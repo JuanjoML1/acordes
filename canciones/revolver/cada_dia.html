@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>BlackJack</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">BlackJack</h1>
+            <div class="tono">
+                <span>Am</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Am                         Am/B C
+Es normal que la distancia sea como un cortafuegos
+       G                         D
+que convierte una montaña en dos montones de arena,
+       Am   Am/B     C
+tan cercanos, tan distantes,
+       D                         F       D
+tan desnudos, siempre eternos, paralelos.
+
+Triste puedo estar conmigo y no necesito a nadie
+pero para estar feliz eres tú la que me vale.
+Ya llevamos en la espalda cicatrices de los dos,
+lo que unas veces se perdona y otras no.
+<span class="estribillo">
+Am       G       E F C        E          Am          F
+Quién me iba a decir que cada día es una vida entera.
+Quiero para mí tu promesa de comerme el corazón.
+</span>
+Es normal que los deseos se disfracen de esperanza
+y se arrastren por el suelo con los restos del gran plan.
+Quién pudiera imaginar,
+quién pudiera imaginar.
+<span class="estribillo">
+Quién me iba a decir que cada día es una vida entera.
+Quiero para mí tu promesa de comerme el corazón. (x2)
+</span>
+</pre>
+
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

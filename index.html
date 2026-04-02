@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Acordes</title>
+        <link rel="stylesheet" href="css/colores.css">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/estilo-texto.css">
+    </head>
+
+    <body>
+        <div id="barra-fija">
+            <h1>Canciones</h1>
+
+            <div id="buscador-container">
+                <select id="filtro">
+                    <option value="titulo" selected>Título</option>
+                    <option value="autor">Autor</option>
+                    <option value="album">Álbum</option>
+                    <option value="todos">Todos</option>
+                </select>
+                <input type="text" id="buscador" placeholder="Buscar canción...">
+            </div>
+
+            <label><input type="checkbox" id="showAlbum">Álbum</label>
+            <label><input type="checkbox" id="showAutor">Autor</label>
+        </div>
+
+        <button id="btn-menu">☰</button>
+        <div id="secciones-lateral">
+            <a href="#rev" class="btn-indice">Revólver</a>
+        </div>
+
+        <button id="btn-tools">⚙️</button>
+        <div id="tools-lateral">
+            <a href="crear_hoja.html" class="btn-indice">Crea tu hoja de cantos</a>
+        </div>
+
+        <button id="btn-theme">🌙</button>
+
+        <h2 id="rev">Revólver</h2>
+        <ul class="lista">
+            <li data-author="Revólver" data-album="21 gramos, Básico IV"><a href="canciones/revolver/21_gramos.html">21 gramos</a></li>
+            <li data-author="Revólver" data-album="Mestizo, Capitol"><a href="canciones/revolver/5_estrellas.html">5 estrellas</a></li>
+            <li data-author="Revólver" data-album="21 gramos"><a href="canciones/revolver/a_contratiempo.html">A contratiempo</a></li>
+            <li data-author="Revólver" data-album="Adictos a la euforia"><a href="canciones/revolver/adictos_a_la_euforia.html">Adictos a la euforia</a></li>
+            <li data-author="Revólver" data-album="Adictos a la euforia"><a href="canciones/revolver/al_infierno_sin_papeles.html">Al infierno sin papeles</a></li>
+            <li data-author="Revólver" data-album="Capitol"><a href="canciones/revolver/angeles_de_alas_sucias.html">Ángeles de alas sucias</a></li>
+            <li data-author="Revólver" data-album="8.30 A.M., Básico 3, Que veinte años no es nada"><a href="canciones/revolver/asustando_al_huracan.html">Asustando al huracán</a></li>
+            <li data-author="Revólver" data-album="8.30 A.M., Básico 3"><a href="canciones/revolver/ay_amor.html">Ay, amor</a></li>
+            <li data-author="Revólver, Elefantes" data-album="Playlist"><a href="canciones/revolver/azul.html">Azul</a></li>
+            <li data-author="Revólver" data-album="Babilonia"><a href="canciones/revolver/babilonia.html">Babilonia</a></li>
+            <li data-author="Revólver" data-album="Calle Mayor"><a href="canciones/revolver/bailando_en_la_frontera.html">Bailando en la frontera</a></li>
+            <li data-author="Revólver" data-album="Sur"><a href="canciones/revolver/balas_perdidas.html">Balas perdidas</a></li>
+            <li data-author="Revólver" data-album="Adictos a la euforia"><a href="canciones/revolver/beguine.html">Beguine</a></li>
+            <li data-author="Revólver" data-album="Básico 2"><a href="canciones/revolver/besare_el_suelo.html">Besaré el suelo</a></li>
+            <li data-author="Revólver" data-album="Capitol"><a href="canciones/revolver/besos_de_contrabando.html">Besos de contrabando</a></li>
+            <li data-author="Revólver" data-album="Capitol, Básico IV"><a href="canciones/revolver/blackjack.html">BlackJack</a></li>
+            <li data-author="Revólver" data-album="Argán"><a href="canciones/revolver/cada_dia.html">Cada día</a></li>
+            <li data-author="Revólver" data-album="Calle Mayor, Básico 2, Grandes éxitos"><a href="canciones/revolver/calle_mayor.html">Calle Mayor</a></li>
+            <li data-author="Revólver" data-album="Adictos a la euforia"><a href="canciones/revolver/calor_y_tiempo.html">Calor y tiempo</a></li>
+            <li data-author="Revólver, Seguridad Social" data-album="Otros"><a href="canciones/revolver/camisa_de_once_varas_(seguridad_social).html">Camisa de once varas (Seguridad Social)</a></li>
+            <li data-author="Revólver" data-album="Capitol, Básico IV"><a href="canciones/revolver/campanilla.html">Campanilla</a></li>
+            <li data-author="Revólver" data-album="21 gramos"><a href="canciones/revolver/carreteras_secundarias.html">Carreteras secundarias</a></li>
+            <li data-author="Revólver" data-album="Capitol"><a href="canciones/revolver/cerrare_los_ojos.html">Cerraré los ojos</a></li>
+            <li data-author="Revólver" data-album="21 gramos, Que veinte años no es nada"><a href="canciones/revolver/clarisa.html">Clarisa</a></li>
+            <li data-author="Revólver, Amaral" data-album="Playlist"><a href="canciones/revolver/como_hablar.html">Cómo hablar</a></li>
+            <li data-author="Revólver" data-album="Revólver, Básico, Rarezas"><a href="canciones/revolver/como_unico_equipaje.html">Como único equipaje</a></li>
+            <li data-author="Revólver" data-album="21 gramos"><a href="canciones/revolver/cuando_todo_va_bien.html">Cuando todo va bien</a></li>
+            <li data-author="Revólver" data-album="Mestizo"><a href="canciones/revolver/dame.html">Dame</a></li>
+            <li data-author="Revólver" data-album="Si no hubiera que correr, Básico, Básico IV, Grandes éxitos"><a href="canciones/revolver/dentro_de_ti.html">Dentro de ti</a></li>
+            <li data-author="Revólver" data-album="8.30 A.M."><a href="canciones/revolver/deprimencia.html">Deprimencia</a></li>
+            <li data-author="Revólver" data-album="Adictos a la euforia"><a href="canciones/revolver/desde_que_no_estas_aqui.html">Desde que no estás aquí</a></li>
+            <li data-author="Revólver" data-album="Si no hubiera que correr, Rarezas"><a href="canciones/revolver/dias_de_vino_y_rosas.html">Días de vino y rosas</a></li>
+            <li data-author="Revólver" data-album="Mestizo, Que veinte años no es nada"><a href="canciones/revolver/dime_como_lo_hago_yo.html">Dime cómo lo hago yo</a></li>
+            <li data-author="Revólver" data-album="Sur"><a href="canciones/revolver/dime_por_que.html">Dime por qué</a></li>
+            <li data-author="Revólver" data-album="8.30 A.M., Enjoy, Que veinte años no es nada"><a href="canciones/revolver/donde_esta_el_final.html">Dónde está el final</a></li>
+            <li data-author="Revólver, Jaime Urrutia" data-album="Playlist"><a href="canciones/revolver/donde_estas.html">Dónde estás</a></li>
+            <li data-author="Revólver" data-album="Revólver, Básico, Enjoy, Rarezas, Que veinte años no es nada"><a href="canciones/revolver/dos_por_dos.html">Dos por dos</a></li>
+            <li data-author="Revólver" data-album="Sur, Básico 3, Que veinte años no es nada"><a href="canciones/revolver/duro_de_llevar.html">Duro de llevar</a></li>
+            <li data-author="Revólver" data-album="El Dorado, Sur, Básico 2"><a href="canciones/revolver/el_aire_sabe_a_veneno.html">El aire sabe a veneno</a></li>
+            <li data-author="Revólver" data-album="Adictos a la euforia"><a href="canciones/revolver/el_anillo_de_boda.html">El anillo de boda</a></li>
+            <li data-author="Revólver" data-album="Mestizo"><a href="canciones/revolver/el_boulevard_de_los_idiotas.html">El boulevard de los idiotas</a></li>
+            <li data-author="Revólver" data-album="Mestizo"><a href="canciones/revolver/el_camino.html">El camino</a></li>
+            <li data-author="Revólver" data-album="21 gramos"><a href="canciones/revolver/el_canal.html">El canal</a></li>
+            <li data-author="Revólver" data-album="El Dorado, Básico 2, Enjoy, Rarezas, Grandes éxitos, Que veinte años no es nada"><a href="canciones/revolver/el_dorado.html">El Dorado</a></li>
+            <li data-author="Revólver, Los Piratas" data-album="Playlist"><a href="canciones/revolver/el_equilibrio_es_imposible.html">El equilibrio es imposible</a></li>
+            <li data-author="Revólver" data-album="Revólver"><a href="canciones/revolver/el_es_el_rey.html">Él es el rey</a></li>
+            <li data-author="Revólver" data-album="Calle Mayor, Básico 2, Enjoy, Que veinte años no es nada"><a href="canciones/revolver/el_mismo_hombre.html">El mismo hombre</a></li>
+            <li data-author="Revólver" data-album="Adictos a la euforia"><a href="canciones/revolver/el_otoño_esta_al_caer.html">El otoño está al caer</a></li>
+            <li data-author="Revólver" data-album="Básico 2, Grandes éxitos, Que veinte años no es nada"><a href="canciones/revolver/el_peligro.html">El peligro</a></li>
+            <li data-author="Revólver" data-album="Básico, Enjoy, Básico IV, Grandes éxitos, Que veinte años no es nada"><a href="canciones/revolver/el_roce_de_tu_piel.html">El roce de tu piel</a></li>
+            <li data-author="Revólver, La Quinta Estación" data-album="Playlist"><a href="canciones/revolver/el_sol_no_regresa.html">El sol no regresa</a></li>
+            <li data-author="Revólver" data-album="Básico 2"><a href="canciones/revolver/el_unico_espectador.html">El único espectador</a></li>
+            <li data-author="Revólver" data-album="Básico 2"><a href="canciones/revolver/ella_es_y_sera_todo_para_mi.html">Ella es y será todo para mí</a></li>
+            <li data-author="Revólver" data-album="Babilonia"><a href="canciones/revolver/en_blanco_y_negro.html">En blanco y negro</a></li>
+            <li data-author="Revólver" data-album="8.30 A.M."><a href="canciones/revolver/en_un_mundo_de_dos.html">En un mundo de dos</a></li>
+            <li data-author="Revólver" data-album="Babilonia, Básico IV"><a href="canciones/revolver/entre_las_nubes.html">Entre las nubes</a></li>
+            <li data-author="Revólver" data-album="Calle Mayor, Enjoy, Rarezas, Que veinte años no es nada"><a href="canciones/revolver/es_lo_que_es_hay_lo_que_hay.html">Es lo que es, hay lo que hay</a></li>
+            <li data-author="Revólver" data-album="Mestizo, Básico 3, Que veinte años no es nada"><a href="canciones/revolver/es_mejor_caminar.html">Es mejor caminar</a></li>
+            <li data-author="Revólver" data-album="Si no hubiera que correr, Básico"><a href="canciones/revolver/esclavo_de_tu_amor.html">Esclavo de tu amor</a></li>
+            <li data-author="Revólver" data-album="Enjoy, Grandes éxitos, Que veinte años no es nada"><a href="canciones/revolver/ese_viejo_rock’n’roll.html">Ese viejo Rock’n’Roll</a></li>
+            <li data-author="Revólver" data-album="8.30 A.M., Básico IV, Que veinte años no es nada"><a href="canciones/revolver/eso_de_saber.html">Eso de saber</a></li>
+            <li data-author="Revólver" data-album="El Dorado, Básico IV, Que veinte años no es nada"><a href="canciones/revolver/esperando_mi_tren.html">Esperando mi tren</a></li>
+            <li data-author="Revólver" data-album="Otros"><a href="canciones/revolver/esta_ciudad.html">Esta ciudad</a></li>
+            <li data-author="Revólver" data-album="Adictos a la euforia"><a href="canciones/revolver/esta_guerra_tuya_y_mia.html">Esta guerra tuya y mía</a></li>
+            <li data-author="Revólver, 091" data-album="Que veinte años no es nada"><a href="canciones/revolver/esta_noche_(091).html">Esta noche (091)</a></li>
+            <li data-author="Revólver, Maldita la hora" data-album="Otros"><a href="canciones/revolver/esta_noche_a_mis_pies_(maldita_la_hora).html">Esta noche a mis pies (Maldita la hora)</a></li>
+            <li data-author="Revólver" data-album="Calle Mayor, Básico 2"><a href="canciones/revolver/esta_noche_tengo_mas_de_lo_normal.html">Esta noche tengo más de lo normal</a></li>
+            <li data-author="Revólver" data-album="Sur, Básico 3, Grandes éxitos"><a href="canciones/revolver/faro_de_lisboa.html">Faro de Lisboa</a></li>
+            <li data-author="Revólver" data-album="Capitol, Básico IV"><a href="canciones/revolver/frio_en_madrid.html">Frío en Madrid</a></li>
+            <li data-author="Revólver" data-album="Revólver, Básico, Rarezas, Grandes éxitos, Que veinte años no es nada"><a href="canciones/revolver/fuera_de_lugar.html">Fuera de lugar</a></li>
+            <li data-author="Revólver, Mónaco" data-album="Que veinte años no es nada"><a href="canciones/revolver/fuimos.html">Fuimos</a></li>
+            <li data-author="Revólver" data-album="8.30 A.M."><a href="canciones/revolver/gargantas_y_desfiladeros.html">Gargantas y desfiladeros</a></li>
+            <li data-author="Revólver" data-album="21 gramos"><a href="canciones/revolver/hay_besos.html">Hay besos</a></li>
+            <li data-author="Revólver" data-album="Sur, Que veinte años no es nada"><a href="canciones/revolver/he_de_salir.html">He de salir</a></li>
+            <li data-author="Revólver, La Habitación Roja" data-album="Playlist"><a href="canciones/revolver/indestructibles.html">Indestructibles</a></li>
+            <li data-author="Revólver" data-album="Argán"><a href="canciones/revolver/intentando_vadear.html">Intentando vadear</a></li>
+            <li data-author="Revólver" data-album="Adictos a la euforia"><a href="canciones/revolver/johnny_and_mary.html">Johnny and Mary</a></li>
+            <li data-author="Revólver" data-album="Que veinte años no es nada"><a href="canciones/revolver/juan_charrasqueando.html">Juan Charrasqueando</a></li>
+            <li data-author="Revólver" data-album="Que veinte años no es nada"><a href="canciones/revolver/la_carretera.html">La carretera</a></li>
+            <li data-author="Revólver" data-album="8.30 A.M."><a href="canciones/revolver/la_flor_mas_bella.html">La flor más bella</a></li>
+            <li data-author="Revólver" data-album="El Dorado"><a href="canciones/revolver/la_fortuna.html">La fortuna</a></li>
+            <li data-author="Revólver" data-album="Otros"><a href="canciones/revolver/la_luna_se_esconde_(pablo_perea).html">La luna se esconde (Pablo Perea)</a></li>
+            <li data-author="Revólver" data-album="Babilonia"><a href="canciones/revolver/la_moral_mora_en_la_moneda.html">La moral mora en la moneda</a></li>
+            <li data-author="Revólver" data-album="Que veinte años no es nada"><a href="canciones/revolver/la_rosa_y_la_cruz_(los_rebeldes).html">La rosa y la cruz (Los rebeldes)</a></li>
+            <li data-author="Revólver" data-album="Revólver"><a href="canciones/revolver/la_sonrisa_de_tu_boca.html">La sonrisa de tu boca</a></li>
+            <li data-author="Revólver" data-album="Capitol"><a href="canciones/revolver/la_vanidad.html">La vanidad</a></li>
+            <li data-author="Revólver, Extremoduro" data-album="Playlist"><a href="canciones/revolver/la_vereda_de_la_puerta_de_atras.html">La vereda de la puerta de atrás</a></li>
+            <li data-author="Revólver, Leiva" data-album="Playlist"><a href="canciones/revolver/lady_madrid.html">Lady Madrid</a></li>
+            <li data-author="Revólver" data-album="Babilonia"><a href="canciones/revolver/las_armas_rotas.html">Las armas rotas</a></li>
+            <li data-author="Revólver" data-album="Babilonia"><a href="canciones/revolver/las_calles_de_madrid.html">Las calles de Madrid</a></li>
+            <li data-author="Revólver" data-album="Mestizo, Que veinte años no es nada"><a href="canciones/revolver/lecho_de_rosas.html">Lecho de rosas</a></li>
+            <li data-author="Revólver" data-album="El Dorado, Básico IV, Que veinte años no es nada"><a href="canciones/revolver/lisa_y_fran.html">Lisa y Fran</a></li>
+            <li data-author="Revólver" data-album="Que veinte años no es nada"><a href="canciones/revolver/lo_mejor_de_lo_peor.html">Lo mejor de lo peor</a></li>
+            <li data-author="Revólver" data-album="8.30 A.M., Grandes éxitos, Que veinte años no es nada"><a href="canciones/revolver/lo_que_ana_ve.html">Lo que Ana ve</a></li>
+            <li data-author="Revólver" data-album="Argán"><a href="canciones/revolver/lo_que_me_hace_feliz.html">Lo que me hace feliz</a></li>
+            <li data-author="Revólver" data-album="Calle Mayor"><a href="canciones/revolver/los_surcos_de_tu_espalda.html">Los surcos de tu espalda</a></li>
+            <li data-author="Revólver" data-album="Otros"><a href="canciones/revolver/los_tres_caballeros.html">Los tres caballeros</a></li>
+            <li data-author="Revólver" data-album="Capitol"><a href="canciones/revolver/magnolia_lane.html">Magnolia Lane</a></li>
+            <li data-author="Revólver" data-album="Si no hubiera que correr, Enjoy"><a href="canciones/revolver/malvarrosa_affaire.html">Malvarrosa Affaire</a></li>
+            <li data-author="Revólver" data-album="Si no hubiera que correr, Básico"><a href="canciones/revolver/manager's_blues.html">Manager's Blues</a></li>
+            <li data-author="Revólver" data-album="Argán"><a href="canciones/revolver/manos_arriba.html">Manos arriba</a></li>
+            <li data-author="Revólver" data-album="Básico 3, Que veinte años no es nada"><a href="canciones/revolver/marineros_varados.html">Marineros varados</a></li>
+            <li data-author="Revólver" data-album="Mestizo, Que veinte años no es nada"><a href="canciones/revolver/mas_por_ellos_que_por_mi.html">Más por ellos que por mí</a></li>
+            <li data-author="Revólver" data-album="Capitol, Básico IV"><a href="canciones/revolver/mas_tequila.html">Más tequila</a></li>
+            <li data-author="Revólver, Mecano" data-album="Otros"><a href="canciones/revolver/me_cuesta_tanto_olvidarte_(mecano).html">Me cuesta tanto olvidarte (Mecano)</a></li>
+            <li data-author="Revólver" data-album="Calle Mayor, Rarezas, Que veinte años no es nada"><a href="canciones/revolver/me_vuelvo_loco.html">Me vuelvo loco</a></li>
+            <li data-author="Revólver, Rubén Pozo" data-album="Playlist"><a href="canciones/revolver/mesa_para_dos.html">Mesa para dos</a></li>
+            <li data-author="Revólver" data-album="Mestizo, Básico 3, Enjoy, Que veinte años no es nada"><a href="canciones/revolver/mestizo.html">Mestizo</a></li>
+            <li data-author="Revólver" data-album="Argán"><a href="canciones/revolver/mi_norte_siempre_apunta_al_sur.html">Mi norte siempre apunta al sur</a></li>
+            <li data-author="Revólver" data-album="Calle Mayor, Básico 2, Grandes éxitos, Que veinte años no es nada"><a href="canciones/revolver/mi_rendicion.html">Mi rendición</a></li>
+            <li data-author="Revólver" data-album="Babilonia"><a href="canciones/revolver/mi_revolucion.html">Mi revolución</a></li>
+            <li data-author="Revólver" data-album="Calle Mayor, Rarezas, Que veinte años no es nada"><a href="canciones/revolver/mi_segundo_amor.html">Mi segundo amor</a></li>
+            <li data-author="Revólver" data-album="Si no hubiera que correr"><a href="canciones/revolver/mueve_tu_cuerpo_frente_a_mi.html">Mueve tu cuerpo frente a mí</a></li>
+            <li data-author="Revólver, Ni un Pelo de Tonto" data-album="Otros"><a href="canciones/revolver/muevete_(ni_un_pelo_de_tonto).html">Muévete (Ni un pelo de tonto)</a></li>
+            <li data-author="Revólver" data-album="Capitol"><a href="canciones/revolver/mustang_shelby.html">Mustang Shelby</a></li>
+            <li data-author="Revólver" data-album="El Dorado"><a href="canciones/revolver/nacidos_para_la_gloria.html">Nacidos para la gloria</a></li>
+            <li data-author="Revólver" data-album="Básico IV"><a href="canciones/revolver/no_escupas_al_suelo.html">No escupas al suelo</a></li>
+            <li data-author="Revólver" data-album="Argán, Enjoy"><a href="canciones/revolver/no_hay_mañanas.html">No hay mañanas</a></li>
+            <li data-author="Revólver" data-album="21 gramos"><a href="canciones/revolver/no_me_hace_falta_mas.html">No me hace falta más</a></li>
+            <li data-author="Revólver" data-album="El Dorado, Básico 2, Enjoy, Rarezas, Grandes éxitos, Que veinte años no es nada"><a href="canciones/revolver/no_va_mas.html">No va más</a></li>
+            <li data-author="Revólver" data-album="8.30 A.M., Básico 3, Grandes éxitos, Que veinte años no es nada"><a href="canciones/revolver/odio.html">Odio</a></li>
+            <li data-author="Revólver" data-album="Mestizo"><a href="canciones/revolver/olas_muertas.html">Olas muertas</a></li>
+            <li data-author="Revólver" data-album="Básico IV"><a href="canciones/revolver/olvide_nuestra_cancion.html">Olvidé nuestra canción</a></li>
+            <li data-author="Revólver" data-album="Revólver, Que veinte años no es nada"><a href="canciones/revolver/pais_del_sur.html">País del sur</a></li>
+            <li data-author="Revólver, Duncan Dhu" data-album="Que veinte años no es nada"><a href="canciones/revolver/palabras_sin_nombre_(duncan_dhu).html">Palabras sin nombre (Duncan Dhu)</a></li>
+            <li data-author="Revólver" data-album="Capitol, Básico IV"><a href="canciones/revolver/perdi_lo_que_no_tuve.html">Perdí lo que no tuve</a></li>
+            <li data-author="Revólver" data-album="8.30 A.M., Que veinte años no es nada"><a href="canciones/revolver/petroleros.html">Petroleros</a></li>
+            <li data-author="Revólver" data-album="Mestizo"><a href="canciones/revolver/planeta_prozac.html">Planeta Prozac</a></li>
+            <li data-author="Revólver" data-album="Sur, Rarezas"><a href="canciones/revolver/pongamos_que_hablo_de_madrid.html">Pongamos que hablo de Madrid</a></li>
+            <li data-author="Revólver" data-album="El Dorado, Que veinte años no es nada"><a href="canciones/revolver/por_un_beso.html">Por un beso</a></li>
+            <li data-author="Revólver" data-album="Capitol"><a href="canciones/revolver/premios_y_cicatrices.html">Premios y cicatrices</a></li>
+            <li data-author="Revólver" data-album="Argán"><a href="canciones/revolver/princesas_o_mendigos.html">Princesas o mendigos</a></li>
+            <li data-author="Revólver, José Feliciano" data-album="Grandes éxitos"><a href="canciones/revolver/que_sera_(jose_feliciano).html">Qué será (José Feliciano)</a></li>
+            <li data-author="Revólver" data-album="Mestizo"><a href="canciones/revolver/quien_esta_mas_vivo_de_los_dos.html">Quién está más vivo de los dos</a></li>
+            <li data-author="Revólver" data-album="Argán"><a href="canciones/revolver/quiero_aire.html">Quiero aire</a></li>
+            <li data-author="Revólver" data-album="Sur, Rarezas, Que veinte años no es nada"><a href="canciones/revolver/quiero_beber_hasta_perder_el_control.html">Quiero beber hasta perder el control</a></li>
+            <li data-author="Revólver" data-album="Argán"><a href="canciones/revolver/reconozco_la_frontera.html">Reconozco la frontera</a></li>
+            <li data-author="Revólver" data-album="Calle Mayor"><a href="canciones/revolver/reir_y_llorar.html">Reír y llorar</a></li>
+            <li data-author="Revólver" data-album="Babilonia"><a href="canciones/revolver/respirando_bajo_el_agua.html">Respirando bajo el agua</a></li>
+            <li data-author="Revólver, Tregua" data-album="Otros"><a href="canciones/revolver/revolucion_(tregua).html">Revolución (Tregua)</a></li>
+            <li data-author="Revólver" data-album="Revólver"><a href="canciones/revolver/rock'n_roll.html">Rock'n Roll</a></li>
+            <li data-author="Revólver" data-album="Sur, Que veinte años no es nada"><a href="canciones/revolver/rodrigo_y_teresa.html">Rodrigo y Teresa</a></li>
+            <li data-author="Revólver" data-album="Que veinte años no es nada"><a href="canciones/revolver/rosario.html">Rosario</a></li>
+            <li data-author="Revólver" data-album="Capitol"><a href="canciones/revolver/sacristan_de_sacristanes.html">Sacristán de sacristanes</a></li>
+            <li data-author="Revólver" data-album="Sur, Que veinte años no es nada"><a href="canciones/revolver/san_francisco.html">San Francisco</a></li>
+            <li data-author="Revólver" data-album="Sur, Capitol, Básico 3, Enjoy, Grandes éxitos, Que veinte años no es nada"><a href="canciones/revolver/san_pedro.html">San Pedro</a></li>
+            <li data-author="Revólver" data-album="21 gramos, Que veinte años no es nada"><a href="canciones/revolver/santa_maria.html">Santa María</a></li>
+            <li data-author="Revólver" data-album="Sur, Básico 3, Que veinte años no es nada"><a href="canciones/revolver/sara.html">Sara</a></li>
+            <li data-author="Revólver" data-album="Revólver"><a href="canciones/revolver/ser_el_mejor.html">Ser el mejor</a></li>
+            <li data-author="Revólver" data-album="El Dorado, Básico IV"><a href="canciones/revolver/si_es_por_ti.html">Si es por ti</a></li>
+            <li data-author="Revólver" data-album="Si no hubiera que correr, Básico, Grandes éxitos, Que veinte años no es nada"><a href="canciones/revolver/si_es_tan_solo_amor.html">Si es tan sólo amor</a></li>
+            <li data-author="Revólver" data-album="Si no hubiera que correr, Básico, Enjoy, Rarezas"><a href="canciones/revolver/si_no_hubiera_que_correr.html">Si no hubiera que correr</a></li>
+            <li data-author="Revólver" data-album="Capitol"><a href="canciones/revolver/sin_barcelona.html">Sin Barcelona</a></li>
+            <li data-author="Revólver" data-album="21 gramos, Que veinte años no es nada"><a href="canciones/revolver/sol_de_invierno.html">Sol de invierno</a></li>
+            <li data-author="Revólver" data-album="Si no hubiera que correr"><a href="canciones/revolver/soy_como_soy.html">Soy como soy</a></li>
+            <li data-author="Revólver, Leo Dan" data-album="Playlist"><a href="canciones/revolver/te_he_prometido.html">Te he prometido</a></li>
+            <li data-author="Revólver" data-album="Revólver"><a href="canciones/revolver/te_quiero.html">Te quiero</a></li>
+            <li data-author="Revólver" data-album="Babilonia"><a href="canciones/revolver/teamotemor.html">Teamotemor</a></li>
+            <li data-author="Revólver" data-album="Calle Mayor, Básico 3, Que veinte años no es nada"><a href="canciones/revolver/ten_fe_en_mi.html">Ten fe en mí</a></li>
+            <li data-author="Revólver" data-album="Revólver"><a href="canciones/revolver/tengo_mi_tiempo.html">Tengo mi tiempo</a></li>
+            <li data-author="Revólver" data-album="21 gramos, Enjoy, Que veinte años no es nada"><a href="canciones/revolver/tiempo_pequeño.html">Tiempo pequeño</a></li>
+            <li data-author="Revólver" data-album="Sur, Enjoy"><a href="canciones/revolver/tierra_baldia.html">Tierra baldía</a></li>
+            <li data-author="Revólver" data-album="Que veinte años no es nada"><a href="canciones/revolver/todo_a_pulmon.html">Todo a pulmón</a></li>
+            <li data-author="Revólver" data-album="Básico 3"><a href="canciones/revolver/todo_aquello_que_jamas_sere.html">Todo aquello que jamás seré</a></li>
+            <li data-author="Revólver" data-album="Babilonia"><a href="canciones/revolver/todo_lo_que_no_se_llora_no_se_limpia.html">Todo lo que no se llora no se limpia</a></li>
+            <li data-author="Revólver" data-album="21 gramos"><a href="canciones/revolver/todos_somos_capitanes.html">Todos somos capitanes</a></li>
+            <li data-author="Revólver" data-album="Que veinte años no es nada"><a href="canciones/revolver/tu_camino.html">Tu camino</a></li>
+            <li data-author="Revólver" data-album="Si no hubiera que correr, Básico, Rarezas, Que veinte años no es nada"><a href="canciones/revolver/tu_cancion.html">Tu canción</a></li>
+            <li data-author="Revólver" data-album="Calle Mayor, Que veinte años no es nada"><a href="canciones/revolver/tu_lado_bueno.html">Tu lado bueno</a></li>
+            <li data-author="Revólver" data-album="Básico, Básico IV, Que veinte años no es nada"><a href="canciones/revolver/tu_noche_y_la_mia.html">Tu noche y la mía</a></li>
+            <li data-author="Revólver" data-album="El Dorado, Básico 2, Enjoy, Que veinte años no es nada"><a href="canciones/revolver/tu_y_yo.html">Tú y yo</a></li>
+            <li data-author="Revólver" data-album="Mestizo"><a href="canciones/revolver/una_guerra_feliz.html">Una guerra feliz</a></li>
+            <li data-author="Revólver" data-album="Básico 2"><a href="canciones/revolver/una_lluvia_violenta_y_salvaje.html">Una lluvia violenta y salvaje</a></li>
+            <li data-author="Revólver" data-album="Sur, Básico IV"><a href="canciones/revolver/viaje_a_ninguna_parte.html">Viaje a ninguna parte</a></li>
+            <li data-author="Revólver" data-album="8.30 A.M."><a href="canciones/revolver/vidas.html">Vidas</a></li>
+            <li data-author="Revólver, Supersubmarina" data-album="Playlist"><a href="canciones/revolver/viento_de_cara.html">Viento de cara</a></li>
+            <li data-author="Revólver, Mala Conciencia" data-album="Otros"><a href="canciones/revolver/y_ahora_que_(mala_conciencia).html">Y ahora que (Mala Conciencia)</a></li>
+            <li data-author="Revólver" data-album="Argán"><a href="canciones/revolver/y_del_hombre.html">Y del hombre</a></li>
+            <li data-author="Revólver" data-album="21 gramos, Básico IV, Que veinte años no es nada"><a href="canciones/revolver/y_pasa_el_tiempo.html">Y pasa el tiempo</a></li>
+            <li data-author="Revólver" data-album="Argán"><a href="canciones/revolver/ya_no_hay_dos_para_cenar.html">Ya no hay dos para cenar</a></li>
+        </ul>
+
+        <h2 style="display:none"></h2>
+
+        <script src="js/buscador.js"></script>
+        <script src="js/barra_lateral.js"></script>
+        <script src="js/cambiar_tema.js"></script>
+        <script src="js/mostrar.js"></script>
+    </body>
+</html>

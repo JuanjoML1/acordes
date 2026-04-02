@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>A contratiempo</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">A contratiempo</h1>
+            <div class="tono">
+                <span>C</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+<span class="solo">
+Intro: Am  Em  F  C  G
+       Am  Em  Dsus2
+</span>
+Am               Em               F                  C     G
+No es la verdad abierta y desnuda lo que me hace más frágil.
+Am                           Em       Dsus2
+No por chillar mirando a los ojos fui más que nadie.
+Am            Em                F               C     G
+No por gritar lo que me espanta se me escucha mejor.
+Am                    Em              F
+Ahora sé que es en la calma donde más clara suena mi voz,
+         Dsus2
+suena mi voz...
+<span class="estribillo">
+  C Em       Am     F
+Huir a contratiempo 
+                     C   G
+del tipo que hubo en mí.
+  C Em       Am     F
+Correr cuanto más lejos
+                     C  G                     Dsus2
+del tipo que hubo en mí, del tipo que hubo en mí.
+</span>
+Quién no ha sentido el peso del miedo,
+quién no lloro alguna vez.
+Para evitar pudrirse por dentro 
+quién no estalló.
+
+Eché la vista atrás y no repetí
+los arañazos y la hiel que escupí, 
+los arañazos y la hiel que escupí. 
+<span class="estribillo">
+Huir a contratiempo 
+del tipo que hubo en mí.
+Correr cuanto más lejos
+del tipo que hubo en mí, del tipo que hubo en mí.
+</span>
+</pre>
+
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

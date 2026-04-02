@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Lo que Ana ve</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Lo que Ana ve</h1>
+            <div class="tono">
+                <span>Am</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Am                                       F          G
+Ana tiene un mensaje pintado de azul en el ojo derecho.
+Am                                         F              G      
+Ana tiene un mal día grabado en los labios, partidos, por cierto.
+C                        G                     Am7
+Ana tiene un secreto que no sabe nadie, aunque no es un secreto.
+     F                                           G
+y un día cualquiera es el último día y un día de estos...
+
+Ana cree que el mundo es enorme pero no lo bastante.
+A Ana la engañan diciendo “si te vas no tardaré en encontrarte”.
+Ana no tiene claro a partir de cuándo todo se volvió negro,
+pero él dijo un día antes muerta que viva, con otro ni en sueños,
+F                                G
+o cuando escupía diciendo tu vida será puro miedo.
+<span class="estribillo">
+C                  Em                      C#º7
+Abrir las alas y volar, dejarlo todo sin hacer
+                  A7
+y largarse pronto con lo puesto.
+F                           Fm                    C
+Quién quiere ver lo que Ana ve, una noche otra también, 
+                      G7                          F
+la vida es bella pero quién quiere ver lo que Ana ve.
+</span><span class="puente">
+Am                C                    F         G
+Y dónde puedes ir cuando tú sabes bien que irá a por ti.
+Am                              F      G
+Cómo vas a gritar si sabes que nadie te escuchará.
+C            G                Am7
+Todos dirán “vaya exageración, no será tanto, no”,
+F                                             G
+mientras esculpe a golpe de puño su nombre en tus huesos,
+F                                                         G
+mientras te tapa la boca y te aplasta un cigarro en el pecho.
+</span><span class="estribillo">
+Abrir las alas y volar, dejarlo todo sin hacer
+y largarse pronto con lo puesto.
+Quién quiere ver lo que Ana ve, una noche otra también, 
+la vida es bella pero quién quiere ver lo que Ana ve.
+</span>
+</pre>
+
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>
