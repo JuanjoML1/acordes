@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Tu camino</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Tu camino</h1>
+            <div class="tono">
+                <span>G</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+      G             C                G
+No buscaba un dios amigo en quien creer,
+     G              C           D
+ni siquiera una aventura que contar.
+      G         G7           C
+No busqué mujer a la que engañar o que querer,
+     G             D            G
+sólo quise una autopista que cruzar.
+
+Y llevé mi coche, un Toyota azul,
+más que viejo, casi tanto como yo,
+a las puertas del desierto con más miedo que Caín
+al saberse el gran y eterno perdedor.
+<span class="estribillo">
+C     G            Em                        Am
+Uh, camino, de los cielos al infierno en un amén.
+C  D  Em           G         D          G
+Uh, camino, tú que sabes ir, ven y llévame.
+</span>
+A menudo uno tiene que partir
+sin saber muy bien cuál es la dirección.
+El asunto es agarrar en marcha el último tren,
+aunque sea en el último vagón.
+<span class="estribillo">
+C     G            Em                        Am
+Uh, camino, de los cielos al infierno en un amén.
+C  D  Em           G         D          G
+Uh, camino, tú que sabes ir, ven y llévame.
+       Em        D          C
+Tú que sabes ir, ven y llévame.
+</span><span class="puente">
+       C          D               G
+Y hace días que dejé el desierto atrás,
+     C                           Am
+pero hoy veo a las montañas sonreír,
+     C           D           G           Em
+cruzaré como a diario por la ruta más salvaje
+          Am                       D
+sé que el llano no está hecho para mí.
+      C         D         G
+Ni tampoco para ese tal Caín,
+      C         D         G
+ni tampoco para ese tal Caín.
+</span><span class="estribillo">
+Uh, camino, de los cielos al infierno en un amén.
+Uh, camino, tú que sabes ir, ven y llévame.
+Uh, camino, tú que sabes ir, ven y llévame.
+</span>
+</pre>
+
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

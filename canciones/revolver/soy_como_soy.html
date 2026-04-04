@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Soy como soy</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Soy como soy</h1>
+            <div class="tono">
+                <span>A</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+<span class="solo">
+Intro: A  C  D  F-G  A  E  A  E7
+</span>
+A                        C
+Llevo los vaqueros destrozados por el sol,
+   D                         F            G
+la lluvia me hace polvo y el polvo el corazón.
+A            E                     A   E7
+Oh, oh, baby, ya no te acuerdas de mí.
+
+A                         C
+Se me hace tan difícil el poder sobrevivir,
+   D                         F          G
+no paro más de un día y otra vez debo seguir.
+A            E                     A   E7
+Oh, oh, baby, ya no te acuerdas de mí.
+<span class="estribillo">
+   D
+Maldita carretera no saldré jamás de ti.
+F#m 
+Es mi sino estar contigo.
+   B
+Maldita carretera, aunque soy feliz así,
+A      E        D
+cuídame de todo mal.
+
+A              F#m                   E   D
+Soy como soy y quiero seguir siendo así.
+A               F#m                E     D
+Soy como soy, mañana ya no estaré aquí.
+A              F#m                   E
+Soy como soy y quiero seguir siendo así,
+       G
+porque soy lo que soy.
+</span>
+Principio de verano en un bar te dije adiós.
+Me largo con mis chicos a tocar buen rock'n'roll.
+Oh, oh, baby, ya no te acuerdas de mí.
+<span class="estribillo">
+Maldita carretera no saldré jamás de ti.
+Es mi sino estar contigo.
+Maldita carretera, aunque soy feliz así,
+cuídame de todo mal.
+
+Soy como soy y quiero seguir siendo así.
+Soy como soy mañana ya no estaré aquí.
+Soy como soy y quiero seguir siendo así,
+porque soy lo que soy.
+</span>
+</pre>
+
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

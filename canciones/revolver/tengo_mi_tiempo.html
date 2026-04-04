@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Tengo mi tiempo</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Tengo mi tiempo</h1>
+            <div class="tono">
+                <span>A</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+<span class="solo">
+Intro: A  A  D  D-E
+</span>
+A
+Ey, vagabundo, ¿quieres venir?
+D
+Tráete contigo las noches de abril.
+A
+Llena tu bolsa de risa y honor,
+D
+vayamos juntos donde no muera el sol.
+
+Tristes y heridos en el corazón,
+de nada sirve vivir con dolor,
+dar rienda suelta, volver a empezar,
+siempre es lo mismo, luchar y luchar.
+<span class="estribillo">
+E  F#m  D        A
+No hay noche sin sexo,
+E  F#m  D
+no hay playa sin mar.
+E  F#m  D          A
+Nada es siempre perfecto,
+D                  F  G
+y vuelta a empezar.
+
+A
+Tengo mi tiempo, pero quiero más,
+D                   E            A
+suelto mi aliento y vuelvo a empezar.
+A
+Tengo mi tiempo, pero quiero más,
+D                   E            A
+suelto mi aliento y vuelvo a empezar.
+</span>
+He visto tipos contra la pared,
+gritando al aire "¿Cuándo ganaré?".
+Viejas pensiones que sirven de hogar
+en lo más hondo de cualquier ciudad.
+
+No corren tiempos sanos y frescos.
+No está de moda el morir por amor.
+Así que, chico, llena tu bolsa,
+vayamos juntos donde no muera el sol.
+<span class="estribillo">
+No hay noche sin sexo,
+no hay playa sin mar.
+Nada es siempre perfecto,
+y vuelta a empezar.
+
+Tengo mi tiempo, pero quiero más,
+suelto mi aliento y vuelvo a empezar.
+Tengo mi tiempo, pero quiero más,
+suelto mi aliento y vuelvo a empezar.
+</span>
+</pre>
+
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Y pasa el tiempo</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Y pasa el tiempo</h1>
+            <div class="tono">
+                <span>C cej2</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+     Am        G          Am 
+Las cosas parpadean y se mueven,
+         F                           C  
+y todo aquello que no tiembla no está vivo.
+       E7                     F 
+Las gaviotas volvieron en diciembre
+        Dm          Dm7          E7 
+y ahora vuelan otra vez aquí conmigo.
+
+La distancia la marcamos tú y yo a medias
+si procuras no tenerme en el olvido.
+Yo prometo soñarte mientras duerma
+y dormir hasta que estés aquí conmigo.
+<span class="estribillo">
+        A                  E          F#m 
+Y pasa el tiempo y mientras pasa considero
+           D         A             C          E 
+que es una falta de respeto y un engaño tan ruin
+             D             A              Bm  
+que cuando al fin ya sé cómo funciona el juego
+        D          A         Bm        E
+se me acaban las monedas, ironías de vivir.
+</span>
+Y la espuma de este mar que me marea
+mientras rompe con fragor contra mi oído,
+recordándome con cada nueva ola
+que tú estás aunque no estés aquí conmigo.
+<span class="estribillo">
+Y pasa el tiempo y mientras pasa considero
+que es una falta de respeto y un engaño tan ruin
+que cuando al fin ya sé cómo funciona el juego
+se me acaban las monedas, ironías de vivir.
+</span>
+Y es que las cosas parpadean y se mueven
+y todo aquello que no tiembla no está vivo
+yo temblaré hasta que me muera si así vienes,
+vente conmigo.
+<span class="estribillo">
+Y pasa el tiempo y mientras pasa considero
+que es una falta de respeto y un engaño tan ruin
+que cuando al fin ya sé cómo funciona el juego
+se me acaban las monedas, ironías de vivir.
+</span>
+</pre>
+
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>
