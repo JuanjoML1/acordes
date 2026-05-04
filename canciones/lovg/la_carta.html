@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>La carta</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">La carta</h1>
+            <div class="tono">
+                <span>G</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+G                     D                              Cm
+Te escribo desde el silencio, donde el miedo tiene excusa,
+                   G                        D
+donde el tiempo se pierde, donde el odio no cura
+                     Cm 
+la bandera que de noche me ahoga.
+<span class="estribillo">
+Gm
+La oscuridad me inunda,
+A7
+mis fuerzas se pierden.
+    Cm
+Sin nada más que decirte,
+      G
+me despido hasta siempre.
+
+Bm                    D
+Cuando leas esta carta no cierres esos ojos
+G
+que tienen la luz que me falta,
+Bm                D
+que tienen la luz que me falta.
+
+Bm                    D
+Cuando leas esta carta no cierres esos ojos
+G
+que tienen la luz que me falta,
+Bm                          E
+que tienen la luz que me falta.
+</span>
+Recuerdos llenan mi espera, cubren todos mis sueños,
+duermen sobre un piedra, soledad que me ahogas,
+deja ya de mirarme y dame tu mano.
+<span class="estribillo">
+La oscuridad me inunda,
+mis fuerzas se pierden.
+Sin nada más que decirte,
+me despido hasta siempre.
+
+Cuando leas esta carta no cierres esos ojos
+que tienen la luz que me falta,
+que tienen la luz que me falta.
+
+Cuando leas esta carta no cierres esos ojos
+que tienen la luz que me falta,
+que tienen la luz que me falta.
+</span>
+</pre>
+
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

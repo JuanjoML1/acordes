@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Desde el puerto</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Desde el puerto</h1>
+            <div class="tono">
+                <span>F</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+(Dm  A  Bb  F  A)
+Desde el puerto he visto amanecer
+con tu ausencia sentada junto a mí.
+
+Me ha invitado no dejar atrás
+el capricho de verte sonreír.
+<span class="estribillo">
+Y cada minuto espera su turno,
+se escapa, se pierde, se une al mar.
+
+Sobre el agua se dibuja
+una historia ya dormida.
+En silencio escucho
+el verso de tu despedida.
+</span>
+Es tu ausencia mi gran soledad,
+me ha contado que el sol sale por ti.
+
+Tiemblo, descanso, ahora escucho su voz.
+Me miro en sus ojos, me llevan a dormir.
+<span class="estribillo">
+Y cada minuto espera su turno.
+Se escapa, se pierde, se une al mar.
+
+Sobre el agua se dibuja
+una historia ya dormida.
+En silencio escucho
+el verso de tu despedida. (bis)
+
+
+Quisiera tenerte aquí un segundo,
+decirte que el mundo no tiene luz.
+
+Sobre el agua se dibuja
+una historia ya dormida.
+En silencio escucho
+el verso de tu despedida. (bis)
+</span>
+</pre>
+
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

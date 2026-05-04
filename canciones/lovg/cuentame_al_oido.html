@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Cuéntame al oído</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Cuéntame al oído</h1>
+            <div class="tono">
+                <span>C</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Am                      F
+Cuéntame al oído muy despacio y muy bajito
+        C                    E
+por qué tiene tanta luz este día tan sombrío.
+Am                        F
+Cuéntame al oído si es sincero eso que ha dicho
+      C                      E
+o son frases disfrazadas esperando solo a un niño.
+<span class="estribillo">
+      F         G
+Cuéntame, cuéntame.
+
+C  F         G                             C
+El cielo acostado detuvo el tiempo en el beso,
+    F               G
+ese beso a mí en el tiempo.
+C  F         G                             C
+El cielo acostado detuvo el tiempo en el beso,
+    F               G
+ese beso a mí en el tiempo.
+</span>
+Cuéntame al oído a que sabe este momento,
+dónde quedan hoy los días en que aquello era un sueño.
+Cuéntame al oído donde duermen hoy tus miedos,
+si aún guardas sus caricias en la caja del recuerdo.
+<span class="estribillo">
+      F         G
+Cuéntame, cuéntame.
+
+C  F         G                             C
+El cielo acostado detuvo el tiempo en el beso,
+    F               G
+ese beso a mí en el tiempo.
+C  F         G                             C
+El cielo acostado detuvo el tiempo en el beso,
+    F               G
+ese beso a mí en el tiempo.
+</span><span class="solo">
+(C  F  G)
+</span><span class="estribillo">
+El cielo acostado...
+El tiempo en el beso...
+Y ese beso a mí en el tiempo.
+El cielo acostado...
+Nos detuvo en el tiempo, nos detuvo en el tiempo.
+Cuéntame al oído.
+</span>
+</pre>
+
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

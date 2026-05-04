@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Paloma blanca</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Paloma blanca</h1>
+            <div class="tono">
+                <span>G</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+G                  D   Em         C
+Estrella de mi vida, espérame mi amor,
+G                    D   Em             C
+que apenas te iluminas y ya dices adiós.
+        Am                       D
+Como un pétalo que viaja por el aire,
+C                           D
+y deja una caricia por mi piel.
+
+Con tinta de agua clara sobre una piedra al sol,
+te dibujé despacio sus ojos y mi voz.
+Como gotas de rocío caen a un lado
+y rompen el espejo al cielo azul
+<span class="estribillo">
+       G
+Paloma blanca,
+Em                        Bm
+pasaste tan cerca de mi ventana
+     Am         D            G
+que revolviste todo con tus alas,
+Em                             Bm
+me despeinaste entera todo el alma.
+   C           D       G          Em
+Nunca te olvidaré y siempre llevaré
+   C       D          G	
+tu cara encima de mi cara.
+</span>
+G                   D  Em                     C
+Cuando vuelva febrero y se haya puesto el sol
+G                   D   Em                 C
+te buscaré en la noche, estrella de mi amor.
+     Am                      D
+Soplaré contigo tu primera vela
+     Am                    D
+y cruzarás el manto celestial.
+<span class="estribillo">
+Paloma blanca,
+pasaste tan cerca de mi ventana
+que revolviste todo con tus alas,
+me despeinaste entera todo el alma.
+Nunca te olvidaré y siempre llevaré
+tu cara encima de mi cara.
+</span><span class="solo">
+D  C  Am  D  C  Am  D
+</span><span class="estribillo">
+Paloma blanca,
+pasaste tan cerca de mi ventana
+que revolviste todo con tus alas,
+me despeinaste entera todo el alma.
+Nunca te olvidaré y siempre llevaré
+tu cara encima de mi cara,
+   C       D          G
+tu cara encima de mi cara,
+   C       D          G
+tu cara encima de mi cara.
+</span>
+</pre>
+
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

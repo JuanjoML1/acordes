@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Adiós</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Adiós</h1>
+            <div class="tono">
+                <span>F</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+          F              Am
+Tengo que irme ya, abrázame.
+          F             Am
+Nada más llegar te llamaré.
+     Dm                    Am
+Déjame marchar, no llores más. 
+     F           G         Am
+Túmbate otra vez, te dormirás.
+
+         F                     Am
+Te he dejado atrás y pienso en ti.
+         F                     Am      
+Oigo “adiós, amor” caer sobre mí.
+           Dm                         Am      
+Yo quiero irme de allí, no puedo escapar.
+    Bb                   F   A7
+Necesito volverte a abrazar.
+<span class="estribillo">
+ D               Bm
+Ven, cálmate, no llores más,
+                F#m                 G
+si cierras los ojos verás que sigo junto a ti,
+    Gm               D
+que no me iré sin besar
+            Bm                        F#m  
+una de esas lágrimas que van desde tu cara al mar,
+         G              Gm
+la vida viene, va, y se va.
+</span><span class="solo">
+D  Am 
+</span>
+Salgo del portal, quiero morir.
+Tú en la habitación, llorando por mí.
+Tú me has hecho tan feliz que siempre estaré
+a tu lado, cuidando de ti.
+<span class="estribillo">
+Ven, cálmate, no llores más,
+si cierras los ojos verás que sigo junto a ti,
+que no me iré sin besar
+una de esas lágrimas que van desde tu cara al mar,
+la vida viene, va, y se va.
+</span><span class="puente">
+D                 Am
+Ven, cálmate no llores más,
+                 G                               Gm
+si cierras los ojos verás que sigo aquí, junto a ti.
+</span><span class="solo">
+D  Am  G  Bb  (x2)
+</span>
+</pre>
+
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Pop</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Pop</h1>
+            <div class="tono">
+                <span>D</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+(A  -  D)
+Tienes talento y cultura,
+manos bonitas y estudias francés.
+Cantas, actúas y pintas,
+escribes poemas, todo lo haces bien.
+
+Has nacido artista, lo sé,
+se te nota en la cara,
+tienes mucho poder.
+
+Firma aquí abajo y verás
+cómo cambia tu vida
+        D       E 
+es muy fácil ganar
+<span class="estribillo">
+D        C#7       F#m 
+Eres la reina del pop,
+     D        A                     C#7
+una vida sin nombre un montón de ilusión.
+
+D        C#7       F#m 
+Eres facturas y alcohol,
+     D       A        Bm        E 
+una foto borrosa, una flor sin olor.
+</span>
+Piensa en que vas a gastar
+todo ese dinero que vas a ganar.
+No sabes cuánto te admiro,
+te aplaudo, te miro y te escucho también.
+
+Nunca olvides quién te ayudó,
+quién estuvo contigo,
+quién te enseñó.
+
+no dejes que nadie al pasar
+te mire a los ojos,
+tú debes mandar.
+<span class="estribillo">
+Eres la reina del pop,
+una vida sin nombre un montón de ilusión.
+
+Eres facturas y alcohol,
+una foto borrosa, una flor sin olor. (x2)
+</span>
+</pre>
+
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

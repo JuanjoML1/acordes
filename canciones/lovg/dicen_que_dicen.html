@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Día cero</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Día cero</h1>
+            <div class="tono">
+                <span>A</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+<span class="solo">
+Intro: A  E  F#m  D // A  E  D  
+
+e|                                           |-10-10-9-7-9-|
+B|---------------------7-6-5-----7-6b7-6b7-5-|
+G|---6-5-4-------4-6-7-------6---------------|
+D|-7-------6-4-----------------7-------------|
+A|-------------7-----------------------------|
+</span>
+(A  E  F#m  D // A  E  D)
+Caer está permitido, levantarse es una obligación. 
+Detrás del número cero la luz ya se nos apagó. 
+Más allá del uno de enero y con la vista puesta atrás 
+te verás en un espejo con tu futuro detrás.
+<span class="estribillo">
+F#m     F#mmaj7        D              A 
+Y ahora mismo están durmiendo en su cajón 
+F#m  F#mmaj7    D      Ebº7  E  
+cada beso, cada flor cada canción.
+
+A         E          F#m          D     A      E        D 
+Dicen que dicen que anuncian que existe un peculiar vegetal 
+      A         E          F#m      D   A         E             D 
+que hace que te rías de la Bruja Avería como la cebolla hace llorar.
+</span>
+Bajo la luz adecuada todo es mejor.
+Lo que hace bello al desierto es que guarda agua en su interior. 
+Piensa en lo lejos que estaba la luna y lo imposible de llegar allí. 
+Y ahora con una simple escalera cualquiera puede ir a dormir.
+<span class="estribillo">
+Y ahora mismo están durmiendo en su cajón 
+cada beso, cada flor, cada canción. 
+
+Dicen que dicen que anuncian que existe un peculiar vegetal 
+que hace que te rías de la bruja avería como la cebolla hace llorar.
+</span>
+</pre>
+
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Déjate llevar</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Déjate llevar</h1>
+            <div class="tono">
+                <span>E</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+E    D   B   A
+Otra vez esa voz,
+E    D   B   A
+la radio despertador.
+E       D   B     A
+Un día más el deber
+ E    D   B   A
+me hace ver amanecer.
+
+E           B      E      B
+Y yo lo que quiero es cantar,
+E           B          E      B
+tirar el reloj al fondo del mar,
+E           B          E       B
+perder el tiempo dedicarme a soñar,
+             E          B             B
+yo no quiero que hoy sea un día normal.
+<span class="estribillo">
+A                 E
+Puedes hacer que nada sea igual,
+      B 
+solo déjate llevar, déjate llevar.
+A                 E
+Puedes hacer que nada sea igual,
+      B
+solo ríe hasta llorar. (bis)
+</span>
+El café de las tres
+viendo desde un bar llover,
+todo seco en la ciudad,
+nada nuevo que contar
+
+Y yo lo que quiero es viajar,
+dormir en el fondo de un cráter lunar,
+perder el tren, dedicarme a soñar,
+yo no quiero que hoy sea un día normal.
+<span class="estribillo">
+Puedes hacer que nada sea igual,
+solo déjate llevar, déjate llevar.
+Puedes hacer que nada sea igual,
+solo ríe hasta llorar. (bis)
+</span><span class="solo">
+E  D  B  A  (x2)
+</span><span class="estribillo">
+Puedes hacer que nada sea igual,
+solo déjate llevar, déjate llevar.
+Puedes hacer que nada sea igual,
+solo ríe hasta llorar. (bis)
+</span>
+</pre>
+
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

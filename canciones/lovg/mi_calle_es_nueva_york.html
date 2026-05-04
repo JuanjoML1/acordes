@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Mi calle es Nueva York</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Mi calle es Nueva York</h1>
+            <div class="tono">
+                <span>A cej1</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+A                                       E 
+Siento el aliento del viento al desempolvar
+                            D        E 
+un amor de verano en una postal, oh,
+          A   Asus2   A  
+en una postal.
+
+Sigo buscando tu cara en el retrovisor
+que miraba mi falda al salir el sol, oh,
+            F   G
+al salir el sol.
+<span class="estribillo">
+                  A                           E 
+La radio es una orquesta y mi calle es Nueva York,
+                 F#m          C#
+los coches son carrozas para dos,
+                  D                 A  
+la tienda de la esquina un bonito salón
+                  E         A  
+donde estamos bailando tú y yo.
+               A                    C#
+Los gatos son palomas volando alrededor,
+                 F#m          D  
+y las rayas del pijama la prisión
+                 A             E              A  
+a la que vuelvo siempre al apagar el despertador.
+</span><span class="solo">
+F#m  C#m  D  A  //  F#m  C#m  E 
+</span>
+Quiero poder descifrar lo que el tiempo silba
+al pasar tan deprisa y no soy capaz, oh,
+y no soy capaz.
+
+Como una ola del mar que se entrega al puerto
+después de escapar quiero descansar, oh,
+quiero descansar.
+<span class="estribillo">
+La radio es una orquesta y mi calle es Nueva York,
+los coches son carrozas para dos,
+la tienda de la esquina un bonito salón
+donde estamos bailando tú y yo.
+Los gatos son palomas volando alrededor,
+y las rayas del pijama la prisión
+a la que vuelvo siempre al apagar el despertador.
+</span><span class="solo">
+E
+</span>
+La radio es una orquesta y mi calle es Nueva York,
+los coches son carrozas para dos,
+la tienda de la esquina un bonito salón
+donde estamos bailando tú y yo.
+Los gatos son palomas volando alrededor,
+y las rayas del pijama la prisión
+a la que vuelvo siempre al despertar,
+a la que vuelvo una vez más,
+a la que vuelvo al apagar el despertador.
+<span class="solo">
+Final: F#m  C#m  D  A  F#m  C#m  E  A
+</span>
+</pre>
+
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>
