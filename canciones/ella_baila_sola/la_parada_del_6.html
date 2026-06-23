@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>La parada del 6</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">La parada del 6</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: C - G - Am - Em - F - C - F - G
+C                G          Am                  Em
+Que me canten lo más bonito hoy antes de que me vaya
+F             C                 F                G
+este último recuerdo será lo primero que me haga fuerte mañana
+Si me encuentran dormida en la parada del 6
+tal como veis no salgo de mi rutina, yo no sé qué es tener pies para correr
+<span class="estribillo">
+F                      G
+Me dejaron de hablar por dormirme
+             C             A7
+de pie en un barra de bar
+       F                      G
+llegue tarde a la cita que el tiempo me dio
+        C                  A7
+y ahora vuelvo a mi hogar
+      F         G                     C      Em7
+me bendice cada gota de lluvia que desprende
+   Am              F                 G
+llorando mi luna, ahí voy cavando mi tumba
+</span>
+Que me canten lo más bonito hoy antes de que te pida
+una flor en el pecho y, mirando hacia el techo, buscar un alma perdida
+Si me encuentran dormida en la parada del 6
+tal como veis no salgo de mi rutina, yo no sé qué es tener pies para correr
+<span class="estribillo">
+Me dejaron de hablar por dormirme
+de pie en una barra de bar
+llegue tarde a la cita que el tiempo me dio
+y ahora vuelvo a mi hogar
+me bendice cada gota de lluvia que desprende
+llorando mi luna, ahí voy cavando mi tumba
+</span>
+Que me canten lo más bonito hoy antes de que me vaya
+este último recuerdo será lo primero que me haga fuerte mañana
+( C  G  Am  Em  F  C  F  G )
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

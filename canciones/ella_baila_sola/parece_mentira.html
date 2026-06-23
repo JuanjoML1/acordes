@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Parece mentira</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Parece mentira</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Am        E                  Am
+Parece mentira que pudiera confiar en ti,
+                   E                      Am
+mi alegría y mi desgracia para ver este final,
+                   E                        Am
+te agradezco que supieras sacar de mi tanta fuerza,
+          E                         Am
+fallo mío regalarte mi vida en tu ausencia,
+<span class="estribillo">
+A                     Dm                         Am
+Y al volver encuentro miedo, de vergüenza y de secretos,
+                     E                         Am
+Que rompen todos tus besos y despiertan mi tristeza,
+                      Dm                        Am
+Y al volver encuentro nada, miro atrás y me arrepiento
+                       E                       Am
+De entregar a quien no debo, todo lo que ya no tengo.
+</span>
+Parece distinto, el sentido de lo justo,
+que me das y que te debo, para cerrar este juego,
+sólo me queda saber, donde irá lo que te di,
+si no supiste tenerlo, y conmigo no ha vuelto.
+<span class="estribillo">
+Y al volver encuentro miedo, de vergüenza y de secretos,
+Que rompen todos sus besos y despiertan mi tristeza,
+Y al volver encuentro nada, miro atrás y me arrepiento
+De entregar a quien no debo, todo lo que ya no tengo.
+</span>
+Ya no miraré tus ojos, no quiero volver a verlos,
+fallo mío dar un sueño a quien no sabe tenerlo.
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Revolución</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Revolución</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cej3
+B|-10----10-11-13-11-| (x3) |-11----11-13-11-|
+G|----10-------------|      |----10----------|
+Intro: D  A  Bm  G
+D
+Somos demasiados y no podrán pasar
+A
+por encima de los años que tuvimos que callar,
+Bm                                       G
+por los libros prohibidos y las entradas secretas.
+D
+Por todos los que un día se atrevieron a gritar
+A
+que la tierra era redonda y que había algo más
+Bm                                       G
+que dragones y abismos, donde acaban los mapas.
+Em
+Por las noches de vacío cuando te ibas a dormir,
+A
+esperando a que la suerte volviera a sonreír,
+D                                   G
+con los ojos abiertos esperando un milagro.
+<span class="estribillo">
+D                        A
+Siento que llego nuestra hora,
+Bm                    G
+esta es nuestra revolución.
+</span>
+D
+Somos demasiados y no podrán pasar
+A
+por encima de la vida que queremos heredar,
+Bm                                  G
+donde no tenga miedo a decir lo que pienso.
+Em
+Por tosas las canciones que empiezan a nacer
+A
+para no ser escuchadas y hoy lo van a ser.
+D                                      G
+Cantadas con rabia por los que siempre callaron.
+<span class="estribillo">
+D                        A
+Siento que llegó nuestra hora,
+Bm                   G
+esta es nuestra revolución.
+D              A
+Somos una luz cegadora,
+Bm                         G
+fuerte, más brillante que el sol.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Palermo no es Hollywood</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Palermo no es Hollywood</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cej1
+Intro: Em7  C  G (x3)  D
+G                   Em7        C         G
+Al otro lado de las vías estoy, tú no respondes
+D/F#          Em7   B7           Em7
+Palermo, Hollywood, se hace de noche
+<span class="estribillo">
+C          G
+No sé si estoy despierto
+Am       D                   C
+Niceto, ayer, me lo llevé de calle
+C         G
+Parece un plan perfecto.
+Am
+Ha vuelto a sonar bip-bip
+D
+me veo tan lejos
+  D#º          Em7 C  G
+Y te echo de menos a muerte.
+          D/F# Em7 C  G
+Te echo de menos tan fuerte.
+</span>
+Al otro lado de las vías estoy, el sol se esconde
+Palermo, Hollywood, siempre es de noche
+<span class="estribillo">
+Domingo, estoy deshecho
+Querido Andrés, Fito, Pappo y Charly
+Me estáis llenando el pecho
+Ha vuelto a sonar bip-bip
+me veo tan lejos
+Y te echo de menos a muerte.
+Te echo de menos tan fuerte.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

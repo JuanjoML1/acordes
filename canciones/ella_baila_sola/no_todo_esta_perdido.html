@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>No todo está perdido</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">No todo está perdido</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+D            Bm       D           Bm
+No está todo perdido, sólo es un agujero en tu abrigo
+G              A                  G                   A
+todavía hay calor para dar a los dos en los días de frío
+No recurras siempre al olvido, no me dejes pensar que te puedo salvar
+Busco a alguien que quiera quererme sin ningún motivo.
+<span class="estribillo">
+D         A            Bm      G         A
+Y cuánto tiempo ha de pasar, si menos es más
+        D              Bm
+no encuentro a quien que ha dado el cien por cien
+G              A
+quiera volver a atrás.
+        D       A          Bm            G         A
+Nos queda tanto tiempo, tanta soledad, si menos es más
+        D             Bm
+cuando el desdén se mueve con desdén
+G                 A7        D
+no hay quien los pueda separar.
+</span>
+No le busques sentido, sólo es otra piedra en el camino
+Si te quieres quedar dile a tu corazón que camine conmigo.
+No decidas siempre lo mismo, no me busques sino hay tiempo para buscar
+a ese alguien que quiera quererte sin ningún motivo.
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

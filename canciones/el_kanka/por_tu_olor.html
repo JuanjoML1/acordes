@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Por tu olor</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Por tu olor</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Am11:      5x553x
+G7(b9):    3x310x  (en lugar de Fsus2/G)
+Bbmaj7/F:  x1x11x
+     G|-----0h2-0-----
+(1)  D|-0h2-------2p0-
+Intro:  Cmaj7/G  D9  G#7(#5)  F/G  G7(b9)  Cmaj7/G  (1)
+Cmaj7/G                       D9
+Suéltate las trenzas cuando quieras
+G#7(#5)         F/G  Fsus2/G  Cmaj7/G  (1)
+Venme a ver con la cara lavada
+Cmaj7/G                       D9
+No pierdas el tiempo en las maneras
+G#7(#5)         F/G    Fsus2/G  Cmaj7/G
+Que el rímel no hace a la mirada
+<span class="estribillo">
+C#º         Eº            Am11  D7
+Te prefiero así, sin maquillaje
+Gm7  Fm7  Bbmaj7/F G7 Cmaj7/G
+Despojada de bisutería
+Cmaj7/G   A7(#5)  D9    G#7(#5) G7  Cmaj7/G
+Sin   trampa, sin trucos y sin traje
+                  Dm9         G7               Cmaj7/G
+No me interesa el mostrador   del que la gente presume
+A(b9)         Fm7         G7           Cmaj7/G
+Estoy contigo por tu olor no por tu perfume (x2)
+</span>
+Nada de espejismos ilusorios
+Nada de intentar disimularte (1)
+No se crea en los laboratorios, no
+Tu belleza es un arte aparte
+<span class="estribillo">
+No es buen cazador gato con guantes
+Te prefiero libre de armaduras
+Sin colorantes ni conservantes
+No me interesa el mostrador del que la gente presume
+Estoy contigo por tu olor no por tu perfume (x2)
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

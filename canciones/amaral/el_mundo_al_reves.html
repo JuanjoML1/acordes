@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>El mundo al revés</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">El mundo al revés</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: (x2)
+B|---1-----1-|---1------1--|---1-----1--|---1-----1--|
+G|--2---0---2|--2----0---2-|--3---3---3-|--3---3---3-|
+D|-3---3-3---|-3----3-3---3|-3---3-3---3|-3---3-3----|
+F                                        Bb
+Esta es la historia, es la verdadera historia
+                                 F
+del mundo al revés, hierba roja, verdes amapolas,
+                            Bb
+flores de alambre, flotando en el estanque
+no me dejan ver lo que ocurre fuera de él.
+<span class="estribillo">
+C                                  Bb  C
+Hay un pez persiguiendo a un pescador,
+                          Bb      C
+si él no pica el anzuelo lo haré yo.
+Dm              C                  Bb
+Esta es la historia del mundo al revés mi corazón,
+Dm          C              Bb           F
+es un coche, de carreras, y nunca llega.
+</span>
+Esta es la historia, la disparatada historia
+del mundo al revés, hierba roja, verdes amapolas
+Si la Tierra viaja grande, como un iceberg gigante
+Qué importancia tiene ir detrás o ir delante.
+<span class="estribillo">
+Hay un gato huyendo de un ratón,
+¿quién pondrá el cascabel al roedor?
+Esta es la historia del mundo al revés, mi corazón,
+Es un coche, de carreras, y nunca llega
+</span>
+F  Bb           F         Bb
+Oh, mi corazón. Oh, mi corazón, oh.
+C                            Bb
+Hoy la cola mordió a la pescadilla
+                             C
+las verdades parecen ser mentiras,
+                           Bb
+cada año que pasa soy más cría,
+                C
+llegaré a ser recién nacida
+<span class="estribillo">
+Esta es la historia del mundo al revés, mi corazón,
+Es un coche, de carreras, pero nunca, nunca llega.
+En este circuito, el surco de un disco, la cara A, la cara B,
+es la misma cantinela, pero nunca, nunca llegará.
+</span>
+F  Bb           F         Bb
+Oh, mi corazón. Oh, mi corazón, oh.
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

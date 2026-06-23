@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vinagre y rosas</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Vinagre y rosas</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: E  A  C#m  B  A
+E
+Cuando aprendí a tragar fuego el circo ya se había ido
+                    B7
+de Albacete a Nueva York.
+El elefante está ciego, el domador malherido
+       A     B         E
+¿quién ha mentido, mi amor?
+A
+La canción que estoy cantando empieza en otras canciones
+                   B7
+y acaba en un hospital.
+¿Por qué me sigo jugando la vida a pares o nones
+A       B       E
+por fulanita de tal?
+<span class="estribillo">
+A                          C#m
+Cuando el flautista de Hamelin sacó un ratón de su bombín,
+       B         A          E
+Polichinela se fugó con Arlequín.
+        A                           C#m
+Hay mariposas de arrabal que nunca aprenden a volar,
+          B           A         E
+vinagre y rosas, a la hora de cenar.
+</span>
+La trapecista polaca se encaprichó de un forzudo
+caminito de Moscú.
+Cambió mi oro por su alpaca, maldita ley del embudo,
+no valgo menos que tú.
+El lanzador de cuchillos por llevarse algo al bolsillo
+trabaja de afilador.
+El hombre bala se enfada, su pólvora está empapada
+de tanto decir adiós.
+<span class="estribillo">
+Cuando el flautista de Hamelin sacó un ratón de su bombín,
+Polichinela se fugó con Arlequín.
+Hay mariposas de arrabal que nunca aprenden a volar,
+vinagre y rosas, a la hora de cenar
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

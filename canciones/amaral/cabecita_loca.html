@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cabecita loca</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Cabecita loca</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+C           G
+Me decías cabecita loca,
+Am
+por seguir mis sueños,
+F
+por romper las olas.
+C
+Me defendía,
+G
+con mis alas rotas
+Am                  F
+contra la corriente vuela, vuela mariposa.
+F                    G
+Eras mi ángel de la guarda,
+Am                G
+sobrevolando mis horas bajas,
+F                   G
+eras la música del alba,
+Am                  G
+la lluvia cuando estalla.
+<span class="estribillo">
+C               F
+Sálvame, no me dejes caer,
+Am                      G
+en la tristeza de las noches en vela.
+C                 F
+Sálvame y yo siempre seré,
+Am                       G
+tu amiga más fiel que dentro te lleva.
+</span>
+Y me decías, cabecita loca,
+por soñar despierta,
+por querer que no amanezca nuca,
+tu me decías cabeza loca.
+Siempre es igual, siempre mi ángel de la guarda,
+sobrevolando mis horas bajas,
+eras la música del alba,
+la lluvia cuando estalla.
+<span class="estribillo">
+Sálvame, no me dejes caer,
+en la tristeza de las noches en vela.
+Sálvame y yo siempre seré,
+tu amiga más fiel que dentro te lleva.
+</span>
+Sálvame,
+vuela, vuela mariposa,
+Eras mi ángel de la guarda,
+sobrevolando mis horas bajas,
+eras la música del alba,
+la lluvia cuando estalla.
+<span class="estribillo">
+Sálvame, no me dejes caer,
+en la tristeza de las noches en vela.
+Sálvame y yo siempre seré,
+tu amiga más fiel
+seré la nieve al caer sobre el mar,
+y sobre la tierra cuando el fuego te quema.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Palomas</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Palomas</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cej1
+Intro: F  G  Am  Bm
+C                                      Em
+Hay miles de palomas volando en círculo
+                Am                   Em
+Alrededor del sol, se acaban de encontrar
+F                           C
+Hay días para decírnoslo, semanas para pensar
+Dm                       G
+Veranos vestidos de alquitrán
+Hay días que te saltas algún capítulo
+No sabes dónde estás, lo tienes que intentar
+Hay días para pedírtelo, semanas para dudar
+Veranos en vilo hasta el final
+<span class="estribillo">
+F
+No es más que un grito
+C                              G
+Déjalo ya, déjalo ya, se quedó frío,
+Am                             F
+cada momento tiene que ser especial
+C                               G
+Déjalo ya, déjalo ya o me quedo frío
+Am                      F
+Es un aviso más del huracán
+</span>
+Hay luces de farolas de barrio mítico
+Perfume de ciudad, espinas que se caen
+Hay vicios que son magníficos, semanas para frenar
+Veranos que sufro de verdad
+<span class="estribillo">
+No es más que un grito
+Déjalo ya, déjalo ya, se quedó frío,
+cada momento tiene que ser especial
+Déjalo ya, déjalo ya o me quedo frío
+Es un aviso más del huracán
+</span>
+( Am  G  F#m (x3)  Bb  C  D )
+<span class="estribillo">
+G
+No es más que un grito
+D                              A
+Déjalo ya, déjalo ya, se quedó frío,
+Bm                             G
+cada momento tiene que ser especial
+D                               A
+Déjalo ya, déjalo ya o me quedo frío
+Bm                      G
+Es un aviso más del huracán
+</span>
+( G  A  Bm  C#m  D )
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

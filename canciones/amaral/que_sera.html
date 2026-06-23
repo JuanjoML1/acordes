@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Qué será</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Qué será</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cej1
+( G  F )
+Yo soy la bala perdida, esta noche me voy a bailar
+Yo soy una viva la vida, pero siempre digo la verdad
+Si eres mi amigo, qué más da ser chica o chico
+Si tú eres mi hermana, qué más da ser negra o blanca
+<span class="estribillo">
+C         G            F         G
+¿Qué será de mi amor?, ¿qué será de los dos?,
+       C            F       G
+de los sueños de un mundo mejor
+       C         G    F      G
+¿Qué será de mi amor? Oh...
+       Am  F         G
+de los sueños de los dos
+</span>
+Yo soy la bala perdida, esta noche me voy a bailar
+Yo soy una viva la vida, pero siempre digo la verdad
+Que las cosas que yo quiero, no se compran con dinero
+Por la tierra, por el cielo, busco un sentimiento nuevo
+Busco un sentimiento
+<span class="estribillo">
+¿Qué será de mi amor?, ¿qué será de los dos?,
+de los sueños de un mundo mejor
+¿Qué será de mi amor? Oh...
+de los sueños de los dos
+</span>
+No más Hiroshima, mon amour estoy perdida
+Bye bye, sayonara, qué más da a donde vaya
+Si tú eres mi amigo, qué más da ser chica o chico
+Si tú eres mi hermana, qué más da ser negra o blanca
+<span class="estribillo">
+¿Qué será de mi amor?, ¿qué será de los dos?,
+de los sueños de un mundo mejor
+¿Qué será de mi amor? Oh...
+de los sueños de los dos
+¿Qué será de mi amor?, ¿qué será de los dos?,
+de los sueños de un mundo mejor
+¿Qué será de mi amor? Oh...
+de los sueños de los dos
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

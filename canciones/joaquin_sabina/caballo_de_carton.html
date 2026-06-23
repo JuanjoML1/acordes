@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Caballo de cartón</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Caballo de cartón</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: G  C
+G              D7        C           G
+Cada mañana bostezas, amenazas al despertador
+              D7              C                 G
+y te levantas gruñendo cuando todavía duerme el sol,
+                    D7            C             G
+mínima tregua en el bar, café con dos de azúcar y croissant,
+                   D7           C              G
+el metro huele a podrido, carne de cañón y soledad.
+<span class="estribillo">
+F          C              D
+Tirso de Molina, Sol, Gran Vía, Tribunal,
+       F           C                   D
+¿Dónde queda tu oficina para irte a buscar?
+       Em           C             G
+Cuando la ciudad pinte sus labios de neón
+    C      Em   Am          D
+Subirás en mi caballo de cartón.
+     Bm             Am-Cm            G
+Me podrán robar tus días, tus noches no.
+</span>
+“Qué buena estás, corazón” cuando pasas grita el albañil
+el obseso del vagón se toca mientras piensa en ti,
+la voz de tu jefe brama “estas no son horas de llegar”
+mientras tus manos archivan, tu mente empieza a navegar.
+<span class="estribillo">
+Tirso de Molina, Sol, Gran Vía, Tribunal,
+¿Dónde queda tu oficina para irte a buscar?
+Cuando la ciudad pinte sus labios de neón
+Subirás en mi caballo de cartón.
+Me podrán robar tus días, tus noches no.
+</span>
+Ambiguas horas que mezclan al borracho y al madrugador,
+danza de trajes sin cuerpo al obsceno ritmo del vagón,
+hace siglos que pensaron “las cosas mañana irán mejor”
+es pronto para el deseo y muy tarde para el amor.
+<span class="estribillo">
+Tirso de Molina, Sol, Gran Vía, Tribunal,
+¿Dónde queda tu oficina para irte a buscar?
+Cuando la ciudad pinte sus labios de neón
+Subirás en mi caballo de cartón.
+Me podrán robar tus días, tus noches no.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

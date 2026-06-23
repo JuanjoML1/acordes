@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pastillas de colores</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Pastillas de colores</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: A
+D       E      A
+Ella es la novedad,
+D              A          E      D
+vuelven los mensajes, qué barbaridad;
+          E                 A    G
+Difícil tarea tratar de olvidar.
+D       E        A
+Tú eres la de verdad,
+D                A        E          Bm
+contigo haría mi viaje hasta el más allá
+           E        C#7            F#m   E    D
+y es tan difícil tratar de ser más listo cada vez
+<span class="estribillo">
+F     E        A         D      E           A
+Y regalarle canciones, comer pastillas de colores
+  Bm           D         A       Bm           E           A
+salir del paso sin disimular, ya sabes que yo soy un criminal.
+</span>
+D        E      A
+Ella es complicidad,
+D              A          E      D
+la que pone en jaque mi salud mental,
+          E                A   G  A  G  A  Bm
+vayámonos juntos en mi sidecar
+           E        C#7            F#m   E    D
+y es tan difícil querer ser el mas listo de los tres...
+<span class="estribillo">
+F     E        A         D      E           A
+Y regalarle canciones, comer pastillas de colores
+  Bm           D         A       Bm           E           A
+salir del paso sin disimular, ya sabes que yo soy un criminal.
+</span>
+( A7  Bm  E  C#7  F#m  //  Bm  B  E  E7 )
+<span class="estribillo">
+A         D      E           A
+Y regalarle canciones, comer pastillas de colores
+  Bm           D         A       Bm                       A
+salir del paso sin disimular, ya sabes que yo soy un criminal.
+   Bm                       A
+ya sabes que yo soy un criminal. (x2)
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

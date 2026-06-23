@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Antonio Vega – El sitio de mi recreo</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Antonio Vega – El sitio de mi recreo</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: G  Em  C  Am  D
+G
+Donde nos llevó la imaginación,
+Em
+donde con los ojos cerrados,
+C             Am          D
+se divisan infinitos campos.
+Donde se creó la primera luz,
+junto a la semilla del cielo azul,
+volveré a ese lugar donde nací.
+<span class="estribillo">
+C                    G
+De sol, espiga y deseo,
+Am                   D
+son sus manos en mi pelo,
+C                    G
+de nieve, huracán y abismos,
+Am                   D
+el sitio de mis recreo.
+</span>
+Viento que en su murmullo parece hablar,
+mueve el mundo con gracia los ves bailar,
+y con él el escenario de mi hogar.
+Mar, bandeja de plata, mar infernal,
+es un temperamento muy natural,
+poco o nada cuesta ser uno más.
+<span class="estribillo">
+De sol, espiga y deseo,
+son sus manos en mi pelo,
+de nieve, huracán y abismos,
+el sitio de mis recreo.
+Silencio, brisa y cordura,
+dan aliento a mi locura,
+hay nieve, hay fuego, hay deseo,
+allí donde me recreo.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

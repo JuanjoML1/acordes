@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Horóscopo</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Horóscopo</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+.    C                  F
+El horóscopo ha dicho que hoy no es el día,
+    C                       F
+las cosas no saldran nunca como deberían,
+      C              F
+el dinero se va por donde ha venido
+      A        G                       F
+y el amor, ese mundo perdido tendrá que esperar
+                G                   C
+porque la salud es un ataque de tos.
+    C                     F
+Perdido entre la gente y buscando un bote
+   C                           F
+y tal vez mantenerse, tal vez salir a flote.
+    C                     F
+Mi golpe de suerte no termina de llegar
+         Am                   G
+y entre tanta tonteria que la cosa se complica,
+     F                 G                    C
+y empiezo a pensar que tú tenias toda la razón.
+            Am           G                         F               G
+Y aquí en Madrid, las estrellas bailan en un cielo tan contaminado
+               Am
+Que no creo en ti...
+                       F                   G
+Tal vez con un poco de música, música, música, música, música,
+  C
+música, música, música...
+             G               F
+Que viva el blues, el sur, el country, el oeste,
+     G                   F
+viva la bulería y lo que tocas con la bateria...
+   C                     G
+El reggea, el ska (y la prima de tu amiga)...
+        F                         G
+ritmo pesado, pieza clásica o hardcore,
+         F                       G
+todo me llega si lo haces de corazón,
+            F                         G
+cualquier sonido que me diga que a sufrir no hemos venido.
+      C                                             F                 G
+Y los chicos del metro de Diego de León que son la salsa del Rock and Roll.
+         F                  G                         C
+Cómo me gustaria vivir para toda la vida en esta canción.
+          F                   G
+Pero el horóscopo ha dicho que hoy no es el dia.
+            Am           G                         F               G
+Y aquí en Madrid, las estrellas bailan en un cielo tan contaminado
+               Am
+Que no creo en ti...
+                    F                   G
+Voy a poner algo de música, música, música, música, música,
+  C
+música, música, música... uhmm
+F                   G                     C
+música, música, música, música, música, música, música, música...
+                       F                   G
+Tal vez con un poco de música, música, música, música, música,
+  Am
+música, música, música...
+         F                  G                         C
+Cómo me gustaría vivir para toda la vida en esta canción.
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

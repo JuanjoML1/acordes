@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>La noche en calma</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">La noche en calma</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cej5
+Intro:  C  F  G  C
+C                   F
+Duerme bajo mi almohada
+G                    C
+Duerme que yo hago guardia
+C                 F
+Tienes la voz ahogada
+G                   C
+Pierdes el norte y bailas
+G/B       Am              Em
+Y no hace falta que digas nada
+          F    Dm        G
+Si duermo salta sobre la cama
+                      C
+Ya pronto llegará mañana
+<span class="estribillo">
+F            G        C
+Por eso he escrito esta nana, nana, nana trasnochada
+                    F            G              C G/B Am
+Para que puedas dormir sin despedir la madrugada
+           Am7         Dm            G
+Si se hace tarde y te asusta el ruido
+                 Em         Am
+O hay sombras en el pasillo
+              Am7        F
+Si el viento azota tu ventana
+        G            C
+Puedo trasnochar contigo
+</span>
+Duerme bajo mi almohada
+Vuelve a cubrir tu espalda
+Miente la noche en calma
+Quieres que salten las alarmas
+Y no hace falta que digas nada
+Si duermo salta sobre la cama
+Ya pronto llegará mañana
+<span class="estribillo">
+Por eso he escrito esta nana, nana, nana trasnochada
+Para que puedas dormir sin despedir la madrugada
+Si se hace tarde y te asusta el ruido
+O hay sombras en el pasillo
+Si el viento azota tu ventana
+Puedo trasnochar contigo
+</span>
+Am - Em - Am - G
+F - G - Am - Em - F - G
+<span class="estribillo">
+Por eso he escrito esta nana, nana, nana trasnochada
+Para que puedas dormir sin despedir la madrugada
+Si se hace tarde y te asusta el ruido
+O hay sombras en el pasillo
+Si el viento azota tu ventana
+        G            Am-G-Am
+Puedo trasnochar contigo
+              Am7           F
+Si el viento agita las persianas
+        G                         C
+Puedo trasnochar para estar contigo
+</span>
+( C  F  G  C )
+C                   F
+Duerme bajo mi almohada
+G                    C       Cmaj7
+Duerme que yo hago guardia
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

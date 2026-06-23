@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Carguen, apunten, fuego</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Carguen, apunten, fuego</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+G                   D                   G
+Cuando no queda nada ya mejor que la lluvia
+  G                      D             G
+y entrar en cualquier bar y pedir un Martini
+      C                            G
+y volver a largarse sin haberlo acabado
+    D                Am      C          G
+y odiar a las parejas que salen de los cines.
+Las siete de la tarde, quisiera estar borracho,
+hace ya dos semanas que Lucía no me escribe,
+no para de llover, camarero otra copa
+con alcohol se hace menos monótona la mili.
+<span class="estribillo">
+C                 Bb            G
+El capitán nos habla del amor a la patria,
+ C                  Bb             G
+el sargento del orden y de la disciplina
+       F             C                      D
+los soldados dormitan, cuentan los días que faltan
+     G              Bb       C        G
+o se llenan la panza de vino en la cantina.
+</span>
+Sus madres les envían paquetes con chorizo,
+Sus novias largas cartas, corazones pintados,
+la ciudad cuando salen les es hostil y extraña
+y las chachas no quieren ya nada con soldados.
+<span class="estribillo">
+Queda el pobre consuelo de andar de cuando en cuando
+a aumentar la clientela de una casa de putas
+y pasar media hora de amor apresurado
+a esa gorda que hace rebaja a los reclutas.
+</span>
+Y el lunes otra vez, como no mi teniente
+tiene mucha razón, si claro, desde luego,
+cuerpo a tierra, saluden, media vuelta, de frente,
+firmes, alto, descansen, carguen, apunten, fuego.
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

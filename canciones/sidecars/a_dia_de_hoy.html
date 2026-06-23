@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A día de hoy</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">A día de hoy</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cej2
+A        C#m     F#m               D
+¿Cómo estás? Por poco me muero del susto
+A      C#7        F#m
+Hoy me fui tan confuso
+        A7                      D
+Tanto que llegué a dudar, la verdad
+          A      B                  E   E7
+es que el uso desgasta tu forma de amar.
+¿Dónde vas? Si estamos tranquilos y a gusto,
+voy a ahorrarte el disgusto
+y te voy a disfrutar cuando estás
+en mi mundo y no necesitas llamar
+<span class="estribillo">
+A                                D
+Hoy, a día de hoy, lo quiero evitar,
+    E                 A
+Si buscas pelea allá voy,
+                       D
+sabes que hoy no pido más,
+   E        Fº
+Tenerte tranquilo y
+   F#m F#m/E B          D
+brindar por siempre con fino.
+</span>
+Nada más que el miedo constante a perderte,
+Si soy tu subconsciente
+ten cuidado al cruzar para entrar
+en mi mente, dejo abierta la puerta de atrás.
+<span class="estribillo">
+A                                D
+Hoy, a día de hoy, lo quiero evitar,
+    E                 A
+Si buscas pelea allá voy,
+                      D
+sabes que hoy no pido más,
+   E                  A
+Tenerte tranquilo y mejor
+                            D
+a día de hoy, lo quiero evitar,
+    E                 A
+Si buscas pelea allá voy,
+                          D
+sabes quién soy, no pido más,
+   E
+Tenerte tranquilo y
+   F#m F#m/E B          D
+brindar por siempre con fino.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

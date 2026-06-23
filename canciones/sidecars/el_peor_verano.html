@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>El peor verano</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">El peor verano</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cej2
+A                                         D
+Sabes, este es el peor verano que nunca tuvimos
+                               E
+Estoy harto de escuchar a mis amigos
+                               A    Asus4-A
+Que me alegro de que todo vaya bien
+Sabes, esta es la peor excusa que nunca pusimos
+Agotados de afilar los incisivos
+Ya no queda sitio donde ir a morder
+<span class="estribillo">
+F#m          E            Bm             E
+Finjo ser perfecto con el cuerpo enfermo
+F#m         E             Bm     A     D
+Cubro desperfectos y en silencio muero
+A Bm     C#m D
+Revienta las puertas
+F#m        D    A        E
+Para aterrizar, déjame pasar
+A  Bm     C#m D
+Despierta con fuerzas
+F#m       D   A         E
+Para derribar todo lo demás
+</span>
+Sabes, esta es la peor estrofa que nunca escribimos
+Me he cansado de contar siempre lo mismo
+Dibujando garabatos en papel
+Sabes cómo fue, no lo vimos, nos pilló desprevenidos
+Y llegamos hasta aquí pidiendo auxilio
+Esperamos irnos para no volver
+<span class="estribillo">
+Finjo ser perfecto con el cuerpo enfermo
+Cubro desperfectos y en silencio muero
+Revienta las puertas
+Para aterrizar, déjame pasar
+Despierta con fuerzas
+Para derribar todo lo demás
+Revienta las puertas
+Para aterrizar, déjame pasar
+Despierta con fuerzas
+Para derribar todo lo demás
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

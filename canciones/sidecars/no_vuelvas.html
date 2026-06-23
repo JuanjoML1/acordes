@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>No vuelvas</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">No vuelvas</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cej2
+A                                              E
+No podrás resistirte a probar porque está prohibido
+                                        A
+Y tendrás que apurar el final para no sufrir
+                                                   E
+Tratarás de encontrarme y lo harás porque estoy rendido
+                                       A
+Y quizás pero sólo quizás hoy podré dormir
+<span class="estribillo">
+A    Bm A/C# D              E
+Y quedarme así será mucho pedir
+       A     E         F#m   E
+Que no vuelvas, que no vuelvas
+       D                         E
+Que no vuelvas a olvidarte de llevarme por delante
+</span>
+Probarás a dejarte llevar y rellenar vacíos
+Y me harás parecer uno más del montón, por fin
+No te asusta perder el control y acabar conmigo
+No darás marcha atrás para ver que quedó de mí
+<span class="estribillo">
+Y quedarme así será mucho pedir
+Que no vuelvas, que no vuelvas
+Que no vuelvas a olvidarte de llevarme por delante
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Canción de primavera</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Canción de primavera</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: F  C  G  C  //  F  C  G
+C-G                 Am     F
+Buenas noches, primavera
+      Am7             Dm   G
+Bienvenida al mes de abril
+                      C          G
+Te esperaba en la escalera del redil
+Nueve meses oxidada
+En el fondo de un baúl
+Si no estás enamorada vente al sur
+<span class="estribillo">
+F                   G
+Sobran lunes por la tarde
+                      C     F
+Faltan novios en los cines
+                   G             C
+Camarero, ponme un par de Dry Martínez
+Conseguí llegar a viejo
+Verde mendigando amor
+¿Qué esperabas de un pendejo como yo?
+</span>
+Buenas noches, primavera
+Perfume del corazón
+Blinda con tu enredadera mi canción
+C                 Fm
+Vacuna de lo que duele
+                     C
+No te enceles con el mar
+                        G          C
+Si hasta tus párpados huelen a humedad
+<span class="estribillo">
+Dm                 G
+Líbrame del sueño eterno,
+                      C    F
+Da cuerda al despertador
+                    G            C
+Ponle cuernos al invierno, por favor
+</span>
+G                    C     F
+Buenas noches, primavera
+                  Dm   G
+Sin bandera ni carnet
+                   C           G
+No me tumbes en la era de internet
+Otoñales van mis años
+Por el río Guadalquivir
+Maquillando el ceño huraño de Madrid
+<span class="estribillo">
+F                     G
+Si se te olvidan las bragas
+                   C      F
+En mis últimos jardines
+                 G           C
+Te regalo una biznaga de jazmines
+</span>
+G                   C    F
+Ven a reavivar la hoguera
+                   C    F
+Cenicienta de mis días
+                   G           C
+Buenas noches, primavera, novia mía
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

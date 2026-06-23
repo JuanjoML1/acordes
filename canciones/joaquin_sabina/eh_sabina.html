@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eh, Sabina</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Eh, Sabina</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro:      A   E7   D   E7       varias veces
+  A                                   D
+Como fumo demasiado mi voz se empieza a quebrar,
+A                                       E7
+sueno tan desafinado: si do re mi fa sol la
+D                                           C       D7
+Vivo del cáncer a un paso sin hacerles caso a los que me dicen
+                   G       G   F#  F                  C
+ESTRIB 1: eh eh eh, Sabina:  ten cuidado con la nicotina.  2 veces
+                            D
+          No me des vitaminas, no,
+                                  E7
+          dame fuego y rock and roll.
+VOZ 2:   como bebo demasiado y no me se controlar
+         del trabajo me han echado por falta de seriedad.
+         Que me pongan otro vaso no pienso hacer caso a
+         los que me dicen
+ESTRIB 2: eh eh eh, Sabina: ten cuidado con el Paternina.  2 veces
+          No más vino de quina, no, no, no, no
+          dame tinto y rock and roll.
+          dame tinto y rock and roll
+INSTRUMENTAL:   A   D  A   E7
+VOZ 3:  Como salgo demasiado con chicas a vacilar
+        me he quedado tan delgado como un papel de fumar.
+        Gozando las noches paso sin hacerles caso a
+        los que me dicen
+ESTRIB 3: eh eh eh, Sabina: ten cuidado con la Josefina.  2 veces
+          Leche con aspirinas, no,
+          dame sexo y rock and roll.
+          todos me dicen
+ESTRIB FINAL: eh eh eh, Sabina:     ten cuidado con la nicotina,
+              eh, eh, eh, Sabina:   ten cuidado con el paternina.
+              eh, eh, eh, Sabina:   ten cuidado con la Josefina.
+              Naranjas de la china, no,
+              dame sexo y rock and roll.
+              dame sexo y rock and roll
+INTRO en tono de LA .....   INTRO en SI.......   INTRO  en MI
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

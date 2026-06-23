@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contigo</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Contigo</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cej2
+Bm                    Em
+Contigo, quiero estar contigo
+    A                               G    F#
+Y decirte que ya no puedo vivir sin ti
+   Bm                    Em
+Contigo, quiero ganar contigo
+    A                                    G       F#
+Y conseguir que todo el tiempo sea estar junto a ti
+    Em   A               D     G
+Contigo, quiero estar contigo
+     Em                            G    F#
+Y decirte que ya no puedo vivir sin ti.
+<span class="estribillo">
+G     F#     Bm     A
+Y sólo quiero vivir contigo
+   G      F#     Bm     A
+Y sólo quiero bailar contigo
+  G     F#     Bm      A
+Sólo quiero estar contigo
+ G                   F#
+Y quiero ser lo que nunca he sido.
+  G     F#     Bm     A
+Sólo quiero soñar contigo
+  G      F#     Bm      A
+Sólo voy a cantar contigo
+  G     F#     Bm      A
+Lo voy a hacer todo contigo
+G                    F#
+Ya ves, sé lo que me digo
+Em               F#m         G              F#m
+Siento cuando estás, y tú me das tu voz con esa fuerza
+Em          F#m         G          F#          Bm
+Quiero oírte más tu voz gritar ese susurro loco.
+</span>
+Bm                       Em
+Contigo, quiero escuchar contigo
+    A                               G        F#
+Esta canción que solamente habla de ti y de mí
+   Bm                    Em
+Contigo, lo soy todo contigo
+    A                                  G    F#
+Me haces falta y ya no puedo vivir sin ti
+    Em   A               D     G
+Contigo, quiero estar contigo
+     Em                            G    F#
+Y decirte que ya no puedo vivir sin ti.
+<span class="estribillo">
+G     F#     Bm     A
+Y sólo quiero vivir contigo
+   G      F#     Bm     A
+Y sólo quiero bailar contigo
+  G     F#     Bm      A
+Sólo quiero estar contigo
+ G                   F#
+Y quiero ser lo que nunca he sido.
+  G     F#     Bm     A
+Sólo quiero soñar contigo
+  G      F#     Bm      A
+Sólo voy a cantar contigo
+  G     F#     Bm      A
+Lo voy a hacer todo contigo
+G                    F#
+Ya ves, sé lo que me digo
+Em               F#m         G              F#m
+Siento cuando estás, y tú me das tu voz con esa fuerza
+Em          F#m         G
+Quiero oírte más tu voz gritar.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

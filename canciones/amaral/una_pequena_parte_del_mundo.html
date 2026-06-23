@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Una pequeña parte del mundo</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Una pequeña parte del mundo</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: D  A  Bm  (x4)
+     D                   Bm
+Sólo he visto una pequeña parte del mundo,
+D                  A
+rumbo donde nadie sabe.
+G                       D             Bm
+Dame el corazón más puro, como hacías antes,
+A               D
+como antes de marcharte.
+                     Bm
+Si me pides un deseo, detener el tiempo,
+D                    A
+para aclarar mi pensamiento,
+G                    D             Bm
+para renacer de nuevo, una flor en el inverno
+A                D
+si me pides un deseo.
+<span class="estribillo">
+G     D            A
+Estoy aquí, cruzando este mar,
+       Bm       A          G
+buscándote, en esta eternidad.
+       Em         D        A
+Estoy aquí, mi estrella fugaz,
+Bm A          G
+uh, dónde andarás.
+</span>
+D            Bm      D             Bm
+¿Por dónde andarás?, ¿por dónde andarás?
+G                     D                  Bm
+Si me pides un deseo, dame por patria el mundo entero,
+A                D
+si me pides un deseo.
+<span class="estribillo">
+Estoy aquí, cruzando este mar,
+buscándote, en esta eternidad.
+Estoy aquí, mi estrella fugaz,
+Bm A          D
+uh, dónde andarás.
+</span>
+G                     D
+Para renacer de nuevo, para detener el tiempo,
+A                            D
+tengo que encontrarte por el cielo.
+G                    D                   Bm
+Si me pides un deseo, dame por patria el mundo entero,
+A                D
+si me pides un deseo.
+<span class="estribillo">
+Estoy aquí, cruzando este mar,
+buscándote, en esta eternidad.
+Estoy aquí, mi estrella fugaz,
+Bm  A  D (x2)
+Estoy aquí, cruzando este mar,
+buscándote, en esta eternidad.
+Estoy aquí, mi estrella fugaz,
+Bm A          G    G  D
+uh, dónde andarás.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

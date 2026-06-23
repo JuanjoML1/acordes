@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Miedo</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Miedo</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+C
+No me dejes pasar, te puedo lastimar,
+     Am7                          G
+no confíes en mi interior, soy un depredador.
+Un impulso vital, una mirada espacial,
+me atropellas sin corazón, tienen toda la razón.
+<span class="estribillo">
+F                   G
+No te ensañes conmigo, no decidas por mí,
+      F                          G
+no te agarres a mi cuerpo que te crece la nariz.
+C
+Tengo miedo, miedo, miedo, miedo,
+F                                C
+no me gusta pensar que te tengo miedo,
+     G            F
+pero tú, por favor, no me tengas miedo.
+</span>
+( C  Am7  G )
+No me dejes hablar, te puedo desarmar,
+no me digas lo que es mejor, lo de ciencia ficción.
+Y en la recta final bailaremos sin igual,
+como dice nuestra canción “báilalo con amor”.
+<span class="estribillo">
+No te ensañes conmigo, no decidas por mí,
+no te agarres a mi cuerpo que te crece la nariz.
+Tengo miedo, miedo, miedo, miedo,
+no me gusta pensar que te tengo miedo,
+pero tú, por favor, no me tengas miedo.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

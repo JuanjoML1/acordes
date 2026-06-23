@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ciudadano cero</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Ciudadano cero</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Em              D   Em                  D              Em    D
+Sé de nuestro amigo lo que andan diciendo todos los diarios.
+Em            D      Em             D               Em      D
+Está usted perdiendo su tiempo conmigo, señor comisario.
+Am           Ammaj7             Am7                   Am6
+Era un individuo de esos que se callan por no hacer ruido,
+B7            C              D                   B7
+perdedor asiduo de tantas batallas que gana el olvido.
+Yo no les pregunto nunca a mis clientes datos personales,
+me pagan y punto, pasa tanta gente por estos hostales...
+Nunca dio el menor motivo de alarma, señor comisario,
+nadie imaginó que escondiera un arma dentro del armario.
+<span class="estribillo">
+G          A
+Ciudadano cero,
+ C                          G          A
+¿qué razón oscura te hizo salir del agujero?,
+C                                  G           A
+siempre sin paraguas, siempre a merced del aguacero.
+C                            G           A     C
+Todo había acabado cuando llegaron los maderos.
+</span>
+Aquella mañana decidió que había llegado el momento.
+Abrió la ventana rumiando que hacía falta un escarmiento.
+Cargó la escopeta, se puso chaqueta, pensando en las fotos.
+Hizo una ensalada de sangre, aliñada con cristales rotos.
+Dejó un gato cojo y un Volkswagen tuerto de un tiro en un faro
+no tuvo mal ojo, diecisiete muertos en treinta disparos.
+Cuando lo metían en una lechera, por fin detenido,
+“ahora -decía- sabrá España entera mis dos apellidos”.
+<span class="estribillo">
+Ciudadano cero,
+¿qué razón oscura te hizo salir del agujero?,
+siempre sin paraguas, siempre a merced del aguacero.
+Todo había acabado cuando llegaron los maderos.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Algo para cantar</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Algo para cantar</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: A(A)  A(G)  A(F#)  A(E) (x2)
+A           C#m       D         E
+No tengo dinero en mi casa se acabó
+A           C#m       D         E
+No tengo verguenza la perdí en un rock'n'roll
+A           C#7    D    D#º  E
+No tengo sueldo trabajo por amor
+E
+Me pongo gafas de sol para verte mejor
+<span class="estribillo">
+E
+Pero tengo una niña que me vuelve loco
+F#m            E      D
+tengo una niña que me da
+A           C#m       D         E
+Algo para cantar, es lo que necesito yo
+A           C#m       D         E
+Algo para cantar, que no nos falte
+A           C#m       D        D#º  E
+Algo para cantar, algo para bailar
+</span>
+Y no me importa lo que piensen mis amigos
+Ten cuidado –me dicen– tío, andas perdido
+Paso las noches en vela
+Sigo buscando una señal mientras curro en la carretera
+<span class="estribillo">
+Pero tengo una niña que me vuelve loco
+tengo una niña que me da
+Algo para cantar es lo que necesito yo
+Algo para cantar que no nos falte
+Algo para cantar, algo para bailar
+</span>
+( D  A  D  E )
+E
+Me pongo gafas de sol mientras curro en la carretera
+<span class="estribillo">
+Algo para cantar es lo que necesito yo
+Algo para cantar que no nos falte
+Algo para cantar, algo para bailar (x2)
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

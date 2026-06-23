@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Robin Hood</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Robin Hood</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+E -> E/G#
+Intro: A   E   A // D   A   E // A   E   A // D   E   A
+A        E           A
+Cuando tocaba en los bares
+D     A          E
+Un borracho me decía
+A         E            A
+“En las cenizas del fracaso
+  D     E     A
+Está la sabiduría”.
+A         E     A
+La piedra filosofal
+    D     A        E
+Que yo busqué cada día
+F#m              E         A
+Que aún no he podido encontrar,
+    Bm     E           A
+Tal vez porque ya no exista.
+A   E   A // D   A   E // A   E   A // D   E   A
+A         E          A
+Cuando dormía en los parques
+D    A        E
+Un arcángel venía
+A      E        A
+A protegerme de noche,
+       D     E      A
+A espantar a la policía.
+<span class="estribillo">
+F#m
+No sé lo que pasó,
+D
+Si estaba escrito o no,
+A                    E
+Si fue su culpa o la mía.
+F#m
+Pero mi ángel cayó,
+D
+Igual que yo caí
+A                 E
+En cada vicio que me descubría.
+       A            E    A
+La diferencia entre él y yo,
+       Bm     E        A
+Es que yo aún sigo con vida.
+</span>
+A   E   A // D   A   E // F#m   E   A // D   E   A
+<span class="estribillo">
+F#m
+Siempre tenía un plan,
+D
+Hablaba de escapar
+A                    E
+Robando un barco del puerto.
+F#m
+Si le hubiera dejado
+D
+Hubiera reventado
+A                    E
+La caja fuerte de un banco creyendo en
+F#m      E        A     D   E   A
+Delirios de Robin Hood.
+F#m      E        A     D   E   A
+Delirios de Robin Hood.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

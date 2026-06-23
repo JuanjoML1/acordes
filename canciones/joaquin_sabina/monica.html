@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mónica</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Mónica</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: G  C (x2)
+G
+Mira Mónica, ya estoy harto de tu maldita indecisión
+                                  C                 C7           G
+vivo al borde del infarto, martes sí, miércoles no, jueves quien sabe.
+          D              C
+Por ti quemé mis naves y algo más,
+Bb           F7         G7
+mal vendí mi alma a Satanás,
+         Bb          F           G
+a cambio de la llave de tu intimidad.
+Mira Mónica ten en cuenta, si se presenta la ocasión,
+que en la frontera de los treinta quema menos el amor, pero calienta.
+De noche nunca cierres tu balcón
+puede que se anime algún ladrón
+a desvalijarte un poco el corazón.
+<span class="estribillo">
+Bb                F          C     G
+No me digas tal vez, quizás, puede que mañana.
+       Bb              F       C     G
+Que de tanto esperarte van a salirme canas.
+      D                C
+No me tengas muerto de sed,
+            G
+no seas inhumana
+</span>
+( G  C )
+Deja, Mónica, ya esa historia de mi mentira y tu verdad.
+No me cuentes tus memorias que no las voy a comprar, basta de copas,
+Y de palabras vueltas del revés
+no ves que ya empieza a amanecer.
+Anda, quítate la ropa de una vez.
+<span class="estribillo">
+No me digas tal vez, quizás, puede que mañana.
+Que de tanto esperarte van a salirme canas.
+No me tengas muerto de sed,
+no seas inhumana
+</span>
+( Bb  C  G  Bb  C  G (x2)   D  C  G )
+<span class="estribillo">
+No me digas tal vez, quizás, puede que mañana.
+Que de tanto esperarte van a salirme canas.
+No me tengas muerto de sed,
+no seas inhumana
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

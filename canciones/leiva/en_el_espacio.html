@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>En el espacio</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">En el espacio</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: C
+C                    Dm7
+Ábrete paso por el camino de estrellas,
+        G                          Am
+tú sólo mueve los brazos que yo te cubro allá afuera.
+Ya no se sienten tus pasos y se nos doblan las piernas,
+ya que has subido bien alto no te me caigas de vuelta.
+<span class="estribillo">
+F             G
+Eres lo único que veo entre la niebla,
+   F                 C
+lo único que vale la pena.
+        Am        Am/G        F
+Eres lo único que tengo que hacer,
+   Am       Am/G C
+lo único que queda.
+</span>
+Tengo pedazos de un disco ya en la cabeza.
+¿Qué tal allí en el espacio, o no te pillo despierta?
+Hoy te has lanzado hacia abajo, yo estaba en la furgoneta,
+llegando al barrio con Juancho después de días de guerra.
+<span class="estribillo">
+Eres lo único que veo entre la niebla,
+lo único que vale la pena.
+Eres lo único que tengo que hacer,
+lo único que queda.
+</span>
+( C  F  C  F )
+<span class="estribillo">
+Eres lo único que veo entre la niebla,
+lo único que veo en la tormenta.
+Eres lo único que veo entre la niebla,
+lo único que veo en la tormenta.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

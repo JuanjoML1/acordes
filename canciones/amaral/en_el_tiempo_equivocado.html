@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>En el tiempo equivocado</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">En el tiempo equivocado</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+        Em            D           Em          C
+Hemos nacido en el tiempo equivocado
+          G        D              B
+Somos los hijos del futuro arrebatado
+        Em     D            Em          C
+Nos conocemos, solo con mirarnos
+         G             D           B
+Nos encontramos, como dos aves de paso
+A ti que vas, a la desesperada
+A ti que vas, a la desbandada
+Somos igual, que fieras enjauladas
+Somos igual, nos mueve solo el ansia
+Hemos crecido, con los puños apretados
+Somos los dueños, de un país imaginario
+Yo estoy dormida, con los parpados sellados
+Tu estas colgado, como un cristo boca bajo
+A ti que vas, a la desesperada
+A ti que vas, a la desbandada
+Somos igual, que fieras enjauladas
+Somos igual, nos mueve solo el ansia
+<span class="estribillo">
+Em    D       Em       C
+Quisieran vernos domesticados
+      G     D      B
+Amaestrados, anestesiados
+</span>
+A ti que vas, a la desesperada
+A ti que vas, a la desbandada
+Somos igual, que fieras enjauladas
+Somos igual, nos mueve poco más que el ansia
+         Em         D          Em            C
+Hemos nacido en el tiempo equivocado
+      G           D            B
+Hemos nacido en el tiempo equivocado   (x2)
+         Em         D          Em            C
+Hemos nacido en el tiempo equivocado
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

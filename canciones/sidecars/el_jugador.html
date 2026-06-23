@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>El jugador</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">El jugador</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: A  D  A  D  Bm  E  C#  F#m
+F#m                                        A
+Cansado sin mirar la hora, para mí no amanecía.
+F#m                                            A
+Qué desesperación, la aguja del reloj no se movía.
+E     Bm           F#m     A     D     E       Fº    F#m
+La paciencia terminó y la melodía desentona en mi canción.
+F#m                                        A
+Las ganas de jugar subían a medida que perdía.
+F#m                                   A
+Tuve que apostar, recuperar lo que tenía.
+E      Bm           F#m      A       D     E
+Nunca fui buen perdedor y me resistía a decirte:
+<span class="estribillo">
+A       D             A       D
+"Ya no puedo más, duele mucho respirar,
+           Bm        E                A     A7
+nunca digo la verdad, no tengo esa facilidad.
+       D     E             A        F#m
+Qué necesidad de poner punto y final
+              Bm            E    Fº    F#m
+sin saber lo que vendrá que ya está bien."
+</span>
+F#m                                          A
+De tanto decorar verdades resultaron ser mentiras.
+F#m                                             A
+Enfermo por jugar mi vida a ver la carta que salía.
+E      Bm           F#m      A       D     E
+Nunca fui buen perdedor y me resistía a decirte:
+<span class="estribillo">
+A       D             A       D
+"Ya no puedo más, duele mucho respirar,
+           Bm        E                A     A7
+nunca digo la verdad, no tengo esa facilidad.
+       D     E             A        F#m
+Qué necesidad de poner punto y final
+              Bm            E         A
+sin saber lo que vendrá que ya está bien."
+</span>
+( B  E  B  E  B  E  A  F# )
+         B       E             B       E
+"Ya no puedo más, duele mucho respirar,
+           C#m      F#                B     B7
+nunca digo la verdad, no tengo esa facilidad.
+       E     F#            B        G#m
+Qué necesidad de poner punto y final
+              C#m           F#    Gº    G#m
+sin saber lo que vendrá que ya está bien."
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

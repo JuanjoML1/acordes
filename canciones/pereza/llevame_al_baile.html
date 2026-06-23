@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Llévame al baile</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Llévame al baile</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+C        Em          F
+Voy buscándome la vida, buscándote en mis planes
+C Em         F
+cogiendo altura, dejando señales
+C Em               F
+y puedo bajar el telón, pero no me sale
+C    Em            F
+o llamar a algún matón que te lleve de calle.
+<span class="estribillo">
+F                      C                G
+Ojos que no ven más allá, llévame al baile
+                 Am               E
+que nos vean caminar por el alambre
+            F       G          C
+dime que te cuesta decirme “vale”.
+</span>
+Voy volviendo a la vida, soltando lastre
+viviendo al día, trabajando encaje
+y sí, puedo aguantar el tirón, soy insuperable
+o escribir una canción a ver qué sale.
+<span class="estribillo">
+Ojos cansados de mirar tras los cristales
+no queda noche para más que un último baile
+si aún dices “venga” yo digo “vale”
+</span>
+Am    F             C
+Uhhh llévame al baile
+Am    F             C
+Uhhh llévame al baile
+Am    F             C
+puedo bajar el telón
+Am    F             C
+Uhhh llévame al baile
+Am    F             C
+llamar a algún matón
+Am    F             C
+Uhhh llévame al baile
+Am    F             C
+o escribir alguna canción
+Am    F             C
+Uhhh llévame al baile
+Am    F             C
+que la noche no da más
+Am    F             C
+Uhhh llévame al baile
+Am    F             C
+Uhhh llévame al baile
+Am    F             C
+Uhhh llévame al baile
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

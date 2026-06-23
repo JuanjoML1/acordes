@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mocedades – La otra España</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Mocedades – La otra España</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: C  F  G  Am  F  G
+C                                G
+Con sombrero de ala ancha y un clavel en la solapa
+         Am     F       G
+un Don Juan se hizo a la mar.
+Con la tierra a sus espaldas, la aventura en su mirada
+su guitarra y un cantar.
+C/E   F   G  C/E  F  G
+Oh marinero, oh marinero.
+De su capa hizo un poncho de su guitarra un charango
+de su tierra otra más.
+<span class="estribillo">
+D      G   A                     Bm      G        A
+Eres la otra España la que huele a caña tabaco y brea,
+D      G   A                     Bm      G        A
+eres la perezosa, la de piel dorada, la marinera.
+D/F# G  A    D/F# G  A
+Oh marinera, oh marinera.
+</span>
+D                         A
+Entre notas de guitarra, les hablaba de su tierra
+Bm      G       A
+de un clavel y de un halcón.
+Donde aún llora una niña esperando aquel que un día
+se olvidó decirle adiós.
+Oh marinero, oh marinero
+Con sombrero de ala ancha y un clavel en la solapa
+un Don Juan se hizo a la mar.
+<span class="estribillo">
+Eres la otra España la que huele a caña tabaco y brea,
+eres la perezosa, la de piel dorada, la marinera.
+Oh marinera, oh marinera. (x2)
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

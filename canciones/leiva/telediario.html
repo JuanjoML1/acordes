@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Telediario</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Telediario</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+E             G#m
+En un cajero amanecimos ciegos,
+A              Bbº
+esquina con el comercial.
+B        C#m   B     A   B        F#m7-G#m7
+Dos pistoleros lentos se comen el día.
+E            G#m
+Dos tragos para cerrar enero,
+A               Bbº
+ayer fuimos Satanás.
+B       C#m   B
+Subidos en un trueno,
+  A
+hablamos de chicas,
+   B
+contamos los días para salir a tocar.
+<span class="estribillo">
+C#m               B            A6
+Paren la vida, me quiero bajar,
+C#m                B
+si estoy a tiempo, quiero saltar
+E          B    A
+por si nos sale mal.
+</span>
+Costelo cerrando tarde, pero
+autopista quiere más.
+Las chicas del ropero ofrecen su casa.
+Canciones saliendo del sombrero,
+cogiendo olas sin parar.
+Arañamos el cielo,
+quemamos las vías,
+contamos los días para salir a tocar.
+<span class="estribillo">
+Paren la vida, me quiero bajar,
+si estoy a tiempo, quiero saltar
+por si nos sale mal. (x2)
+</span>
+C#m       B      A        E
+Vamos a salir en el telediario,
+C#m       B  A-E
+vamos a salir. (x4)
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

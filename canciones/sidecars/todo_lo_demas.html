@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Todo lo demás</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Todo lo demás</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+D           A             D             E
+uuuuuuuu   uuuuuuuuu     uuuuuuuuuuuuuuuuuuuu
+          A    D       G        D
+Te veo aquí, callada, eres una monada.
+A               G    D   D#   E
+¿Quieres que te diga qué decir?
+         A     D           G           D
+Es que sin nadie a tu lado tú no vales nada.
+E            D        G   G#   A
+necesitas que te digan ven aquí.
+<span class="estribillo">
+G              D                   A                  F#m
+Diciendo bobadas, cantando chorradas esperas conversación
+        Bm     C#m      D           D#º
+y llego yo, te toco, te froto poco a poco
+E
+hagamos juntos esta canción.
+             D  A
+Y todo lo demás, me sabe a poco.
+    D                  A
+si solo con pensar en ti ya me coloco.
+Bm                    G                     E
+No existe una droga mejor en cualquier situación, en cualquier situación.
+</span>
+Y luego voy, te tomo, recorro todo el lomo
+hago que grites, grites por mí.
+Es que si me he marchado, tu voz he sepultado,
+necesitas que te diga, "ven aquí".
+<span class="estribillo">
+Diciendo bobadas, cantando chorradas esperas conversación
+y llego yo, te toco, te froto poco a poco.
+hagamos juntos esta canción.
+Y todo lo demás, me sabe a poco.
+si solo con pensar en ti ya me coloco.
+No existe una droga mejor en cualquier situación, en cualquier situación.
+Y todo lo demás, me sabe a poco.
+si solo con pensar en ti ya me coloco.
+No existe una droga mejor en cualquier situación, en cualquier situación.
+Y todo lo demás, me sabe a poco.
+si solo con pensar en ti
+y todo lo demás, y todo lo demás. Todo lo demás
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

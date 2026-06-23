@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>***Habla</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">***Habla</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Habla, tú puedes hacerlo,
+Dime, habla, cuéntame una historia inventada,
+Me gusta escucharte cuando me hablas.
+Parece tan sencillo empezar.
+Sabes, no tienes razones para hacerlo,
+Pero es la única forma de entendernos.
+Puedes convencerme si me hablas.
+¿no quieres ganar mi confianza?
+<span class="estribillo">
+Por todos los que tienen que callar,
+Que nadie te quite la voz.
+Por todos los que nunca ganan.
+Por todos los que faltan,
+Dime, habla, dime, habla, habla.
+</span>
+Habla, suéltate un poquito de palabra
+Tu lengua se ha quedado enjaulada
+Dime, el aire se desliza en tu garganta
+Y no encuentra la forma de salir
+No encuentra tu boca.
+<span class="estribillo">
+Por todos los que tienen que callar,
+Que nadie te quite la voz.
+Por todos los que nunca ganan.
+Por todos los que faltan,
+Dime, habla, dime, habla, habla.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

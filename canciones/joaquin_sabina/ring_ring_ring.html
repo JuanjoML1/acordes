@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ring, ring, ring</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Ring, ring, ring</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+A                                                 D
+Tu nombre estaba en todas las agendas de la gente in
+     A                                                D
+El teléfono en tu casa no paraba de hacer ring, ring, ring
+         A                                             D
+No había cóctel, party, cena, estreno, en que faltaras tú
+         A                                        D
+Por las noches en Bocaccio, y al Gijón para el vermut
+E                         D                   A
+Lástima que ahora, cuando llaman a tu puerta, ves
+A                         E                   D   A
+Al casero que te pide por octava vez el alquiler
+<span class="estribillo">
+E
+El mercader de sueños ya murió
+    D
+El príncipe azul era un impostor
+   A
+El último amante se largó
+               E   D
+Y el siguiente no, nena, no
+             E
+No voy a ser yo
+E            A
+No voy a ser yo
+</span>
+Ahora que todo se derrumba, ahora que se acerca el fin
+Déjate de Valium, no imites a Marilyn
+Puede que haya algo aún que tu puedas hacer
+Esto es un supermercado ¿qué tienes para vender?
+Tendrás que decir sí a ofertas que dijiste no
+Son tiempos de rebajas, siempre habrá algún comprador
+El mercader de sueños ya murió
+<span class="estribillo">
+El príncipe azul era un impostor
+El último amante se largó
+Y el siguiente no, nena, no
+No voy a ser yo
+</span>
+Déjate de rollos, anda, reina, muévete
+Sal corriendo si no quieres perder también ese tren
+El mercader de sueños ya murió
+El príncipe azul era un impostor
+El último amante se largó
+Y el siguiente no, nena, no
+No voy a ser yo
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

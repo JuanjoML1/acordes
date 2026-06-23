@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pongamos que hablo de Madrid</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Pongamos que hablo de Madrid</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cej4
+C             F            C
+Allá donde se cruzan los caminos
+                              Dm
+donde el mar no se puede concebir
+F             Em             Dm
+donde regresa siempre el fugitivo
+         G              F
+pongamos que hablo de Madrid
+Donde el deseo viaja en ascensores
+un agujero queda para mí
+que me dejo la vida en sus rincones
+pongamos que hablo de Madrid
+Las niñas ya no quieren ser princesas
+y a los niños les da por perseguir
+el mar dentro de un vaso de ginebra
+pongamos que hablo de Madrid
+Los pájaros visitan al psiquiatra
+las estrellas se olvidan de salir
+la muerte pasa en ambulancias blancas
+pongamos que hablo de Madrid
+El Sol es una estufa de butano
+la vida un metro a punto de partir
+hay una jeringuilla en el lavabo
+pongamos que hablo de Madrid
+Cuando la muerte venga a visitarme
+no me despiertes, déjame dormir
+aquí he vivido, aquí quiero quedarme
+pongamos que hablo de Madrid
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

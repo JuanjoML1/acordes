@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A medio centímetro</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">A medio centímetro</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cej1
+Intro: C  F  C  G  C
+           C                F
+Adictos al fuego de los principios
+              C                                    G
+Adictos al vaivén de la noria, y a los primeros mordiscos
+         Am                    F              C
+Hay algo hermoso al dejarse marchar, hay algo bueno
+E                  Am         Am/G F
+Aunque no queramos verlo, hay algo bueno
+    Dm                            Am
+Uno es del lugar al que quiere volver
+    C              Cmaj7                C7
+Uno es a menudo distinto de lo que se espera
+<span class="estribillo">
+F                    Fm
+Nos importa una mierda admitirlo
+     C         C/B        Am
+Solo fuimos la luz de una vela
+       Bb               G
+Nos quedamos a medio centímetro
+</span>
+( C  F  C  G  C )
+Aguarda el verano sentado en sus tobillos
+Prefiere recostarse en la luna, a mí me ocurre lo mismo
+Hay algo hermoso al dejarse marchar, hay algo bueno
+Aunque no queramos verlo, hay algo bueno
+<span class="estribillo">
+Nos importa una mierda admitirlo
+Nos ponía cachondos el riesgo
+Nos quedamos a medio centímetro
+</span>
+( )
+<span class="estribillo">
+F                     Fm
+Los recuerdo bailando en el filo
+     C         C/B        Am
+Solo fuimos la luz de una vela
+       F       G        C
+Nos quedamos a medio centímetro
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

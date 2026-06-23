@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vengas cuando vengas</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Vengas cuando vengas</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: Dadd9  Dsus2  D7sus4  D7  Gadd9  G(Ec3)  Gm/D  (e|-6-5-3-1-)
+Dsus2                 D7
+Vengas cuando vengas, deja atrás el peso,
+Gadd9              Gm/D
+quema las maletas, tira tu champú.
+Tengas lo que tengas, dame lo que quieras,
+a plazos o entera, como veas tú.
+D            Em     F#m          Fm
+Hagas lo que hagas, hazlo porque quieres.
+Gadd9    Gm/D    A7
+No pongo deberes y no paso lista.
+D           Em      F#m          Gm
+Vistas como vistas, falda o pantalón,
+D    Gadd9  Gm     A7sus4     D(A)  Dsus4  D  Dsus2
+no te me disfraces para la ocasión
+<span class="estribillo">
+G            D
+No te quiero retener
+G                  D
+Si te da el punto, te vas
+G                D     Ebº
+Y aunque me veas mirar
+Gadd9  Gm/D  A7           Dsus2   D7   Gadd9   Gm/D
+Baila como tú quieras bailar
+</span>
+Vengas cuando vengas, ven sin salvavidas,
+sin paracaídas, y sin afeitar.
+Digas lo que digas, dilo sin sedante,
+fuerte y al semblante, lo puedo encajar.
+Hagas lo que hagas, que sea sincero,
+sin quizás, sin peros, y sin avalista.
+Vistas como vistas, seda o algodón,
+no te me disfraces para la ocasión
+<span class="estribillo">
+No te quiero retener
+Si te da el punto, te vas
+Y aunque me veas mirar
+Baila como tú quieras bailar
+</span>
+Dsus2                     D7
+Baila como quieras bailar, baila como quieras bailar
+Gadd9                       Gm/D         A7
+Baila como quieras bailar, baila como tú quieras bailar
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Payaso</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Payaso</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Em          B7        Em
+Me dicen que soy un payaso,
+E7                     Am
+porque no les tomo en serio,
+Am              Em
+y que no tengo remedio,
+C             B7
+que siempre seré un payaso,
+C              B7        Em   B7  Em
+que siempre seré un bufón.
+Em         B7         Em
+Me dicen que doy cierta risa
+E7               Am
+y que nadie me respeta,
+Am                Em
+tengo abierta la bragueta
+C               B7
+y por fuera la camisa
+C           B7       Emaj7
+y a mí, me importa un mojón.
+<span class="estribillo">
+E                  G#m  Gm              F#m7
+Me tomo la vida en broma, porque es muy corta,
+B7                                       Cº       E
+me burlo de la desgracia, porque bastante tenemos ya.
+E                           E7               A    Am7b5
+Y será lo que será, al que se ríe nada le importa,
+                  E                  B7            E    E7
+tráiganme mis zapatones, porque sin ellos no doy un paso,
+A   Am             E            B7   Em
+que para mí es un orgullo ser un payaso.
+</span>
+Em  B7  Em
+Me dicen que soy un payaso,
+porque hago tonterías,
+las hago pa que te rías,
+y así ahuyentes al fracaso
+y las ganas de penar.
+Me dicen que soy un cencerro,
+pero eso me hace más fuerte,
+cuando me llegue la muerte,
+si alguno llora en mi entierro,
+no le vuelvo a saludar.
+<span class="estribillo">
+Me tomo la vida en broma, porque es muy corta,
+me burlo de la desgracia, porque bastante tenemos ya.
+Y será lo que será, al que se ríe nada le importa,
+tráiganme mis zapatones, porque sin ellos no doy un paso,
+que para mí es un orgullo ser un payaso.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

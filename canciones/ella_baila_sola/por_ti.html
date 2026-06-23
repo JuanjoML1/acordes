@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Por ti</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Por ti</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+C                G
+Yo te quiero regalar palabras
+Am              Em
+ser tu red para cuando caigas
+F             C         G
+cogerte de la mano al andar
+Y decirte cosas al oído
+ser tu manta cuando tengas frío
+y ser tu hombro para llorar
+<span class="estribillo">
+C
+Por ti mi vida empeño
+    F
+por un momento
+   C     G    F
+de verte sonreír
+          C
+por ti mi alma vendo
+  F              G
+a cambio del tiempo
+          C        G     F
+que necesites para ser feliz
+</span>
+Dejo todo por un beso tuyo
+quiero ser tu espada y tu escudo
+decirte que te quiero una vez más
+Quiero ser tus alas y tu cielo
+quiero ser el mar y tu velero
+el cielo y tus pies para caminar
+<span class="estribillo">
+Por ti mi vida empeño
+por un momento
+de verte sonreír
+por ti mi alma vendo
+a cambio del tiempo
+que necesites para ser feliz
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

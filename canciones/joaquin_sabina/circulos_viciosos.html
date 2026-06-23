@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Círculos viciosos</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Círculos viciosos</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+(E – B)
+Quisiera hacer lo que ayer, pero introduciendo un cambio
+No metas cambios, Hilario, que está el jefe por ahí,
+¿Por qué esta de jefe? Porque va a caballo
+¿Por qué va a caballo? Porque no se baja
+¿Por qué no se baja? Porque vale mucho
+¿Y cómo lo sabe? Porque está muy claro
+¿Por qué esta tan claro? Porque esta de jefe.
+Eso mismo fue lo que yo le pregunté: ¿Por qué esta de jefe? (x2)
+Yo quiero bailar un son y no me deja Lucia
+Yo que tú no bailaría porque esta triste Ramón.
+¿Por qué esta tan triste? Porque esta malito
+¿Por qué esta malito?  Porque está muy flaco
+¿Por qué esta tan flaco? Porque tiene anemia
+¿Por qué tiene anemia? Porque come poco
+¿Por qué come poco?  Porque está muy triste
+Eso mismo fue lo que yo le pregunté ¿Por qué esta tan triste? (x2)
+Quiero formar sociedad con el vecino de abajo
+Ese no tiene trabajo no te fíes, Sebastian
+¿Por qué no trabaja? Porque no lo cogen
+¿Por qué no lo cogen? Porque esta fichado
+¿Por qué lo ficharon? Porque estuvo preso
+¿Por qué lo metieron? Porque roba mucho
+¿Por qué roba tanto? Porque no trabaja
+Eso mismo fue lo que yo le pregunté ¿Por qué no trabaja? (x2)
+Quiero conocer a aquél, hablarle y decirle hola
+No le has visto la pistola deja esa vaina, Javier
+¿Por qué la pistola? Porque tiene miedo
+¿Por qué tiene miedo? Porque no se fía
+¿Por qué no se fía? Porque no se entera
+¿Por qué no se entera? Porque no le hablan
+¿Por qué no le hablan? Por llevar pistola
+Eso mismo fue lo que yo le pregunté ¿Por qué la pistola?
+Eso mismo fue lo que yo le pregunté ¿Por qué la pistola?
+Eso mismo fue lo que yo le pregunté ¿Porqué no trabaja?
+Eso mismo fue lo que yo le pregunté ¿Porqué esta tan triste?
+Eso mismo fue lo que yo le pregunté ¿Porqué esta de jefe?
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

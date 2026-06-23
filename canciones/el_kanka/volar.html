@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Volar</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Volar</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cej1
+(1)  B|-2-3-5-
+     G|-2-4-6-
+  Am                      B7
+Volar lo que se dice volar
+E7                Bº
+volar, volar, volar
+  Am     F7 E7
+No vuelo
+Volar lo que se dice volar
+volar, volar, volar
+  Am
+No vuelo
+A7   Dm
+Pero desde que cambie el palacio por el callejón
+ Am
+Desde que rompí todas las hojas del guion
+E7                               Am/G  Am  A7   (1)
+Si quieres buscarme mira para el cielo
+Dm
+Pero desde que me deje el bolso en la estación
+Am
+Y le pegue fuego a la tele del salón
+B7                      E7          Bº          Amaj7  Bm7   E7
+Te prometo hermano que mis suelas no tocan el suelo
+<span class="estribillo">
+Amaj7                     Bm7
+Solté todo lo que tenía y fui feliz
+   E7             Bº       Amaj7  E7  A7
+Solté las riendas y dejé pasar
+ Dmaj7          Dm
+No me ata nada aquí
+    Amaj7         B7
+No hay nada que guardar
+ E7                Bº    Am
+así que cojo impulso y a volar
+</span>
+...lo que se dice volar
+volar, volar, volar
+No vuelo
+Volar lo que se dice volar
+volar, volar, volar
+No vuelo
+Pero desde que tiré las llaves ya no quiero entrar
+Desde que quemé las naves y aprendí a nadar
+Si quieres buscarme mira para el cielo
+Pero desde que dejé el teléfono en un bar
+Desde que no tengo nada parecido a un plan
+Te prometo hermano que mis suelas no tocan el suelo
+Solté todo lo que tenía y fui feliz
+Solté las riendas y dejé pasar
+No me ata nada aquí
+No hay nada que guardar
+así que cojo impulso y a volar
+(Am-G-F-E7)
+Volar, lo que se dice volar
+E|-0-2-4-5-  Am6
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

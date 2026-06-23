@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Peligrosamente dark</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Peligrosamente dark</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: D  Dmaj7  G   A
+           D       Dmaj7           G           A
+Qué harías tú si tuvieras rota por dentro la cabeza
+           D           Dmaj7        G                A
+Qué harías tú si te ahogaras y no supieras cómo se expresa
+<span class="estribillo">
+G           F#m            Bm
+Qué harías tú, yo me empiezo a acostumbrar
+      A         G
+Se me va la fuerza
+     A             D            D7
+Solo me dedico a aullar, a inventar respuestas
+Em           A              D
+Déjame estar peligrosamente dark
+</span>
+( D  Dmaj7  G  A )
+Qué harías tú si sintieras enfermedades misteriosas
+Qué harías tú si olvidaras por un instante lo que puede importar
+<span class="estribillo">
+Qué harías tú, yo me empiezo a acostumbrar
+Se me va la fuerza
+Solo me dedico a aullar, a inventar respuestas
+Déjame estar peligrosamente dark
+</span>
+          Bm                G
+La vida está tan de nuestro lado
+      A                    D
+Sin embargo, estoy aterrorizado
+  G
+A veces me pregunto insistente
+    A
+Hay algo que quisieras saber
+       G           D/F#    Em     Em/D
+Porque siempre hay uno que quiere
+  A
+Y otro que se deja querer
+( Bm  G  D ) x2
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

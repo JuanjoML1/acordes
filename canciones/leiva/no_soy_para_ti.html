@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>No soy para ti</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">No soy para ti</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cej1
+Intro: E  A  E  C#m  B  A (x2)
+   E                A        E
+Un rayo de sol muerde la habitación
+       C#m       B         A
+Y no estoy, no estoy, no estoy
+E                           A     E
+Aunque ya es tarde, huele a revolución
+     C#m         B         A
+Y no estoy, no estoy, no estoy
+<span class="estribillo">
+B
+No estoy para nadie
+     C#m
+No estoy en tu piel
+        A            E
+Ya no estoy para alumbrarte
+  B                  C#m
+Estoy por el aire, recuérdalo bien
+F#m-G#m-A-B-E
+No soy para ti
+</span>
+( E  A  E  C#m  B  A )
+Salto a los charcos, quemo el portal
+No es igual, no es igual, no es igual
+Ya no me parto la cabeza en el bar
+No es igual, no es igual, no es igual
+<span class="estribillo">
+No es igual que te marches,
+No es igual que no estés,
+No me da para alcanzarte
+Estoy por el aire, recuérdalo bien
+No soy para ti
+No estoy para nadie
+No estoy en tu piel
+Ya no estoy para alumbrarte
+Estoy por el aire, recuérdalo bien
+No soy para ti
+</span>
+( )
+<span class="estribillo">
+No estoy para nadie
+No estoy en tu piel
+Ya no estoy para alumbrarte
+Estoy por el aire, recuérdelo bien
+No soy para ti
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

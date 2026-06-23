@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarde para cambiar</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Tarde para cambiar</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cej1
+A          E
+Era pronto para todo
+  Bm            A
+y tarde para cambiar
+  A             G
+Aún me guardo algunas fotos
+    Bm               A    A  Em  Bm  A
+que no me atrevo a mirar
+Era todo tan hermoso
+que no podía durar
+en la flor de nuestras vidas
+con tanto amor para dar
+<span class="estribillo">
+Em                    A
+Solías llamar de madrugada
+Em                      A
+me hacías saltar de la cama
+G          Bm
+salíamos a quemar
+        F#m      G
+todo el fin de semana
+ F#m       Bm
+casi sin blanca
+</span>
+En el fondo reconozco
+que nos gustaba jugar
+A          G               Bm      A
+a tener el mundo en contra nuestra
+<span class="estribillo">
+Quería cumplir dieciocho
+quería vivir para siempre a mi aire
+y tú lo sabías bien
+lo que empieza acaba
+se nos escapa
+</span>
+A        E
+Era todo tan hermoso
+   Bm               A        A  Em  Bm  A
+se fue deprisa y no volverá
+<span class="estribillo">
+Y mientras partía una nave hacia Marte
+tú me prometías nunca olvidarme
+Pero tú lo sabías bien
+lo que empieza acaba
+se nos escapa
+         F#m    G
+lo que empieza acaba.
+Los dos aprendimos bien,
+tú y yo aprendimos bien
+         F#m    G
+lo que empieza acaba
+</span>
+Era pronto para todo y
+tarde para cambiar
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

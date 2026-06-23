@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Todo lo que tú quieras</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Todo lo que tú quieras</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: G  C (x2)
+G
+Hace ya tiempo del huracán, de los puñales y los vuelos,
+  C                                      D
+y no sé cómo hacerlo, no sé cómo hacerlo.
+G
+Sube la fiebre, sube el pan, el descosido de tus vaqueros,
+  C                                      D
+y no sé cómo hacerlo, no sé cómo hacerlo.
+<span class="estribillo">
+Em              C
+Dos vidas sin saber quién eres,
+D                 G          Em
+dos tragos por el último bye-bye
+               A
+ya sabes que será
+D   C              G
+Uh, todo lo que tú quieras
+D   C              G
+Uh, todo lo que tú quieras
+</span>
+( G  C ) x2
+Hace ya tiempo de la señal, de los fracasos y los celos,
+y no sé cómo verlo, no sé cómo verlo.
+No queda hueco para más, no tengo aliento ni en los sueños,
+y no sé cómo hacerlo, no sé cómo hacerlo.
+<span class="estribillo">
+Dos vidas sin saber quién eres,
+dos tragos por el ultimo bye-bye
+ya sabes que será
+Uh, todo lo que tú quieras,
+Uh, todo lo que tú quieras. (x4)
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

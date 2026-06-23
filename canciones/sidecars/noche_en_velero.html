@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Noche en velero</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Noche en velero</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+C         F         C                  F
+Diez de febrero, no puedo olvidarlo ni quiero,
+  C         F           C                 F
+noche en velero, si te quedas conmigo me quedo.
+Dm                G    F              C
+Tú no quisiste parar, hoy te vas a marear,
+      Am       F         G
+qué mejor canción, chica rock and roll
+<span class="estribillo">
+F         G       C           Am     G     F
+Vámonos de Madrid para mí no hace falta ir a París
+      G      C         G      Am    G   F
+Vamos a decidir Las Vegas, Brujas o Berlín.
+</span>
+C           F     C                     F
+Era un recreo la parte de atrás del Costello,
+  C       F       C                 F
+cuánto veneno, olvídalo y pide un deseo.
+  Dm                 G       F                  C
+Mañana tienes que volar y aquí no me quieres dejar
+      Am       F         G
+qué mejor canción, chica rock and roll
+<span class="estribillo">
+F         G       C           Am     G     F
+Vámonos de Madrid para mí no hace falta ir a París,
+      G      C         G      Am  G    F
+vamos a decidir Las Vegas, Brujas o Berlín
+     F         G        C          Am     G     F
+Vámonos de Madrid para mí no hace falta ir a París
+      G      C         G      Am  G    D
+vamos a decidir Las Vegas, Brujas o Berlín.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

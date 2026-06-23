@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Llueve</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Llueve</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cej2
+D                              Asus2   A  Asus2-A
+Vuelvo a intentar dormir, pero no me sale
+D                       Asus2 A   Asus2-A
+Esto no es para mí, déjate llevar
+D                     Asus2 A   Asus2-A
+Los calores ya son salvajes
+D                          A
+Y hace rato que empecé a sudar
+A       Bm           C#m             D
+Ríos de confusión y alardes de virilidad
+E
+Litros de curiosidad no te lo puedo negar
+<span class="estribillo">
+A   D  A     E   F#m D       E
+Llueve alrededor, no puedo cubrirme
+A            D        A       E         G
+Vestir la verdad será mucho mejor, quédate con ganas
+</span>
+Te lo intenté decir, cometí un delito
+No me pudiste oír, ahí no estabas tú
+Sí, quizás este no es mi sitio
+La culpa fue de tu actitud,
+Noches de rock & roll, reproches cargados de acción
+Miedo a la insatisfacción y mucha falta de valor
+<span class="estribillo">
+Llueve alrededor, no puedo cubrirme
+Vestir la verdad será mucho mejor, quédate con ganas
+Llueve alrededor, no puedo cubrirme
+Vestir la verdad será mucho mejor, quédate con ganas
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

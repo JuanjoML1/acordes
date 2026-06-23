@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>El joven aprendiz de pintor</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">El joven aprendiz de pintor</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro:  C5   G   Am  C   D  C  Am7  D7
+         G
+El joven aprendiz de pintor que ayer mismo
+                                    D
+Juraba que mis cuadros eran su catecismo
+Hoy como ve que el público empieza a hacerme caso
+                D7                 G
+Ya no dice que pinto tan bien como Picasso
+En cambio, la vecina que jamás saludaba
+Cada vez que el azar o el ascensor nos juntaba
+Vino hoy a decirme que mi última novela
+La excita más que todo Camilo José Cela
+<span class="estribillo">
+D                C
+Y qué decir del mánager, audaz y decidido
+                Bm7           D             D7
+Que no me recibió, que siempre estaba reunido
+           Em                       C
+Hoy moviendo la cola se acercó como un perro
+         Bm7                          Am
+A pedir que le diéramos vela en este entierro y yo le dije
+ G        C          D              C
+No, no, no, no, no, no, no, ya está marchita
+    Bm7      Am                  C       D
+la margarita que en el pasado he desojado yo
+</span>
+El torpe maletilla que hasta ayer afirmaba
+Que con las banderillas nadie me aventajaba
+Ahora que corto orejas y aplauden los del siete
+Ya no dice que cito mejor que Manolete
+La propia Caballé que me negó sus favores
+La diva que pasaba tanto de cantautores
+Llamo para decirme “estoy en deuda contigo
+Mola más tu Madrid que el Aranjuez de Rodrigo
+<span class="estribillo">
+Y qué decir del crítico que indignado me acusa
+De jugar demasiado a la ruleta rusa
+Si no hubiera arriesgado tal vez me acusaría
+De quedarme colgado en Calle Melancolía y eso sí que
+No, no, no, no, no, no, no, ya está marchita
+la margarita que en el pasado he desojado yo
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A ti que te lo haces</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">A ti que te lo haces</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+E                    A                B            E
+A ti que te lo haces de baile de disfraces cada día,
+E                     A                B            E
+a ti que te lo montas de niña tonta en medio de una orgía,
+B                      A                        E
+a ti que me has ganado con un naipe marcado la partida,
+C#m                    F#m                      B
+a ti que te has colado en el coto privado de mi vida.
+A ti que aún no sabes los besos que te caben en la boca,
+a ti que has comprendido que a veces el olvido se equivoca,
+a ti que has preferido vivir como si nada fuera eterno,
+a ti que has compartido conmigo una almohada en el infierno.
+<span class="estribillo">
+E                              A
+A ti que has decidido no prestar atención
+ C#m                F#m                    B
+a frases del tipo “ese menda va a ser tu ruina”.
+E                       A            B
+a ti que has detenido con un beso el reloj,
+C#m
+a ti que me enfermas,
+G#m                F#m           B
+a ti que eres mi envenenada medicina.
+</span>
+A ti que vas deprisa por miedo a que la risa se marchite,
+a ti que te diviertes jugando con la muerte al escondite,
+a ti que has levantado el árbol de tu nido en mi tejado,
+a ti que has dirigido la flecha de Cupido a mi costado.
+<span class="estribillo">
+A ti que has decidido no prestar atención
+a frases del tipo “ese menda va a ser tu ruina”.
+a ti que has detenido con un beso el reloj,
+a ti que me enfermas,
+a ti que eres mi envenenada medicina.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

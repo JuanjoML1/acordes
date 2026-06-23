@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estrella de mar</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Estrella de mar</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Em             G    C           D
+Mi estrella de Mar, beber de tu boca
+             Em            G               C     D
+es como andar encima de un mar de luz y silencio.
+Em             G   C              D         Em
+Mi estrella de Mar, mirarte a los ojos es nadar,
+            G               C         D
+nadar en un mar más frío que el hielo.
+C               D                  Em
+El Mar junto al cual yo fui a nacer
+               G   C
+mi estrella fugaz
+                       D
+En un día gris del mes de febrero.
+<span class="estribillo">
+Em            G
+Tú y yo, sí, tú y yo,
+     C           D
+tú y yo nos abrazamos.
+     Em            G
+Tú y yo, sí, tú y yo,
+     C           D
+tú y yo nos abrazamos.
+</span>
+Mi Estrella de Mar, dormir en tus brazos
+es viajar a un mundo irreal
+perdido en el tiempo.
+Mi Estrella de Mar, sentir el contacto
+de tu piel, es amanecer en un mar abierto.
+El Mar junto al cual yo fui a nacer
+Estrella fugaz
+En un día gris del mes de febrero.
+<span class="estribillo">
+Tú y yo, sí, tú y yo,
+tú y yo nos abrazamos.
+Tú y yo, sí, tú y yo,
+tú y yo nos abrazamos.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

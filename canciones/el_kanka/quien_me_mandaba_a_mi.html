@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quién me mandaba a mí</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Quién me mandaba a mí</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Gmaj7*: xx5430
+Amaj7*: xx7650
+Intro: Dsus2  A/C#  Dsus2  A/C#  G6  Dmaj7/F#  Gmaj7*  Amaj7*
+Dsus2       A/C#      Dsus2     A/C#
+Quién me mandaba a mí cruzar la carretera
+G6         Dmaj7/F# G6         Dmaj7/F#
+aquel día de abril, aquel día cualquiera
+Quién te mandaba a ti cruzarte en mi mirada
+así muy porque si, así como si nada
+<span class="estribillo">
+Dsus2 A/C# G  A7
+Y quién le mandaba al azar
+Dsus2 A/C# Em7b5  A7
+ponerte enfrente
+Dsus2 A/C# G6 Dmaj7/F#    Em7
+Y quién me mandaba a mi mirar
+   A7
+Juanillo nunca aprenderás
+Dsus2 Em F#m G Dsus2            Asus2
+Yo estaba tranquilo viviendo mi vida
+             Bbmaj7  A7
+aburrida, normal y feliz
+Dsus2 Em F#m G      Dsus2              Asus2
+Y ahora no hago más que tropezarme con estas
+          Bbmaj7  A7     Dsus2
+ganitas de ti, de ti, de ti
+</span>
+(Intro)
+Quién me mandaba a mí hacerle caso omiso
+a mi instinto de huir y abandonar el piso
+Quién te mandaba a ti a avivarme la vida
+obligando a latir al corazón suicida
+<span class="estribillo">
+Y quién le mandaba al azar
+ponerte en frente
+Y quién me mandaba a mi mirar
+Kankilla nunca aprenderás
+Yo estaba tranquilo viviendo mi vida
+aburrida, normal y feliz
+Y ahora no hago más que tropezarme con estas
+ganitas de ti, de ti, de ti
+</span>
+(Intro)
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

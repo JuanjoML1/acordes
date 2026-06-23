@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lady Madrid</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Lady Madrid</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: C  Csus2  C  Fmaj7  //  C  Csus2  C  G
+C                 G       Fmaj7            C
+Más bonita que ninguna, ponía a la peña de pie
+G                     Am    Fmaj7           G
+Con más noches que la luna, estaba todo bien
+C           G       Fmaj7 C
+Probaste fortuna en 1996
+G                   Am     Fmaj7                       G
+De Málaga hasta La Coruña, durmiendo en la estación de tren
+<span class="estribillo">
+C                     G            Am                  F
+La estrella de los tejados, lo más rock & roll de por aquí
+C                      G6     Fmaj7   C    Cadd9 C G6
+Los gatos andábamos colgados, Lady Madrid
+</span>
+C                     G          Fmaj7             C
+La más viciosa que ninguna, pero tan difícil de coger
+G                     Am   Fmaj7             G
+Tuvo un piso en las alturas, handle it with care
+C            G       Fmaj7              C
+Probaste fortuna con héroes de barrio y conmigo también
+G                Am   Fmaj7         G
+Algunos todavía dudan, si vas a volver
+<span class="estribillo">
+C                     G            Am                  F
+La estrella de los tejados, lo más rock & roll de por aquí
+C                      G      Fmaj7   C    G6
+Los gatos andábamos colgados, Lady Madrid
+C            G              Am                      F
+Pitillos ajustados, era The Burning, Ronaldos y Lou Reed
+C                      G6       Fmaj7  Dm7
+Y nunca hablaron los diarios de Lady Madrid
+</span>
+( Dm  G  Dm  G  G#º  Am7  G )
+<span class="estribillo">
+C                     G            Am                  F
+La estrella de los tejados, lo más rock & roll de por aquí
+C                      G      Fmaj7   C    G6
+Los gatos andábamos colgados, Lady Madrid
+C            G              Am                      F
+Pitillos ajustados, era The Burning, Ronaldos y Lou Reed
+C                      G6       Fmaj7   C
+Y nunca hablaron los diarios de Lady Madrid
+Fmaj7  C
+Lady Madrid
+Fmaj7  C
+Lady Madrid
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

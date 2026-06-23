@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Los mismos clavos</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Los mismos clavos</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: Am  F  Am  F  Am  F  F (x2) F
+   Am             F               Am
+Me dices que me parezco a los caracoles
+         F                 Am
+me sobra techo, me muero en soles,
+         F              F
+tras espesura del chaparrón
+  Am               F                  Am
+será que el camino bueno se ha vuelto malo
+         F                  Am
+o que no quiero pegar ni un palo,
+         F                  F
+que solo quiero escuchar tu voz.
+<span class="estribillo">
+F                         Cadd9    F             F
+Que siempre llego a la deshora que marca el corazón
+F                       Cadd9    F               F            F
+y que, cuando estamos a solas, molesta el caparazón, el caparazón.
+</span>
+( Am  F  Am  F  Am  F  F (x2) F )
+Me dicen que tus braguitas revolotean
+que lo hacen sólo pa que las vea
+que llevan alas de desamor,
+será que las ensuciamos tan malamente
+que los colchones son mala gente,
+que siempre quieren tener razón.
+<span class="estribillo">
+Que siempre llego a la deshora que marca el corazón
+y que, cuando estamos a solas, molesta el caparazón, el caparazón.
+</span>
+Am        F              F
+Mi casa está donde estás tú
+           Am  F          F
+los mismos ojos, la misma luz
+Am        F              F
+mi casa está donde estás tú
+           Am    F          F
+los mismos clavos, la misma cruz
+           Am   F              F
+los mismos clavos, el mismo ataúd.
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

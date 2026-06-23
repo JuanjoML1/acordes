@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Concorde</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Concorde</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cej 2
+Intro: D  G  Em  (x4)
+D
+Qué verdad, qué triste realidad.
+             G
+Surgió de la nada y se alza ante mí.
+            A          Em        G
+Me siento pequeña pero nunca más
+     D     D-Dsus4   (x2)
+confiada.
+Cómo fue, qué tal la sensación
+de ver cómo ardían por ti mis manos en el fuego.
+Ya nada será igual, es el final
+de la inocencia.
+<span class="estribillo">
+D      A         Em
+Ya no verás volar el Concorde
+G             D
+sobre nuestras cabezas.
+</span>
+Iba a hacer una canción cruel
+escrita en tu honor que sacara de mi este veneno,
+pero en un sueño vi tu alma
+destrozada.
+<span class="estribillo">
+D      A            Em
+Y al  despertar lloré porque una vez
+G        D
+creí ser tu hermana.
+D         A         Em
+Ya nada será igual, es el final
+G         D
+de la inocencia.
+D      A         Em
+Ya no verás volar el Concorde
+G             D
+sobre nuestras cabezas.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

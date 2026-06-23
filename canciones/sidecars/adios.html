@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Adiós</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Adiós</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cej3
+Intro: D  C  G  D (x2)
+D              G                    D               A
+Y así fue, una noche como todas las demás decidiste irte
+D               G                    D                       A
+no importó siempre fuiste fiel a la insatisfacción no estaba triste
+  D                     A
+sepulté tus maneras de aprendiz
+         D      G D/F# C            A
+te sobra tiempo para huir lejos de aquí
+<span class="estribillo">
+C            G             D
+Nunca supiste aprovechar lo que tenías
+       C            G             D
+ahora da igual ya lo demás son tonterías
+    G               D/F#          Em
+reciclé nuestra tristeza en mi alegría
+   G                            A
+y si alguien lo hizo bien ese fui yo
+</span>
+Cambió el color lo que antes era blanco, ahora es marrón, qué mal lo hiciste
+no es por dolor aún me quedan compañeras de dolor, no hay que rendirse
+Todo murió tu historia acaba aquí
+te sobra tiempo para huir lejos de aquí
+<span class="estribillo">
+Nunca supiste aprovechar lo que tenías
+ahora da igual ya lo demás son tonterías
+reciclé nuestra tristeza en mi alegría
+y si alguien lo hizo bien ese fui yo  (x2)
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

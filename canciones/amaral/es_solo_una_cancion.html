@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Es sólo una canción</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Es sólo una canción</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: D  Bm  A
+D
+Con la mirada de sorpresa que ponía Charlot
+Bm                                A
+Yo alucinaba con la televisión, qué pena
+D
+Con el deseo irrefrenable de que todo latiera
+Bm                          A
+Y como un gato subido en la azotea.
+<span class="estribillo">
+D                         G
+Por los tejados de Madrid quise escaparme yo
+D                                      A
+Los pararrayos no sirven cuando hay tormentas,
+G       A      D
+Dentro de mi cabeza.
+G                 D
+De tanto reír no puedo ni hablar
+ A                         D        A
+y hay tantas cosas que te quiero contar
+G
+¿Te hace un billar?
+ D                  A
+nos vemos en la Vía Láctea
+D
+Es sólo una canción para calmar mi corazón
+          G                 D
+Lo que yo siento, lo que yo quiero
+Es solo rock and roll para calmar mi corazón
+          G                 D
+Lo que yo siento, lo que yo quiero
+</span>
+D
+Tumbados los dos en el sillón
+Bm                                A
+Baja el volumen de la televisión, qué pena,
+G     A       D
+pena, penita, pena.
+<span class="estribillo">
+D                                G
+Si sólo salen paparazzis sin conciencia,
+D                       A
+Y el matador acaba la faena
+    G      A       D
+con sangre sobre la arena
+G                         D
+No quiero entender por qué hay que matar
+A                      D      A
+A veces siento que soy ese animal
+G
+Mejor sería
+D                     A
+fugarnos a una isla desierta
+D
+Es sólo una canción para calmar mi corazón
+          G                 D
+Lo que yo siento, lo que yo quiero
+Es solo rock and roll para calmar mi corazón
+          G                 D
+Lo que yo siento, lo que yo quiero
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

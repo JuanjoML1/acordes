@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Un día más</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Un día más</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cej2
+Intro: A  Em  G  (x2)
+A
+Sube despacio,
+Em
+El mediodía hará que estallen
+G
+los termómetros de la calle.
+A
+La música en el autorradio, dragones chinos,
+Em
+Soplando en mis oídos,
+G
+después del feliz cumpleaños.
+A
+Mañana será un día más, o un día menos
+Em
+en todos los idiomas,
+G                         A
+En todas las esferas de reloj.
+<span class="estribillo">
+G      D           A
+Un día más, un día más.
+G      D           A
+Un día más, un día más.
+</span>
+A                           Em          G
+Dicen que existen formas de vida alternativas,
+             A
+Especies en evolución en el espacio.
+   Em
+El mundo en movimiento
+    G              A
+Que vuelve como un boomerang.
+<span class="estribillo">
+G      D           A
+Un día más, un día más.
+G      D           A
+Un día más, un día más.
+</span>
+G                D             A
+El sol sale para todos, un día más.
+G                    D           A
+Todo se vuelve a repetir, un día más.
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

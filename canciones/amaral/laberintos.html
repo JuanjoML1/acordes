@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Laberintos</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Laberintos</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cej5
+Am   C/G        G6       Am  C/G
+Uhhhh, ¿dónde está el amor
+     G6       Am  C/G
+y su destrucción?
+         G6      F
+¿Dónde está la euforia?
+         G            Am  C/G
+¿Dónde está la depresión?
+          G6        Am  C/G
+¿Dónde está el control
+         G6      Am  C/G
+de nuestros sentidos,
+     G6   F           G          Am  C/G  G6
+de cada latido, de cada respiración?
+<span class="estribillo">
+F  G            Am
+Uh, ¿dónde nace la adicción?
+G6           Dm              G          Am
+  En los laberintos de nuestra imaginación.
+Em             G             F         Am (G)→ nexo para unir Am y Em
+  Medio deslumbrados, medio visionarios,
+Em            G        F           Am (G)
+  bajo la bandera del ahora o nunca.
+F            G          F           Am
+ No hay respuesta para tus preguntas,
+F     G           F
+ solo un inmenso mar de dudas.
+</span>
+Uh, ¿dónde ruge el animal
+que mantiene vivo
+lo que un día fuimos?
+¿Dónde está el amor real?
+En los laberintos de nuestra imaginación.
+En los laberintos de nuestra imaginación.
+<span class="estribillo">
+Em              G            F        Am
+  Si estamos dormidos o estamos sedados,
+Em                     G            F           Am
+  si somos muertos vivientes o tan solo esclavos.
+F             G           F          Am
+ Y no hay respuesta para tus preguntas,
+F         G          F
+ solo un turbulento mar de dudas
+</span>
+Am  C/G          G6     Am     C/G
+Uhhhh, ¿dónde está el amor real?
+     G6          Am
+¿Dónde está el amor?
+G6            Am             G6         Am
+  En los laberintos de nuestra imaginación.
+G6            Am             G6         Am
+  En los laberintos de nuestra imaginación.
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

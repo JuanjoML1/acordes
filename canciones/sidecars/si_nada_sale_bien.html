@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Si nada sale bien</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Si nada sale bien</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro:  C  D  F  C (x2)
+G                           Am
+He visto poco a poco caer el sol
+F                            C   Bm
+si quieres que te de alguna razón
+Am                       G
+espero y no llega la solución
+F
+me lo he buscado yo
+   D                      G
+desnudo en una noche de verano
+   E/G#         Am
+cantando una canción
+         G
+que no habla de amor.
+<span class="estribillo">
+F     G          C
+Y si nada sale bien
+      Am              F
+volveré a empezar de cero,
+     G            E
+si nada me sale bien
+F     G          C
+Y si nada sale bien
+      Am              F
+volveré a empezar de cero,
+     G            C
+si nada me sale bien
+</span>
+( C  D  F  C )
+Es cierto que me ciega la ilusión
+si no quieres volar tendré que imaginarlo por los dos,
+qué pena confundir
+las ganas de vivir
+con despertar borracho cada día
+tratar de no sufrir,
+no hablaré de amor
+<span class="estribillo">
+Y si nada sale bien
+volveré a empezar de cero,
+si nada me sale bien
+Y si nada sale bien
+volveré a empezar de cero,
+si nada me sale bien.
+</span>
+C  Am  F  C (x2)
+<span class="estribillo">
+Y si nada sale bien
+volveré a empezar de cero,
+si nada me sale bien
+Y si nada sale bien
+volveré a empezar de cero,
+si nada me sale bien.
+Y si nada sale bien
+Y si nada sale bien
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

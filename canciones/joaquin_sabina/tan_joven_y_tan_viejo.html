@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tan joven y tan viejo</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Tan joven y tan viejo</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cej2
+Intro: Dsus2  D  G/B  D  //  Dsus2  D  Dsus4  D  D/B
+       Dsus2/B  D/B  Dsus4/B  D/B  D/A  Asus2
+       Dsus2/F#  Dsus2/A  Dsus2/D  G/B (x2)  Dsus2
+               D                        G/B
+Lo primero que quise fue marcharme bien lejos
+      G/F#     Em7    A7sus4 A7    D    G/B
+En el álbum de cromos de la resignación
+Pegábamos los niños que odiaban los espejos
+Guantes de Rita Hayworth, calles de Nueva York.
+Apenas vi que un ojo me guiñaba la vida
+Le pedí que a su antojo dispusiera de mí
+Ella me dio las llaves de la ciudad prohibida
+Yo todo lo que tengo que es nada se lo di
+<span class="estribillo">
+D                  G
+Así crecí volando y volé tan deprisa
+             G/F#   Em        A7          D      G
+Que hasta mi propia sombra de vista me perdió
+                D                     G
+Para borrar mis huellas destrocé mi camisa
+     G/F#        Em      A7           D      G
+y confundí con estrellas las luces de neón
+</span>
+( Intro )
+Hice trampas al póker, defraudé a mis amigos
+Sobre el banco de un parque dormí como un lirón
+Por decir lo que pienso sin pensar lo que digo
+Más de un beso me dieron y más de un bofetón
+Lo que sé del olvido lo aprendí de la luna
+Lo que sé del pecado lo tuve que buscar
+Como un ladrón debajo de la falda de alguna
+De cuyo nombre ahora no me quiero acordar
+<span class="estribillo">
+Así que de momento nada de adiós muchachos
+Me duermo en los entierros de mi generación
+Cada noche me invento, todavía me emborracho
+Tan joven y tan viejo, like a Rolling Stone.
+</span>
+( Intro )
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

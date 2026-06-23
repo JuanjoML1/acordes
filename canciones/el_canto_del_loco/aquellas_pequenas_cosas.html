@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aquellas pequeñas cosas</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Aquellas pequeñas cosas</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+      Bm             E7
+Uno se cree que los mató
+                 Amaj7    Amaj7(13)
+el tiempo y la ausencia,
+        Bm            E7
+pero su tren vendió boleto
+         Amaj7    Amaj7(13)   A7
+de ida y vuelta.
+<span class="estribillo">
+D                Dm
+Son aquellas pequeñas cosas
+          Amaj7             F#m
+que nos dejó un tiempo de rosas
+         Bm           E7
+en un rincón, en un papel
+          Amaj7  Amaj7(13)
+o en un cajón.
+</span>
+Como un ladrón te acechan
+detrás de la puerta;
+te tienen tan a su merced
+como a hojas muertas
+<span class="estribillo">
+que el viento arrastra allá o aquí
+que te sonríen tristes y
+nos hacen que lloremos cuando
+nadie nos ve.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hoy tus ojos</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Hoy tus ojos</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: C  Am  F  C  Am  F  G (x2)
+   C                                Em
+Sentado con las piernas cruzadas queriendo desaparecer
+   Am                  G
+ojalá lo consiguiera alguna vez.
+Las pocas estrellas que quedan están todas de alquiler.
+Hoy me desperté con ella, no lo puedo creer.
+<span class="estribillo">
+C                         Em
+Vámonos a los tejados con los gatos, amor.
+        Am                           F                  G
+Hoy tus ojos, mañana el mundo, algún día los dos, algún día los dos.
+F         C    F     C      F
+Va a explotar, salta rápido
+G         C       G        C
+Fuerza la máquina, sonrisa mágica,
+   F            G          C
+un poco más, un poco más.
+</span>
+( Am  F  C  Am  F  G )
+Andando por la arena mojada queriéndote sin querer,
+ojalá lo descubrieras alguna vez
+Las viejas secuelas que llevas en el fondo de la piel
+ya se fueron a la mierda, no lo puedo creer.
+<span class="estribillo">
+Vámonos a los tejados con los gatos, amor.
+Hoy tus ojos, mañana el mundo, algún día los dos, algún día los dos.
+Va a explotar, salta rápido
+Fuerza la máquina, sonrisa mágica,
+un poco más, un poco más.
+C F         Am
+Oh, un poco más.
+C F         G
+Oh.
+</span>
+( C  Am  F  C  Am  F  G  C )
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

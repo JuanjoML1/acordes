@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Partido a partido</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Partido a partido</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: C  Fmaj7  C (x2)
+C                              Fmaj7          C
+Aunque apenas queda un socavón junto al Manzanares
+Dm
+Y atascos en los bulevares de mi corazón
+G                              G#º
+Los profetas de anteayer son gaviotas de alas rotas
+    Am
+muertas de sed, gatos sin botas
+Al balcón de la soledad trepan los náufragos
+Malheridos de tanto remar contra el huracán
+En el trono de Neptuno donde no cabe ninguno
+que no sepa soñar partido a partido
+<span class="estribillo">
+F                         G
+No me habléis de resistir, es mi Atleti de Madrid.
+      F                          G
+No me vengan con lamentos, hablo de sobrevivir
+    C
+Y seguir coronando montañas
+    Bb
+y seguir conquistando escaleras
+      Am                       G
+En el tiempo de descuento, regateando al porvenir
+    F
+Y ganar y ganar y ganar
+    Em
+Y ganar y volver a ganar
+Dm G           C  E  F
+Partido a partido
+   G           C
+Partido a partido
+</span>
+( C  Fmaj7  C  Dm  G  G#º  Am )
+<span class="estribillo">
+No me habléis de resistir, es mi Atleti de Madrid.
+No me vengan con lamentos, hablo de sobrevivir
+Y seguir coronando montañas
+y seguir conquistando escaleras
+En el tiempo de descuento, regateando al porvenir
+Y ganar y ganar y ganar
+Y ganar y volver a ganar
+Partido a partido
+Partido a partido
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

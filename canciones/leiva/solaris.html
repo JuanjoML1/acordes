@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Solaris</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Solaris</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: F  Bb (x4)
+             Bb                        Dm
+Ya sé que no puedo atarme a la vida de nadie
+              Bb                       F
+Y que esto me va a costar locura y soledad
+          Bb                    Dm
+A veces detesto mi bucle interminable
+  C             Bb
+y culpo a los demás
+<span class="estribillo">
+Bb              F          C      Bb
+Invencible como Jules en Euphoria
+                 F       C               Bb
+Entre tanta multitud, me siento un poco igual
+               F       C     Gm
+Ya te lo sabes tú de memoria
+                      F   Gm
+Creo que lo empiezo a ver
+                      F   Gm
+Creo que lo empiezo a ver
+</span>
+( Gm  Bb  C // Dm  F  Bb )
+Te escribo mil veces el mismo mensaje
+Y vuelvo a cambiar el emoticono del final
+El ángulo muerto, tu exceso de equipaje
+Mis ansias de escapar
+<span class="estribillo">
+Invencible como Jules en Euphoria
+Entre tanta multitud, me siento un poco igual
+Ya te lo sabes tú de memoria
+Creo que lo empiezo a ver
+Creo que lo empiezo a ver
+</span>
+( Gm  Bb  C // Dm  F  Bb ) x2
+<span class="estribillo">
+Gm                    F
+Creo que lo empiezo a ver
+Gm                    F
+Creo que lo empiezo a ver
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

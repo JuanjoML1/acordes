@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Merecido</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Merecido</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: F#m  E  D
+A                 D
+Una vez más estoy confundido
+                  A                  D
+He asumido que no vas a dejarme ser hoy tu ombligo
+                           E
+Mi destino baila tu compás en lugar del mío
+A                         D
+Voy marcha atrás no encontré el camino
+                Bm        E
+Si te digo nena la verdad algo me he perdido
+<span class="estribillo">
+A  D        E
+   Me lo he merecido
+A  D        E           F#m  E
+   Me lo he merecido
+</span>
+A                        D
+Vuelve a llamar no te lo he acogido
+                      A             D
+Te he advertido puedo perdonar pero nunca olvido
+                Bm      E
+Si te digo nena la verdad algo me he perdido
+<span class="estribillo">
+Me lo he merecido
+Me lo he merecido
+</span>
+A  D  A  D  E
+<span class="estribillo">
+Me lo he merecido
+Me lo he merecido (x2)
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

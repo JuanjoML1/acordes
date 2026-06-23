@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Juegos de azar</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Juegos de azar</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cej4
+Intro:  Am    G7     F     F7     G7    Am
+        Am    G7     F     F7     G7
+C      Em7       Am        Am/G
+Recordarás la primera vez
+    F                 G
+Que con su trajín nos juntó la vida
+C           Em7      Am         Am/G
+Llamaste al timbre para vender
+  F                   G
+Libros sobre razas desconocidas
+F           G
+Qué nos sucedió
+       C        Em7     Am        Am/G
+Que acabamos desnudos jugando abrazados
+  F                G          F   C
+Sobre el parqué al juego del amor
+<span class="estribillo">
+G                        C
+Luego te marchaste sin dejarme un papel
+F               D      G
+Con tu nombre y tu dirección
+Bb                       Am7
+Alguien te esperaba como siempre a las tres
+F                    G    G7  G6  G
+Y eran ya más de las dos
+</span>
+Volví a encontrarte meses después
+La casualidad me cruzó contigo
+En el vestíbulo de un hotel
+Qué demonios andas haciendo en Vigo
+Cuando me desperté
+me besabas los parpados, cómo te llamas,
+te pregunté, después, amaneció
+<span class="estribillo">
+Y así fue como el tabique de aquel hotel
+Que nos separaba cayó
+Tu tenías el cuarto 143,
+yo el 142
+</span>
+Siglos pasaron sin que el azar
+Duende juguetón, sus hilos moviera
+Casi me había olvidado ya
+De tus pies subiendo por mi escalera
+Pero antes de ayer
+En un cine de barrio una voz me llamó
+Desde el ambigú y supe que eras tú
+<span class="estribillo">
+Y la rara historia otra vez se repitió
+Unos cuantos años después
+En taquilla te habían dado la fila dos
+Y a mí me dieron la tres
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>
