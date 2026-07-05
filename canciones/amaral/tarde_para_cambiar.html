@@ -1,46 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Tarde para cambiar</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tarde para cambiar</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Tarde para cambiar</h1>
+
+            <div class="tono">
+                <span>A cej1</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Tarde para cambiar</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
-Cej1
+        <pre>
 A          E
 Era pronto para todo
   Bm            A
@@ -48,7 +43,8 @@ y tarde para cambiar
   A             G
 Aún me guardo algunas fotos
     Bm               A    A  Em  Bm  A
-que no me atrevo a mirar
+que no me atrevo a mirar.
+
 Era todo tan hermoso
 que no podía durar
 en la flor de nuestras vidas
@@ -88,6 +84,7 @@ lo que empieza acaba
 se nos escapa
          F#m    G
 lo que empieza acaba.
+
 Los dos aprendimos bien,
 tú y yo aprendimos bien
          F#m    G
@@ -97,9 +94,9 @@ Era pronto para todo y
 tarde para cambiar
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

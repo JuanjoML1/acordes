@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Siento que te extraño</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Siento que te extraño</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Siento que te extraño</h1>
+
+            <div class="tono">
+                <span>F</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Siento que te extraño</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
+        <pre>
+<span class="solo">
 Intro: Dm
+</span>
 Dm           Bb                F
 A los quince supe toda la verdad,
           C        Dm
@@ -55,6 +53,7 @@ Luego fue la fiebre de los veinte años,
 Romper con todo.
 Bb         F              C
 Me balanceaba sobre los tejados.
+
 Nunca fui la dulce niña de tus ojos,
 Ni la mejor barca del mar.
 Nunca de nadie dueña de todo
@@ -70,8 +69,9 @@ Bb           Dm                    Am         Bb
 Se van por siempre pero a pesar de todo sigo aquí
 C                Dm
 Siento que te extraño. (x3)
-</span>
+</span><span class="solo">
 Dm  Bb  F  C (x2)
+</span>
 Dm Bb          F                    C
      La melancolía es un licor bien caro
 Dm Bb                  F                     C
@@ -87,9 +87,9 @@ Siento que te extraño. (x3)
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

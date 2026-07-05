@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Cazador</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cazador</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Cazador</h1>
+
+            <div class="tono">
+                <span>C</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Cazador</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
+        <pre>
+<span class="solo">
 Intro: Am  G   Em  C  (x2)
+</span>
 Am                      G
 Ahí va el gran cazador,
 Em                          F
@@ -62,14 +61,14 @@ Am             C         Em       Am
 Dame al fin el tiro de gracia,
 Am             C         Em       Am
 apunta el blanco y dispara
-CORO:
+<span class="estribillo">
     Em       Am        F        C
 Cazador, cazador,
     Em       Am
 cazador, cazador,
      F               Am
 Sólo mata por diversión
-PUENTE:
+</span><span class="puente">
 D                  Am
 Salen de sus madrigueras
 C                    G
@@ -78,8 +77,9 @@ liebres y pequeñas fieras,
 pero hay suelta una pantera
                          Am
 y ella es mucho más traviesa
+<span class="solo">
 Am  C   Em  Am  X2
-CORO 2:
+</span><span class="estribillo">
     Em       Am         F        C
 Al final quedaremos los dos
     Em         Am        F        C
@@ -91,12 +91,13 @@ Sólo matas por diversión
      F         Em      Am
 Sólo matas por diversión
         F              Am
-Puede que antes te cace yo
+Puede que antes te cace yo.
+</span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

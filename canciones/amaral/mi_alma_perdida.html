@@ -1,46 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Mi alma perdida</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mi alma perdida</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Mi alma perdida</h1>
+
+            <div class="tono">
+                <span>C cej4</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Mi alma perdida</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
-Cej4
+        <pre>
 C
 Dame una corona más, que esta noche yo quiero perder
 Fmaj7                                             C
@@ -62,7 +58,8 @@ Descifrar el sentido de tus sueños
               G
 Quedarme los besos que se escapan
              Fmaj7                      G
-Cada vez que respiras, cada vez que dormido me hablas
+Cada vez que respiras, cada vez que dormido me hablas.
+
 C
 Dame una corona más, para ver si dejo de pensar
 Fmaj7                                 C
@@ -78,8 +75,9 @@ C G   Fmaj7         C G   Fmaj7
 Te daré mi corazón, te daré mi vida
      C G   Fmaj7   G
 Te daré mi alma perdida
-</span>
+</span><span class="solo">
 C - Am - Fmaj7 - G (x2)
+</span>
    C                G
 Ojalá, ojalá nunca cambie
               Am                    Fmaj7    G
@@ -97,9 +95,9 @@ C - Am - Fmaj7 - G (x2)
 Dame una corona más, dame una corona más
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

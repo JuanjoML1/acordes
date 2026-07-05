@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Mares igual que tú</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mares igual que tú</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Mares igual que tú</h1>
+
+            <div class="tono">
+                <span>A</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Mares igual que tú</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
+        <pre>
+<span class="solo">
 Intro: F#m  D  A  E (x2)
+</span>
 F#m           D                A   E
 Hay mares de bruma y mares de luz
 F#m           D
@@ -51,7 +50,7 @@ F#m                      A                E
 Mares de peligro que nos hacen sentir vivos
       F#m           D          A         E
 Mares locos, mares puros, mares cálidos
-[Pre-Estribillo]
+<span class="estribillo">
           F#m
 Igual que tú
           D
@@ -64,7 +63,7 @@ Igual que tú
 Igual que tú
          A      E
 Mares igual que tú.
-[Estribillo 1]
+
   F#m            D         A     E
 Igual que van y vienen las mareas
      F#m          D           A   E
@@ -75,7 +74,7 @@ F#m           D
 (Igual que tú, igual que tú)
     A           E
 (Mares igual que tú)
-[Verso 2]
+</span>
 F#m               D           A            E
 Hay distintos mares, son el mismo en realidad
 F#m               D           A            E                                 D
@@ -84,7 +83,7 @@ F#m               D           A            E
 Mares tan profundos como tu mirada
 F#m               D               A    E
 Mares en calma (mares en calma)
-[Pre-Estribillo]
+<span class="estribillo">
           F#m
 Igual que tú
           D
@@ -97,7 +96,7 @@ Igual que tú
 Igual que tú
          A      E
 Mares igual que tú.
-[Estribillo 2]
+
   F#m            D           A     E
 Igual que van y vienen las mareas
      F#m          D           A    E
@@ -108,7 +107,7 @@ Todos los mares de la Tierra son igual que tú
 (Igual que tú, igual que tú)
         A        E
 (Mares igual que tú)
-[Puente]
+</span>
     F#m       D           A              E
 Tus manos, delfines saltando en mi espalda
    F#m       D          A          E
@@ -117,7 +116,7 @@ Tu pelo, las ondas que dejó mi barca
 En islas desiertas perdidas en los mapas
    F#m       D          A        E
 Misterios de mares y océanos tú guardas
-[Pre-Estribillo]
+<span class="estribillo">
 F#m
 Igual que tú
 D
@@ -126,7 +125,7 @@ A
 Igual que tú
 F#m               D  A  E
 Igual que tú
-[Estribillo 3]
+
   F#m            D         A     E
 Igual que van y vienen las mareas
      F#m          D           A   E
@@ -141,16 +140,16 @@ D                       E
 Todos los mares de la Tierra
               F#m     D   A   E
 Son igual que tú, uh-uh
-[Outro]
+</span>
 F#m       D     A    E
 Mares igual que tú
 F#m       D     A    E
 Mares igual que tú
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

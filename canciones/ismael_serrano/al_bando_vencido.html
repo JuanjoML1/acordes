@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Al bando vencido</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Al bando vencido</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: Bm  G  D  A (x2)  Bm  F#m  G  D  //  Bm  G  D  A (x2)
+
+Bm                   G                     D                      A
+Se van llevando la memoria, queda en la historia una mancha, un borrón,
+Bm                        G                D             A
+mientras el resto sufre amnesia un viejo recuerda una canción,
+Bm              F#m   G            D    D/C#  Bm
+de una lejana batalla donde pudo morir,
+Bm                 F#m     G                     A
+en una guerra no ganada, a veces me pregunta por ti
+
+Se cree aún en la trinchera, otra bandera de otro color,
+solemne en su viento ondea sobre la cima y en su salón
+a veces habla con fantasmas de cuyo nombre se olvidó
+vencidos nunca regresaron de su exilio interior
+
+<span class="estribillo">
+Bm             F#             G                                      A
+Ni un momento, ni un recuerdo para los que perdieron, los que construyeron
+Bm                F#  G                      A
+la tumba, el mausoleo de la miseria del carnicero
+Bm                     F#          G                           A
+Cómo esperas ganar sin ellos las batallas que anteriormente perdieron
+Bm                           F#                  G                 A
+si han de callar que callen aquellos, los que firmaron pactos de silencio
+</span>
+( Bm  G  D  A ) x2
+
+Tratan de convencerle: abuelo, las explosiones han terminado
+pero cuando sale a la calle Madrid parece bombardeado
+y lee escritos en los muros gritos contra los que luchó
+y personajes de rostro oscuro que le inculcaron el terror
+
+Y un día sin darnos cuenta el viejo con sus historias se consumió
+y en la memoria de su nieto sólo una huella, un leve borrón
+de aquella lejana batalla donde pudo morir
+en una guerra no ganada donde luchó por ti, donde luchó por ti
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Canción sin retorno</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Canción sin retorno</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: C  G
+
+C               C
+Pájaro azul, ¿a dónde vas?
+G
+volando contra el viento.
+
+Sí, quizás tú me puedas contar
+cosas que nunca supe.
+
+<span class="estribillo">
+Em        D     C   G
+¿Quién ha enterrado mi bandera?
+G              D
+sin preguntarme nada
+Em        D         C
+¿Quién puso precio a mi vida?
+</span>
+( G  D  C  G ) x2
+
+C
+Pájaro azul,
+C
+poco importa ya
+G
+lo que pueda pasarme,
+C
+pero antes de brindar
+C
+por última vez,
+G
+quiero recordarte así.
+
+Em  D   C            G
+No dejaré cabos sin atar,
+D
+cabos sin atar,
+Em  D  C            C
+no dejaré la puerta abierta.
+
+C C G G C C G G
+
+Em  D    C            G
+No dejaré cabos sin atar,
+D
+cabos sin atar,
+Em  D  C            C
+no dejaré la puerta abierta.
+
+G            D
+cuando yo me marche...
+G            F
+cuando yo me marche...
+G            D
+cuando yo me marche...
+G      F                    G
+cuando yo cuando yo cuando yo me marche
+
+G F G F G F G F G F G F G
+G D C G
+G  D C G
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

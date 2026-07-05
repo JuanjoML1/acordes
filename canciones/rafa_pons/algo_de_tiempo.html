@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Algo de tiempo</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Algo de tiempo</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+              F  G                  Am
+Me gustaría saber a qué dedico el invierno
+                  F   G                   C
+Si no te puedo cuidar, tampoco echarte de menos
+E                 Am Dm                 E
+Tú dices que lo mejor es darnos algo de tiempo
+
+Será cuestión de llamar a algunos viejos amigos
+Dispuestos a celebrar que al menos estamos vivos
+Desafiando al azar con tres botellas de vino
+
+<span class="estribillo">
+                Am                     Dm
+Pelota punto partido, se acabó, se è finito
+                         E                      Am
+Un tiro que iba hacia el agua me ha tocado y hundido
+                Am                     Dm
+Qué te voy a contar, suena el pitido final
+                    E
+Tú ganas y yo he perdido
+</span>
+Yo sé que voy a sufrir si un día encuentras a alguien
+Te culpare por huir, diré que fuiste cobarde
+Pero tal vez seas feliz, es más, incluso es probable
+
+<span class="estribillo">
+Pelota punto partido, se acabó, se è finito
+Un tiro que iba hacia el agua me ha tocado y hundido
+Qué te voy a contar, suena el pitido final
+Tú ganas y yo he perdido (x2)
+</span>
+  F        G     Am
+Pero qué estás diciendo
+      F        G   Am
+Protestas tras escucharme
+   Dm                    E         Am
+Yo nunca he dicho que quisiera separarme
+    Dm     F      E
+Yo elijo estar contigo
+
+<span class="estribillo">
+Pelota punto partido, se acabó, se è finito
+Un tiro que iba hacia el agua me ha tocado y hundido
+Qué te voy a contar, suena el pitido final
+Tú ganas y yo he perdido (x2)
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

@@ -1,74 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Ahora ya fue</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ahora ya fue</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Ahora ya fue</h1>
+
+            <div class="tono">
+                <span>E</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Ahora ya fue</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
+        <pre>
+<span class="solo">
 Intro: G#m7 - E - F#m (x2)
+</span>
 G#m7                                C#m7
 No me dolió, como si fuera la primera vez
                         D#m7
 Que me mintiera me dolió después
         B - C#m7
 De darme cuenta
+
 G#m7                                       C#m7
 No dijo adiós, tan solo se sentó a mi lado y fue
                            D#m7
 La más de barrio, debería saber
                    B - C#m7
  Lo que me hizo al rato
+
 F#                       D#m7 -  E
 Lo que es cansado es no pensarte no entender que ya es pasado
+
 G#m7                                   C#m7
 No amaneció, 500 noches que vendrían después
                          D#m7
 No más mentiras, debería saber
                    B - C#m7
 Con quien no hacer un trato
+
 G#m7                                    C#m7
 Y caen, caen, caen sobre la acera trozos de papel
                       D#m7
 Me duele verla desaparecer
                  B - C#m7
 Bailando al viento lenta
+
       F#                D#m7                         E
 Lo que me quema es ahora verte y no sentir siquiera pena
+
 CORO:
                 G#m7     E      F#
 Siquiera pena de ti, de mi, de nada
@@ -78,20 +85,24 @@ F#7               B5   E             F#
 Siquiera dije que sí, me fui de barras
               G#m7      E             F#
 No quiero verte y al fin, bandera blanca
+
 G#m7                              C#m7
 Contaron que la vieron pronto con otro querer
                       D#m7
 Y luego otro pareciera que
                  B - C#m7
 Su sed no se saciaba
+
        G#m7                          C#m7
 Contaron, no hubo poeta sin probar su piel
 D#m7
 Triste condena queriendo creer
                  B - C#m7
 Sin ropa la belleza
+
           F#          D#m7               E
 Pobre poeta que despierta, Sin sentir siquiera pena
+
 CORO:
                 G#m7     E      F#
 Siquiera pena de ti, de mi, de nada
@@ -101,15 +112,17 @@ F#7               B5   E             F#
 Siquiera dije que sí, me fui de barras
               G#m7      E             F#
 No quiero verte y al fin, bandera blanca
-PUENTE
+<span class="solo">
 G#m7   E    F#
 G#m7   E    F# F#7
+</span>
                 B5     E            F#
 Siquiera dije que sí, me fuí de barras
            G#m7      E   F#
 No quiero verte y al fin, bandera blanca
-PUENTE
+<span class="solo">
 G#m7  E   F# (x4)
+</span>
 Encima:
 Lo que es cansado es no llorarte
 No creer que hayas pasado
@@ -118,9 +131,9 @@ Como si quisieras no volverme a ver
 Que ahora ya fue...
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

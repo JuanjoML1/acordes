@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alicia</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Alicia</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+C#º7:     34232x
+D#º7:     xx1212
+
+Intro: G  D/F#  Em  Bm7  C  Bm7  Am  Am/G  D/F#
+
+  G       D/F#         Em
+Alicia, brújula y equilibrio,
+    G/B         C    Bm7             Am
+una tarde en un cine rompiste el maleficio,
+      Am/G          D/F#
+que otro mundo es posible.
+
+Alicia, emprendamos el vuelo.
+No habrá quién nos detenga, señora de mis cielos,
+boca de hierbabuena.
+
+<span class="estribillo">
+   C     C#º7         D
+Si un día amanece sin mí,
+       D#º7           Em
+Alicia es capaz de exigir
+              Em/D#       Em/D
+que los astros se detengan,
+      C#m7b5        C       Em7  Am
+que reparen en mi ausencia,
+        Am/G     D/F#
+que regresen por mí.
+</span>
+Alicia, si hoy estás cansada
+se detendrán mañana los relojes, las calles,
+las marchas militares.
+
+Alicia, dueña de mis suspiros,
+resuelve el acertijo que supone estar lejos
+de tu luz y estar cuerdo.
+
+<span class="estribillo">
+A veces no puedo dormir,
+Alicia, y sé que te vas a reir,
+pero ando loco buscando la melodía
+que te congele en mi abrazo,
+que te retenga a mi lado.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Te conocí</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Te conocí</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+ARPEGIOS VARIOS:
+
+(C1)
+    C               Cadd9 (sigue arpegio hasta Amadd)
+|---0---3---2--------0--
+|---------------3----3--
+|-----0---0---0---0--0--
+|-----------------------
+|---3----------------3--
+|-----------------------
+
+(Am1)
+    Am            Asus4    (sigue en Am-G)
+|----------------------------
+|---------0-1-------3-----3--
+|-------2-----2---2-----2----
+|-----2---------2-----2------
+|---0---------------0--------
+|----------------------------
+
+(A1)
+    A               (sigue en estribillo)
+|-----------------0
+|---------0-2-0-------
+|-------2-------2----
+|-----2---------------
+|---0--------------
+|---------------
+
+(Am2)
+    Am             D9    (sigue en Am-G)
+|---------------------0-------
+|---------0-1-------3---3----
+|-------2-----2---2-------2
+|-----2---------2---0--------
+|---0-----------------------
+|----------------------------
+
+_______________________________________________________________________
+
+INTRO:
+
+  Am7/11                        Am7     D/A    Am7
+|----------0--3--2-----0---------0--3----2--3---0---
+|--------3----------2------------1---1---3------1---
+|------5-------------------------0-0-----2-2----0---
+|----5---------------------------2--------------2---
+|--0-------------------0---------0-------0------0---
+|---------------------------------------------------
+
+Am7                C(c1)                      Amadd9
+Te conocí viendo pasar trenes que nunca regresaban.
+       Fmaj                     Gsus4-G                 Am(am1)  Am-G
+Tú esperabas a otro hombre en la estación,  parecías cansada.
+       Fmaj                      G                     Am  G6  Am
+No supe qué decir.  Se quedó un ángel  dormido en mi garganta.
+
+                       C(c1)                      Amadd9
+Al fin el tiempo nos reunió  como a planetas que orbitan.
+       Fmaj                  Gsus4-G           Am(am1)  Am-G
+Coleccionabas soles, me dijiste, te enseñé mis heridas.
+       Fmaj                  G                         A(a1)
+Tú te soltaste el pelo  y amarraste las horas con tu cinta.
+
+           D9-D                  A9
+Y ahora te miro  tras tantos años.
+                 D              E
+Creo que aún te debo muchas canciones,
+           E7             A       Am7
+regar las flores de tu regazo.
+
+                       C(c1)                      Amadd9
+El tiempo y sus mareas fueron meciéndonos con sus latidos.
+       Fmaj                     Gsus4-G                 Am(am2)  Am-G
+El fiero canto de un guerrero cisne  anunciaba un nuevo siglo.
+       Fmaj                  G              Am     G6    Am
+Cayeron hombres, levantaron muros  y aún seguías conmigo.
+
+                       C(c1)                      Amadd9
+Ahora te escribo esta canción.  Madrid agita sus estambres.
+       Fmaj                   Gsus4-G             Am(am2)  Am-G
+No puedo dar con el último verso y mi puerta se abre.
+       Fmaj                 G                            A
+Anda, ven A LA cama,  me susurras, ¿No ves que se hace tarde?
+
+           D9-D                  A9
+Y ahora te miro  tras tantos años.
+                 D              E
+Creo que aún te debo muchas canciones,
+           E7             A       Am7
+regar las flores de tu regazo.
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

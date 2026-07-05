@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Despiértame</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Despiértame</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Despiértame</h1>
+
+            <div class="tono">
+                <span>A cej1</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Despiértame</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
-Cej1
+        <pre>
       Asus2                   C#m7
 Ya se fue, maldita sea, el brillante de la luna
      F#m                     D
 decreciente de la cuna de la niña que antes eras.
+
 Ahora entiendo las maneras de tu educación torcida
 la condena de afirmarte en tus mentiras.
+
 F#m              D             A            E
 Deja de culpar a trenes que no pasan por tu vía
       F#m          D            E
@@ -68,12 +68,15 @@ Si escuchas esto le dices al de al lado
 que la belleza le está aguardando fuera
                  D           Asus2   E     F#m
 si sólo resta el más de tu pasado despiértame
-</span>
+</span><span class="solo">
 ( F#m  D  Asus2  E )
+</span>
 Ya se fue, bendita sea, el amor propio de menos
 ahora creo en otros cuerpos que hace tiempo que me esperan
+
 Cuidado con presentadoras que ya no presentan, cuidado,
 he conocido tu pasado, ay del futuro que te llega
+
      F#m           D            Asus2        E
 Deja de pensar que aviones sólo vuelan si tu miras
       F#m           D             E
@@ -106,9 +109,9 @@ Ya se fue, maldita sea,
 el brillante de mi luna a otro abrazo
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

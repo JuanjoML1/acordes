@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Qué va a ser de mí</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Qué va a ser de mí</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: Dsus2  D  Dsus4  A7/C#  G/B  Dsus4  D  D/C#  D/B  D/F#  Gsus2  A7sus4  A7
+       G  A7/C#  Dmaj7/Bb  D/B  Gsus2  D/F#  Em7  A7sus4  A7  A7sus4
+
+Dsus2-D-Dsus4       A7/C#    G/B              Dsus4-D-D/C#
+Qué va a ser de mí, volveré a mentir de nuevo
+D/B         D/F#    Gsus2               A7-A7sus4
+Llenaré mi cama de fantasmas de muertos
+Dsus2-D-Dsus4  A7/C#        G/B            Dsus4-D-D/C#
+Contaré los días, las calles que nos separan
+D/B            D/F#     Gsus2            A7sus4-A7
+Las tardes de domingo esperaré tu llamada.
+
+<span class="estribillo">
+G    A7/C#       Dmaj7/Bb        D/B
+Maldeciré a las parejas que, abrazadas
+Gsus2         D/F#            Em7      A7sus4-A7
+Sueñan con habitaciones de hotel desocupadas
+G  A7/C#    Dmaj7/Bb   D/B
+Y odiaré con calma tu risa
+Gsus2         D/F#     Em7        A7sus4-A7
+Todas mis palabras, nuestra despedida.
+</span>
+Dsus2  D  Dsus4  A7/C#  G/B  Dsus4  D  D/C#  D/B  D/F#  Gsus2  A7sus4  A7  A7sus4
+
+Qué va a ser de mí, les diré barbaridades
+a las mujeres hermosas que pasen por mi calle.
+Sin que me invites me colaré en tus fiestas
+Cuando venga tu recuerdo, reiré con violencia.
+
+<span class="estribillo">
+Iré a buscarte a los sitios acordados
+Aunque tú no vengas, aunque me hayas olvidado.
+Te escribiré los versos que nunca te hice.
+Seré puntual, como siempre quisiste.
+</span>
+Dsus2  D  Dsus4  A7/C#  G/B  Dsus4  D  D/C#  D/B  D/F#  Gsus2  A7sus4  A7  A7sus4
+
+Qué va a ser de mí, emprenderé un largo viaje
+Para que el eco de tus noches nunca me alcance.
+Qué va a ser de mí, dudo que en ningún bar
+Me puedan servir todo el alcohol que necesito para olvidar.
+
+<span class="estribillo">
+Iré a buscarte a los sitios acordados
+Aunque tú no vengas, aunque me hayas olvidado.
+Te escribiré las cartas que nunca te hice.
+Seré puntual, como siempre quisiste.
+</span>
+( Gsus2  D/F#  Em7  A7sus4 ) x2
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

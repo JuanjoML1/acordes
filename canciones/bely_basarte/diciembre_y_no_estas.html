@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Diciembre y no estás</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Diciembre y no estás</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cej 3
+
+Intro: C  D  Em Em
+       C  D  G  G
+       C  D  Em Em
+       C  C  D  D
+
+C      D          Em     C       D        Em
+Me da igual si no nieva, si se olvidan de mí,
+     C             D          Em         C                    D
+y no dejan bajo el árbol un regalo que recuerde que no estás aquí
+C          D           Em    C     D       Em
+Y aunque enciendan las luces tú no vas a venir,
+      C          D          Em           C                   D
+me convenzo cada noche de Diciembre, suficiente vodka sabe a ti
+
+<span class="estribillo">
+       C        D         Em
+No nos queda ya nada en común,
+      C         D         Em
+quemé los recuerdos del baúl
+       C        D        Em         A7
+porque si no te tengo ¿para qué los quiero?
+   C               D
+Al menos así dan calor
+</span>
+( Em - D - C // Em – D – G )
+
+( C  D  Em Em )
+( C  C  D  D  )
+
+Y mis años dorados se han teñido de gris,
+y me apuesto esta canción a que has pensado que las otras hablan de ti
+
+<span class="estribillo">
+Me permito la debilidad
+de confesar que quizá es verdad
+que cuanto más perdida me encuentro a mí misma
+helada porque ya no estás
+</span>
+( Em - D - C // Em – D – G )
+
+( C  D  Em Em )
+( C  C  D  D  )
+
+<span class="estribillo">
+No nos queda ya nada en común,
+quemaré hasta el maldito baúl
+y es que si no te tengo tampoco lo quiero
+hace tiempo tú eras mi calor
+</span>
+( Em - D - C // Em – D – G )
+
+( C  D  Em Em )
+( C  C  D  D  )
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

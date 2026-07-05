@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Qué andarás haciendo ahora</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Qué andarás haciendo ahora</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cm/G: 30101x
+
+Cej3
+
+Intro: G  D/F#  C  D#º  Em  D/F#  G  Am7  Em7  C  D/F#
+       ( G  F/G  Am7/G  Cm/G x2 )
+
+G             D/F#
+Qué andarás haciendo ahora,
+C           D#º          Em
+hecha una madeja en el sillón,
+D/F#          G                 Am     Em7
+dibujando constelaciones en los huecos
+C                      D/F#
+de los cuadros que aún faltan por colgar.
+
+( G  F/G  Am7/G  Cm/G ) x2
+
+Qué andarás haciendo ahora,
+apagando las luces del salón,
+probándote quizá un vestido nuevo,
+C             D/F#          G
+planeando una huida, ver el mar.
+
+( D/F#  B7b9 )
+
+<span class="estribillo">
+Em            C         D/F#         Em  D/F#-E/G#
+Y yo afilando lunas, perdido en el hotel,
+Am          Fmaj7        D/F#      B7b9-B7
+encontrando tus caricias en el neceser.
+Em           C          D/F#          Em  D/F#-E/G#
+Y yo buscándote en el espejo azul del baño,
+Am            D/F#       C     Em7  Am7  Am7/G  D/F#  C  D#º  Em  D/F#
+en la ropa cansada del armario.
+</span>
+Qué andarás haciendo ahora,
+cansada viendo la televisión,
+guardando mi paz y mis retratos,
+la costumbre de dormir al lado izquierdo.
+
+Qué andarás haciendo ahora,
+maldiciendo la luz del primer sol,
+hermosa con los párpados hinchados,
+regando las plantas, todos los recuerdos.
+
+<span class="estribillo">
+Y yo retirando hojas secas de la cama,
+soñándome contigo bajo el agua.
+Y yo recordando que olvidé tender la ropa
+preguntándome qué andarás haciendo ahora
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

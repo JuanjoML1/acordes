@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Números cardinales</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Números cardinales</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Números cardinales</h1>
+
+            <div class="tono">
+                <span>G cej1</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Números cardinales</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
-Cej1
+        <pre>
 G                      Em7                     Cadd9
 Uno fue la luna que dejaste en mi colchón, dos tus ojos,
 G                            Em7                     Cadd9
@@ -49,6 +47,7 @@ G                      Em7                    Cadd9
 cinco las mañanas esperando que volvieras del trabajo,
 G                       Em7                       Cadd9
 seis canciones llevo sin dejarte de querer y no he acabado.
+
 G                        Em7              Cadd9
 Siete los hoteles que dejamos sin aliento y menos solos,
 G                    Em7                           Cadd9
@@ -91,9 +90,9 @@ que la luna es niña que juega y se esconde.
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

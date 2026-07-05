@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Como un martillo en la pared</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Como un martillo en la pared</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Como un martillo en la pared</h1>
+
+            <div class="tono">
+                <span>C</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Como un martillo en la pared</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
+        <pre>
 Am                          F                 Am
 ¿Quién nos ha llamado a ser juez, jurado y verdugo?
 Am                             F                              G      F  G
 ¿Quién nos dio el poder para saber qué es trivial y qué es profundo?
+
 ¿Cuál es el motivo elevado que mueve vuestros actos?
 Sé que es imposible que la envidia haya manchado tantas manos.
 <span class="estribillo">
@@ -58,6 +56,7 @@ como un martillo en la pared.
 </span>
 Ya no es importante quien tiró la primera piedra,
 porque la siguiente sepultaron mi alma de pies a cabeza
+
 En las puertas de una nueva era que nos haga a todos libres
 sé que es imposible que mi libertad no sea inconcebible.
 <span class="estribillo">
@@ -65,26 +64,28 @@ Pero podría suceder,
 todo podría suceder.
 La historia se repite una y otra vez
 como un martillo en la pared.
-</span>
+</span><span class="solo">
 ( Em  Am  Fm  C  Em  Am  Fm )
-<span class="estribillo">
+</span><span class="estribillo">
 Podría suceder,
 todo podría suceder.
 La historia se repite una y otra vez
 como un martillo en la pared.
+
 F                        Am
 Como un disparo por la espalda
 F                 C     G/B    F
 Vacía el cargador una y otra vez
                           Am
 Como un martillo en la pared
-</span>
+</span><span class="solo">
 ( Am  F  G  Am )
+</span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

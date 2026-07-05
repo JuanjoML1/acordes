@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Oigo música</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Oigo música</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+A     E    Bm     F#m
+Uuuuuuuhhuhhhhuhuhhhhuhhh
+D    Bm    A
+Uuuuhhhhhhhhhhhhh
+
+       A
+Sigo viajando por valles
+E
+ríos de plata
+D          A
+volcanes en erupción
+
+          A
+Cruzando puentes en llamas
+E
+y barricadas
+D             A
+busco una canción
+
+      E   D             A
+eheheeey...  para sobrevivir
+      E   D             E
+eheheeey...  para poder seguir
+
+   D                 A
+oigo música en todas partes
+     D                  A
+dentro de mi cabeza a cada instante
+    Bm     D       E            A
+música, explota y siempre eres tú
+
+A    E   Bm   F#m
+Uuuuuuuuhhuuuuuuuuuhhh
+D    Bm    A
+Uuuuhhhhuhhuhh
+
+A
+oigo charangas de barrio
+E
+pitos y flautas
+D               A
+bandas de rock & roll
+
+A
+cuartetos de cuerda
+E
+para rato
+D                A
+penas de bandoneón
+
+     E     D            A
+eheheeey..  es mi salvación
+     E     D             E
+eheheeey..  canciones de redención
+
+Est (x2)
+      D                  A
+oigo música en todas partes
+     D                    A
+dentro de mi cabeza a cada instante
+  Bm      D          E          A
+música, explota y siempre eres tú
+
+A   E   Bm   F#m
+mmmmmmmmmmmmmmmmmmmm
+D   Bm    A
+mmmmmmmmmmmm
+(x2 lo de mmmm tb)
+
+solo musical ( A   E  D  A )
+             ( A   E  D  A )
+
+    E    D       A
+eheheeey  E  salvación
+    E    D              E
+eheheeey  canciones de redención
+
+(Est x2)
+     D                 A
+oigo música en todas partes
+     D                A
+dentro de mi cabeza a cada instante
+  Bm      D          E          A
+música, explota y siempre eres tú
+
+(x2)
+A  E  Bm  F#m
+Uuuuuuuuuhhhhhhhhhhhh
+D   Bm   A
+Uhhhhhhhhhhhhhhhhh
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

@@ -1,46 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>500 vidas</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>500 vidas</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">500 vidas</h1>
+
+            <div class="tono">
+                <span>C cej2</span>
+            </div>
         </div>
 
-        <h1 class="titulo">500 vidas</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
-Cej2
+        <pre>
 Am
 Quiero vivir 500 vidas
 G                        Am
@@ -48,7 +44,8 @@ Quiero una distinta cada día
 Am
 Unas donde sea la heroína
 G                        Am
-Otras donde esté entre bambalinas
+Otras donde esté entre bambalinas.
+
 Am
 Quiero capturar este momento
 G                           Am
@@ -56,7 +53,8 @@ Y convertirlo en un segundo eterno
 Am
 Quiero recurrir a su recuerdo
 G                          Am
-Cuando me amenacen malos tiempos
+Cuando me amenacen malos tiempos.
+
 F
 Quiero desafiar las leyes
 A
@@ -103,9 +101,9 @@ Cada nuevo día
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

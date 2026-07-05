@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chueca</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Chueca</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+A6:         202200
+B7*:        021200
+C#m7*:      242424
+Bm7*:       020202
+B7sus2(11): x22222
+
+E                                  Esus4            E      Esus4
+Hay algo en ella que no consigo quitarme de la cabeza
+           E                 Esus4            A6   B7
+Puede que sea tan solo el síndrome de abstinencia
+        F#m      B7           E      C#7*  Bm7*
+Nos conocimos tomando unas cervezas
+          F#m7  B7              E
+En una terraza de la plaza de Chueca (bis).
+
+E                                  Esus4            E      Esus4
+Y en una barra me la encontré y me dijo que no madrugaba
+          E                 Esus4            F#m7        B7
+Que trabajaba en la noche, por eso estaba pálida, cansada
+       F#m      B7           E
+Ojos oscuros despierta la mirada
+             F#m7 B7           E
+Y ciegos los míos de tanto mirarla (bis).
+
+<span class="estribillo">
+A B7         G#m   C#m
+Y quédate conmigo
+F#m B7       E   C#7*  Bm7*
+Y háblame de ti
+A  B          G#m   C#m   F#m
+Y cuéntame al oído
+B7             Asus2
+Que haces por aquí
+B7sus2(11)       Asus2
+Que te trae por aquí
+B7sus2(11)         E
+Que quieres hoy de mí
+</span>
+E  B7sus2(11)
+
+Vamos a casa, vivo muy cerca tan solo a un par de manzanas, me dijo
+Llevo en el bolso unas gafas de sol que tengo siempre preparadas
+Para estos casos en los que a la luz del alba
+El sol y la luna se besan la cara (bis).
+
+Cruzamos la raya, la que separa la noche de la mañana
+Con las cortinas de mi habitación dejamos ciega la ventana
+Y acurrucada al borde de mi cama
+Su cuerpo mi lecho, mi pecho su almohada (bis).
+
+<span class="estribillo">
+A B7         G#m   C#m
+Y quédate conmigo
+F#m B7       E   C#7*  Bm7*
+Y háblame de ti
+A  B          G#m   C#m   F#m
+Y cuéntame al oído
+B7             Asus2
+Que haces por aquí
+B7sus2(11)       Asus2
+Que te trae por aquí
+B7sus2(11)         E
+Que quieres hoy de mí
+</span>
+E                          F#m7         B7       E
+Hay algo en ella que no consigo quitarme de la cabeza.
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

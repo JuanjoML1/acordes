@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Bien alta la mirada</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bien alta la mirada</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Bien alta la mirada</h1>
+
+            <div class="tono">
+                <span>D</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Bien alta la mirada</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
+        <pre>
+<span class="solo">
 Intro: D  F#m  E  F#m
+</span>
       D      F#m         E          F#m
 Ni mi piel morena, ni mi pelo enmarañado
       D    F#m          E         F#m
@@ -54,12 +53,14 @@ Eso es lo que queda, eso hablará por mí
 Eso hablará por mí
                F#m
 Eso hablará por mí
+
 E            A      D   F#m
 Bien alta la mirada
 E      F#m   D  F#m
 Bien alta
 E            A              D                        F#m
 Bien alta la mirada, que el mundo te vea pasar, bien alta
+
   E       F#m
 Quién te quiera
   D            F#m
@@ -76,18 +77,21 @@ D            A    E         F#m
 El amor que he dado y el que recibí
    D            A         E           F#m
 Eso es lo que queda y eso hablará por mí
+
 E            A      D   F#m
 Bien alta la mirada
 E      F#m   D  F#m
 Bien alta
 E            A              D                       F#m
 Bien alta la mirada, que el mundo te vea pasar bien alta
+
 E           A      D  F#m
 Bien alta, gavilana
 E          F#m    D  F#m
 Vuela bien alta
 E                   A     D          F#m
 Que el mundo te vea pasar bien alta
+
 E             F#m
 Quien te quiera
 D                 F#m
@@ -97,9 +101,9 @@ Te querrá bien alta (x2)
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

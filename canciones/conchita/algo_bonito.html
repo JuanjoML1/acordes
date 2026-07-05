@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Algo bonito</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Algo bonito</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+C        G               Am                   Em
+Quisiera escribirte algo bonito, bonito de verdad
+F             G             Am                    Em
+pero se trata de despedirme y se me da muy mal.
+
+Quisiera escribirte algo sencillo, en realidad,
+pero se trata de despedirme de alguien que no tuve jamás.
+
+<span class="estribillo">
+    C               G                 Am
+Y dime, qué difícil es intentarse olvidar
+                 Em
+de algo que nunca tuvo lugar.
+      F         G              Am        Em
+Y qué difícil es dejar de imaginar,
+C               G                  Am
+y qué difícil es intentarse alejar.
+                  Em               F   G             Am     Em
+Quisiera encontrar algún final que no, no sonara tan mal.
+</span>
+Difícil escribir algo bonito, se trata de un final.
+No acabaré con un te quiero, no me dio tiempo a llegar.
+Difícil escribir algo sencillo, en realidad,
+que se hace algo cuesta arriba darse la vuelta y echar a andar.
+
+<span class="estribillo">
+C                     G
+Y antes de olvidarme, y antes de alejarme...
+Am                          Em
+y antes de marcharme, y que todo se acabe...
+F              G               Am
+Yo sólo quería haberte escrito algo bonito...
+       Em
+algo bonito de verdad.
+C                G
+Qué difícil es...intentarse alejar...
+Am                 Em
+quisiera encontrar...algún final...
+F     G                 Am     Em    C
+que no...no acabara tan mal.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

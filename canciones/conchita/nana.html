@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nana</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Nana</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+A:  002220
+A2: 001220
+A1: 000220
+
+Cej5
+
+A                              A2                            A1
+Tú, como un hilo musical en mi vida de fondo siempre estás y yo
+                     A
+ya no sé cómo disimular.
+A                               A2                 A1
+Tú, que vas girando y no sabes bien dónde mirar ni yo
+                           A
+que ya no sé por dónde acabar
+
+A                           A2
+Y no sé si despedirme, no sé si hace falta o no
+     A1                                A
+Cómo se entiende un "te quiero" seguido de un "se acabó"
+A                           A2
+Y no sé si despedirme, no sé si hace falta o no
+     A1                                A
+Cómo se entiende un "te quiero" seguido de un "se acabó"
+
+    D
+Y mientras siento que te marchas
+              A
+y mientras me juro que todo acabó
+    D                                     A
+y mientras te alejas despacio olvido olvidarte
+          E            A   E  A
+y te grito sin voz
+
+A                              A2                            A1
+Tú, como un hilo musical en mi vida de fondo siempre estás y yo
+                    A
+ya no sé cómo disimular.
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

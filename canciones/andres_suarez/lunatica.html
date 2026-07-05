@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Lunática</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Lunática</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Lunática</h1>
+
+            <div class="tono">
+                <span>G cej2</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Lunática</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
-Cej2
+        <pre>
+<span class="solo">
 Intro: G  C  D (x2)  G
+</span>
 G              C           D
 Pediré tu mano tibia una mañana.
 G               C             D        Em
@@ -50,10 +50,12 @@ Pediré la paz saliente que le quede al día.
 Por la noche la desidia de vanguardia,
 Em             Em/B-C         D
 bien posada con dos alas malheridas.
+
 Pediré cambiar de disco y de ventana.
 Pedirás habitación en un hotel que mira
 al pasado del pesado de la cama;
 a la niña que un día fuiste repetida.
+
 C                        D
 Ey, la luna te imagina a solas.
    G               G/B   C
@@ -62,25 +64,32 @@ La luna te imagina compartidas.
 Ey, la luna te imagina a solas
   Em
 y brilla.
+
 Qué mal te sentaba la luz.
+
 Qué mal te sentaba la luz.
+
 cuando amanecía a escondidas.
+
 Cuando amanecía a escondidas.
+
 Cuando amanecía y decías: la culpa eres tú.
 La culpa, la risa que enciende al amante la noche precisa.
 La culpa el azul sobre tu mejilla.
 Quemando la rama que no sostenía.
+
 Ey, la Luna quiere verte a solas
 pero te encuentra siempre acompañada.
 Y agita enfurecida olas y barcas.
+
 Ey, la Luna te menguó llorando
 de besos de otros hombres maniatada.
 Jurándome que te estás alejando me abrazas.
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

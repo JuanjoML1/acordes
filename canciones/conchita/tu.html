@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tú</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Tú</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+A
+He visto ciudades grandes y pequeñas
+Amaj7
+Montañas diminutas y otras gigantescas
+A7
+Peces de colores, aviones que no vuelan
+D                             C#m
+Y trenes      que pasan y se van
+Bm7                            E
+     ¿Quién sabe a dónde    irán?
+A
+He visto alguna flor que nunca volveré a encontrar
+Amaj7
+He viajado lejos y he visto pasar
+A7
+A mucha gente corriente
+D                           C#m          Bm              E
+Gente    que lo hace todo igual          Exactamente igual
+     A                         C#m
+  uh uh Y entre tanto ruido    uh uh  y entre tanta gente
+G            A        D
+Nunca vi a nadie como tú u
+A                              C#m
+uh uh Y entre tanto ruido,  uh uh  me quedo contigo
+G           A          D     A                D      A  Amaj7  A7   D
+Nunca vi a nadie como tú u      Así como eres tú uh uh uh uh uh uh uh
+A
+He visto ciudades grandes y pequeñas
+Amaj7
+Rincones escondidos que casi ni se encuentran
+ A7                      D                    C#m7
+Y tuve algo de suerte y pude   ver mucho mas allá
+  Bm                     E
+     Donde se acaba el mar
+A                             C#m
+uh uh Y entre tanto ruido y uh uh  entre tanta gente
+G           A           D
+Nunca vi a nadie como tú u
+A                             C#m
+uh uh Y entre tanto ruido, uh uh  me quedo contigo
+G          A             D
+Nunca vi a nadie como tú u
+
+A              D        A     Amaj7   A7      D
+Así como eres tú  uh uh uh uh uh uh uh  uh uh uh uh
+A            D
+Lo vi todo y no vi nada
+A             D
+Lo vi todo y no vi nunca nada
+A        D                A        D
+Nunca nadie como          Nunca nadie como
+A       D        A    D    A       D
+Nunca nadie como tú       Nunca nadie como
+A      D                  A    D         A
+Nunca nadie como         Nunca nadie como tú
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

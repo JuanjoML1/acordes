@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Dime a qué has venido</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dime a qué has venido</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Dime a qué has venido</h1>
+
+            <div class="tono">
+                <span>G</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Dime a qué has venido</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
+        <pre>
 Em                                         C
 Lo que me duele no es estar solo, es estar solo contigo
         Am                      Bm7
 Y no quitarte el abrigo, y no poder rozar la paz de tu ombligo
+
 Lo que me quema no es esta hoguera, es no saltarla contigo
 Es no probar lo prohibido, quiero ser coral y tu barco hundido, además
+
 C                      D
 La noche no se ha dado mal
                       Em
@@ -59,7 +60,9 @@ Que sólo quiero verte y tú jugar
 Y ya se ha terminado el vino
                                D
 Te ofrezco luz de velas y un sofá
+
 O dime a qué has venido
+
 Si quieres nos dejamos de alargar
 Los dos sabemos que al principio
 La ropa es más difícil de arrancar
@@ -67,8 +70,10 @@ Dime a qué has venido
 </span>
 Ni tú te vistes ni yo lo quiero, ni en el cuarto hace frío
 Ahora salto al vacío, “Ten cuidado, chaval” me dijo un amigo, y es verdad
+
 A la ciudad se le va la hora cuando quedo contigo
 Si tú sigues yo sigo, la corriente va haciendo lo que el río le hace al mar
+
 La noche no se ha dado mal
 Haciéndote reír no he perdido
 Y tú cambiándome el disfraz, bailando conmigo
@@ -77,6 +82,7 @@ Que sólo quiero verte y tú jugar
 Y ya se ha terminado el vino
 Te ofrezco luz de velas y un sofá
 O dime a qué has venido
+
 Si quieres nos dejamos de alargar
 Los dos sabemos que al principio
 La ropa es más difícil de arrancar
@@ -84,6 +90,7 @@ Dime a qué has venido
 </span>
 C                        D
 A ser malabarista o carnaval
+
 Dime a qué has venido
 B7                        Em
 A recoger las velas o a remar
@@ -98,13 +105,14 @@ Que sólo quiero verte y tú jugar
 Te ofrezco luz de velas y un sofá
 Si quieres nos dejamos de alargar
 La ropa es más difícil de arrancar
+
 Dime a qué has venido (x5)
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

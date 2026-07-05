@@ -1,47 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Van como locos</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Van como locos</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Van como locos</h1>
+
+            <div class="tono">
+                <span>C cej4</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Van como locos</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
-Cej4
+        <pre>
+<span class="solo">
 Intro: Am  D
+</span>
 Am       Am7  Am      Am7
 Van corriendo desde el alto
 Am       Am7  Am      Am7 F   G
@@ -49,15 +46,16 @@ son caballos desbocados
 Am       Am7  Am      Am7
 son los ríos subterráneos
 Am       Am7  Am      Am7  F   G
-son espíritus sagrados
+son espíritus sagrados.
+
 Am       Am7  Am      Am7
-han tomado la ciudad
+Han tomado la ciudad
 Am       Am7  Am      Am7  F   G
 y son parte de algo inabarcable.
 Am       Am7  Am      Am7
 Van viviendo por delante
 Am       Am7  Am      Am7  F   G
-van vagando por las calles
+van vagando por las calles.
 <span class="estribillo">
 F                 G
 Nada les podrá detener
@@ -69,17 +67,19 @@ C        G           Am          G
 Van como locos, como locos, como locos van
  F              G
 no les importa lo que puedan pensar
-</span>
+</span><span class="solo">
 Am Am7 Am Am7
 Am Am7 Am Am7 F  G
+</span>
 Caen rodando abrazados
 y comiéndose los labios
 agarrados de las manos
-invocando a soles incendiarios
+invocando a soles incendiarios.
+
 Y no hay nada que perder
 el cielo ya lo daban por ganado
 Ellos saben que su tiempo
-es aquel que ahora ha comenzado
+es aquel que ahora ha comenzado.
 <span class="estribillo">
 Nada les podrá detener
 Van como locos, como locos, como locos van
@@ -89,23 +89,28 @@ Van como locos, como locos, como locos van
 no les importa lo que piensen, no,
  F                 G              D
 no les importa lo que puedan pensar.
+</span><span class="solo">
 F  G  D  F  G
-</span>
+
 Am Am7 Am Am7
 Am Am7 Am Am7  F   G  (x2)
+</span>
 Nada les podrá detener
 Ahora nada les podrá detener
 Van como locos, como locos, como locos van
-no les importa lo que piensen
+no les importa lo que piensen.
+
 Van como locos, como locos, como locos van
 no les importa lo que piensen, no
 Van como locos, como locos, como locos van (x2)
+<span class="solo">
 Am Am7 Am Am7 Am
+</span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

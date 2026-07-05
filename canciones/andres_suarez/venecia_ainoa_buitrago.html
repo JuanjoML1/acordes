@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Venecia (Ainoa Buitrago)</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Venecia (Ainoa Buitrago)</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Venecia (Ainoa Buitrago)</h1>
+
+            <div class="tono">
+                <span>G</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Venecia (Ainoa Buitrago)</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
+        <pre>
+<span class="solo">
 Intro: G  A  D  G  A  C
+</span>
 G                           D
 Sé que nunca tuve la menor idea
         Em
@@ -49,12 +50,13 @@ De encontrar palabras para distinguir
 Entre la soledad que hay en mi pecho y las mareas
              C                       D
 Entre los balcones que cayeron sobre mí
+
 Estuve tanto tiempo cosiendo razones
 Estuve tantas noches loca por vivir
 Que ahora en mi pecho solo bailan tus canciones
 Que sé que es turbia tu manera de sentir
 <span class="estribillo">
-G                        D
+          G                        D
 Y ahora estás en la barra de aquel bar
                Em                        D
 Sopesando las ideas que te hicieron desertar
@@ -62,16 +64,19 @@ Sopesando las ideas que te hicieron desertar
 Un cielo gris sin ti, un túnel a París
                  C                           D
 Venecia está sin agua y caen sus gotas sobre mí
+
 Y ahora estás en la barra de aquel bar
 Sopesando las ideas que me hicieron desertar
 De esta vida sin ti, de esa vida contigo
 De todos los terrenos que se hicieron precipicios
-</span>
+</span><span class="solo">
 ( G  D  Em  C  D  C  D )
+</span>
 Que suerte fue la mía al creer que los consejos
 servían para algo más que renovar
 sonrisas en la cara de alguien que se encuentra dentro
 de un pozo que no sabe ni cómo llegó a acabar
+
 Supongo que hay momentos en los que falta el aliento
 Y rezas a la vida para poder soportar
 Que el pánico te hunda las mejillas hacia dentro
@@ -81,10 +86,12 @@ Y ahora estás en la barra de aquel bar
 Sopesando las ideas que te hicieron desertar
 Un cielo gris sin ti, un túnel a París
 Venecia está sin agua y caen sus gotas sobre mí
+
 Y ahora estás en la barra de aquel bar
 Sopesando las ideas que me hicieron desertar
 De esta vida sin ti, de esa vida contigo
 De todos los terrenos que se hicieron precipicios
+
           G                        D
 Y ahora estás en la barra de aquel bar
                Em                        D
@@ -93,15 +100,16 @@ Sopesando las ideas que te hicieron desertar
 Un cielo gris sin ti, un túnel a París
                  Em
 Venecia está sin agua y caen sus gotas sobre mí
-</span>
+</span><span class="solo">
 ( C  Bm  Em ) x2
+</span>
 G            C         G
 Sé que nunca tuve la menor idea
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

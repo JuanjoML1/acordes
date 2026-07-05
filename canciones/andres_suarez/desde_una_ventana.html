@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Desde una ventana</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Desde una ventana</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Desde una ventana</h1>
+
+            <div class="tono">
+                <span>D cej3</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Desde una ventana</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
-Cej3
+        <pre>
 D                     D/C#
 Acaba de caerse una estrella
  D/B                      G
@@ -53,22 +51,26 @@ G                        D/B
 dejar junto a su ropa la arena
 A7sus                     D/F#
 mirarla entre canciones, mojada
+
      G                     A7sus            D/F#                   G
 Solo soy un cantante princesa, y tú vienes buscando una cara que valga
      Em7                A Asus     D/F#                  G
 pero puede que valga la pena, recitarte un poema en la cama
+
 D                                           Em7
 Ayer me di cuenta, noventa, que estaba en segunda y el coche quemaba
               D/F#
 pero es que tu mano en la mía,
                G
 pero es que prefiero ir a pata
+
     D                                     Em7
 Quisiera enseñarle mi mundo desde una ventana
                                      D/B
 mirando de a dentro, y el pelo de plata
            D/F#               G
 que el tiempo si no es a tu lado, no pasa
+
       G                    A7sus
 Solo sé del rosal que mi abuelo plantó
          D/F#                G
@@ -77,6 +79,7 @@ para que hoy esta rosa no niegues
 le darías un disgusto tremendo
        D/F#                     G
 solo acepta el mayor de mis bienes
+
       G                  A7sus
 Solo soy un cantante que baila
               D/F#                     G
@@ -85,9 +88,9 @@ si lo haces conmigo, y un niño en el medio
 que jugando se esconda contigo, cuando vuelva de cada concierto
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

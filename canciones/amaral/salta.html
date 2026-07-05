@@ -1,58 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Salta</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Salta</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Salta</h1>
+
+            <div class="tono">
+                <span>C</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Salta</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
+        <pre>
 C                    G
 Corre, con los pelos al viento
                   Dm
 En un mar de destellos
                 F
 Corre hasta quedarte casi sin aliento.
+
 C                    G
 Salta con los brazos abiertos
                 Dm
 Ya no toques el suelo
               F
 Y tu cuerpo remonta el vuelo hacia el cielo.
+<span class="solo">
 C  G  Dm  F
+</span>
                  C
 Por primera vez sabes
                    G
@@ -70,20 +70,23 @@ Am             G
 Salta como un gato,
 A#             G           C
 Tú no eres un pájaro enjaulado.
-</span>
+</span><span class="solo">
 C  G  Dm  F
+</span>
 C                     G
 Nadie sabe nuestro secreto,
                 Dm
 Nadie quiere saberlo,
              F
 Ellos viven con los zapatos en el suelo.
+
 Am                      G
 Salta con los brazos abiertos
                  Dm
 con los pelos al viento
-A#          G
+Bb          G
 Este es nuestro momento.
+
 C                          G
 Salta aunque nadie te comprenda,
 Dm                      F
@@ -94,12 +97,14 @@ A#             G              C
 Nunca más serás un pájaro enjaulado.
 Dm                  F
 Salta, salta, salta.
+<span class="solo">
 C  G  Dm  F (x4)
+</span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

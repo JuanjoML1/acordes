@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Al final</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Al final</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Al final</h1>
+
+            <div class="tono">
+                <span>C</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Al final</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
+        <pre>
 B
 El mismo camino que nos ha visto crecer,
 E
@@ -48,7 +45,9 @@ B
 El mismo que un día sueño vuelvo a recorrer,
 E                                                 F#
 el mismo y los mismos, no quiero que cambie nada.
+<span class="solo">
 (B  C#m  E  C#m)
+</span>
 B
 Las mismas palabras que me unieron anteayer,
 E
@@ -66,6 +65,7 @@ B      C#                 E
    De que me serviría vivir
    F#                    E     F#     F#
 si al final no te encontrara.
+
 B             C#            E        F#
    Nos prometimos junto al mar nunca cambiar
 B           C#              E         F#
@@ -90,6 +90,7 @@ B      C#              E
   Ya sé de qué sirvió vivir
    F#                    E     F#
 si al final lo tengo todo.
+
 B        C#                    E      F#
    La vida no fue igual sin ti,
 B      C#              E      F#
@@ -103,9 +104,9 @@ si al final lo tengo todo.
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

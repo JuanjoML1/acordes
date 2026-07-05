@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Moriría por vos</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Moriría por vos</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Moriría por vos</h1>
+
+            <div class="tono">
+                <span>C</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Moriría por vos</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
+        <pre>
+<span class="solo">
 Intro: C  F  Am  G   (x2)
+</span>
 C    F               Am        G
 Como Nicolas Cage en Living las Vegas
 C    F       Am        G
 Veo caer la nieve en la hierba,
 C    F         Am  G       C      F      Am       G
-Un Robinson en una isla desierta
+Un Robinson en una isla desierta.
+
 C    F               Am        G
 Como Nicolas Cage en Living las Vegas
 C    F               Am        G
@@ -68,7 +68,8 @@ Como Nicolas Cage en Living las Vegas
 C    F               Am        G
 No tengo planes más allá de esta cena,
 C       F             Am       G          C      F      Am       G
-Es un misterio hacia dónde la noche nos lleva
+Es un misterio hacia dónde la noche nos lleva.
+
 C    F               Am        G
 Como Nicolas Cage en Living las Vegas
 C        F          Am        G
@@ -84,6 +85,7 @@ Serán las luces de esta habitación
 Será que suena Marquee Moon
           G                 F       G
 Pero esta noche moriría por vos
+
 F           G                C              G
 Será el champagne, será el color de tus ojos verdes
                 F
@@ -103,6 +105,7 @@ Serán las luces de esta habitación
 Será el poder de una canción,
           G                  F
 Pero esta noche moriría por vos.
+
               G               C              G
 Será el champagne, será el color de tus ojos verdes
                 F
@@ -114,9 +117,9 @@ Pero esta noche moriría por vos
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

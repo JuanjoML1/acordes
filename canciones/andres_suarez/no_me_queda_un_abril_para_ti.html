@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>No me queda un abril para ti</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>No me queda un abril para ti</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">No me queda un abril para ti</h1>
+
+            <div class="tono">
+                <span>C</span>
+            </div>
         </div>
 
-        <h1 class="titulo">No me queda un abril para ti</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
+        <pre>
          C       Csus4      Csus2-C             Csus4  Csus2  C
 Me he cansado de ver hombres solos paseando las playas,
          F
@@ -54,6 +53,7 @@ Del mar que alguna vez desvestimos tú y yo,
 Del sonido al nacer el sonrojo del sol.
       F         C         G-Am      F         C         G
 No me queda un abril para ti, no me queda un abril para ti
+
        D     Dsus4     D                       Dsus4  D
 Y otro día salió y uno menos que llevarse a tu boca.
       G
@@ -68,6 +68,7 @@ Viento, llévame a ver lo que siente un halcón,
 Viento, tira de mí, se me apaga la voz,
       G         D         A-Bm      G         D         A
 No me queda un abril para ti, no me queda un abril para ti.
+
 E
 Cámbiame la escena, vuélvete humedad y llora
 Deja que me duerma, hace tanto tiempo que no truena amor
@@ -90,14 +91,15 @@ Quiero volver atrás, atrás es renacer,
 Volver a navegar bogando entre mi gente.
 No quiero no querer, sentir miedo otra vez,
 Volver a oír mi acento en los andenes despidiéndose.
+
 Viento, llévame a ver lo que siente un halcón,
 viento, tira de mí, se me apaga la voz,
 No me queda un abril para ti.
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

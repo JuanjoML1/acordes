@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Escucha mi voz</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Escucha mi voz</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+D*: xx0130
+
+Intro: D  Gm (x4)
+
+D              Dsus2
+Puede que esta noche
+       G          Em            D
+sea la última que canto a los demás.
+D                D7
+Gracias por los aplausos
+           G            Em       D
+por los destellos donde vi felicidad.
+
+<span class="estribillo">
+Am              C
+Creo que fui testigo
+          Em                       D
+de las montañas, de una vida y el amor.
+Am                 C
+Nunca pensé que el mundo
+       Em                        A
+podría ser sin ti un lugar desolador.
+
+           D   Gm
+Escucha mi voz
+           D   Gm
+escucha mi voz
+        Em                        A
+que se ahoga en medio de esta soledad
+           D   Gm
+escucha mi voz.
+</span>
+D                 D*
+Busco un verso perdido
+               G            Em            D
+que entre el espacio de tus labios se escapó.
+D               D*
+Veo tu nombre escrito
+        G            Em         D
+en los amarres fríos de la decepción.
+
+<span class="estribillo">
+Barcos que un día ardieron,
+que nos dejaron cicatrices en la piel.
+Luces entre tu pelo
+justo cuando empezaste a desaparecer.
+
+Escucha mi voz
+escucha mi voz
+que se ahoga en medio de esta soledad
+escucha mi voz. (x2)
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

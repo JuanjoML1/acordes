@@ -1,51 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>De la noche a la mañana</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>De la noche a la mañana</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">De la noche a la mañana</h1>
+
+            <div class="tono">
+                <span>G</span>
+            </div>
         </div>
 
-        <h1 class="titulo">De la noche a la mañana</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
+        <pre>
 G        C      G             C              D             G
 Nos conocimos aquí, tú me lanzaste hacia el centro de tu diana
          D            G            Em          C
 de intenciones disfrazadas y ahora va vagando mi alma
        D           G
 de la noche a la mañana.
+
 G           C        G            C           D           G
 Fue como un beso de amor la mordedura en el cuello me quemaba
        D         G            Em            C
@@ -61,15 +59,18 @@ Em               C
 Y mis amigos preguntan
      D            G
 Pero niña ¿qué te pasa?
-</span>
+</span><span class="solo">
 ( G  C  Em  D ) (x2)
+</span>
 G         C     G              C         D              G
 Nadie lo supo jamás, pero inyectaste el veneno del que ama
         D           G           Em         C
 y me hiciste tu esclava y ahora va vagando mi alma
       D            G
 de la noche a la mañana.
+<span class="solo">
 ( G  C  Em  D ) (x2)
+</span>
 G                       D                      G
 Todos los besos que doy llevan tu nombre y tu marca
         Em           C       D         G
@@ -83,6 +84,7 @@ Em               C
 Y mis amigos preguntan
      D            G
 Pero niña ¿qué te pasa?
+
 D                 G
 Y no descanso de noche
 D                  G
@@ -94,9 +96,9 @@ de la noche a la mañana.
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

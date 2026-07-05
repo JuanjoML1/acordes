@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>No saben de ti</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>No saben de ti</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">No saben de ti</h1>
+
+            <div class="tono">
+                <span>D cej1</span>
+            </div>
         </div>
 
-        <h1 class="titulo">No saben de ti</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
-Cej1
+        <pre>
 D               A/C#
 La gente quiere que esté contento
 G                         D   A/C#
@@ -53,6 +51,7 @@ me está cambiando hasta la voz,
 pero la gente no sabe de ti.
         G          A
 Pero la gente no entiende.
+
 D                   A/C#
 Ey, supongo estarás bien,
                Bm7         G
@@ -65,12 +64,13 @@ canté con Milanés, grabé un disco en Madrid.
 Ya no te veo en cualquier cielo gris,
        G        A
 ya diferencio colores.
+
                      D                 D/C#        Bm
 Voy a hacerte una canción que hable en realidad de ti,
       Bm/A         G             D/F#         A
 voy a ser la habitación donde te miraba al dormir.
 <span class="estribillo">
-G              A
+               G              A
 Voy a hacer de ti sólo una canción.
            D                 G
 Qué será Madrid sin nosotros dos.
@@ -78,8 +78,9 @@ Qué será Madrid sin nosotros dos.
 Háblale de mí a otro como yo.
               D                G
 Yo estaré sin ti, tú estarás mejor.
-</span>
+</span><span class="solo">
 ( Bm7  A  Em9 )
+</span>
 D                A           Bm7
 Ey, supongo estarás bien, supongo y además
                 G                        D
@@ -88,12 +89,14 @@ D                A           G
 donde te vi feliz, donde me hiciste hablar.
       G            A
 Fue la noche más bella del mundo.
+
 D                A                    Bm7
 Dijo "no recuerdo nada" despertando al día siguiente.
                       G                          Bm7
 Se vistió y entre la gente otro sueño que se apaga.
                     F#m                   G     D
 Dijo que no era tan mala, pero no era diferente.
+
 Em                        F#7       Bm
 Dijo "llámame mañana" y mañana dura siempre.
                     G                           Em
@@ -105,9 +108,9 @@ Voy a hacer de ti sólo una canción.
 Qué será Madrid sin nosotros dos.
 Háblale de mí a otro como yo.
 Yo estaré sin ti, tú estarás mejor.
-</span>
+</span><span class="solo">
 ( G  A  D  G  Em  A  D  G )
-<span class="estribillo">
+</span><span class="estribillo">
 Voy a hacer de ti sólo una canción.
 Qué será Madrid sin nosotros dos.
 Háblale de mí a otro como yo.
@@ -117,9 +120,9 @@ Bm7            A             G   A             D
 La gente quiere risas, pero no, no saben de ti tanto como yo.
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

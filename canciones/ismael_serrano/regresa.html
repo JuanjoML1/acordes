@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Regresa</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Regresa</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Acordes
+D/F#: 2.3.2.0.x.2
+G/B : x.3.0.0.2.x
+D#m7b57: 2.0.2.1.x.x
+
+Intro:  G--D/F#--Em--Bm--C--C-G/B-Am--D/F#--G--Cadd9--G--D/F#--Em
+
+      Bm         C           C-G/B-Am
+Pasan ya varios dias sin ti
+               D/F#                G      Cadd9 G---13/17--G (en 7ºtraste: 7.8.7.9.10.x)
+dónde te has metido dónde te escondiste de mí
+            Em(7ºt:7.8.9.9.7.x)  Am
+acuchillo estrellas y grita la gente al ver
+D          D#m7b57           Em            Em-D-C
+llena de tristeza que mi corazón arranque
+               D/F#                G  Cadd9  G
+te dije en tu ausencia cuido de madrid
+Am             D/F#             G   Cadd9   G--D/F#--Em
+que yo estaré bien y aquí te mentí
+
+         Bm                    C           C-G/B-Am
+Repaso lugares me convierte en sal el dolor
+              D/F#                G      Cadd9 G---13/17--G (en 7ºtraste: 7.8.7.9.10.x)
+las calles de huertas donde ella borracha gritó
+                 Em(7ºt:7.8.9.9.7.x)  Am
+mi nombre en las barras de los bares en que la amé
+D              D#m7b57       Em            Em-D-C
+la guerra en su cuerpo creo que fue ayer
+
+          D/F#                         G  Cadd9  G
+rendido empapado en alcohol y en su ausencia
+Am             D/F#                     D#m7b57   Em-D-C
+sangrando la herida que ha abierto esta espera
+               D/F#          C   D/F#  Gm Cadd9 G
+gritaba dónde estás rubia regreeeeeeresa
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

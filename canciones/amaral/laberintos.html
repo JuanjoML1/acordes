@@ -1,46 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Laberintos</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Laberintos</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Laberintos</h1>
+
+            <div class="tono">
+                <span>C cej5</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Laberintos</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
-Cej5
+        <pre>
 Am   C/G        G6       Am  C/G
 Uhhhh, ¿dónde está el amor
      G6       Am  C/G
@@ -60,7 +56,8 @@ F  G            Am
 Uh, ¿dónde nace la adicción?
 G6           Dm              G          Am
   En los laberintos de nuestra imaginación.
-Em             G             F         Am (G)→ nexo para unir Am y Em
+
+Em             G             F         Am
   Medio deslumbrados, medio visionarios,
 Em            G        F           Am (G)
   bajo la bandera del ahora o nunca.
@@ -72,6 +69,7 @@ F     G           F
 Uh, ¿dónde ruge el animal
 que mantiene vivo
 lo que un día fuimos?
+
 ¿Dónde está el amor real?
 En los laberintos de nuestra imaginación.
 En los laberintos de nuestra imaginación.
@@ -95,9 +93,9 @@ G6            Am             G6         Am
   En los laberintos de nuestra imaginación.
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

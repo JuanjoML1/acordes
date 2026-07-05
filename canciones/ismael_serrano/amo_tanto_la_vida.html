@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Amo tanto la vida</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Amo tanto la vida</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cm*:      x3504x
+G/B:      x2503x
+Bb6:      x1303x
+Fadd9:    xx3213
+Gaug:     3x544x
+Amadd9:   x02410
+Emadd9:   024000
+
+Intro: Cm*  G/B  Bb6  Fadd9  G#  Cm  Cm/Bb  F/A  Gaug  G
+
+(Cm*  G/B  Bb6  Fadd9  G#  Cm  Cm/Bb  F/A  Gaug  G)
+
+Amo tanto, tanto la vida, que de ti me enamoré,
+y ahora espero impaciente ver contigo amanecer.
+
+Si se acaba este milagro, si se consume mi voz,
+si me das un último portazo, ¿en qué calle moriré yo?
+
+<span class="estribillo">
+C                     G     E(Dc2)         Amadd9            Emadd9
+Estás tan bonita esta noche,  te sienta el pelo recogido tan bien.
+F                   C  F                  G
+Pídeme cualquier deseo, poco te puedo ofrecer.
+Lloras, gritas, bajo la lluvia, como el ángel Lucifer.
+Somos de nuevo herida abierta, mala tierra, trágame, trágame.
+</span>
+Amo tanto, amo tanto la vida, que de ti me enamoré,
+y de amarte tanto, tanto, puede que no te ame bien.
+
+Si yo fuera tu asesino conmigo nunca tendría clemencia,
+y me condenaría a muerte, que es condenarme a tu ausencia.
+
+<span class="estribillo">
+Que no haya más despedidas, que no eres Ilsa Lazlo ni yo Rick Blaine,
+ni soy tan idiota, no te dejaría ir con él.
+El próximo avión que tomes conmigo lo tendrás que hacer,
+y el camino de regreso yo te lo recordaré, te lo recordaré.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

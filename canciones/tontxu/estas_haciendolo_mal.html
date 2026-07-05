@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estás haciéndolo mal</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Estás haciéndolo mal</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+INTRO
+
+---------------------------------------------------
+---------------------------------------------------
+---------------------------------------------------
+----6-6-9-8-----7-7-6-4-6------6-6-9-8----7-6-4-6--
+--7-----------9--------------7----------9----------
+---------------------------------------------------
+X 2
+
+Todo el rato se repite la misma estructura:
+
+(E F#7 A B) X 4 + RIFF INTRO
+
+E                   F#7               A            B
+La casa, el coche y el trabajo, los amigos la mujer.
+E              F#7          A                B
+La cara del idiota del vecino del tercero, puerta 'b'.
+E                F#7           A                  B
+Los gastos de notario, la hipoteca y el euribor me compré.
+E                F#7             A          B
+Y en una tienda Ikea, igual que todos, la decoré.
+     A
+Seguramente, que antes de pagarlo todo, moriré.
+
+El curro, el jefe y el recorte de plantilla, la UGT.
+Amable con clientes que no quieres en la vida volver a ver.
+Aumento de salario, vacaciones, fin de mes.
+Si llegas a estudiar un poco más, tal vez, te iría bien.
+Han ascendido al más pelota, trepa, y me pregunto
+quién le habrá enchufado.
+
+  E      F#7        A            B
+Estás haciéndolo mal.
+  E      F#7        A            B
+Estás haciéndolo mal.
+  E      F#7        A            B
+Estás haciéndolo mal.
+E      F#7        A
+Estás haciéndolo mal.
+
+(E      F#7        A            B) X 4 + RIFF INTRO
+
+La boda, el traje, padre, madre, suegra, suegro, la luna de miel.
+La ceremonia y el banquete tan mediocres como el vino y el hotel.
+Los curas de las bodas se despiertan con resaca.
+Lo que une Dios, al día siguiente, unas faldas lo separan,
+Así lo dice la estadística que, a veces, ...
+... nunca falla.
+
+Los niños, los pañales, las caquitas, los potitos de Nestlé.
+Ropitas, los juguetes, las facturas del colegio, 'cómprame'.
+Está dormido, está despierto, está llorando y no sabes por qué.
+No sé contar un cuento ni cantar canciones ¡niño duérmete!
+Por cierto, ¿qué es del pan aquel que traías bajo el brazo?
+
+Estás haciéndolo mal.
+Estás haciéndolo mal.
+Estás haciéndolo mal.
+Estás haciéndolo mal.
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

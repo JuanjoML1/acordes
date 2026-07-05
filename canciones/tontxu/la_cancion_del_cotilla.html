@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>La canción del cotilla</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">La canción del cotilla</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: Fmaj7  Am  Aº  Esus4
+
+(Fmaj7  Am  Aº  Esus4)
+Sabes que no tienes alas, que no ves el cielo, pero quieres volar.
+Crees tener los pies en el suelo, mides cada paso, pero nunca lo das.
+
+<span class="estribillo">
+(C  G  Am  Esus4)
+Hablas por hablar de todo, aparentas saber, pero no sabes nada de nada.
+Hablas por hablar de un modo que pareces bobo, qué pena me das.
+</span>
+(Fmaj7  Am  Aº  Esus4)
+Alma de Dios, ocúpate de ti, pregúntate el porqué de tu soledad,
+sé que en cuanto de la media vuelta y salga por esa puerta lo mismo harás.
+
+<span class="estribillo">
+(C  G  Am  Esus4)
+Alma de Dios, portera aburrida, de qué coño no sabrás,
+deja de pasear tus pies por la orilla, que te estás perdiendo el mar,
+la inmensidad del mar.
+</span>
+Fmaj7  Am  Aº  Esus4
+
+Eres mentiroso, y cojo, torpe demagogo, tontorrón, cabezón de la sal.
+Debe ser tan aburrida tu mísera y triste vida que criticas la de los demás
+
+<span class="estribillo">
+Alma de Dios, portera aburrida, de qué coño no sabrás
+deja de pasear tus pies por la orilla, que te estás perdiendo el mar,
+la inmensidad del mar.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

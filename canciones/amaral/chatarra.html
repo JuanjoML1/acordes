@@ -1,46 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Chatarra</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Chatarra</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Chatarra</h1>
+
+            <div class="tono">
+                <span>C cej4</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Chatarra</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
-Cej4
+        <pre>
 Am           Em  F             C    G
 La noche de ayer escrita en la cara
 Am    Em F         E7
@@ -74,6 +70,7 @@ Dime por qué las piernas
 no me sujetan, si tú lo sabes.
 F        C          F         E
 si tú lo sabes todo, si tú lo sabes.
+
 C                 Am
 Dime por qué mi mente
          Em                 C
@@ -82,8 +79,9 @@ C                  Am
 Dime por qué mi vida
           Em                 C
 se ha detenido en este instante.
-</span>
+</span><span class="solo">
 ( F  C  Am  Em ) x2
+</span>
 F              C
 La noche de ayer
 Am              Em
@@ -96,8 +94,10 @@ Am              Em
 escrita en la cara
 F      C  Am          Em
 libérame, de esta resaca.
+<span class="solo">
 ( F  C  Am  Em  )
 ( F  C  Am  G   )
+</span>
 C                G
 Todo está perdido
 Am         Em
@@ -106,9 +106,9 @@ Bb    Am           G
 a las seis de la mañana.
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

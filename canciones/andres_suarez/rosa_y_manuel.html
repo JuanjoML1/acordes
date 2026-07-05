@@ -1,59 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Rosa y Manuel</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Rosa y Manuel</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Rosa y Manuel</h1>
+
+            <div class="tono">
+                <span>G cej1</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Rosa y Manuel</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
-Cej1
+        <pre>
+<span class="solo">
 G  D  C  G   D
+</span>
 G                 Em
 Tu nombre es una planta
               D
 que hay delante del portal
               C
 aún lo recuerdo
+
 G                D
 El nombre de la calle
 Em                  D
 se parece al del mantel
            C
 pero al revés
+
 G                      D
 La playa que hay a un lado
 Em               D
@@ -62,37 +64,45 @@ G               D    Em
 que hicimos de jóvenes
         C
 Te veo tan bien
+
 G              D
 Supongo me miras extraño
 Em               D             C
 por no hacer de rey de este palacio
+
 G                D
 no conocer el reino
         Em             D           C
 pues ayer tuvieron que irme a recoger
+
 G                D
 a una casa arruinada
            Em             D
 creo que vio nacer a alguien
           G       D        Em
 y hoy te juro no sé quien es
+
 C               D                 Em
 A veces alguien llora mientras duermo
 C                  D              Em
 y Rosa aprieta el pecho contra el tallo
 C              D             G
 y Rosa se marchita en un papel
+
 C                    D
 que se encontró limpiando
          G            D
 entre caricias y recuerdos
       Em      D     C
 que firma abajo Manuel:
+
                    Em
 “Recuerda tu que puedes”
                    C   D   G      C   D  Em
 “Recuerda tú que puedes”
+<span class="solo">
  C   D   G   D    C
+</span>
 G                 D          Em
 Y ella le enseña las fotografías
 C                   D              Em
@@ -101,6 +111,7 @@ C               D              Em
 Y si Manuel se nubla ella lo abriga
            D        G            D     Em
 y hasta olvida que ayer le enseño a comer
+
 G                D           Em
 Y el niño de la foto ya ni asoma
 C              D               G
@@ -113,6 +124,7 @@ le asegura mañana sabrás volver
 al hogar que hicieron juntos media vida
                        C
 Y en el sueño habla Manuel:
+
 C#m                   F#m
 Amor se te olvide la pena
                   B
@@ -141,7 +153,9 @@ conmigo se enfadó
 por no devolver el beso el abrazo
            C#m
 que llorando me dio
+<span class="solo">
 C#m B  A  E  F#
+</span>
 B
 Amor
                  F#
@@ -150,6 +164,7 @@ y cuidarás los rosales
 que planté antes del viaje
                   E                 F#
 les cantaras por mi cualquier canción
+
 B
 Amor
                      F#
@@ -160,12 +175,14 @@ E
 y no recordarte tanto
 F#          B
 corazón adiós
+<span class="solo">
 B F# E B F# B
+</span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sólo luz</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Sólo luz</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: C  D  Em  G   C  D
+
+       G
+Somos sólo luz,
+       Bm                          C
+dos cobardes que no encuentran la manera,
+     D               D#º7       Em
+dos idiotas que no saben cómo hacer
+                B7             C       Cm
+una vida con la vida que les queda.
+
+   Am        Ammaj7    Am7         B7          Em             Em7
+No hicimos pie,       y casi nos ahogamos sin saber qué hacer,
+    C                      Am
+los dos nos abrazamos sin tenernos fe,
+     B7
+sin tenerlo nada claro.
+
+<span class="estribillo">
+    Em     Emmaj7                Em7
+Hay lodo y humedad por encima de todo
+      Em6                 C
+y una foto con cara de bobos
+     Ammaj7               C                     B7
+y el rencor al dolor del amor que no acaba del todo.
+     Em      Emmaj7                        Em7
+Hay nada, la presión contra el pecho y las alas,
+   Em6                    C
+tu mirada entre tantas miradas,
+   Ammaj7                C                  B7
+la razón de que no se cruzaran es sólo un misterio que
+                Em7    D
+no vale nada.
+</span>
+Somos sólo luz,
+personajes que abandonarán la escena,
+y el cuento que ha vuelto a ocurrir,
+no nos quedan ya finales ni inocencia.
+
+No hicimos pie, y casi nos ahogamos sin saber qué hacer,
+los dos nos abrazamos sin tenernos fe,
+sin tenerlo nada claro.
+
+No hicimos pie, y casi nos ahogamos sin saber qué hacer,
+los dos nos abrazamos sin tenernos fe,
+sin tenerlo nada claro.
+
+<span class="estribillo">
+Hay lodo y humedad por encima de todo
+y una foto con cara de bobos
+y el rencor al dolor del amor que no acaba del todo.
+Hay nada, la presión contra el pecho y las alas,
+tu mirada entre tantas miradas,
+la razón de que no se cruzaran es sólo un misterio que
+no vale nada
+</span>
+Somos sólo luz,
+dos cobardes que no encuentran la manera,
+dos idiotas que no saben cómo hacer
+una vida con la vida que les queda
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

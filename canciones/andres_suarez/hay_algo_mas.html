@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Hay algo más</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hay algo más</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Hay algo más</h1>
+
+            <div class="tono">
+                <span>G cej6</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Hay algo más</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
-Cej6
+        <pre>
          G                                        C9
 Hay un velero a lo lejos que asoma al final de la barra
         G                                          C9
@@ -59,6 +57,7 @@ debe haber mar
 dentro de esa mirada
              C9
 que me roba tanto
+
          G                                     C9
 Hay demasiado volumen en versos que no escucha nadie
            G                                    C9
@@ -73,6 +72,7 @@ que no se atreve a ir a casa una vez más
 con otro niño allí llamándole papá
               D
 robándole el abril.
+
     C                                 D
 También hay una camarera que quisiera ser algo más
           G             D/F#          Em
@@ -81,7 +81,9 @@ hay un quizás si es que suena un bolero
 hay un hombre vencido en el suelo
             G
 hay que cerrar.
+<span class="solo">
 G    C9    G    C9
+</span>
          C                   D
 Nunca hay mar al encender la luz
                     G         D/F#       Em
@@ -90,6 +92,7 @@ aunque haya en las miradas cambio de marea
 no es verdad el "te quiero" de papel
                 G         D/F#         Em
 escrito con las ansias de dormir con ella
+
      C                                       D
 También hay un talento innato en el mozo que sirve champán
          G           D/F#       Em
@@ -104,9 +107,9 @@ salvando la luz
 y ahí estás tú
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

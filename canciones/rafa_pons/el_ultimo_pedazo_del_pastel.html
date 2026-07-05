@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>El último pedazo del pastel</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">El último pedazo del pastel</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: E  B  A (x2)
+
+E         B            A        B              E
+Vale, que sí, que todo bien, me largo y a otra cosa
+E    B         A       B          C#m
+quédate mi soledad, perfumando tu boca.
+                       A
+me he guardado en un cajón
+    B                                       A
+una mierda pinchada en un palo con forma de corazón.
+
+Vale, que sí, que todo bien, hablaremos del tiempo
+y de lo fácil que es saber que pasó nuestro momento
+No te preocupes por mí,
+tengo arte para destrozarme sin dejar de sonreír.
+
+<span class="estribillo">
+E      D             C#m               C          E
+Será mejor que no me llames, ya no hay nada por hacer.
+      D             C#m            C          C#m
+Tú nunca follas los martes, hoy no vengas a joder
+                  B        D        B          E
+o acabará de maquillaje el último pedazo de pastel.
+
+E         B            A
+Vale, que sí, que todo bien.
+</span>
+Vale, que sí, que todo bien, maldita primavera,
+dejaré de estornudar cuando alguna me quiera.
+Soy alérgico a la luz,
+pero en mi cama tengo dos fantasmas que me abrazan como tú.
+
+<span class="estribillo">
+Será mejor que no me llames, ya no hay nada por hacer.
+Tu nunca follas los martes, hoy no vengas a joder
+o acabará de maquillaje el último pedazo de pastel.
+</span>
+C                                             E
+Que a veces me desoriento, derrotado en mi sillón,
+C                                          B
+el reposo del guerrero lo ha arrasado un ciclón.
+
+<span class="estribillo">
+Será mejor que no me llames, ya no hay nada por hacer.
+Tu nunca follas los martes, hoy no vengas a joder
+o acabará de maquillaje el último pedazo de pastel. (x2)
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

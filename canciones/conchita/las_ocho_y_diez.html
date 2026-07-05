@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Las ocho y diez</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Las ocho y diez</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: F  G  Am  C (x2)
+
+<span class="estribillo">
+F              G
+Son las ocho y diez, y vuelves otra vez
+Am               C
+A pedir perdón y van más de quinientas
+F                 G
+Que si no sé qué, que si más allá
+Am                C
+Y se enredan tus excusas en mi puerta
+</span>
+Dm             Em
+Ya lo analicé, en tu cabeza
+C               Am
+Algo no va bien, no hay quien te entienda
+Dm                G
+No sabes por qué, ya nunca aciertas
+C                 Am
+Mientes otra vez, nunca lo intentas
+
+<span class="estribillo">
+Son las ocho y diez y volverás después
+Ya perdí la cuenta, van más de quinientas
+Que si no sé qué, que si más allá
+Se amontonan tus excusas en mi puerta
+</span>
+Em
+Me pongo aplaudir, tus frases hechas
+C                 Am
+Me haces sonreír, Tanta franqueza
+D       G
+Miro tu WhatsApp y mi respuesta
+C        Am
+Me voy a bailar, con tres flamencas
+
+<span class="estribillo">
+Son las ocho y diez y vuelves otra vez
+A pedir perdón e irán más de seiscientas
+Que si no sé qué, que si más allá
+Ya hace eco tu discurso en mi cabeza
+</span>
+Dm
+Y la verdad
+G                                 C
+Hace algún tiempo que nadie escucha ya
+Am                      Dm
+Pides perdón y como el humo se va
+Em             Dm               G
+Pides perdón si intentar acertar
+
+Dm
+Y la verdad
+G                    C
+Que te repites y me empiezo a cansar
+Am                   Dm
+Entenderás que yo me voy a marchar
+  G                       C         Am
+Y serás tú quien tenga que perdonar
+
+<span class="estribillo">
+Son las ocho y diez y vuelvas otra vez
+Ya perdí la cuenta, van más de ochocientas
+Que si no sé qué, que si más allá
+Y se enreda tu discurso en mi cabeza
+
+Son las ocho y diez y volverás después
+Mejor da la vuelta y búscate otra puerta
+Que si no sé qué, que si más allá
+Ya suena hueco tu discurso en mi cabeza
+
+Son las ocho y diez y volverás después
+Mejor da la vuelta y búscate otra puerta
+Que si no sé qué, que si más allá
+Chao, cariño, yo ya estoy en otra fiesta
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

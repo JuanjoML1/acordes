@@ -1,61 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Tarde de domingo rara</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tarde de domingo rara</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Tarde de domingo rara</h1>
+
+            <div class="tono">
+                <span>A cej2</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Tarde de domingo rara</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+        <pre>
+ A                       C#m
+Domingo por la tarde, me vienes a buscar
+  D                 E
+y vamos a perder el tiempo un rato.
+ A                       C#m
+Volvemos a bajar a la cantina
+    D                        E
+del novio de la hermana de Lucía.
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
-Cej2
- A                       C#m               D                 E
-Domingo por la tarde, me vienes a buscar y vamos a perder el tiempo un rato.
-Volvemos a bajar a la cantina del novio de la hermana de Lucía.
     D                         E
 Que estaba con un tío que le hacía sufrir;
    A                    E
 y vino con los ojos de fracaso total,
-    D                 E               A
+    D                   E                A
 con ganas de llorar con ganas de dejarlo todo.
+
+    A                       C#m
 Dos whiskies con naranja y unas patatas fritas
+D                  E
 para reírnos de lo perra que es la vida.
-<span class="estribillo">
+
 A                       C#m
 Dan el mundial en la tele del bar,
-   D                 E
+   D
 España vuelve a casa
     E                   D
 yo juego al futbolín contigo,
@@ -65,6 +70,7 @@ sinceramente da lo mismo
 ¿que importará quién pierde o gana?
                        E   E7
 si nunca nos jugamos nada.
+<span class="estribillo">
        A      E        F#m   D   E   A
 No no no, no no no, no no no.
     E        D       E
@@ -91,7 +97,9 @@ D
 dicen siempre lo mismo dicen que mi inocencia
           E                      A
 se ha perdido, ya no hay vuelta atrás.
+<span class="solo">
 A  E   F#m  D  E   A  E   F#m  D  E
+</span>
 Dan el mundial en la tele del bar:
 España vuelve a casa,
 yo juego al futbolín contigo,
@@ -112,9 +120,9 @@ que el lunes quedará lejana.
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

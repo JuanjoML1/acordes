@@ -1,46 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>La barrera del sonido</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>La barrera del sonido</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">La barrera del sonido</h1>
+
+            <div class="tono">
+                <span>A cej2</span>
+            </div>
         </div>
 
-        <h1 class="titulo">La barrera del sonido</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
-Cej2
+        <pre>
 D               E
 Otra mañana despierto
 A                     E
@@ -49,7 +45,9 @@ D               E
 Sabor a cama vacía
     A             E
 Y apenas ha amanecido.
+<span class="solo">
 Bm  F#m  D  A  Bm  F#m  D  E
+</span>
 D             E
 Otro tirar palante
 A                E
@@ -64,7 +62,8 @@ Las siete y cuarto, el zumo estaba amargo
 A                             E
 Igual que las noticias de la radio
 Bm                 F#m              E
-Doy dos caladas al último cigarro y ya
+Doy dos caladas al último cigarro y ya.
+
         A                      E
 Que se rompa la barrera del sonido
       F#m            D
@@ -85,23 +84,27 @@ Bm                 F#m
 Hasta el Puente de Vallecas tú
   A                  E
 Y yo hasta Cuatro Caminos.
+
 Que se rompa la barrera del sonido
 Y que no se escuche nada
 Porque sobran las palabras que decirnos.
+
 Que se rompa la barrera del sonido
 Este lunes de resaca
 Y que reine al fin la calma que nunca he tenido
         D           E          A
 Que se rompa la barrera del sonido.
-</span>
+</span><span class="solo">
 Bm  F#m  D  A  Bm  F#m  D  E (x2)
-<span class="estribillo">
+</span><span class="estribillo">
 Las siete y cuarto, el zumo estaba amargo
 Igual que las noticias de la radio
-Doy dos caladas al último cigarro y ya
+Doy dos caladas al último cigarro y ya.
+
 Que se rompa la barrera del sonido
 Y que no se escuche nada
 Porque sobran las palabras que decirnos.
+
 Que se rompa la barrera del sonido
 Este lunes de resaca
 Y que reine al fin la calma que nunca he tenido.
@@ -109,9 +112,9 @@ Que se rompa la barrera del sonido.
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Delta</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Delta</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: C G C F C G F C
+
+G     F       C    G
+Delta, un río va
+      F               C     G
+Delta, sangra hacia el mar
+      F           C
+Delta, eres libertad
+F                     G
+yo soy el agua que no quiere abandonar
+         C
+tu cauce nunca más
+F                 G                         C
+ir a morir en esa boca que está llena de verdad
+
+Acustico: G F C (x2)
+
+G     F           C    G
+Delta, remanso de paz
+      F                  C     G
+Delta, se que un dia volarás
+F                   G                      C
+yo no quería que llegara la mañana con sus pájaros
+F                      G                    Am   C  Am
+todo mi mundo estaba aqui contigo entre los álamos
+F   G  Am             F
+Delta, es hora de partir
+    C        G              C
+Será dificil no llorar por ti
+
+Acustico: G F C (x4)
+
+G      F            C      G
+Delta, adiós mi amor
+       F               C
+Delta, ya siento el dolor
+F                 G                       C
+dos corazones ardiendo que pretenden escapar
+Am                    G                        Am
+y de la hoguera de la noche solo quedan las cenizas ya
+
+F   G  Am             F
+Delta, es hora de partir
+    C        G              C
+Será dificil no llorar por ti
+
+Final: G F C
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

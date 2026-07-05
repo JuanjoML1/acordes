@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Carrusel</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Carrusel</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: A  C#  F#m  B  A  E  D  A  E
+
+      A        C#        F#m                B
+Volverás a sentir, un millón de luces sobre ti.
+A                 E          D          A       E
+Tropezaste sin querer, resbalaste en el barro.
+       A         C#         D               Dm
+Fuiste más de lo que muchas chicas soñarían ser,
+        A          E        D          A
+Y en un baño del Rabal te esnifas el pasado.
+
+<span class="estribillo">
+F#m                 A
+Y ahora cierran los bares,
+D                  Dm
+y vuelve sola otra vez.
+A         D    E        D      A         E
+Esta madrugada fue de estrellas fugaces.
+</span>
+      A        C#        F#m                B
+Volverás a sentir, un millón de luces sobre ti,
+A                    E          D         A
+para cuando luzca el sol nos habrás abandonado.
+
+D                                Dm
+Por el bulevar se escapa hacia el mar
+                A                     E        A
+otra madrugada igual, otra canción de soledad.
+
+A   C#  F#m  B    A   E  D  A
+A   C#  D  Dm    A   E  A
+
+F#m                 A
+Y ahora cierran los bares,
+D                  Dm
+y vuelves sola otra vez.
+A         D    E               A
+Esta madrugada fue estrellas fugaces.
+F#m                 A
+Y ahora riegan las calles
+D                  Dm
+tus lagrimas pero sé
+A             D                 E             A
+que hay un millón de luces para ti en el carrusel,
+      D      E          D              Dm     A
+un millón de luces para ti en el carrusel.
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

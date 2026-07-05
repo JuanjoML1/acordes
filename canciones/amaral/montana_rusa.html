@@ -1,89 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>***Montaña rusa</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>***Montaña rusa</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">***Montaña rusa</h1>
+
+            <div class="tono">
+                <span>A</span>
+            </div>
         </div>
 
-        <h1 class="titulo">***Montaña rusa</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
-F#m-D-F#m-D-F#m-D-F#m-E
-Uhh uhh uhh uhh uhh uhh uhh uhh, uhh uhh uhh uhh
-F#m   A       D
+        <pre>
+<span class="solo">
+F#m  D (x3)
+F#m  E
+</span>
+F#m A         D
 A una montaña rusa subiré
-F#m   A       D
-para cambiar el vertigo de amar
-F#m   A       D
+F#m A           D
+para cambiar el vértigo de amar
+F#m A        D
 por la filosofía de caer,
-F#m   A       D                  E
+F#m A           D             E
 rendida ante un capricho del azar.
-F#m   A       D
+
+F#m A           D
 La palma de tus manos leeré
-F#m   A       D
+F#m A         D
 me dijo una muchacha del Raval,
-F#m   A       D
+F#m A              D
 pero hay cosas que no quiero saber,
-F#m   A       D                E
+F#m A           D           E
 que pase lo que tenga que pasar
-E                      F#m  E
+                  E     F#m  E
 que a mi me da lo mismo.
-D           A
+<span class="estribillo">
+D               A
 Perdida como un perro voy
-E          F#m
+E               F#m
 en busca de aventuras,
-D           A
+D             A
 perdida sin saber quién soy
-E             F#m  A  D
-en la montaña rusa...
-              F#m  A  D
-En la montaña rusa...
-F#m   A       D
+E             F#m   A  D
+en la montaña rusa.
+              F#m   A  D
+En la montaña rusa.
+</span>
 Y yo quise cambiar el mundo
-F#m   A       D
 y tal vez ese mundo me cambió,
-F#m   A       D
 Y hay noches que me hundo entre la nada
-F#m   A         D            E                    F#m  A  D
-para alcanzar la misma conclusión: no soy ninguna santa.
-                   E             F#m
+para alcanzar la misma conclusión:
+
+               F#m    A  D
+no soy ninguna santa.
+                  E             F#m
 Porque a veces me pierde el corazón.
                 D
 "Te pasas de la raya":
-                F#m         E
+                 F#m       E
 eso es lo que me dice la razón.
+<span class="estribillo">
 D           A
 Perdida como un perro voy
 E          F#m
@@ -94,8 +96,10 @@ E             F#m  A  D
 en la montaña rusa...
               F#m  A  D
 En la montaña rusa...
-F#m-D-F#m-D-F#m-D-F#m-E
-Uhh uhh uhh uhh uhh uhh uhh uhh, uhh uhh uhh uhh
+</span><span class="solo">
+F#m  D (x3)
+F#m  E
+</span><span class="estribillo">
 D              A
 Perdida como un perro
 E           F#m
@@ -112,11 +116,12 @@ D                A
 Perdida sin saber quién soy.
 E               F#m
 en la montaña rusa.
+</span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

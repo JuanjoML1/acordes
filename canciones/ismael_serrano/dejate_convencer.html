@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Déjate convencer</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Déjate convencer</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+B*: x6x400    //    A*: x4x200
+
+Intro: Asus2  E/G#  A  B/A  E/G#  C#m9  C#m7*  C#m7**
+       Asus2  E/G#  A  B/A  B*  A*  B(E)
+
+E                  E/G#        Asus2
+Un día la vida echará abajo tu puerta.
+B              E/G#           A
+Rendida, acorralada te pedirá cuentas
+B/A           E/G#               A*  B(E)
+por este fracaso, por haberme mentido.
+
+Y no encontrarás a un hombre que te ponga a salvo,
+que el hecho de estar vivo siempre exige algo.
+Déjate convencer, duerme esta noche conmigo.
+
+Que el amor se encuentra antes si se busca.
+Mira qué casualidad si yo fuera tu hombre y la duda
+de haberte dado luz no te deja dormir nunca.
+
+<span class="estribillo">
+E       C        F#m             E/G#            A
+Déjate convencer. Ya habrá alguien que se haga cargo
+E/G#            F#m             E/G#
+de recoger las culpas de este pecado.
+         C             B
+A donde iré, sin este abrazo.
+E       C        F#m             E/G#     A
+No te puedes negar, no sea que nuestro pasado
+E/G#                 F#m                   E/G#
+nos llegué a atrapar. Esta noche está en nuestras manos
+  C             B       F#m-E/G#-A-B            E
+decir alguna verdad que ya, que ya mentimos a diario.
+</span>
+( E  C  F#m  E/G#  A  B/A  E/G#  A )
+
+Pero anda, echa un vistazo a tu alrededor, no seas tonta,
+mira que no hay un alma que llevarse a la boca,
+que hay que repartir caricias y esta noche nos toca.
+
+Que yo también comparto los mismos miedos,
+también busco una cinta para atar el tiempo.
+También arrastro conmigo una cadena de sueños.
+
+Un día la vida echará abajo tu puerta.
+Rendida, acorralada te pedirá cuentas
+por este fracaso, por haberme mentido.
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

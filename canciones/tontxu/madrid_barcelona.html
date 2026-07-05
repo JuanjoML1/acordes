@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Madrid – Barcelona</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Madrid – Barcelona</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Gm7*:    3x333xx
+
+Cej2
+
+C               Dm         Em
+Me ha dejado un beso y un abrazo,
+F              Gsus4         C      C/B
+me ha enseñado su ciudad por dentro
+Am             Am/G           D/F#
+y al final nos ha faltado tiempo
+F              Gsus4    C
+para descubrir rincones nuevos,
+F              G      C
+y no hemos podido conocernos.
+
+Me ha dejado un número y su nombre
+anotado en una servilleta,
+un café con hielo y tres cervezas,
+una para cada y otra a medias;
+no me olvides llama cuando vuelvas.
+
+<span class="estribillo">
+Gm7*                             C9
+Ojalá que el destino me vuelva a traer,
+Fmaj7                           Bb9
+yo prometo llamarte no lo olvidaré,
+C                Em7              A7
+que lo tuyo y lo mío me huele muy bien,
+F       G            C
+todavía no la he vuelto a ver.
+</span>
+Estuvimos juntos en la fuente
+esa que si bebes siempre vuelves.
+Sé que estaba cerca de una plaza
+pero no recuerdo bien de dónde,
+y la estoy buscando desde entonces.
+
+Me enseñó palabras en su idioma,
+le enseñe unas cuantas yo en el mío,
+nos reímos de las mismas bromas.
+“No te marches, quédate conmigo
+qué más da Madrid o Barcelona.”
+
+<span class="estribillo">
+Ojalá que el destino me vuelva a traer
+por aquí yo prometo llamarte no lo olvidaré
+que lo tuyo y lo mío me huele 'molt bé',
+todavía no la he vuelto a ver.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

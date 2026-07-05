@@ -1,46 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Subamos al cielo</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Subamos al cielo</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Subamos al cielo</h1>
+
+            <div class="tono">
+                <span>C cej3</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Subamos al cielo</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
-Cej3
+        <pre>
      Am                        G
 Esta noche crecerá como hiedra trepadora
      Am                       G
@@ -50,9 +45,9 @@ Esta noche crecerá encaramada al cielo,
     Am                      E
 Subiremos en sus hojas como alfombras voladoras
 <span class="estribillo">
-Am (X)     G              Am
+Am         G              Am
 Quiero que nos subamos al cielo,
-Am (X)        G              Am
+Am            G              Am
 Yo quiero que nos subamos al cielo.
 Dm                                   Am
 Quiero ver desde el aire, la tierra y el mar,
@@ -71,6 +66,7 @@ Yo quiero que nos subamos al cielo.
 Quiero ver desde el aire, la tierra y el mar,
 Yo no quiero morirme, yo quiero subir y poder bajar.
 Yo quiero que nos subamos al cielo.
+
 Dm                                     Am
 Quiero ver desde el aire, la tierra y el mar,
 Dm                                E
@@ -79,6 +75,7 @@ Dm                                Am
 Y esta noche crecerá la semilla de luna,
 Dm                                    E
 Y dará de frutos otras estrellas, Y subiremos a recogerlas.
+
 Am         G              Am
 Quiero que nos subamos al cielo,
 Am            G             Am
@@ -90,9 +87,9 @@ Al cielo...
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

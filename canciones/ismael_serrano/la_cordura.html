@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>La cordura</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">La cordura</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+G1: 320033
+G2: 300020
+G3: 300010
+G4: 300000
+
+Intro: G1-G2-G3-G4
+
+G1         G2             G3           G4
+Reconocerme en los rincones de tu abrazo.
+G1         G2             G3           G4
+Comprarte flores cuando sales del trabajo.
+
+ Am           Em7                 C
+Volver contigo cuando escucho el noticiero.
+ Am            Em7                C
+Quedarme fuera y que me empape el aguacero.
+ G1                 G2 G3 G4
+Para estar cuerdo.
+G1                  G2 G3 G4
+Y seguir despierto.
+
+ Am             Em7                C
+Tenerte cerca cuando estalle la razón.
+ Am             Em7                  C
+Besar tu estambre, congelar la habitación.
+ G1                 G2 G3 G4
+Contigo dentro.
+ G1                 G2 G3 G4
+Para estar cuerdo.
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

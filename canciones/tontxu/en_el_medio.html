@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>En el medio</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">En el medio</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: Am  B7  Em
+
+Am              B7         Em
+Llevamos mucho tiempo defendiendo
+Am               B7             Em
+un nombre, un apellido, una canción.
+C                 D           G
+y con mis propios ojos quiero verlo
+Am                B7         Em
+que lo hemos conseguido con amor.
+
+Am             B7        Em
+Llevamos muchos años peleando
+Am             B7          Em
+y no hay pelea si no quieren dos.
+C                D               G
+y hay gente por aquí que está llorando,
+Am               B7             Em
+que no sabe qué hacer con su dolor.
+
+<span class="estribillo">
+              Am           D              G
+Estoy cantando alto porque busco una respuesta.
+              Am             D               G
+Estoy diciendo basta porque quiero una solución.
+                   B7                           Em
+Que tengo un par de amigos, cada uno está en un bando,
+                   C             B7        Em
+y ya se han distanciado y en el medio muero yo.
+</span>
+Llevamos muchas tardes discutiendo
+que si esto pertenece, que si no,
+y a cualquier precio quieren enfrentarnos,
+a ver si así perdemos la razón.
+
+Llevamos muchas noches sin hablarnos
+pero nos queda un sueño por cumplir.
+así que unamos fuerte nuestras manos,
+si yo confío en ti, confía en mí.
+
+<span class="estribillo">
+Estoy cantando alto porque busco una respuesta.
+Estoy diciendo basta porque quiero una solución.
+Que tengo un par de amigos, cada uno está en un bando,
+y ya se han distanciado y en el medio muero yo.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

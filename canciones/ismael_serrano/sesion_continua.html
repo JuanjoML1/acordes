@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sesión continua</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Sesión continua</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+   A   A/B  E/G# Em/G  Gm6  D/F# F6   F#m  B7    E  Esus2 G6/E  E*
+|--0----X----x----x----x----x----1----2----2----0----0----0----0----
+|--2----4----5----5----3----3----3----2----0----0----0----0----0----
+|--2----4----4----4----3----2----2----2----2----1----2----4----7----
+|--2----4----2----2----2----0----3----4----1----2----4----6----9----
+|--0----0----x----x----x----x----x----4----2----2----x----x----x----
+|--x----x----4----3----3----2----1----2----x----0----0----0----0----
+
+F#sus4/G C#7(2) Fm   Em    D   Dm
+----x------x-----1----0----2----1----
+----2------2-----1----0----3----3----
+----4------4-----1----0----2----2----
+----4------3-----3----2----0----0----
+----x------4-----3----2----x----x----
+----4------x-----1----0----x----x----
+
+Intro: A - A/B..
+
+A        A/B                E/G#                    Em/G      Gm6
+Eran días   de algodón de azúcar, pantalón corto y lluvia mojando un verano
+D/F#
+azul.
+F6                         A         E/G#         F#m                B7
+Eran mis primeros días de cine, las primeras cicatrices que el amor tatuó
+        E Esus2 G6/E E*
+en mi piel.
+A                          E/G#                    Em/G      Gm6
+Cada sábado puntual en el Excélsior alimentaba mis sueños de dos rombos la
+   D/F#
+taquilla.
+F6                         A         E/G#                 F#m
+Una muchacha que vendía las entradas, que partía en dos mi alma al sonreír
+   B7      E Esus2 G6/E E*
+tras el cristal.
+
+A                                 F#sus4/G# C#7(2)
+Y cuando en la pantalla rugía al rescate el Halcón Milenario,
+F#m                    (Fm) Em    A      D
+yo era Han Solo y ella Leia dándome mi cambio
+                        Dm                          A
+y dos entradas para el cielo y a mi lado Indiana Jones,
+        E/G#           F#m            B7          E Esus2 G6/E
+perdido, buscando el tesoro que escondíamos tú y yo.
+
+A                          F#sus4/G#  C#7(2)
+Sesión continua a tu lado, yo soy tu octavo pasajero,
+F#m                         (Fm) Em        A           D
+paseando en la Nostromo, buscándote para anidar en tu pecho.
+                   Dm                          A
+Mi corazón daba piruetas como un poseído Bruce Lee
+        E/G#           F#m            B7          E Esus2 G6/E
+cuando se encendía la luz y te encontraba allí.
+
+A                          E/G#                        Em/G          Gm6
+El tiempo pasó. Cerró el Excélsior y en su lugar han abierto un súper del
+           D/F#
+que ya te hablé.
+F6                          A           E/G#         F#m          B7
+No lo encontrarás en la cartelera, no iluminan la Albufera sus carteles de
+ E Esus2 G6/E E*
+neón.
+A                     E/G#                 Em/G          Gm6       D/F#
+Todavía cuando voy al cine busco su mirada triste alumbrando la taquilla.
+F6                          A           E/G#         F#m          B7
+Pero el cristal sólo me devuelve el reflejo de este niño que se empeña en
+     E Esus2 G6/E E*
+no crecer.
+
+A                          F#sus4/G#  C#7(2)
+Y cuando en casa ruge en la tele el Halcón Milenario
+F#m                    (Fm) Em      A         D
+sigo siendo Han Solo y ella Leia entre mis brazos.
+                          Dm                          A
+¿Quién sería el que te raptara? ¿Quién me robó las entradas
+      E/G#            F#m            B7          E Esus2 G6/E E*
+centraditas y en mis sueños para ver tu cuerpo arder?
+
+A                               F#sus4/G#     C#7(2)
+Sesión continua lejos de ti. Sigo siendo tu octavo pasajero
+ F#m                       (Fm) Em        A             D
+paseando en la Nostromo. Buscándote para anidar en tu pecho.
+                       Dm                        A
+Cuando se enciende la luz, como el viejo Woody Allen,
+     E/G#          F#m               B7        E Esus2 G6/E
+quedo solo y descompuesto pues te busco como antes.
+
+solo
+
+A                               F#sus4/G#  C#7(2)
+Y cuando en la pantalla ruge al rescate el Halcón Milenario
+F#m                    (Fm) Em      A         D
+sigo siendo Han Solo y ella Leia entre mis brazos.
+                   Dm                       A
+Me acompañan en la huida la pobre bruja Avería,
+      E/G#            F#m            B7          E Esus2 G6/E E*
+Naranjito, E.T. y Fantomas, mi negativa a crecer.
+
+A                             F#sus4/G#  C#7(2)
+Sesión continua lejos de ti. Yo soy tu perro callejero
+F#m                           (Fm) Em        A           D
+de patrulla por el barrio, buscándote para anidar en tu pelo.
+                   Dm                            A
+Me ha atrapado el lado oscuro. Hoy regreso a tu futuro
+      E/G#            F#m             B7          E Esus2 G6/E E*
+para buscarte en mis sueños, para ver tu cuerpo arder.
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

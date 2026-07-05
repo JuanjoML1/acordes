@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>El corazón me arde</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>El corazón me arde</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">El corazón me arde</h1>
+
+            <div class="tono">
+                <span>C</span>
+            </div>
         </div>
 
-        <h1 class="titulo">El corazón me arde</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
+        <pre>
+<span class="solo">
 Intro: D  Am  G (x2)
+
         D         Am      G         D       Am            G
 A|----5h7-9-9--9/7/5--3--7-5-3/2-|---5h7-9-9--9/7/5/10----7b--5-5---
 E|--5----------------------------|--5-------------------------------
+</span>
     D                                    D/C#
 Del norte, como yo, perdida, como todos, duermen
       Am/C                           G
@@ -52,15 +54,17 @@ si quebrara ahora la tierra, nos da igual
 los dos somos del mar, los dos somos la suerte
       Bm         A             G
 de sentirnos diferente a los demás
+
 De solo corazón al centro añejo roble siente
 que si ríe bien pudiera ir más allá
 enmudecer la sal con besos y el poniente
 no pusiera mi futuro en su mirar
 <span class="estribillo">
-Bm                   A                    G
+           Bm                   A                    G
 Mientras quede el después de tu pelo danzando en el aire
       Bm               A                 G
 no me pidas respeto perdiéndolo en horizontal
+
     D
 Pretendiendo quererte he mirado de más,
      Am
@@ -75,15 +79,16 @@ Em                        A
 quédate, o al menos no te muevas
                 Bm    A        G
 y el corazón me arde, y el corazón
-</span>
+</span><span class="solo">
 ( D  Am  G ) x2
-<span class="estribillo">
-Bm                  A              G
+</span><span class="estribillo">
+          Bm                  A              G
 Mientras quede champán y el teléfono siga mojado
          Bm             A                   G
 mientras sobre teatro, segundo papel me da igual
          Em            A7
 permíteme el azar, apaga el escenario
+
 Pretendiendo quererte he mirado de más,
 a la noche le faltan estrellas
 quizás con tu piel tendrán que rendir cuentas
@@ -91,6 +96,7 @@ Represento la fe y no he rezado jamás,
 no hay olvido detrás de la noche de ayer
 Em-D/F#-G                    D
 quédate, o al menos no te muevas
+
 Pretendiendo quererte he mirado de más,
 a la noche le faltan estrellas
               Em                          A7sus4
@@ -102,9 +108,9 @@ y el corazón me arde, y el corazón me arde
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

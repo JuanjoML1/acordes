@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Corazón de mudanza</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Corazón de mudanza</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Am         Bm        Em
+Esta casa sabe demasiado
+Am         Bm        Em
+sus paredes escucharon tanto
+Am         Bm        Em
+que han salido grietas en el corazón de ambos
+          C          Bm          Em
+y han perdido ya su brillo los armarios
+          C          Bm          Em
+y las luces del salón ya se apagaron.
+
+Esta nuestra casa se ha cansado
+de peleas, gritos y portazos
+de esconder tras sus cortinas tantos desencanto
+provocado por el paso de los años
+y ha empezado tanto amor a hacernos daño.
+
+<span class="estribillo">
+C            D
+Cajas de cartón
+G
+amontonadas en la entrada.
+C            D
+Esto de quién es,
+G
+si no te importa me lo quedaré.
+C            D
+Te noto al hablar
+G
+una forzada naturalidad,
+C            D
+me puedo reír
+             B7
+y a solas llorar.
+     C        D  Em
+Corazón de mudanza,
+     C        D  Em
+tengo el corazón de mudanza,
+     C        D  Em
+corazón de mudanza.
+</span>
+Esta nueva casa es más pequeña,
+me acostumbraré a vivir en ella.
+Por las noches estaré pendiente de la puerta,
+esperando como siempre a que tú vuelvas
+y con tu ausencia dormiré cuando amanezca.
+
+<span class="estribillo">
+Cajas de cartón
+amontonadas en la entrada.
+Esto de quién es,
+si no te importa me lo quedaré.
+Te noto al hablar
+una forzada naturalidad,
+me puedo reír
+y a solas llorar.
+Corazón de mudanza,
+tengo el corazón de mudanza,
+corazón de mudanza.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

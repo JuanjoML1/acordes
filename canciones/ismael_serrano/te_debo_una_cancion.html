@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Te debo una canción</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Te debo una canción</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+C              F        Am                              G
+Te debo una canción que hable de mujeres con piel de quinoto,
+C             F        Am                     G
+del frío manantial que lava las arrugas de tu rostro.
+F                 Em      Am                       G
+De hombres que maldicen y salvan del incendio tu retrato,
+F              Em       Am                         G
+con voz de caracola, gritan tu nombre en los acantilados.
+
+Te debo una canción para desalambrar cada mañana,
+para quitar la sal del llanto del color de tu pijama.
+Para cuando camines al borde de la vida cada lunes,
+te desate las alas si el metro no se detiene en tu nube.
+
+<span class="estribillo">
+C                         G                     Am
+Te debo una canción, pero esta madrugada sin ventanas,
+    F                       C             G                    Am
+la usura del raptor de mi futuro, el muro gris que cerca tu jardín,
+           F
+en fin, no me dejan soñar.
+
+Te debo una canción, pero la dulce absenta del olvido,
+ladridos de noche y televisados, el muro helado que cerca tu jardín,
+en fin, quizá los telediarios,
+
+C              G                   F
+No me dejan pensar, ya ves, en melodías.
+C                G                            F
+Pero yo estoy en ello, te juro que no se me olvida.
+</span>
+Te debo una canción que limpie el rostro sucio de las hadas
+que encuentras en la calle en lámparas de oro encarceladas.
+Que hable de los libros que abandonaste en los bancos del parque,
+que cuentan el secreto que mantuvo despierta a Sherezade.
+
+Te debo una canción que aplaque la iracunda madrugada
+si rapto a tu marido y en cualquier bar las musas nos atrapan.
+Pues, si llegamos tarde, la noche nos abriga como madre
+que cuida a sus retoños y teme que sus niños se hagan grandes.
+
+<span class="estribillo">
+Te debo una canción, pero esta madrugada sin ventanas,
+la usura del raptor de mi futuro, el muro gris que cerca tu jardín,
+en fin, no me dejan soñar.
+
+Te debo una canción, pero la dulce absenta del olvido,
+ladridos de noche y televisados, el muro helado que cerca tu jardín,
+en fin, quizá los telediarios,
+
+No me dejan pensar, ya ves, en melodías.
+Pero yo estoy en ello, te juro que no se me olvida.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

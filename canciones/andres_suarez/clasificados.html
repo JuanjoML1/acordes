@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Clasificados</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Clasificados</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Clasificados</h1>
+
+            <div class="tono">
+                <span>D</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Clasificados</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
+        <pre>
 Bm                             Gmaj7
 Puede que hoy suene esa voz que lo cambia todo
 A                          Bm
@@ -48,6 +47,7 @@ Puede que no y sigas partiendo mi rumbo
 Si me das un papel te hago reina,
        F#m               G
 Si te bajas la falda te juro.
+
 Pórtate bien, dame calor, las diez y diez.
 Mira qué sol viene a deshacer el nudo
 De tu abrazo que todo lo puede
@@ -59,6 +59,7 @@ Tú, tú, cualquier frase silente entre la luz
 Tú, motivo de los besos que no sigo
    F#m                      G
 Promesa de un pronombre posesivo.
+
 Tú, tú, reflejo que devuelve aquel azul
 Tú, volviéndote a favor de mi destino
 Océano buscándose en el río.
@@ -69,6 +70,7 @@ Y la luna que no es llena, es para ti
 Te la traje en un café
                  G
 Aún dormías y me fui.
+
       D                           G
 Luego vuelvo cuando vuelvas tú también
                    Bm
@@ -79,6 +81,7 @@ Aún dormida dijo sí.
 Tú, tú, un vuelo migratorio rumbo al sur
 Tú, llevando en mi futuro tu pasado
 Buscando visa para un sueño largo.
+
 No hay ley, los gritos en la plaza de piedad ayer
 vinieron a sacarnos de esta casa
 Y a cántaros aún tiene que llover.
@@ -101,13 +104,16 @@ G            Em  A  Bm
 No llores, amor.
            F#m   G   A
 No llores, amor.
+<span class="solo">
 G  Em  F#m  G
+
 Em  A  Bm  F#m  G
+</span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

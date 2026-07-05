@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Para tocar el cielo</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Para tocar el cielo</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cadd9:       032030
+Em7:         020030
+Em7(b5):     010030
+Fmadd9:      xx3113
+Gm:          x10033
+Gsus4:       3x0013
+
+Cej1
+
+Intro: Cadd9  Em7  Em7(b5)  A7  A7sus4  Dm  Fmadd9
+       C  Gm  A7sus4  A7  Dm  Dsus2  G(B)  Gsus4  G(D)
+
+Cadd9    Em7
+El calor de tu amor
+Em7(b5)     A7    A7sus4   Dm
+me da sed y donde bebo yo
+      Fmadd9      Cadd9
+es donde quiero beber
+    A            Dm   G
+y saciar allí mi sed.
+
+El color de tus ojos
+se adivina entre tu pelo y yo
+los deseo más que ayer
+y que la primera vez.
+
+<span class="estribillo">
+F             E         F#*  G#*
+No preciso viajar lejos
+       Am7     Am/G  F   Fm
+para hallar lo que deseo
+      C        Gm   A7sus4  A7
+si tropiezo en tu regazo
+      Dm   Dsus2
+ya me basta
+G(B) Gsus4 G(D) Cadd9
+para tocar el cielo.
+</span>
+Cadd9  Em7  Em7(b5)  A7  A7sus4  Dm  Fmadd9
+C  Gm  A7sus4  A7  Dm  Dsus2  G(B)  Gsus4  G(D)
+
+El sabor de tus labios
+ese selecto capricho que
+solo yo puedo probar
+y a chincharse los demás.
+
+El candor de tu abrazo
+puro, fiel, eterno, halagador,
+es mi fe y mi religión
+garantía del amor.
+
+<span class="estribillo">
+No preciso viajar lejos...
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

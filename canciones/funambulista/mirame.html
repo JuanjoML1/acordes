@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mírame</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Mírame</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: E  F#m  E  G#m  F#m  A  F#m  E  G#m
+
+E    F#m
+Dicen que tengo la voz gastada
+E          A          E
+Que me olvidé de sentir
+F#m                A              E
+Dicen que dónde dejé las ganas, que ya no me acuerdo de ti.
+
+B                      F#m       A            E
+   Dicen que bailo muy mal y que ya no te entiendo
+           F#m
+Me sigo peinando igual
+   A                B
+Sintiendo igual de mal
+
+<span class="estribillo">
+       E  B           A
+Y mírame, perdiendo peso
+            E
+Imaginándote sin mí
+           B               A
+No vaya a ser que toque hueso
+  E                 B
+Maldita forma de vivir
+
+       E  B           A
+Y mírame, perdiendo peso
+            E
+Imaginándote sin mí
+           B               A
+No vaya a ser que toque hueso
+</span>
+E  F#m
+
+Pronto te echaré de menos
+Haré como si no supiera que te quiero
+Y volveré a andar, volveré a andar, a ver si llego…
+
+Dicen que bailo muy mal y que ya no te entiendo
+Me sigo peinando igual
+Sintiendo igual de mal
+
+<span class="estribillo">
+Y mírame, perdiendo peso
+Imaginándote sin mí
+No vaya a ser que toque hueso
+Maldita forma de vivir
+
+Y mírame, perdiendo peso
+Imaginándome sin mí
+No vaya a ser que toque hueso
+</span>
+F#m   G#m   B   A   B
+
+<span class="estribillo">
+Y mírame, perdiendo peso
+Imaginándote sin mí
+No vaya a ser que toque hueso
+Maldita forma de vivir
+
+Y mírame, perdiendo peso
+Imaginándote sin mí
+No vaya a ser que toque hueso
+Maldita forma de vivir...
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

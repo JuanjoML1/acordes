@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Un poco idiota</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Un poco idiota</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: G  C  D
+
+<span class="estribillo">
+G                                  C
+Por lo menos te he mandado cien mensajes
+D                                   G
+super cursis, en plan “sueño con tu boca”.
+Por favor, no se lo cuentes a nadie,
+que esta noche yo es que estoy un poco idiota.
+</span>
+Em                   D                 G
+Quizás me he cargado más la última copa.
+C                  D          Em
+El caso es que estaba fría mi cama
+C            Am              D
+y te echaba de menos mi pijama
+C           D       C                     D
+y de abrazarte y de estrujarte me moría de ganas.
+
+                        Am                   D
+Porque soy igual que un niño castigado sin recreo,
+              C   Am                   D
+dibujando corazones cada vez que no te veo.
+Am                    D
+Pero, no pasa nada, mañana se me quita.
+  C                       D
+Olvida mis chorradas, demasiadas cervecitas.
+
+<span class="estribillo">
+Simplemente te he mandado cien mensajes
+super cursis en plan “sueño con tu boca”.
+Por favor no se lo cuentes a nadie
+que esta noche yo es que estoy un poco idiota.
+</span>
+Esto debe ser como una gripe.
+En vez de fiebre lo que ocurre es que sonríe
+mi cara si recuerdo los momentos en que te siento
+tan cerca y me entretengo
+
+dibujando corazones como un niño sin recreo.
+Con lo golfo que yo he sido y lo tonto que hoy parezco.
+No me tomes en serio, yo al menos no lo haría.
+Pero, cuelga tu primero, joder, macho, vaya día.
+
+<span class="estribillo">
+Y es que encima te he mandado cien mensajes,
+super cursis en plan “sueño con tu boca”.
+Por favor no se lo cuentes a nadie
+que esta noche yo es que estoy un poco idiota
+(mal te veo, rafita, mal te veo)
+que esta noche yo es que estoy un poco idiota.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Tal vez te acuerdes de mí</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tal vez te acuerdes de mí</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Tal vez te acuerdes de mí</h1>
+
+            <div class="tono">
+                <span>G cej5</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Tal vez te acuerdes de mí</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
-Cej5
+        <pre>
 G           Cadd9      G         Em7
 Tal vez te acuerdes de mí con el paso de los años
           Cadd9       G                       Dsus2/F#
@@ -50,7 +48,7 @@ Tal vez te acuerdes de mí cuando a una niña le cantes
 C                     G                         Dsus2/F#
 las melodías que os hacía sin guitarra en el jardín
 <span class="estribillo">
-Cadd9                      D/F#
+         Cadd9                      D/F#
 Y cuando ya no puedas más de tanto amor sin escalera,
        G              D/F#        Em7
 cuando busques piso a medias y colchón
@@ -70,7 +68,7 @@ Tal vez, tal vez volvamos a vernos
        Cadd9         Am                         D/F#
 y compadezca a la persona que entristezca tu perfil
 <span class="estribillo">
-Cadd9                        D/F#
+           Cadd9                        D/F#
 Y cuando escuches Nessum Dorma y haya estrellas
     G           D/F#         Em7
 escapando de sí mismas con color
@@ -87,9 +85,9 @@ Vas a acordarte de mí, tal vez te acuerdes de mí.
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

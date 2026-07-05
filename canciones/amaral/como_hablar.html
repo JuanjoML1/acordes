@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Cómo hablar</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cómo hablar</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Cómo hablar</h1>
+
+            <div class="tono">
+                <span>A</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Cómo hablar</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
+        <pre>
 A                         G
 Si volviera a nacer, si empezara de nuevo,
      D                    A
@@ -48,7 +45,9 @@ A                        G
 Es el destino quien nos lleva y nos guía,
       D                    A
 nos separa y nos une a través de la vida.
+<span class="solo">
 ( A  G  D  A )
+</span>
 Nos dijimos adiós y pasaron los años,
 volvimos a vernos una noche de sábado.
 Otro país, otra ciudad, otra vida,
@@ -58,6 +57,7 @@ A       G         D                      A
 A veces te mataría y otras en cambio te quiero comer,
           G             A
 ojillos de agua marina.
+
      D                F#                 Bm
 Cómo hablar si cada parte de mi mente es tuya,
          G                   D         F#
@@ -80,9 +80,9 @@ Cómo hablar si cada parte de mi mente es tuya,
 si no encuentro la palabra exacta cómo hablar....
 Cómo decirte que me has ganado poquito a poco,
 tú que llegaste por casualidad, cómo hablar...
-</span>
+</span><span class="solo">
 ( A  G  D  A ) (x2)
-<span class="estribillo">
+</span><span class="estribillo">
 A veces te mataría y otras en cambio te quiero comer,
 me estas quitando la vida.
 Cómo hablar si cada parte de mi mente es tuya,
@@ -92,9 +92,9 @@ tú que llegaste por casualidad, cómo hablar... (x2)
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Rock & Roll</title>
+
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Rock & Roll</h1>
+
+            <div class="tono">
+                <span>G cej2</span>
+            </div>
+        </div>
+
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+
+        <pre>
+G                   D
+Era la banda del barrio
+                   Em
+como los truenos sonando
+                 D
+rompiendo la medianoche
+                 Em
+encima del escenario.
+
+Em      G            D
+Sólo teníamos quince años
+                    Em
+y ahí supe lo que sería
+                 D
+dos corazones marcados
+                      Em   Em D C
+para el resto de los días.
+<span class="estribillo">
+D         Em
+Ya no tengo solución
+       C             G
+sé que no tengo remedio
+          C             D
+rock and roll para ser libres
+         Em
+como el viento.
+</span>
+Em     G           D
+Eran maneras de vivir
+                  Em
+por un pedazo de sueño
+             G       D
+siempre que salgo a tocar
+                        Em
+me acuerdo de aquellos tiempos.
+
+C                 G
+Sigo buscando la verdad
+C                     G
+cuando se rompe el silencio
+                     D
+siempre que salgo a tocar
+                  Em      Em D C
+me vienen esos recuerdos.
+<span class="estribillo">
+Ya no tengo solución
+sé que no tengo remedio
+rock and roll para ser libres
+como el viento.
+
+Ya no tengo solución
+sé que te echaré de menos
+yo nací para ser libre
+como el viento. (x2)
+</span>
+C  D  Em  D
+</pre>
+
+    </body>
+
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

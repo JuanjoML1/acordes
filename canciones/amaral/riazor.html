@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Riazor</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Riazor</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Riazor</h1>
+
+            <div class="tono">
+                <span>C cej3</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Riazor</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
-Cej3
+        <pre>
+<span class="solo">
 Intro: Am  G  F  Am (x2)
+</span>
 G
 En media noche en el acantilado
 F                       Am
@@ -56,8 +54,10 @@ F              Am            G
 nadamos en las playas de Riazor.
              F                      C
 Agosto de calor, septiembre de tormenta
+<span class="solo">
 B|-1-0-1-3-1-0-----|
 G|-------------2-0-|
+</span>
 Am                     F
 Dos meses antes de que aparecieran
 G                      Am
@@ -73,6 +73,7 @@ De las horas muertas en tu habitación
 ¿Quién dijo que no perdería el control
                G6*                 Am
 cuando iba a camino de la destrucción?
+
 Am                      C
 Hoy vuelve a soplar ese viento del mar
     G                   Am
@@ -86,9 +87,11 @@ Siempre fumando como una posesa
 Buscando vida en otros planetas
 Obsesionada con ir más allá
 Para alcanzar la emoción perfecta
+
 ¿Acaso solo yo me daba cuenta
 de que en octubre llegaría lo peor?
 Agosto de calor, septiembre de tormenta
+
 Aun puedo ver a cámara lenta
 Aquellos días de marea negra
 entre tu corazón y mi cabeza
@@ -97,6 +100,7 @@ entre tu corazón y mi cabeza
 De las horas muertas en tu habitación
 ¿Quién dijo que no perdería el control
 cuando iba a camino de la destrucción?
+
 Hoy vuelve a soplar ese viento del mar
 que nubla la mente y la vista.
 Prefiero saltar de una vez sin mirar
@@ -104,9 +108,9 @@ y quiero que tú me sigas, y quiero que tú me sigas
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

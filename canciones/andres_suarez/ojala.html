@@ -1,56 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Ojalá</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ojalá</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Ojalá</h1>
+
+            <div class="tono">
+                <span>C</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Ojalá</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
+        <pre>
 Ojalá que todo vaya bien
 No tengas frío
 Que valen más tus ojos que rezar, a Dios,
 Que ahora somos dos y dos caminos
 Distinto recorrido
 Distinta soledad.
+
 Camino siempre recto por si el gesto
 De aquí no pasa nada
 Me quita el mal sabor de amor,
 Me abrazo a los recuerdos como un preso
 De cada beso te haré una canción.
+
 Qué sin querer hacerlo mal
 Igual no te supe escuchar
 Perdona la sordera
@@ -58,23 +59,26 @@ Y es que, verás,
 Andaba despertando de soñar
 No pude abrir los ojos pa mirar,
 Perdona la ceguera.
+
 Camino siempre recto
 Por si el gesto
 De aquí no pasa nada
 Me quita el mal sabor de amor,
 Me abrazo a los recuerdos como un preso
 De cada beso...
+
 Camino siempre recto
 Por si el gesto
+
 De aquí no pasa nada
 Me quita el mal sabor de amor,
 Me abrazo a los recuerdos como un preso
 De cada beso te haré una canción.
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

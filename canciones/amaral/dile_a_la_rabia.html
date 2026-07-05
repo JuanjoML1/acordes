@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Dile a la rabia</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dile a la rabia</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Dile a la rabia</h1>
+
+            <div class="tono">
+                <span>C</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Dile a la rabia</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
+        <pre>
 <span class="estribillo">
 D             A          Bm            G
   Dile a la rabia que se quede en el camino,
@@ -49,8 +46,9 @@ D             A                 Bm         G
   Junto a las   piedras que nos han endurecido,
 D              A         Bm
   dile a la rabia que se quede...
-</span>
+</span><span class="solo">
 ( Bm  Bm7  G  F# )
+</span>
 Bm               Bm7
 Todo mi universo     me fue vendido al mejor postor,
 G                      F#
@@ -59,7 +57,9 @@ fue como quedarse ciega,   no merecía tanto honor.
 Y aún así tu me conduces,    un gatopardo duerme junto a ti
 G                         F#
    parado en la autopista, buen lugar para sentirse el rey.
+<span class="solo">
 ( Bm  Bm7  G  F# )
+</span>
 Bm               Bm7
 Ven a mi casa,   es de caoba y caña de bambú.
 G                    F#
@@ -69,8 +69,9 @@ Dile a la rabia que se quede en el camino,
 entre la niebla y los ruidos de los coches.
 Junto a las   piedras que nos han endurecido,
 dile a la rabia que se quede...
-</span>
+</span><span class="solo">
 ( Bm  Bm7  G  F# )
+</span>
 Bm               Bm7
 Todo lo que tengo    es un desierto en un cajón.
 G                     F#
@@ -79,7 +80,9 @@ Bm                         Bm7
 esta es la aguja que ha dormido a tu familia,
        G                    F#
 y los únicos despiertos tú y yo.
+<span class="solo">
 ( Bm  Bm7  G  F# )
+</span>
 Sal y vinagre curarán tus llagas,
 en madera de raíces tallaré tu espalda
 y aguardiente calmará el dolor.
@@ -94,9 +97,9 @@ dile a la rabia.
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

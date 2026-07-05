@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>No diré</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>No diré</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">No diré</h1>
+
+            <div class="tono">
+                <span>G</span>
+            </div>
         </div>
 
-        <h1 class="titulo">No diré</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
+        <pre>
 G                       D/B        Cadd9                     G     D/F#
 Siento como nunca he sentido, el vibrar de las cuerdas, este sol sostenido
 G                          D/B      Cadd9
@@ -53,21 +52,24 @@ No diré que no intento enamorarme de otras
         Cadd9               G           D/F#
 que no añoren el vuelo al posarse en mi boca
 <span class="estribillo">
-Cadd9         Em7               Am7
+     Cadd9         Em7               Am7
 No diré ya encontraré a alguien como tú
         D/F#          Em7                          D/F#
 porque quiero un aguacero de caricias y tequieros
      Cadd9         Em7               Am7 D  C
 No diré ya encontraré a alguien como tú, no puedo
+
 G                                Cadd9
 Siento como cae del cielo agua salada
                                Em7                                   D/F#
 siento una ventana abierta en esta celda, que es tu cara en otros cuerpos
+
 siento, siento, lo siento,
 G                                  Cadd9
 siento como te desmayas viendo enamorados en los aeropuertos
     Em7                            D/F#
 siento haberte dicho que te amaba, aunque era cierto.
+
 Am                            Cadd9
 Cierto que vi tu cara en los hijos que no tengo,
        Em7                           D
@@ -81,11 +83,13 @@ procurando tu nombre desvestido a tu olvido.
 No diré ya encontraré a alguien como tú
 porque nunca fui tan niño en un juego que te esconde
 No diré ya encontraré a alguien como tú
+
 Siento como cae del cielo agua salada
 siento una ventana abierta en esta celda, que es tu cara en otros cuerpos
 siento, siento, lo siento,
 siento como te desmayas viendo enamorados en cada concierto
 siento haberte dicho que te amaba, aunque era cierto.
+
 Cierto que vi tu cara en los hijos que no tengo,
 en los labios que en el viento no se callan.
 </span>
@@ -98,9 +102,9 @@ No diré ya encontraré a alguien como tú
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

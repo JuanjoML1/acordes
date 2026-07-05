@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Margot</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Margot</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+C                 G
+Canta esta noche, pásate a verla
+       Am                Em
+por el pub irlandés ese que hay de madera,
+       F                      C
+el que está justo al lado del otro irlandés,
+        G                  E
+ése que hay de madera en la misma acera.
+   Am      Am/G    F      G         Bb   G
+Empezará sobre las diez, diez y media.
+
+C                 G
+Canta esta noche, pásate a verla,
+       Am                Em
+encontrarás su nombre anunciado en la puerta
+       F                      C
+y en el fondo del bar un borracho cualquiera
+        G                  E
+destrozando sus letras, mirándole las tetas,
+   Am         Am/G      F      G      C
+mezclando sus babas con una cerveza.
+
+<span class="estribillo">
+F                 E
+Canta esta noche, pásate a verla
+Am          Am/G       F         Fm
+y apláudele como si fuera una estrella,
+    C                   G              F
+que nunca ha salido en la tele pero es de primera,
+G                F  Em  Dm  G7  C
+ella es de primera.
+</span>
+Canta esta noche, pásate a verla
+y cuando acabe pregúntale por su maqueta.
+La grabó en el estudio de un novio que tuvo,
+que registró los derechos y la dejó sin un duro;
+no superó el casting de Operación Triunfo.
+
+Canta esta noche, pásate a verla,
+no podrás quitártela de la cabeza:
+su belleza, su voz, su talento, sus piernas...
+Si pregunta por mí, que disculpe mi ausencia:
+me he quedado en casa escribiendo estas letras.
+
+<span class="estribillo">
+Canta esta noche, pásate a verla
+y apláudele como si fuera una estrella,
+que nunca ha salido en la tele pero es de primera,
+ella es de primera.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

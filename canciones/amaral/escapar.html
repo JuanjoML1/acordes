@@ -1,96 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Escapar</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Escapar</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Escapar</h1>
+
+            <div class="tono">
+                <span>D</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Escapar</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
-Bm A G
+        <pre>
+Bm        A          G
 Es el principio y el fin,
+Bm     A         G
 así me siento yo hoy.
-D A Em
+<span class="estribillo">
+D                            A
 Abre las puertas de la percepción,
+                          Em
 usa el poder de tu imaginación
+
 aunque no puedas mirar hacia el sol
+                   D
 sabes que sigue brillando.
+
 Piensa en las cosas que te hacen sentir
 en cada segundo vivido escapar
 de este momento y la gente al pasar
 sientes por dentro que todos se van.
-Bm A G
+</span>
 Desde el principio al fin
 solo quisimos vivir.
 ¿Por qué es tan dificil creer
 que no habra mañana jamás?
-D A Em
+<span class="estribillo">
 Abre las puertas de la percepción,
 usa el poder de tu imaginación
 aunque no puedas mirar hacia el sol
 sabes que sigue brillando.
+
 Piensa en las cosas que te hacen sentir
 en cada segundo vivido escapar
 de este momento y la gente al pasar
+                                C   Em
 sientes por dentro que todos se van
-C Em
+</span>
+         C             Em
 hacia el sol, hacia el sol.
-D A Em
+<span class="estribillo">
 Abre las puertas de la percepción,
 usa el poder de tu imaginación
 aunque no puedas mirar hacia el sol
 sabes que sigue brillando por ti.
+
 Piensa en las cosas que te hacen sentir
 en cada segundo vivido escapar,
 de este momento y la gente al pasar
 sientes por dentro que todos se van
+
 Bm D G
 sientes por dentro que todos se van   [+1V]
 sientes muy dentro que todos se van
 sientes por dentro que todos se van    [+5V]
+
 D A Em
 sientes por dentro que todos se van
 sientes por dentro que todos se van
 sientes muy dentro que todos se van...
 sientes tu alma queriendo escapar...
+</span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

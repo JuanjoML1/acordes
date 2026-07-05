@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Es sólo una canción</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Es sólo una canción</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Es sólo una canción</h1>
+
+            <div class="tono">
+                <span>D</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Es sólo una canción</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
+        <pre>
+<span class="solo">
 Intro: D  Bm  A
+</span>
 D
 Con la mirada de sorpresa que ponía Charlot
 Bm                                A
@@ -56,6 +55,7 @@ D                                      A
 Los pararrayos no sirven cuando hay tormentas,
 G       A      D
 Dentro de mi cabeza.
+
 G                 D
 De tanto reír no puedo ni hablar
  A                         D        A
@@ -64,10 +64,12 @@ G
 ¿Te hace un billar?
  D                  A
 nos vemos en la Vía Láctea
+
 D
 Es sólo una canción para calmar mi corazón
           G                 D
 Lo que yo siento, lo que yo quiero
+
 Es solo rock and roll para calmar mi corazón
           G                 D
 Lo que yo siento, lo que yo quiero
@@ -85,6 +87,7 @@ D                       A
 Y el matador acaba la faena
     G      A       D
 con sangre sobre la arena
+
 G                         D
 No quiero entender por qué hay que matar
 A                      D      A
@@ -92,20 +95,22 @@ A veces siento que soy ese animal
 G
 Mejor sería
 D                     A
-fugarnos a una isla desierta
+fugarnos a una isla desierta.
+
 D
 Es sólo una canción para calmar mi corazón
           G                 D
 Lo que yo siento, lo que yo quiero
+
 Es solo rock and roll para calmar mi corazón
           G                 D
 Lo que yo siento, lo que yo quiero
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

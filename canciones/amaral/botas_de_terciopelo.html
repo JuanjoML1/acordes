@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Botas de terciopelo</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Botas de terciopelo</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Botas de terciopelo</h1>
+
+            <div class="tono">
+                <span>B</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Botas de terciopelo</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
+        <pre>
 B                                                 F#
 Dices que tengo el cenizo y me persiguen las tormentas,
 E                                   B
@@ -82,14 +79,15 @@ tengo el poder de atraer los rayos
 Botas, botas de terciopelo,
 nubes de caramelo,
 cubren el sol de agosto.
+
 Ah, y te espero
 con los ojos abiertos,
 para decir: “te quiero”,
 lo que creció en agosto
 se marchará en invierno.
-</span>
+</span><span class="solo">
 ( E   B   F#   E   B   F# )
-<span class="estribillo">
+</span><span class="estribillo">
 B                      F#
 Botas, botas de terciopelo,
              G#m
@@ -105,9 +103,9 @@ Botas, botas de terciopelo.
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

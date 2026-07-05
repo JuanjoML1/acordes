@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Nocturnal</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Nocturnal</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Nocturnal</h1>
+
+            <div class="tono">
+                <span>G</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Nocturnal</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
+        <pre>
+<span class="solo">
 Intro: C  G (x2)
+</span>
 C                   G
 Primera norma nocturnal:
 C           G
@@ -49,12 +48,14 @@ C            G
 nada te puedo dar,
 D                    Em
 no hay nada bueno en mí.
+
 La Tierra lucha contra el Sol,
 y todos los planetas,
 en perfecto descontrol,
 Orbitan sobre mi cabeza.
+<span class="solo">
 D  Em
-<span class="estribillo">
+</span><span class="estribillo">
 D                     Em
 No puedo controlar mi vida,
 C                   G
@@ -63,14 +64,16 @@ D                     Em
 Nunca he tenido disciplina,
 D                    Em
 no hay nada bueno en mí.
-</span>
+</span><span class="solo">
 C  G  (x2)
+</span>
 Presiento lo que va a ocurrir,
 el círculo se cierra.
 Mira que te lo advertí,
 esa es mi naturaleza.
+<span class="solo">
 D  Em
-<span class="estribillo">
+</span><span class="estribillo">
 D                     Em
 No puedo controlar mi vida,
 C                   G
@@ -81,8 +84,9 @@ D           Am       Em
 no hay nada bueno en mí,
 D           Am       Em
 no hay nada bueno en mí.
-</span>
+</span><span class="solo">
 Am  Em-D  Am  Em-D  C  D  Em  D
+</span>
 ( C  G )
 Un impulso irracional de destruirlo todo,
 Hundirte y descender, como en octubre rojo.
@@ -96,7 +100,8 @@ Son las leyes del azar,
 D               Em
 Si pudieras elegir,
 C                  G
-Cuál de ellas romperías
+Cuál de ellas romperías.
+
 Ahora no puedo controlar mi vida,
 solo te quiero prevenir.
 Nunca he tenido disciplina,
@@ -106,9 +111,9 @@ No hay nada más que decir.
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Tengo 26</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tengo 26</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Tengo 26</h1>
+
+            <div class="tono">
+                <span>D</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Tengo 26</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
+        <pre>
       D              Dsus2/C#   Dsus2/B
 Por derecho tengo el lado bueno de tu espalda,
         D         Dsus2/C#      Dsus2/B
@@ -48,6 +47,7 @@ suelo estar desafinado entre la gente.
 Viajo más de lo que debo, debería beber menos.
       D              Dsus2/C#      G      Asus2
 Por favor, aún no te vistas, no te vayas.
+
 Por amor dejé a mi hermano con mi hermana.
 Por la infancia sé lo que es felicidad.
 Una noche vi una luna que miraba
@@ -69,6 +69,7 @@ Por los libros que sostuve me mantengo.
 Llevo con la voz un acento de sal.
 He llorado con un beso no robado.
 Por remar junto a mis padres soy verdad.
+
    D/F#      G                        Dsus2/F#
 En esta vida vi salir del agua mil delfines,
                        Asus2                      Bm
@@ -85,6 +86,7 @@ han besado más que yo, sonarán cuando yo no.
 Nunca me ha faltado nada en el amor,
                     Em7                 Asus4
 fue mi casa y mi colchón una playa enamorada.
+
                   G                            Asus4
 He aprendido a perder, he visto la luna en Montmartre,
                            D                    Dsus2/C#        Dsus2/B
@@ -110,13 +112,14 @@ No sé qué decir, nunca creí en Dios.
 Soy fruto de un cuento que escribió mi padre,
    Dsus2/F#     G     Asus4       D  G
 mi madre lo cantó. Mi madre lo cantó.
+
 Tengo 26 años y a vivir.
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

@@ -1,63 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Calella</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Calella</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Calella</h1>
+
+            <div class="tono">
+                <span>G</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Calella</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
+        <pre>
 C     D               G                    C
 Ay de mí, estás más bonita que nunca esta noche
 C       D                   G
 Ay del coche, la cinta en repeat:
         D        Em       D     C
 Lluís Llach cantaba, no había nada
+
                C    D                G      C
 más animal que su mirada queriendo decirme “pasa”.
              C          D                 G
 Mi pecho sirvió de almohada, no quiso dormir,
        D      Em   Bm      C        D
 Juan Luis rimaba por mí palabras, entonces la oí:
+
 C                   D
 No sabré deciros nunca
 G                      C
 todo lo que fui a su lado.
 <span class="estribillo">
-Em
+                  Em
 No me vayas a olvidar,
                    D                          G
 cada frase en tu pasiva se me fue volviendo hogar.
@@ -74,10 +75,12 @@ C     D                    G
 no dejé ni gota en sus piernas,
     D       Em        D        C
 conté sus pecas, después sus miedos.
+
   C      D               G          C
 “tengo que marcharme, mañana canto lejos”,
   C    D                  G         D       Em    Bm    C
 “cuídate” y el coche arrancaba, la tramontana nos debe tiempo.
+
 C                     D
 Un penúltimo silencio bajo un arco me desarma
     G                     C
@@ -89,27 +92,32 @@ me dijiste “no soy mía” y yo no quise propiedad.
 Dónde estás, ni en redes sociales
            D        G
 ni nadie recuerda...
-</span>
+</span><span class="solo">
 ( C  Em7
   D  G  )
+</span>
 Iré a buscarte una mañana gris
 para decirte todo lo que sabes
 Nos cerrarán los bares y a Madrid
 le nacerán acentos que olvidaste.
+
 Iré a buscarte una mañana gris,
 soñándome habanera al desnudarte.
 Me atreveré a decirte lo que oí
 aún hablan de lo nuestro en los portales.
+
 Iré a buscarte una mañana al fin,
 a devolverte, unidos, los cristales
 del vaso que, al caernos, no bebí,
 pero reímos hasta unir los mares.
+<span class="solo">
 C  Em7  D  C  G ....Am  G  C
+</span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

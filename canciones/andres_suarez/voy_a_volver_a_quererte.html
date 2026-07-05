@@ -1,81 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Voy a volver a quererte</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Voy a volver a quererte</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Voy a volver a quererte</h1>
+
+            <div class="tono">
+                <span>C</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Voy a volver a quererte</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
+        <pre>
+<span class="solo">
 Intro: ( Em7  D  Cadd9  D ) x2
+</span>
    G
 Te juraré una vida nueva
    Cadd9
 Te llevaré volando a Cádiz
    D
 Sabrás decir que sí.
+
      G
 Me harás un puzzle con dos piezas
    Cadd9
 de ropa inundando la almohada
    D
 Luego te haré reír.
-Em7                                   Cadd9
-Háblame volvamos a escribirnos con los pies
+
+Em7                                    Cadd9
+Háblame, volvamos a escribirnos con los pies
 <span class="estribillo">
-G
+         G
 Voy a volver a quererte,
          Cadd9                 Em7
 voy a llenarte de notas, voy a dejarte tranquila,
    Bm7         Cadd9
 mi vida, ahora duerme.
-</span>
+</span><span class="solo">
 ( Em7  D  Cadd9  D ) x2
+</span>
 G
   Llegarás tarde, quizá colocada,
    Cadd9
 hablaremos de todo, nos reiremos por nada,
          D
 sabré besarte esta vez.
+
                Em7
 Y al llegar al parque
    D                         Cadd9
 habrá un cometa loco y un sostén volante.
+
 <span class="estribillo">
-G                         Cadd9
+         G                         Cadd9
 Voy a volver a esperarte aunque no vuelvas del todo,
         Em7                 D         Cadd9
 voy a rogarte hasta que otro llene tu cuarto menguante.
@@ -83,10 +89,10 @@ voy a rogarte hasta que otro llene tu cuarto menguante.
 Voy a volver a quererte, voy a robarte hasta el alba,
         Em7           D            Cadd9
 voy a dejarte indicada la estrella nuestra de siempre.
-</span>
+</span><span class="solo">
 ( Em7  D  Cadd9  D ) x2  Em7
-<span class="estribillo">
-D       Cadd9  Bm7    Em7         D Cadd9
+</span><span class="estribillo">
+ D       Cadd9  Bm7    Em7         D Cadd9
 Voy a volver a quererte, vas a volver
  D       Em7    D Cadd9
 Voy a volver...
@@ -97,9 +103,9 @@ Voy a volver...
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

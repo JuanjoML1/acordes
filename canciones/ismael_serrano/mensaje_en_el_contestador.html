@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mensaje en el contestador</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Mensaje en el contestador</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro: Em  D/F#  G // Am7  Gsus2  D/F# // Em  D/F#  G // Em  D/F#  G
+
+Em-D/F#   G-Gsus2  Am-Gsus2-D/F#
+Hola, soy yo.      Sólo llamaba
+Em-D/F#      G-Gsus2  Em    D/F# G-Gsus2
+porque estos lunes    siempre me matan.
+
+Ha amanecido tarde este día,
+mi almohada llena de tus cenizas.
+
+<span class="estribillo">
+Em/C#   C        B7           Em-Em7/D-C
+Pasé, recuerdas, por nuestros bares
+Em/B     Am              Am7/G     F             Dsus2
+donde arañábamos a la nostalgia su sucio esmalte
+
+Cogí al futuro por la cintura.
+Donde hubo vuelo sólo ha quedado escombro de plumas
+</span>
+Qué cosas pasan, días bulliciosos,
+tan cerca estamos, pero tan solos.
+
+Sólo era eso. Bueno, pues, nada,
+si tienes frío y tiempo me llamas.
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

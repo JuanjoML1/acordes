@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Luz de pregonda</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Luz de pregonda</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Luz de pregonda</h1>
+
+            <div class="tono">
+                <span>C</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Luz de pregonda</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
+        <pre>
 C             Em7                   Am7
 Si tu madre supiera lo que haces de noche
 G             D
@@ -48,10 +47,12 @@ C                 Em7             Am7
 si detrás en el coche supieras mi nombre
 G              D
 no hubiera callado
+
 C             G
 Si la luna no tiene color
 Am7     Em7       D
 si un mal vino me sienta mejor
+
 Una dama valiente quemando en la hoguera
 mis versos cobardes
 Si escribiendo se aprende a escribir, qué hago quieto
@@ -61,6 +62,7 @@ C              D     Em7
 Te cambio el aplauso por
     D/F#              G
 un fin de semana en Cádiz
+
         C         D
 Y ahí dejé de ser bueno
         Em        Bm            C
@@ -69,9 +71,9 @@ y en la playa del viento nos llovió
 Y al vestirse de nuevo
        Em          Bm          C
 y al mojarse un te quiero se rio
-</span>
+</span><span class="solo">
 ( C  D  Em7 ) x2
-<span class="estribillo">
+</span><span class="estribillo">
 C               D        Em7
 Su saliva en la boca del metro
 C               D         Em7
@@ -80,27 +82,31 @@ C                D      Em7
 si hay dos muriendo de amor
    D/F#         G
 en este mismo momento
+
 Ya valdría la pena
 revivir este cuento en su honor
 No me quedan ya fuerzas
 pero vivo sin miedo
-</span>
+</span><span class="solo">
 ( C  D  Em7  Bm7  C  Am7  D  Em7  Bm7  C )
-<span class="estribillo">
+</span><span class="estribillo">
 Y ahí dejé de ser bueno
 y en la playa del viento
+
 No me quedan ya fuerzas
 pero vivo sin miedo
+
 Y al mojarse un te quiero
 Y al vestirse de nuevo
+
 Y ahí dejé de ser bueno
 y en la playa del viento
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

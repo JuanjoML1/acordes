@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Te va a pasar</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Te va a pasar</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Te va a pasar</h1>
+
+            <div class="tono">
+                <span>D</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Te va a pasar</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
+        <pre>
 D       Bm7     G      A
 Ha de volver la primavera
 D           Bm7      G      A
 siempre que quieras si al besar
 D        Bm7      G      A
 sigues cambiando las mareas
+<span class="solo">
 D  Bm7  G
+</span>
 D        Bm7     G     A
 Han de llegar nuevos amores
 D          Bm7      G       A
 que a otros les fugue tu bondad
        D        G    D  G      Bm7  A  G
 te pasará la vida y yo seré tu paz
+
 D        Bm7      G      A
 Seré ese viento que te peina
 D         Bm7      G      A
@@ -61,6 +63,7 @@ Bm7               G                  A                  D
 cuando dormida te venzan de alguna manera te haré despertar
 A      D     G     D     G    Bm7  A  G
 seré señal cuidándote de cerca
+
 D           Bm7     G        A
 Cambia la historia como siempre
 D         Bm7      G      A
@@ -69,18 +72,21 @@ D          Bm7        G           A          D       A         D
 cuando te abracen y tiembles y un golpe de suerte te llame mamá
 A          D     G     D      G    Bm7  A  G
 te va a pasar sal a volar y vuelve
+
 D          Bm7      G      A
 Siembra de ti este mundo enfermo
 D         Bm7   G      A
 sálvalo y luego sal de aquí
 D     Bm7        G      A          D    G   A
 como conmigo has hecho, dime que sí
+
 D        Bm7    G             A
 Me llevo tanto amor que el tiempo
 D     Bm7     G     A
 ni repetido bastará
           D       G   D       G   Bm7   A  G
 no llores más la vida ya te espera
+
 D        Bm7    G             A
 Cuenta conmigo cuando cuentes
 D        Bm7    G             A
@@ -91,9 +97,9 @@ sigue sin miedo a la muerte mi niña valiente y no mires atrás
 te va a pasar la vida, ya, despierta
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ángel de puntillas</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Ángel de puntillas</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+E(Dc2):     0xx454
+B7sus2(11): x22222
+E(Dc2)/G#:  422434  (También E/G#)
+Esus4/F#:   2222xx
+Bsus4*:     x24400
+E7(Dc2):    222432
+
+Intro: E(Dc2)(sus4)  D  A  B7sus2(11)
+
+Yo tampoco encuentro a mis amigos, tienes cara de perdida.
+Vaya par de despistados hemos ido a tropezar.
+Yo te invito a que te quedes, tú me invitas a buscar.
+       D               A          B7       Cdim   C#m
+Yo con tal de estar contigo de verdad, que me da igual.
+
+Asus2  B7sus4  B7
+
+Tú me coges de la mano, empezamos a buscar.
+Mientras tanto me pregunto si es un gesto tuyo natural,
+si es tan sólo una caricia, si esto es inseguridad.
+     D         A                B7sus2(11)     E    Esus4  E
+Desarmado te defiendo aprieto y tú me aprietas más.
+
+E  Esus4/F#  E/G#
+
+<span class="estribillo">
+A      B          G#m          C#m             F#m
+Entre gente y empujones, entre espuma y mil canciones
+      B7                      E
+entre rumba, bacalao y el Macarena...
+A        B             G#m          C#m          F#m
+Sé de un sitio más tranquilo, buena música y con mesas
+    B7         E
+donde sí se puede hablar.
+</span>
+E  Esus4/F#  E(Dc2)/G#
+
+<span class="estribillo">
+Abro a fondo mis cajones, me desnudo de intenciones,
+tú te vistes de complejos y temores.
+Donde están nuestras cuadrillas, pasa un  ángel de puntillas,
+oportuno y besucón.
+</span>
+  E7(Dc2)       A        B7            E
+Mejor si no les vemos, mejor si no nos ven.
+Mejor despiertan juntos y descalzos nuestros pies. (bis)
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

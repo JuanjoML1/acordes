@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ya llegó la primavera</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Ya llegó la primavera</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+E7    F/G#    G#aug    G#m/5+    E/5+/G    B/D
+ 0   1   0   0   0   7
+ 3   1   1   0   1   7
+ 4   1   1   1   0   7
+ X   X   X   X   X   X
+ X   X   X   X   X   X
+ X   X   X   X   X   X
+
+F#m/5     Am/5   Caug    G#m/E      GM7   E7/5 E7    Bm7/F#
+2         5      8       7          0     0    0     2
+3         6      9       9          3     1    0     3
+2         5      9       9          4     1    1     2
+X         X      X       X          4     X    X     4
+X         X      X       X          X     X    X     2
+X         X      X       X          3     0    0     2
+
+Intro: E7 (no 3) -- F/G# (no 3)  -- G# aug -- G#m / 5+ --  E/5+/G  --  B/D (no 3) -- F#m/5+ --
+
+         Am/5  -- Caug -- G#m/E (no 5) -- E/5+/G  -- D7
+
+         GM7 -- E7/5+ -- E7 -- Am7 -- D7 - Bm7 -- E7/5+ -- E7 -- Am7 -- D7
+
+GM7                    (E7/5   E7)           Am7                D7
+Ya llegó la primavera en unos grandes almacenes,
+GM7                    (E7/5   E7)                 Am7                       D7
+el último neón centellea mientras media ciudad aún duerme.
+Am7                              D7           Bm7                           E7
+Madrid despierta perezosa, vuelven las putas a sus guaridas.
+Am7                        D7                                     GM7   D7
+Unos esperan en casa, otro se ata a su rutina.
+
+GM7                           (E7/5   E7)   Am7                      D7
+Mil prisioneras en sus casas despiden a sus maridos,
+GM7                       (E7/5   E7)         Am7                           D7
+falsos retazos en los besos de lo mucho que han perdido.
+Bm7/F#      (E7/5+/A#  E7/A#)  Am7                           Cm7
+Amanece lentamente y la guerra de lo cotidiano
+Bm7                    (E7/5   E7)           Am7                D7
+derrotará a estas mujeres que se pasan la vida esperando.
+
+GM7               (E7/5   E7)        Am7                D7
+Otra vez en el 62 se volverán a encontrar
+GM7                    (E7/5   E7)        Am7                D7
+ella y él medio dormidos camino de la facultad.
+Bm7/F#            (E7/5+/A#   E7/A#)   Am7                           Cm7
+Durante más de tres años comparten ese viaje cada mañana,
+Bm7                   (E7/5   E7)           Am7                D7
+el uno en el sueño del otro y nunca se dirán nada.
+
+GM7                    (E7/5   E7)           Am7                D7
+Ya llegó la primavera en unos grandes almacenes,
+GM7                    (E7/5   E7)                 Am7                       D7
+el último neón centellea mientras media ciudad aún duerme.
+Am7                              D7           Bm7                           E7
+Madrid despierta los kioscos, han llegado los diarios.
+Am7                        D7                                     GM7   D7
+Nuevos relatos de terror perdieron los desahuciados.
+
+GM7                    (E7/5   E7)           Am7                D7
+Un indigente solicita una urgente ayuda que le pierda
+GM7                    (E7/5   E7)           Am7                D7
+ en su soledad adictiva, que le aleje de tanta mierda.
+Bm7/F#            (E7/5+/A#  E7/A#)      Am7                           Cm7
+Aunque ninguna droga ya adormezca, aunque mañana se muera,
+Bm7                   (E7/5   E7)           Am7                D7
+en unos grandes almacenes llegará la primavera.
+
+GM7                    (E7/5   E7)           Am7                D7
+No pudo soportar el estrés aquel eficiente ejecutivo,
+GM7                    (E7/5   E7)           Am7                D7
+aquella mañana la ciudad le convirtió en un asesino
+Bm7/F#            (E7/5+/A#  E7/A#)   Am7                           Cm7
+En plena calle sacó un arma y disparó a discreción matando
+Bm7                                   (E7/5   E7)                              Am7                            D7
+a un indigente, dos jóvenes y un marido  que a una mujer dejó esperando.
+
+GM7                    (E7/5   E7)           Am7                D7
+Ya llegó la primavera en unos grandes almacenes,
+GM7                    (E7/5   E7)                 Am7                       D7
+el último neón centellea mientras media ciudad aún duerme.
+Am7                              D7           Bm7                           E7
+Madrid despierta perezosa, vuelven las putas a sus guaridas.
+Am7                        D7                                         G
+Unos esperan en casa, otro se ata a su rutina.
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

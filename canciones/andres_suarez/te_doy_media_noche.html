@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Te doy media noche</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Te doy media noche</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Te doy media noche</h1>
+
+            <div class="tono">
+                <span>D cej4C</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Te doy media noche</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
-Cej4
+        <pre>
         D           D/F#       G
 No he venido a recordarte tu belleza
         Bm         A                 G
@@ -49,6 +47,7 @@ no he venido a dedicarte un rock and roll
 pero no soy uno más aunque lo creas
                F#m                  G
 maldita sea la vela del barco de tu voz
+
      D            A           G
 Represento a todo hombre enamorado
        Bm           A            G
@@ -59,6 +58,7 @@ no sé cuál es tu lado de la cama
 el humor de tu mañana, si sabrás de esta canción
        G                       A          D
 si es así atrévete a decir que no es amor
+
    D/F#          G                   A
 Tu boca es el portal donde quiero dormirme
              Bm         Bm/A
@@ -71,6 +71,7 @@ sentí tu aliento y vi Santiago amaneciendo
 saliendo de un concierto reías
      G                            A
 si supieras lo que te miro a escondidas
+
      D             A            Bm7             G
 Si supieras lo equivocada que estás estando con otros
       Em                       A                      Bm
@@ -83,6 +84,7 @@ Tu sonrisa es la más bella cara al mar
 pero me hablas de sequía
         F#m            D              G    D  Em  A
 y en Pantín fugó una estrella en tu lugar
+
 D                      A
 Bailo contigo en la distancia
              Bm
@@ -97,15 +99,16 @@ y ahí no dices que no
 ahí dices: cántame
                   G    D  Em  A
 y te hice esta canción
+
          D         A            G
 Que ha venido como yo desnudo y solo
       Em          A          G
 media noche, vida mía, ya me voy
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

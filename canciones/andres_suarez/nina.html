@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Nina</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Nina</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Nina</h1>
+
+            <div class="tono">
+                <span>C</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Nina</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
+        <pre>
 C           Em7                   Am                Em
 Late, corazón, te echaba tanto en falta, yo también
               F             C              G
@@ -48,6 +47,7 @@ C           Em7                      Am                 Em
 Late, corazón, que aunque no vuelva, vuelvo a ser feliz
                  F             C              G
 Aunque nos duela sabes que pasó por algo por aquí
+
 G                     Am
 No todo el mundo sabe cómo enmudecerte
       F                        C
@@ -68,6 +68,7 @@ No me dijo adiós, hablaba en el silencio nuestro amor
 </span>
 Late, por favor, ahora que está desnuda, déjame
 Beberla en la más pura de la sed: su cuerpo en el colchón
+
 Me hizo reír incluso en cambios de postura
 Qué armadura no se quiebra en ese honor
 Le hice creer en algún dios que solo duda
@@ -95,6 +96,7 @@ Tú y yo comiéndonos a besos
 En el dos por dos del baño de un tercero
 Que en la habitación no entraban nuestros sueños
 No me dijo adiós, hablaba en el silencio...
+
 Tú y yo comiéndonos a besos
 En el dos por dos del baño de un tercero
 Que en la habitación no entraban nuestros sueños
@@ -102,9 +104,9 @@ No me dijo adiós, hablaba en el silencio nuestro amor
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

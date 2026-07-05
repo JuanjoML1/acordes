@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>El día de año nuevo</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>El día de año nuevo</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">El día de año nuevo</h1>
+
+            <div class="tono">
+                <span>G</span>
+            </div>
         </div>
 
-        <h1 class="titulo">El día de año nuevo</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
+        <pre>
+<span class="solo">
 Intro:    Em  D                Em  Am  D  G
           Em  D                Em  Am  D  Em
+</span>
 Em        Am             D                G
   No es otra nueva historia de una canción de amor
 Em        Am         D                  G         D
@@ -70,14 +69,16 @@ ha encontrado un amigo
 Caen estrellas para celebrar
 Am            D
 el día de año nuevo.
+
 No volverá la soledad,
 porque ha encontrado un amigo de verdad
 Caen estrellas, todo vuelve a brillar
 Am           Em        C-D
 El día de año nuevo.
-</span>
+</span><span class="solo">
 G  D  C  D  (x2)
 G  D  (x2)
+</span>
 D
 Era un regalo, era un flechazo, el día de año nuevo
 <span class="estribillo">
@@ -86,6 +87,7 @@ ha encontrado un amigo
 Caen estrellas para celebrar
 Am            D
 el día de año nuevo.
+
 No volverá la soledad,
 porque ha encontrado un amigo de verdad
 Caen estrellas, todo vuelve a brillar
@@ -94,9 +96,9 @@ El día de año nuevo, el día de año nuevo.
 </span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

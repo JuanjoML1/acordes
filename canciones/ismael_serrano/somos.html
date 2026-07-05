@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Somos</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Somos</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Intro:  Dsus2  Dsus2/C  Dsus2/G  A7sus4 (x2)
+
+Dsus2                Dsus2/C#                 Dsus2/C              G     (D/F#)
+Somos los niños burbuja del fin de la historia, x en ecuaciones
+Em                    A    Bbº               Bm7
+soñando con contratos fijos, con libélulas que anhelan dulces besos que se
+   E     Esus4
+esconden
+G                      A         Bbº           Bm7               E Esus4
+tras el brillo de las barras de aquel bar donde te amé, isla de resistencia
+G                      Asus4             Dsus2     Dsus2/C  Dsus2/G  A7sus4  Dsus2
+tallando en cubitos de hielo futuro y promesas.
+
+Dsus2                  Dsus2/C#               Dsus2/C              G     (D/F#)
+Y mientras los ultracuerpos subidos a estrados recitan sermones,
+Em                             A        Bbº         Bm7
+hay quien nos dice que no es tiempo para hablar de la utopía ni de
+      E     Esus4
+revoluciones,
+G                  A    Bbº      Bm7                 E     Esus4
+que es un anacronismo cantarle a la trova, nombrar a Guevara
+G                    Asus4                  Dsus2
+y mientras golpean tu fe y tu futuro en su fragua.
+
+Dsus2                       G     Asus4  A           F#m    F#m7
+Y en estos días el que escribe, consciente del privilegio
+Bm7                Em  Em7 Bbº                       Bm7
+de nacer en esta orilla,    cree que aún éste será el tiempo
+    G       F#          Bm7     G         Asus4       Bm7
+del ángel temeroso que suspira, átomo que gira en solitario,
+    G         F#           Em7              Dsus2/F#
+alienígena nacido en esta tierra, del sueño sublime, en fin,
+       G                     Asus4   A            Dsus2
+del hombre y la mujer que buscan    otro mundo posible.
+
+Dsus2  Dsus2/C  Dsus2/G  A7sus4  Dsus2  x2
+
+Dsus2                    Dsus2/C#               Dsus2/C              G     (D/F#)
+Y, mientras tanto, los santos de causas perdidas discuten verdades,
+Em                  A     Bbº         Bm7                    E  Esus4
+armados con su piolet se confunden de enemigo. Mientras, en la calle,
+G                   A    Bbº    Bm7                 E     Esus4
+un rumor de alas batiendo exige su voz, una voz diferente.
+G                    Asus4                  Dsus2
+Meciendo en la red utopías pregunta y disiente.
+
+Dsus2                       G     Asus4  A           F#m    F#m7
+Y en estos días el que escribe, consciente del privilegio
+Bm7                  Em  Em7 Bbº                        Bm7
+de habitar en esta orilla,      cree que aún éste será el tiempo
+    G       F#          Bm7       G            Asus4        Bm7
+del hada  temerosa que suspira, luciérnaga abandonando el letargo,
+G         F#           Em7              Dsus2/F#
+Ícaro escapando de una isla,del sueño sublime, en fin,
+       G                     Asus4   A            Dsus2
+del hombre y la mujer que buscan    otro mundo posible.
+
+Dsus2   Dsus2/C  Dsus2/G  A7sus4  Dsus2  x2
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

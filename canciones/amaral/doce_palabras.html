@@ -1,49 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Doce palabras</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Doce palabras</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Doce palabras</h1>
+
+            <div class="tono">
+                <span>C</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Doce palabras</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
+        <pre>
+<span class="solo">
 Intro:
 E|-3-----3-----3---1---1-----1----0-----0-----0------1--0----------|
 B|---1-----1-----1---1---1-----1----1-----1-----1----------3--1--0-| (x2)
 G|-----0-----0---------0---0----------0-----0----------------------|
+</span>
 C
 Velocidad y descontrol,
                 Em
@@ -63,7 +62,7 @@ Son doce    palabras
 son doce uvas blancas
       C          Dm
 el año se acaba
-           A#
+           Bb
 y no hay noticias de ti.
 </span>
 C
@@ -85,7 +84,7 @@ Son doce    palabras
 son doce uvas blancas
       C          Dm
 el año se acaba
-           A#
+           Bb
 y no hay noticias de ti.
           C
 no hay ni rastro de ti.
@@ -106,16 +105,16 @@ Las doce sonaban
 las doce campanadas
       C          Dm
 no creo en las hadas
-           A#       C     Em    Am     G        F  C
+           Bb       C     Em    Am     G        F  C
 y mi carroza es una calabaza, Sólo doce palabras
 </span>
-Dm      A#            C       Am   G   C
+Dm      Bb            C       Am   G   C
 doce palabras y me olvido de ti.
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

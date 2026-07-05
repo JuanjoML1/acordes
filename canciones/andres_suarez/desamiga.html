@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Desamiga</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Desamiga</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Desamiga</h1>
+
+            <div class="tono">
+                <span>C</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Desamiga</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
+        <pre>
            C
 Si la primavera
                        Em7
@@ -48,6 +47,7 @@ Te hiciera sangrar la boca
 De sed o de ganas no importa
                       Am
 Piensa en el último clavel
+
                 C
 Que puse en tu pelo
                      Em7
@@ -56,6 +56,7 @@ Volviendo a tirar la copa
 Sonaba sangre española
                Am
 Bebía por no llover
+
              F/C  C
 Que será de ti            F/C   G/D
             F/C         |--X--|--X--|-[E
@@ -72,6 +73,7 @@ Cuando truena
 Que será de mí sin ti
       G
 Y viceversa
+
       F/C
 Duele más un desamigo
         G/D
@@ -84,8 +86,10 @@ Que tu ausencia
 Duele más un desamigo
         G/D  C
 Que un desamor
+
 F/C - C x4
 F/C - G/D - Am - G
+
             D
 Si esa primavera
                  F#m
@@ -102,6 +106,7 @@ Que de esa finante pena
 Mintió la madera el tallo
                     Bm
 Que tanto lloró también
+
              G/C   D                  G/D   A/E
 Que será de ti                      |--X--|--X--|-[E
                 G/C         D       |--5--|--7--|-[A
@@ -114,6 +119,7 @@ Hoy se bate en duelo aquel instante
 El día que te fuiste así
         A
 Sin tu equipaje
+
        G/D
 Duele más un desamigo
         A/E
@@ -136,13 +142,14 @@ Duele más en vez de verte, imaginarte
 Duele más un desamigo
         A/E  D
 Que un desamor
+
 G/D - D x4
 G/D - A/E - Bm - D
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

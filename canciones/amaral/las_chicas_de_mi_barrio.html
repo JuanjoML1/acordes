@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Las chicas de mi barrio</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Las chicas de mi barrio</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Las chicas de mi barrio</h1>
+
+            <div class="tono">
+                <span>A</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Las chicas de mi barrio</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
 
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
+        <pre>
+<span class="solo">
 Intro: F#m  A  D  C# (x2)
        D  F#m  A  C# (x2)
+</span>
 F#m                      A
 Las chicas de mi barrio llevan
     E            A
@@ -50,6 +49,7 @@ el sol en la cintura
 nos hizo quemaduras
   Bm          C#
 aquella libertad.
+
 F#m                             A
 los chicos de la esquina me preguntan
    E          A
@@ -60,6 +60,7 @@ si necesito ayuda
 o si soy nueva en la ciudad.
                  F#m
 y yo sigo a mi bola.
+
 F#m                    D
 en este momento te prometo
          E            A
@@ -73,6 +74,7 @@ iremos a bailar.
 para desafiar a todos los que dicen
      D         A     Bm            C# 
 que no será posible amar después de amar.
+
 (C# )       D       E         F#m        C#
 si tú me quieres me dejaras volar.
 C#          D       E         F#m -C#m -D -C#    F#m -C#m -D -C#
@@ -86,16 +88,17 @@ que llega la tormenta
 y que lo que nos queda
 Bm              C#
 será nuestra verdad.
+
          D      E              A
 para desafiar a todos los que piensan
      D         A       Bm             C#
 que no será posible volvernos a encontrar,
                  F#m
 amar después de amar.
-   (acordes del estribillo)
 <span class="estribillo">
 si tú me quieres me dejaras volar.
 si tú me quieres me dejaras volar.
+
 pero si tú me quieres me dejaras marchar
 y algún día podemos volvernos a encontrar.
 y no me harás reproches.
@@ -107,9 +110,9 @@ aquella libertad
 como ninguna.
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

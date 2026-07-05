@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ven</title>
+
+    <link rel="stylesheet" href="../../css/colores.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/estilo-texto.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+
+        <h1 class="titulo">Ven</h1>
+
+        <div class="tono">
+            <span>C</span>
+        </div>
+    </div>
+
+    <div id="main-controls">
+        <button id="back-button"
+                onclick="window.location.href='../../index.html'">
+            ← Volver
+        </button>
+
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+<pre>
+Cej1
+
+B*:      X24400
+B/C#:    X44400
+B/D#:    X64400
+Emaj7*:  XX2440
+F#*:     044300
+F#**:    244300
+G#m7:    404400
+
+Intro: B*  B/C#  B/D#  Emaj7*
+
+B*          B/D#              Emaj7*
+Deja que te vea, cómo pasa el tiempo.
+B*         B/D#                 Emaj7*
+Somos el lamento de una vieja herida.
+B*         B/D#                 Emaj7*
+He gastado días persiguiendo el viento,
+B*            B/D#             Emaj7*
+he perdido el mapa, he dado la vida.
+E         F#*                B*  G#m7
+He robado pan de la mesa del rico,
+E             F#**                G#m7
+me volví un experto en perder solitarios.
+E          F#*                       B*  G#m7
+Llega tu recuerdo y me hago el distraído.
+C#m9                                    F#**
+Bebo en tu memoria y me estrello en tus labios.
+
+( B*  B/C#  B/D#  Emaj7* )
+
+La vida es eterna en cinco minutos,
+los que nos tomaba quitarnos la ropa.
+Lo que el amor tarda en descubrir mis trucos
+o tu despedida en borrarme la boca.
+No es verdad que el tiempo nos lo cura todo,
+y no está el mañana ni el ayer escrito.
+Yo sigo esperando que nieve en agosto.
+De mayor yo siempre quise ser un niño.
+
+<span class="estribillo">
+  B*-B/C#                 B/D#       Emaj7*
+Y ven, deja que el viento nos lleve,
+                     G#m7
+que nuestras citas esperen,
+C#m9               F#**
+hoy les toca compartir.
+  B*-B/C#                     B/D#  Emaj7*
+Y ven, no existe el tiempo perdido.
+              G#m7
+Cada minuto vacío
+C#m9                  F#**
+siempre está lleno de ti.
+
+         G#m7
+En los andenes, en cada espera,
+       B/C#
+he dibujado una luna llena.
+          B/D#
+Y en el vagón fui un lobo herido
+           Emaj7*                  F#**
+soñando el viaje que nunca hicimos.
+        G#m7
+En los atascos grité tu nombre,
+         B/C#
+cantando sobrevolé los coches
+          B/D#
+hacia las playas en que te nombran,
+        Emaj7*               F#**
+y de tu mano salté las olas.
+</span>
+( G#m7  B/C# )
+
+Deja que te vea, tanto que contarte.
+Es que a mí el olvido no se me da bien.
+Aún siento la urgencia de aquel estudiante
+que en la barricada no aprendió a perder.
+Aún no he escrito el himno de esta despedida,
+lloro como un tonto con cualquier anuncio.
+Pierdo los papeles con una sonrisa
+y en la fiesta ajena aún me marcho el último.
+
+<span class="estribillo">
+Y ven, deja que el viento nos lleve,
+que nuestras citas esperen,
+hoy les toca compartir.
+Y ven, no existe el tiempo perdido,
+cada minuto vacío
+siempre está lleno de ti.
+</span>
+</pre>
+
+</body>
+
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+
+</html>

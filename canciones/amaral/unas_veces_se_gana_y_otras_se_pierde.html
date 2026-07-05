@@ -1,46 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Unas veces se gana y otras se pierde</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Unas veces se gana y otras se pierde</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Unas veces se gana y otras se pierde</h1>
+
+            <div class="tono">
+                <span>G cej4</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Unas veces se gana y otras se pierde</h1>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
 
-        <div class="tono">
-            <span>C</span>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
-Cej4
+        <pre>
 G                            D Em7
 He bajado hasta el puerto y he escuchado
                    G                    D       Em7
@@ -76,8 +71,9 @@ Apostando a una causa que se muere
 Unas veces se gana
            Em7    A
 y otras se pierde.
-</span>
+</span><span class="solo">
 G  D-Em7 (x2)
+</span>
       G                 D      Em7
 Las mujeres y los niños van primero,
                        G      D  Em7
@@ -99,13 +95,14 @@ Unas veces se gana
 y otras se pierde,
              Em7        A
 y otras se pierde.
-</span>
+</span><span class="solo">
 G  D-Em7 (x2)
+</span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

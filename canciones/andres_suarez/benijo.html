@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Benijo</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Benijo</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Benijo</h1>
+
+            <div class="tono">
+                <span>G</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Benijo</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
+        <pre>
          G                          Cadd9
 Apuró el paso para que no llegara la noche,
                       Em7            D
@@ -56,6 +55,7 @@ Em                Cadd9                  G
 Luego tejer un mantel entre mi boca y su pecho.
    D              D#º              Em7       Cadd9
 Llenar de sal los pliegues de su espalda.
+
                    G                  D
 La vi bañarse una vez y me sacó los colores,
                    Em                   Cadd9
@@ -78,6 +78,7 @@ a la arena pegada, y los besos
 siguientes fueron hoy quédate.
   D                     Cadd9      D
 Y me quedé parado en el tiempo.
+
                   Em                         C
 Y nos siguió la marea, prendimos fuego al hostal,
                         G                        D
@@ -90,6 +91,7 @@ Desafinamos canciones. Se nos prohibía llorar.
 Hoy te he vuelto a recordar.
                       Cadd9  D
 Hoy te he vuelto a recordar.
+
                      C                                   D
 ¿De qué me sirve esperarte si me entra el sueño y no hay más
                         Em                       E7sus4
@@ -98,6 +100,7 @@ que un circo triste y cobarde que no quiere regresar?
 Te veo en cada gaviota aunque no sepa si hay mar
                  Em                          E7sus4
 detrás de cada pareja; no tengo con quién bailar.
+
                      C                        D
 Desnúdate que hay tormenta y llueve por no llorar.
                        Em                       E7sus4
@@ -114,9 +117,9 @@ Hoy te he vuelto a recordar.
 Hoy te he vuelto a recordar
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>

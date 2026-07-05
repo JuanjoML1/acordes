@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Dublín</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dublín</title>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+
+            <h1 class="titulo">Dublín</h1>
+
+            <div class="tono">
+                <span>G cej3</span>
+            </div>
         </div>
 
-        <h1 class="titulo">Dublín</h1>
-
-        <div class="tono">
-            <span>C</span>
-        </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
+        <div id="main-controls">
+            <button id="back-button"
                 onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
+                ← Volver
+            </button>
 
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-<pre>
-Cej3
+        <pre>
     Cadd9                      Em9
 Reivindico el uno mismo y contigo no se puede,
      Cadd9                       Em9
@@ -51,6 +49,7 @@ Me duele el hueso de quererte,
 Me crecen nueve vientres de vivir,
       Cadd9          Dadd9                  Em9
 Sólo tengo tres canciones para hacerte reír.
+
         Cadd9                         Em9
 Tengo fe y te rezo a besos, en mis brazos crecen flores,
        Cadd9                           Em9
@@ -61,6 +60,7 @@ Culpable como un vino añejo
 Hace olas que no veo amanecer,
       Cadd9              Dadd9             Em9
 Ya te vi desnuda, tengo el amor por hacer.
+
   Cadd9         Dadd9                       Em9
 Tiemblo, como un desfile de gaviotas solas,
                                  Cadd9
@@ -73,6 +73,7 @@ Me alejo, cuanto más veo a la luna sola, siento,
 El miedo al hambre del aire que seca el cuerpo
       Dadd9
 Del hombre que no soy.
+
   Cadd9         Dadd9                       Em9
 Miedo, desde hoy no tengo corazón, ni tiempo
                                     Cadd9
@@ -85,8 +86,10 @@ Me alejo, como un desfile de agua en cualquier río,
 Rasgando versos de un mismo sentido,
    Dadd9
 Rimado al corazón.
+<span class="solo">
 C   D  Em
 C   D  Em
+</span>
           C        D     Em
 Prefiero no bailar, a recoger tus pasos,
           C        D        Em
@@ -95,18 +98,21 @@ Seguir oyendo como gime este rosal,
 Por no nadar seguí anclado a cualquier barco,
       F
 Y no sació esta sed volver al mar.
+
        Cadd9              Em
 Tengo fe y te rezo a besos,
          C         D        Em
 Tengo sed de sudor nuestro en Dublín.
+<span class="solo">
 Em      D     C  D
 Em      D     C
 Em9
+</span>
 </pre>
 
-</body>
+    </body>
 
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
 
 </html>
