@@ -20,7 +20,11 @@ function filtrar() {
     items.forEach(li => {
         const titulo = normalizar(li.querySelector("a").textContent);
         const autor = normalizar(li.dataset.author || "");
-        const album = (li.dataset.album || "").toLowerCase().split(",").map(normalizar);
+        const momentos = (li.dataset.momento || "").split(",").map(normalizar);
+        const bib = normalizar(li.dataset.bib || "");
+        const nold = normalizar(li.dataset.nold || "");
+        const nrcc = normalizar(li.dataset.rcc || "");
+        const nnew = normalizar(li.dataset.nnew || "");
 
         let mostrar = false;
 
@@ -28,14 +32,24 @@ function filtrar() {
             mostrar = titulo.includes(texto);
         } else if (tipo === "autor") {
             mostrar = autor.includes(texto);
-        } else if (tipo === "album") {
-            mostrar = album.some(m => m.includes(texto));
+        } else if (tipo === "momento") {
+            mostrar = momentos.some(m => m.includes(texto));
         } else if (tipo === "bib") {
             mostrar = bib.includes(texto);
+        } else if (tipo === "nold") {
+            mostrar = nold.includes(texto);
+        } else if (tipo === "nnew") {
+            mostrar = nnew.includes(texto);
+        } else if (tipo === "nrcc") {
+            mostrar = nrcc.includes(texto);
         } else if (tipo === "todos") {
             mostrar = titulo.includes(texto) ||
                 autor.includes(texto) ||
-                album.some(m => m.includes(texto))
+                momentos.some(m => m.includes(texto)) ||
+                bib.includes(texto) ||
+                nold.includes(texto) ||
+                nnew.includes(texto) ||
+                nrcc.includes(texto);
         }
 
         li.style.display = mostrar ? "" : "none";
@@ -43,29 +57,39 @@ function filtrar() {
 
     document.querySelectorAll("ul.lista").forEach(ul => {
         const visibles = ul.querySelectorAll("li:not([style*='display: none'])").length;
-        const header = ul.previousElementSibling;
 
-        // Ocultar o mostrar la lista y su cabecera (H3 normalmente)
+        // Cabecera visual: el H2/H3 previo (ahora hay un span.ancla en medio)
+        let header = ul.previousElementSibling;
+        while (header && !["H2", "H3"].includes(header.tagName)) {
+            header = header.previousElementSibling;
+        }
+        // Ancla no-sticky asociada (span.ancla-seccion justo delante del header)
+        let ancla = header ? header.previousElementSibling : null;
+        if (ancla && !(ancla.classList && ancla.classList.contains("ancla-seccion"))) {
+            ancla = null;
+        }
+
+        // Ocultar o mostrar la lista y su cabecera (H2/H3 normalmente)
         if (visibles === 0) {
             ul.style.display = "none";
-            if (header && ["H2", "H3"].includes(header.tagName)) {
-                header.style.display = "none";
-            }
+            if (header) header.style.display = "none";
+            if (ancla) ancla.style.display = "none";
         } else {
             ul.style.display = "";
-            if (header && ["H2", "H3"].includes(header.tagName)) {
-                header.style.display = "";
-            }
+            if (header) header.style.display = "";
+            if (ancla) ancla.style.display = "";
         }
     });
 
     // Luego, ocultar H2 si todos sus H3/UL asociados están ocultos
+    // (saltando los span.ancla-seccion, que no cuentan como contenido)
     document.querySelectorAll("h2").forEach(h2 => {
         let next = h2.nextElementSibling;
         let algunVisible = false;
 
         while (next && next.tagName !== "H2") {
-            if (next.style.display !== "none") {
+            const esAncla = next.classList && next.classList.contains("ancla-seccion");
+            if (!esAncla && next.style.display !== "none") {
                 algunVisible = true;
                 break;
             }

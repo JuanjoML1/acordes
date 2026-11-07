@@ -18,10 +18,14 @@
 
     --sombra: rgba(0, 0, 0, 0.2);
 
+    /* Altura real de #barra-fija (la ajusta barra_lateral.js). */
+    --barra-h: 200px;
+
     /* Colores musicales */
     --estribillo: #00028e;
-    --puente: #cc0000;
-    --solo: #337733;
+    --puente: #aa8844;
+    --acorde-gr: #cc0000;
+    --acorde-ag: #337733;
 }
 
 
@@ -47,6 +51,7 @@ body.dark {
 
     /* Colores musicales */
     --estribillo: #4da6ff;
-    --puente: #ff6666;
-    --solo: #66cc66;
+    --puente: #aa8844;
+    --acorde-gr: #ff6666;
+    --acorde-ag: #66cc66;
 }

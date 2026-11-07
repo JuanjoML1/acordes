@@ -1,51 +1,39 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
 body {
     font-family: Arial, sans-serif;
-    font-size: 1.2em;
-    max-width: 800px;
-    margin: auto;
+    font-size: 16px;
+    max-width: 90%;
+    margin: 0 auto;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .lista {
     list-style: none;
-    /* elimina los bullets */
     padding: 0;
-    /* quita padding por defecto del <ul> */
     margin: 0;
-    /* quita margen por defecto del <ul> */
 }
 
 .lista a {
     display: block;
-    /* Hace que cada enlace ocupe toda la línea, clic fácil en móvil */
     text-align: center;
-    /* Centra el texto */
-    padding: 0.2em 1em;
-    /* Espacio interno: 0.2em arriba/abajo, 1em izquierda/derecha */
+    padding: 0.5em 1em;
     margin: 0.2em 0;
-    /* Separación entre enlaces: 0.2em arriba y abajo */
-    background-color: var(--bg-listas);
-    /* Color de fondo gris claro */
     text-decoration: none;
-    /* Quita el subrayado del enlace */
-    color: var(--texto);
-    /* Color del texto gris oscuro */
     border-radius: 4px;
-    /* Esquinas ligeramente redondeadas */
-    transition: background 0.2s;
-    /* Transición suave de 0.2s al cambiar el fondo (hover) */
-}
-
-.lista a:hover {
-    background-color: var(--hover-lista);
-    /* Cambia el fondo al pasar el cursor */
 }
 
 pre {
-    font-size: 1.6em;
-    /* un poquito más grande que el tamaño base */
+    font-size: clamp(0.5rem, 1.2vw, 1.5rem);
     line-height: 1.2;
-    /* interlineado*/
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 pre .estribillo {
@@ -56,11 +44,6 @@ pre .estribillo {
 pre .puente {
     font-weight: bold;
     color: var(--puente);
-}
-
-pre .solo {
-    font-weight: bold;
-    color: var(--solo);
 }
 
 pre .gr {
@@ -75,14 +58,13 @@ pre .ag {
 }
 
 pre.original {
-    /*Los pre que son original. Con punto es "los original que estén dentro de un pre"*/
     font-style: italic;
     color: var(--texto);
 }
 
 .cancion-header .numeros {
     min-width: 80px;
-    font-size: 1em;
+    font-size: clamp(0.75rem, 1.5vw, 1.5rem);
     text-align: left;
 }
 
@@ -90,13 +72,32 @@ pre.original {
     flex: 1;
     text-align: center;
     margin: 0;
-    font-size: 1.8em;
+    font-size: clamp(1.2rem, 4vw, 2.5rem);
 }
 
 .cancion-header .tono {
     flex: 1 0 100%;
     min-width: 80px;
     text-align: center;
-    font-size: 1.3em;
+    font-size: clamp(0.85rem, 1.8vw, 1.75rem);
     margin-top: 4px;
+}
+
+.cancion-info {
+    width: auto;
+    max-width: 600px;
+    margin: 2em auto 1em;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+.cancion-info th,
+.cancion-info td {
+    padding: 0.4em 0.7em;
+}
+
+.cancion-info th {
+    font-weight: bold;
+    text-align: right;
+    border-right: 1px solid var(--estribillo);
 }

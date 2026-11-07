@@ -3,15 +3,25 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Acordes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Acordes JML</title>
         <link rel="stylesheet" href="css/colores.css">
         <link rel="stylesheet" href="css/estilo.css">
         <link rel="stylesheet" href="css/estilo-texto.css">
     </head>
 
     <body>
+
+        <header id="barra-superior">
+            <div id="lateral-controles">
+                <button id="btn-theme">🌙</button>
+                <button id="btn-home" class="oculto">🏠</button>
+                <button id="btn-menu">☰</button>
+                <button id="btn-acordes" title="Mostrar acordes">🎸</button>
+            </div>
+        </header>
         <div id="barra-fija">
-            <h1>Canciones</h1>
+            <h1>Acordes JML</h1>
 
             <div id="buscador-container">
                 <select id="filtro">
@@ -27,7 +37,6 @@
             <label><input type="checkbox" id="showAutor">Autor</label>
         </div>
 
-        <button id="btn-menu">☰</button>
         <div id="secciones-lateral">
             <a href="#rev" class="btn-indice">Revólver</a>
             <a href="#lovg" class="btn-indice">La Oreja de Van Gogh</a>
@@ -53,9 +62,8 @@
             <a href="#otros" class="btn-indice">Otros</a>
         </div>
 
-        <button id="btn-theme">🌙</button>
-
-        <h2 id="rev">Revólver</h2>
+        <span class="ancla-seccion" id="rev" aria-hidden="true"></span>
+        <h2>Revólver</h2>
         <ul class="lista">
             <li data-author="Revólver" data-album="21 gramos, Básico IV"><a href="canciones/revolver/21_gramos.html">21 gramos</a></li>
             <li data-author="Revólver" data-album="Mestizo, Capitol"><a href="canciones/revolver/5_estrellas.html">5 estrellas</a></li>
@@ -80,7 +88,7 @@
             <li data-author="Revólver" data-album="21 gramos"><a href="canciones/revolver/carreteras_secundarias.html">Carreteras secundarias</a></li>
             <li data-author="Revólver" data-album="Capitol"><a href="canciones/revolver/cerrare_los_ojos.html">Cerraré los ojos</a></li>
             <li data-author="Revólver" data-album="21 gramos, Que veinte años no es nada"><a href="canciones/revolver/clarisa.html">Clarisa</a></li>
-            <li data-author="Revólver, Amaral" data-album="Playlist"><a href="canciones/revolver/como_hablar.html">Cómo hablar</a></li>
+            <li data-author="Revólver, Amaral" data-album="Playlist"><a href="canciones/amaral/como_hablar.html">Cómo hablar</a></li>
             <li data-author="Revólver" data-album="Revólver, Básico, Rarezas"><a href="canciones/revolver/como_unico_equipaje.html">Como único equipaje</a></li>
             <li data-author="Revólver" data-album="21 gramos"><a href="canciones/revolver/cuando_todo_va_bien.html">Cuando todo va bien</a></li>
             <li data-author="Revólver" data-album="Mestizo"><a href="canciones/revolver/dame.html">Dame</a></li>
@@ -214,7 +222,8 @@
             <li data-author="Revólver" data-album="Argán"><a href="canciones/revolver/ya_no_hay_dos_para_cenar.html">Ya no hay dos para cenar</a></li>
         </ul>
 
-        <h2 id="lovg">La Oreja de Van Gogh</h2>
+        <span class="ancla-seccion" id="lovg" aria-hidden="true"></span>
+        <h2>La Oreja de Van Gogh</h2>
         <ul class="lista">
             <li data-author="LOVG" data-album="Lo que te conté mientras te hacías la dormida, Nuestra casa a la izquierda del tiempo"><a href="canciones/lovg/20_de_enero.html">20 de enero</a></li>
             <li data-author="LOVG" data-album="Guapa"><a href="canciones/lovg/a_diez_centimetros_de_ti.html">A diez centímetros de ti</a></li>
@@ -336,7 +345,8 @@
             <li data-author="LOVG" data-album="Guapa"><a href="canciones/lovg/vuelve.html">Vuelve</a></li>
         </ul>
 
-        <h2 id="amar">Amaral</h2>
+        <span class="ancla-seccion" id="amar" aria-hidden="true"></span>
+        <h2>Amaral</h2>
         <ul class="lista">
             <li data-author="Amaral" data-album="Amaral"><a href="canciones/amaral/1997.html">1997</a></li>
             <li data-author="Amaral" data-album="Nocturnal"><a href="canciones/amaral/500_vidas.html">500 vidas</a></li>
@@ -465,7 +475,8 @@
             <li data-author="Amaral" data-album="Amaral"><a href="canciones/amaral/voy_a_acabar_contigo.html">Voy a acabar contigo</a></li>
         </ul>
 
-        <h2 id="suar">Andrés Suárez</h2>
+        <span class="ancla-seccion" id="suar" aria-hidden="true"></span>
+        <h2>Andrés Suárez</h2>
         <ul class="lista">
             <li data-author="Andrés Suárez" data-album="Moraima"><a href="canciones/andres_suarez/320_dias_(hace_un_año).html">320 días (Hace un año)</a></li>
             <li data-author="Andrés Suárez" data-album="Andrés Suárez"><a href="canciones/andres_suarez/6_de_la_mañana.html">6 de la mañana</a></li>
@@ -562,6 +573,462 @@
             <li data-author="Andrés Suárez" data-album="Moraima"><a href="canciones/andres_suarez/vuelve.html">Vuelve</a></li>
             <li data-author="Andrés Suárez" data-album="Desde una ventana"><a href="canciones/andres_suarez/walt_disney.html">Walt Disney</a></li>
             <li data-author="Andrés Suárez" data-album=""><a href="canciones/andres_suarez/y_sigas_sin_saber_lo_que_es_amor.html">Y sigas sin saber lo que es amor</a></li>
+        </ul>
+
+        <span class="ancla-seccion" id="kank" aria-hidden="true"></span>
+        <h2>El Kanka</h2>
+        <ul class="lista">
+            <li data-author="El Kanka" data-album="El día de suerte de Juan Gómez"><a href="canciones/el_kanka/a_desobedecer.html">A desobedecer</a></li>
+            <li data-author="El Kanka" data-album="El día de suerte de Juan Gómez"><a href="canciones/el_kanka/a_dieta_de_dietas.html">A dieta de dietas</a></li>
+            <li data-author="El Kanka, El niño de la hipoteca" data-album="Versiones"><a href="canciones/el_kanka/alquitran_y_carmin.html">Alquitrán y carmín</a></li>
+            <li data-author="El Kanka" data-album="El arte de saltar"><a href="canciones/el_kanka/andalucia.html">Andalucía</a></li>
+            <li data-author="El Kanka" data-album="De pana y rubí"><a href="canciones/el_kanka/ante_la_duda.html">Ante la duda</a></li>
+            <li data-author="El Kanka" data-album="Cosas de los vivientes"><a href="canciones/el_kanka/autorretrato.html">Autorretrato</a></li>
+            <li data-author="El Kanka" data-album="De pana y rubí"><a href="canciones/el_kanka/ay_vida_mia.html">Ay, vida mía</a></li>
+            <li data-author="El Kanka" data-album="Cosas de los vivientes"><a href="canciones/el_kanka/baladi.html">Baladí</a></li>
+            <li data-author="El Kanka" data-album="El arte de saltar"><a href="canciones/el_kanka/busquese_una_vida.html">Búsquese una vida</a></li>
+            <li data-author="El Kanka" data-album="Cosas de los vivientes"><a href="canciones/el_kanka/cancion_de_adios.html">Canción de adiós</a></li>
+            <li data-author="El Kanka" data-album="De pana y rubí"><a href="canciones/el_kanka/cancion_final.html">Canción final</a></li>
+            <li data-author="El Kanka" data-album="Lo mal que estoy y lo poco que me quejo"><a href="canciones/el_kanka/canela_en_rama.html">Canela en rama</a></li>
+            <li data-author="El Kanka" data-album="El día de suerte de Juan Gómez"><a href="canciones/el_kanka/con_el_permiso_de_ustedes.html">Con el permiso de ustedes</a></li>
+            <li data-author="El Kanka" data-album="De pana y rubí"><a href="canciones/el_kanka/con_las_ganas.html">Con las ganas</a></li>
+            <li data-author="El Kanka" data-album="Lo mal que estoy y lo poco que me quejo"><a href="canciones/el_kanka/confesion.html">Confesión</a></li>
+            <li data-author="El Kanka, La otra" data-album="Versiones"><a href="canciones/el_kanka/contigo.html">Contigo</a></li>
+            <li data-author="El Kanka" data-album="Cosas de los vivientes"><a href="canciones/el_kanka/cosas_de_los_vivientes.html">Cosas de los vivientes</a></li>
+            <li data-author="El Kanka" data-album="De pana y rubí"><a href="canciones/el_kanka/de_los_errores_se_aprende.html">De los errores se aprende</a></li>
+            <li data-author="El Kanka" data-album="El día de suerte de Juan Gómez, Las canciones"><a href="canciones/el_kanka/del_miercoles_al_martes.html">Del miércoles al martes</a></li>
+            <li data-author="El Kanka" data-album="El arte de saltar"><a href="canciones/el_kanka/demasiada_pasion.html">Demasiada pasión</a></li>
+            <li data-author="El Kanka" data-album="El arte de saltar"><a href="canciones/el_kanka/desde_lejos.html">Desde lejos</a></li>
+            <li data-author="El Kanka" data-album="El arte de saltar"><a href="canciones/el_kanka/despues_de_esta_mañana.html">Después de esta mañana</a></li>
+            <li data-author="El Kanka" data-album="Cosas de los vivientes, Las canciones"><a href="canciones/el_kanka/el_anfitrion.html">El anfitrión</a></li>
+            <li data-author="El Kanka" data-album="El día de suerte de Juan Gómez"><a href="canciones/el_kanka/el_dia_de_suerte_de_pierre_nodoyuna.html">El día de suerte de Pierre Nodoyuna</a></li>
+            <li data-author="El Kanka" data-album="Cosas de los vivientes, Las canciones"><a href="canciones/el_kanka/eres.html">Eres</a></li>
+            <li data-author="El Kanka" data-album="El día de suerte de Juan Gómez"><a href="canciones/el_kanka/espero_que_disfruten_de_mi_sufrimiento.html">Espero que disfruten de mi sufrimiento</a></li>
+            <li data-author="El Kanka" data-album="CanEpé"><a href="canciones/el_kanka/guapas_y_guapos.html">Guapas y guapos</a></li>
+            <li data-author="El Kanka" data-album="De pana y rubí, Las canciones"><a href="canciones/el_kanka/instrucciones_para_bailar_un_vals.html">Instrucciones para bailar un vals</a></li>
+            <li data-author="El Kanka" data-album="Cosas de los vivientes"><a href="canciones/el_kanka/la_senda.html">La senda</a></li>
+            <li data-author="El Kanka" data-album="De pana y rubí"><a href="canciones/el_kanka/llamame_fino.html">Llámame fino</a></li>
+            <li data-author="El Kanka" data-album="Lo mal que estoy y lo poco que me quejo"><a href="canciones/el_kanka/lo_mal_que_estoy_y_lo_poco_que_me_quejo.html">Lo mal que estoy y lo poco que me quejo</a></li>
+            <li data-author="El Kanka" data-album="Las canciones"><a href="canciones/el_kanka/los_soñadores.html">Los soñadores</a></li>
+            <li data-author="El Kanka" data-album="El día de suerte de Juan Gómez"><a href="canciones/el_kanka/me_alegra_la_vista.html">Me alegra la vista</a></li>
+            <li data-author="El Kanka" data-album="De pana y rubí"><a href="canciones/el_kanka/me_gusta.html">Me gusta</a></li>
+            <li data-author="El Kanka" data-album="CanEpé"><a href="canciones/el_kanka/nana_para_noam.html">Nana para Noam</a></li>
+            <li data-author="El Kanka" data-album="El día de suerte de Juan Gómez"><a href="canciones/el_kanka/no_jodan_la_marrana.html">No jodan la marrana</a></li>
+            <li data-author="El Kanka" data-album="Cosas de los vivientes"><a href="canciones/el_kanka/no_se_dice_suerte.html">No se dice suerte</a></li>
+            <li data-author="El Kanka" data-album="El día de suerte de Juan Gómez"><a href="canciones/el_kanka/no_te_veo_gozar.html">No te veo gozar</a></li>
+            <li data-author="El Kanka" data-album="Lo mal que estoy y lo poco que me quejo"><a href="canciones/el_kanka/noche.html">Noche</a></li>
+            <li data-author="El Kanka" data-album="Cosas de los vivientes"><a href="canciones/el_kanka/o_algo.html">O algo</a></li>
+            <li data-author="El Kanka" data-album="Lo mal que estoy y lo poco que me quejo"><a href="canciones/el_kanka/pagafantas.html">Pagafantas</a></li>
+            <li data-author="El Kanka" data-album="El arte de saltar, Las canciones"><a href="canciones/el_kanka/para_eso_canto.html">Para eso canto</a></li>
+            <li data-author="El Kanka" data-album="De pana y rubí"><a href="canciones/el_kanka/para_quedarte.html">Para quedarte</a></li>
+            <li data-author="El Kanka" data-album="Cosas de los vivientes, Las canciones"><a href="canciones/el_kanka/para_vivir.html">Para vivir</a></li>
+            <li data-author="El Kanka" data-album="CanEpé"><a href="canciones/el_kanka/payaso.html">Payaso</a></li>
+            <li data-author="El Kanka" data-album="Lo mal que estoy y lo poco que me quejo"><a href="canciones/el_kanka/por_matar_un_gato.html">Por matar un gato</a></li>
+            <li data-author="El Kanka" data-album="El arte de saltar"><a href="canciones/el_kanka/por_tu_olor.html">Por tu olor</a></li>
+            <li data-author="El Kanka, Luis Eduardo Aute" data-album="Versiones"><a href="canciones/el_kanka/prefiero_amar.html">Prefiero amar</a></li>
+            <li data-author="El Kanka" data-album="Cosas de los vivientes"><a href="canciones/el_kanka/propositos_de_año_nuevo.html">Propósitos de año nuevo</a></li>
+            <li data-author="El Kanka" data-album="De pana y rubí, Las canciones"><a href="canciones/el_kanka/pudo_pasar.html">Pudo pasar</a></li>
+            <li data-author="El Kanka" data-album="Lo mal que estoy y lo poco que me quejo"><a href="canciones/el_kanka/que_bello_es_vivir.html">Qué bello es vivir</a></li>
+            <li data-author="El Kanka" data-album="De pana y rubí, Las canciones"><a href="canciones/el_kanka/querria.html">Querría</a></li>
+            <li data-author="El Kanka" data-album="El arte de saltar"><a href="canciones/el_kanka/quien_me_mandaba_a_mi.html">Quién me mandaba a mí</a></li>
+            <li data-author="El Kanka" data-album="Lo mal que estoy y lo poco que me quejo"><a href="canciones/el_kanka/refunk.html">Refunk</a></li>
+            <li data-author="El Kanka" data-album="Lo mal que estoy y lo poco que me quejo"><a href="canciones/el_kanka/rin_rin.html">Rin rin</a></li>
+            <li data-author="El Kanka" data-album="Las canciones"><a href="canciones/el_kanka/sabeis_quienes_sois.html">Sabéis quiénes sois</a></li>
+            <li data-author="El Kanka" data-album="Lo mal que estoy y lo poco que me quejo"><a href="canciones/el_kanka/señales_de_humo.html">Señales de humo</a></li>
+            <li data-author="El Kanka" data-album="El arte de saltar"><a href="canciones/el_kanka/si_que_puedes.html">Sí que puedes</a></li>
+            <li data-author="El Kanka" data-album="Lo mal que estoy y lo poco que me quejo"><a href="canciones/el_kanka/tarde.html">Tarde</a></li>
+            <li data-author="El Kanka" data-album="El arte de saltar"><a href="canciones/el_kanka/tienes_que_saltar.html">Tienes que saltar</a></li>
+            <li data-author="El Kanka" data-album="El arte de saltar"><a href="canciones/el_kanka/triste_trofeo.html">Triste trofeo</a></li>
+            <li data-author="El Kanka" data-album="Cosas de los vivientes"><a href="canciones/el_kanka/tu_opinion.html">Tu opinión</a></li>
+            <li data-author="El Kanka, Dani Tejedor" data-album="Versiones"><a href="canciones/el_kanka/una_cancion_que_destrozar.html">Una canción que destrozar</a></li>
+            <li data-author="El Kanka" data-album="El día de suerte de Juan Gómez"><a href="canciones/el_kanka/vengas_cuando_vengas.html">Vengas cuando vengas</a></li>
+            <li data-author="El Kanka" data-album="El día de suerte de Juan Gómez"><a href="canciones/el_kanka/vente.html">Vente</a></li>
+            <li data-author="El Kanka" data-album="Cosas de los vivientes"><a href="canciones/el_kanka/vente_a_vivir_conmigo.html">Vente a vivir conmigo</a></li>
+            <li data-author="El Kanka" data-album="El día de suerte de Juan Gómez, Las canciones"><a href="canciones/el_kanka/volar.html">Volar</a></li>
+            <li data-author="El Kanka" data-album="Cosas de los vivientes, Las canciones"><a href="canciones/el_kanka/youtuber.html">Youtuber</a></li>
+        </ul>
+
+        <span class="ancla-seccion" id="ecdl" aria-hidden="true"></span>
+        <h2>El Canto del Loco</h2>
+        <ul class="lista">
+            <li data-author="El Canto del Loco" data-album="A contracorriente"><a href="canciones/el_canto_del_loco/a_contracorriente.html">A contracorriente</a></li>
+            <li data-author="El Canto del Loco" data-album="Personas"><a href="canciones/el_canto_del_loco/acabado_en_a.html">Acabado en A</a></li>
+            <li data-author="El Canto del Loco, Los Piratas" data-album="Por mí y por todos mis compañeros"><a href="canciones/el_canto_del_loco/años_80.html">Años 80</a></li>
+            <li data-author="El Canto del Loco, Joan Manuel Serrat" data-album="Por mí y por todos mis compañeros"><a href="canciones/el_canto_del_loco/aquellas_pequeñas_cosas.html">Aquellas pequeñas cosas</a></li>
+            <li data-author="El Canto del Loco" data-album="A contracorriente"><a href="canciones/el_canto_del_loco/aquellos_años_locos.html">Aquellos años locos</a></li>
+            <li data-author="El Canto del Loco, Quique González" data-album="Por mí y por todos mis compañeros"><a href="canciones/el_canto_del_loco/aunque_tu_no_lo_sepas.html">Aunque tú no lo sepas</a></li>
+            <li data-author="El Canto del Loco" data-album="Zapatillas"><a href="canciones/el_canto_del_loco/besos.html">Besos</a></li>
+            <li data-author="El Canto del Loco" data-album="El Canto del Loco"><a href="canciones/el_canto_del_loco/busco_la_vida.html">Busco la vida</a></li>
+            <li data-author="El Canto del Loco" data-album="Zapatillas"><a href="canciones/el_canto_del_loco/canciones.html">Canciones</a></li>
+            <li data-author="El Canto del Loco" data-album="Estados de ánimo"><a href="canciones/el_canto_del_loco/como_un_perro_ladrando.html">Como un perro ladrando</a></li>
+            <li data-author="El Canto del Loco" data-album="A contracorriente"><a href="canciones/el_canto_del_loco/contigo.html">Contigo</a></li>
+            <li data-author="El Canto del Loco" data-album="Personas"><a href="canciones/el_canto_del_loco/corazon.html">Corazón</a></li>
+            <li data-author="El Canto del Loco" data-album="A contracorriente"><a href="canciones/el_canto_del_loco/crash.html">Crash</a></li>
+            <li data-author="El Canto del Loco" data-album="Estados de ánimo"><a href="canciones/el_canto_del_loco/dentro_de_mi.html">Dentro de mí</a></li>
+            <li data-author="El Canto del Loco" data-album="Zapatillas"><a href="canciones/el_canto_del_loco/desaparece.html">Desaparece</a></li>
+            <li data-author="El Canto del Loco" data-album="Zapatillas"><a href="canciones/el_canto_del_loco/despiertame.html">Despiértame</a></li>
+            <li data-author="El Canto del Loco" data-album="Personas"><a href="canciones/el_canto_del_loco/eh_tu.html">Eh, tú</a></li>
+            <li data-author="El Canto del Loco" data-album="El Canto del Loco"><a href="canciones/el_canto_del_loco/el_agricultor.html">El agricultor</a></li>
+            <li data-author="El Canto del Loco" data-album="Zapatillas"><a href="canciones/el_canto_del_loco/el_pescao.html">El pescao</a></li>
+            <li data-author="El Canto del Loco" data-album="Estados de ánimo"><a href="canciones/el_canto_del_loco/equis.html">Equis</a></li>
+            <li data-author="El Canto del Loco" data-album="Personas"><a href="canciones/el_canto_del_loco/eres_tonto.html">Eres tonto</a></li>
+            <li data-author="El Canto del Loco" data-album="El Canto del Loco"><a href="canciones/el_canto_del_loco/eres_un_canalla.html">Eres un canalla</a></li>
+            <li data-author="El Canto del Loco, Loquillo" data-album="Por mí y por todos mis compañeros"><a href="canciones/el_canto_del_loco/feo_fuerte_y_formal.html">Feo, fuerte y formal</a></li>
+            <li data-author="El Canto del Loco" data-album="Personas"><a href="canciones/el_canto_del_loco/fin_de_semana.html">Fin de semana</a></li>
+            <li data-author="El Canto del Loco" data-album="Personas"><a href="canciones/el_canto_del_loco/gigante.html">Gigante</a></li>
+            <li data-author="El Canto del Loco" data-album="Personas"><a href="canciones/el_canto_del_loco/gracias.html">Gracias</a></li>
+            <li data-author="El Canto del Loco" data-album="El Canto del Loco"><a href="canciones/el_canto_del_loco/he_vuelto_a_caer.html">He vuelto a caer</a></li>
+            <li data-author="El Canto del Loco" data-album="Estados de ánimo"><a href="canciones/el_canto_del_loco/insoportable.html">Insoportable</a></li>
+            <li data-author="El Canto del Loco, Brighton 64" data-album="Por mí y por todos mis compañeros"><a href="canciones/el_canto_del_loco/la_casa_de_la_bomba.html">La casa de la bomba</a></li>
+            <li data-author="El Canto del Loco" data-album="Estados de ánimo"><a href="canciones/el_canto_del_loco/la_madre_de_jose.html">La madre de José</a></li>
+            <li data-author="El Canto del Loco" data-album="Personas"><a href="canciones/el_canto_del_loco/la_suerte_de_mi_vida.html">La suerte de mi vida</a></li>
+            <li data-author="El Canto del Loco" data-album="Personas"><a href="canciones/el_canto_del_loco/la_vida.html">La vida</a></li>
+            <li data-author="El Canto del Loco" data-album="Singles"><a href="canciones/el_canto_del_loco/laura.html">Laura</a></li>
+            <li data-author="El Canto del Loco" data-album="El Canto del Loco"><a href="canciones/el_canto_del_loco/llueve_en_mi.html">Llueve en mí</a></li>
+            <li data-author="El Canto del Loco, Los Brincos" data-album="Por mí y por todos mis compañeros"><a href="canciones/el_canto_del_loco/mejor.html">Mejor</a></li>
+            <li data-author="El Canto del Loco, Cecilia" data-album="Por mí y por todos mis compañeros"><a href="canciones/el_canto_del_loco/nada_de_nada.html">Nada de nada</a></li>
+            <li data-author="El Canto del Loco, Los Ronaldos" data-album="Por mí y por todos mis compañeros"><a href="canciones/el_canto_del_loco/no_puedo_vivir_sin_ti.html">No puedo vivir sin ti</a></li>
+            <li data-author="El Canto del Loco" data-album="El Canto del Loco"><a href="canciones/el_canto_del_loco/no_quiero_nada.html">No quiero nada</a></li>
+            <li data-author="El Canto del Loco" data-album="Estados de ánimo"><a href="canciones/el_canto_del_loco/no_voy_a_parar.html">No voy a parar</a></li>
+            <li data-author="El Canto del Loco" data-album="Estados de ánimo"><a href="canciones/el_canto_del_loco/otra_vez.html">Otra vez</a></li>
+            <li data-author="El Canto del Loco" data-album="A contracorriente"><a href="canciones/el_canto_del_loco/para_siempre.html">Para siempre</a></li>
+            <li data-author="El Canto del Loco" data-album="El Canto del Loco"><a href="canciones/el_canto_del_loco/pasion.html">Pasión</a></li>
+            <li data-author="El Canto del Loco" data-album="El Canto del Loco"><a href="canciones/el_canto_del_loco/pequeñita.html">Pequeñita</a></li>
+            <li data-author="El Canto del Loco" data-album="Personas"><a href="canciones/el_canto_del_loco/personas.html">Personas</a></li>
+            <li data-author="El Canto del Loco" data-album="Personas"><a href="canciones/el_canto_del_loco/peter_pan.html">Peter Pan</a></li>
+            <li data-author="El Canto del Loco" data-album="Zapatillas"><a href="canciones/el_canto_del_loco/por_ti.html">Por ti</a></li>
+            <li data-author="El Canto del Loco" data-album="A contracorriente"><a href="canciones/el_canto_del_loco/preguntas.html">Preguntas</a></li>
+            <li data-author="El Canto del Loco" data-album="A contracorriente"><a href="canciones/el_canto_del_loco/puede_ser.html">Puede ser</a></li>
+            <li data-author="El Canto del Loco" data-album="Zapatillas"><a href="canciones/el_canto_del_loco/que_caro_es_el_tiempo.html">Qué caro es el tiempo</a></li>
+            <li data-author="El Canto del Loco" data-album="Zapatillas"><a href="canciones/el_canto_del_loco/quiero.html">Quiero</a></li>
+            <li data-author="El Canto del Loco" data-album="Zapatillas"><a href="canciones/el_canto_del_loco/sera.html">Será</a></li>
+            <li data-author="El Canto del Loco" data-album="Estados de ánimo"><a href="canciones/el_canto_del_loco/siempre_cerca.html">Siempre cerca</a></li>
+            <li data-author="El Canto del Loco" data-album="El Canto del Loco"><a href="canciones/el_canto_del_loco/sin_mitad.html">Sin mitad</a></li>
+            <li data-author="El Canto del Loco" data-album="A contracorriente"><a href="canciones/el_canto_del_loco/son_sueños.html">Son sueños</a></li>
+            <li data-author="El Canto del Loco" data-album="A contracorriente"><a href="canciones/el_canto_del_loco/super_heroe.html">Súper héroe</a></li>
+            <li data-author="El Canto del Loco" data-album="Zapatillas"><a href="canciones/el_canto_del_loco/tal_como_eres.html">Tal como eres</a></li>
+            <li data-author="El Canto del Loco" data-album="Estados de ánimo"><a href="canciones/el_canto_del_loco/te_recuerdo.html">Te recuerdo</a></li>
+            <li data-author="El Canto del Loco" data-album="Personas"><a href="canciones/el_canto_del_loco/todo_lo_hago_mal.html">Todo lo hago mal</a></li>
+            <li data-author="El Canto del Loco" data-album="El Canto del Loco"><a href="canciones/el_canto_del_loco/traidora.html">Traidora</a></li>
+            <li data-author="El Canto del Loco" data-album="A contracorriente"><a href="canciones/el_canto_del_loco/tremendo.html">Tremendo</a></li>
+            <li data-author="El Canto del Loco" data-album="Personas"><a href="canciones/el_canto_del_loco/un_millon_de_cicatrices.html">Un millón de cicatrices</a></li>
+            <li data-author="El Canto del Loco" data-album="Estados de ánimo"><a href="canciones/el_canto_del_loco/una_foto_en_blanco_y_negro.html">Una foto en blanco y negro</a></li>
+            <li data-author="El Canto del Loco" data-album="A contracorriente"><a href="canciones/el_canto_del_loco/una_salida.html">Una salida</a></li>
+            <li data-author="El Canto del Loco" data-album="Zapatillas"><a href="canciones/el_canto_del_loco/usanos.html">Úsanos</a></li>
+            <li data-author="El Canto del Loco" data-album="A contracorriente"><a href="canciones/el_canto_del_loco/vamonos.html">Vámonos</a></li>
+            <li data-author="El Canto del Loco, Camilo Sesto" data-album="El Canto del Loco"><a href="canciones/el_canto_del_loco/vivir_asi_es_morir_de_amor.html">Vivir así es morir de amor</a></li>
+            <li data-author="El Canto del Loco" data-album="Estados de ánimo"><a href="canciones/el_canto_del_loco/volver_a_disfrutar.html">Volver a disfrutar</a></li>
+            <li data-author="El Canto del Loco" data-album="Zapatillas"><a href="canciones/el_canto_del_loco/volvera.html">Volverá</a></li>
+            <li data-author="El Canto del Loco" data-album="Zapatillas"><a href="canciones/el_canto_del_loco/vuelve.html">Vuelve</a></li>
+            <li data-author="El Canto del Loco" data-album="El Canto del Loco"><a href="canciones/el_canto_del_loco/y_si_el_miedo.html">Y si el miedo</a></li>
+            <li data-author="El Canto del Loco" data-album="Estados de ánimo"><a href="canciones/el_canto_del_loco/ya_nada_volvera_a_ser_como_antes.html">Ya nada volverá a ser como antes</a></li>
+            <li data-author="El Canto del Loco" data-album="Zapatillas"><a href="canciones/el_canto_del_loco/zapatillas.html">Zapatillas</a></li>
+        </ul>
+
+        <span class="ancla-seccion" id="jsab" aria-hidden="true"></span>
+        <h2>Joaquín Sabina</h2>
+        <ul class="lista">
+            <li data-author="Joaquín Sabina" data-album="Inventario"><a href="canciones/joaquin_sabina/1968.html">1968</a></li>
+            <li data-author="Joaquín Sabina" data-album="19 días y 500 noches"><a href="canciones/joaquin_sabina/19_dias_y_500_noches.html">19 días y 500 noches</a></li>
+            <li data-author="Joaquín Sabina" data-album="Inventario"><a href="canciones/joaquin_sabina/40_orsett_terrace.html">40 Orsett Terrace</a></li>
+            <li data-author="Joaquín Sabina" data-album="Dímelo en la calle"><a href="canciones/joaquin_sabina/69_punto_g.html">69 punto G</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona, Antonio García de Diego, Jaime Asúa" data-album="Física y química"><a href="canciones/joaquin_sabina/a_la_orilla_de_la_chimenea.html">A la orilla de la chimenea</a></li>
+            <li data-author="Joaquín Sabina" data-album="19 días y 500 noches"><a href="canciones/joaquin_sabina/a_mis_cuarenta_y_diez.html">A mis cuarenta y diez</a></li>
+            <li data-author="Joaquín Sabina" data-album="Mentiras piadosas"><a href="canciones/joaquin_sabina/a_ti_que_te_lo_haces.html">A ti que te lo haces</a></li>
+            <li data-author="Joaquín Sabina, Joan Manuel Serrat" data-album="La orquesta del Titanic"><a href="canciones/joaquin_sabina/acuerdate_de_mi.html">Acuérdate de mí</a></li>
+            <li data-author="Joaquín Sabina" data-album="Vinagre y rosas"><a href="canciones/joaquin_sabina/agua_pasada.html">Agua pasada</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona" data-album="19 días y 500 noches"><a href="canciones/joaquin_sabina/ahora_que.html">Ahora que</a></li>
+            <li data-author="Joaquín Sabina" data-album="El hombre del traje gris"><a href="canciones/joaquin_sabina/al_ladron_al_ladron.html">Al ladrón, al ladrón</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona, Antonio García de Diego" data-album="Física y química"><a href="canciones/joaquin_sabina/amor_se_llama_el_juego.html">Amor se llama el juego</a></li>
+            <li data-author="Joaquín Sabina" data-album="Hotel, dulce hotel"><a href="canciones/joaquin_sabina/amores_eternos.html">Amores eternos</a></li>
+            <li data-author="Joaquín Sabina" data-album="Dímelo en la calle"><a href="canciones/joaquin_sabina/arenas_movedizas.html">Arenas movedizas</a></li>
+            <li data-author="Joaquín Sabina" data-album="Hotel, dulce hotel"><a href="canciones/joaquin_sabina/asi_estoy_yo_sin_ti.html">Así estoy yo sin ti</a></li>
+            <li data-author="Joaquín Sabina" data-album="Mentiras piadosas"><a href="canciones/joaquin_sabina/ataque_de_tos.html">Ataque de tos</a></li>
+            <li data-author="Joaquín Sabina" data-album="Yo, mi, me, contigo"><a href="canciones/joaquin_sabina/aves_de_paso.html">Aves de paso</a></li>
+            <li data-author="Joaquín Sabina" data-album="Vinagre y rosas"><a href="canciones/joaquin_sabina/ay_carmela.html">Ay, Carmela</a></li>
+            <li data-author="Joaquín Sabina" data-album="Alivio de luto"><a href="canciones/joaquin_sabina/ay_rocio.html">Ay, Rocío</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona" data-album="Juez y parte"><a href="canciones/joaquin_sabina/balada_de_tolito.html">Balada de Tolito</a></li>
+            <li data-author="Joaquín Sabina" data-album="19 días y 500 noches"><a href="canciones/joaquin_sabina/barbi_superstar.html">Barbi superstar</a></li>
+            <li data-author="Joaquín Sabina" data-album="Esta boca es mía"><a href="canciones/joaquin_sabina/besos_con_sal.html">Besos con sal</a></li>
+            <li data-author="Joaquín Sabina" data-album="Hotel, dulce hotel"><a href="canciones/joaquin_sabina/besos_de_judas.html">Besos de Judas</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona" data-album="El hombre del traje gris"><a href="canciones/joaquin_sabina/besos_en_la_frente.html">Besos en la frente</a></li>
+            <li data-author="Joaquín Sabina" data-album="Vinagre y rosas"><a href="canciones/joaquin_sabina/blues_del_alambique.html">Blues del alambique</a></li>
+            <li data-author="Joaquín Sabina" data-album="Malas compañías"><a href="canciones/joaquin_sabina/bruja.html">Bruja</a></li>
+            <li data-author="Joaquín Sabina, Fito Páez" data-album="Enemigos íntimos"><a href="canciones/joaquin_sabina/buenos_aires.html">Buenos Aires</a></li>
+            <li data-author="Joaquín Sabina" data-album="Ruleta rusa"><a href="canciones/joaquin_sabina/caballo_de_carton.html">Caballo de cartón</a></li>
+            <li data-author="Joaquín Sabina" data-album="Malas compañías"><a href="canciones/joaquin_sabina/calle_melancolia.html">Calle melancolía</a></li>
+            <li data-author="Joaquín Sabina" data-album="Dímelo en la calle"><a href="canciones/joaquin_sabina/camas_vacias.html">Camas vacías</a></li>
+            <li data-author="Joaquín Sabina, Joan Manuel Serrat" data-album="La orquesta del Titanic"><a href="canciones/joaquin_sabina/cancion_de_navidad.html">Canción de Navidad</a></li>
+            <li data-author="Joaquín Sabina" data-album="Lo niego todo"><a href="canciones/joaquin_sabina/cancion_de_primavera.html">Canción de primavera</a></li>
+            <li data-author="Joaquín Sabina" data-album="Inventario"><a href="canciones/joaquin_sabina/cancion_para_las_manos_de_un_soldado.html">Canción para las manos de un soldado</a></li>
+            <li data-author="Joaquín Sabina" data-album="Malas compañías"><a href="canciones/joaquin_sabina/carguen_apunten_fuego.html">Carguen, apunten, fuego</a></li>
+            <li data-author="Joaquín Sabina, Fito Páez" data-album="Enemigos íntimos"><a href="canciones/joaquin_sabina/cecilia.html">Cecilia</a></li>
+            <li data-author="Joaquín Sabina, Alejo Stivel" data-album="19 días y 500 noches"><a href="canciones/joaquin_sabina/cerrado_por_derribo.html">Cerrado por derribo</a></li>
+            <li data-author="Joaquín Sabina" data-album="Lo niego todo"><a href="canciones/joaquin_sabina/churumbelas.html">Churumbelas</a></li>
+            <li data-author="Joaquín Sabina" data-album="Malas compañías"><a href="canciones/joaquin_sabina/circulos_viciosos.html">Círculos viciosos</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona" data-album="Juez y parte"><a href="canciones/joaquin_sabina/ciudadano_cero.html">Ciudadano cero</a></li>
+            <li data-author="Joaquín Sabina" data-album="19 días y 500 noches"><a href="canciones/joaquin_sabina/como_te_digo_una_co_te_digo_la_o.html">Como te digo una co te digo la o</a></li>
+            <li data-author="Joaquín Sabina" data-album="Dímelo en la calle"><a href="canciones/joaquin_sabina/como_un_dolor_de_muelas.html">Como un dolor de muelas</a></li>
+            <li data-author="Joaquín Sabina" data-album="Esta boca es mía"><a href="canciones/joaquin_sabina/como_un_explorador.html">Como un explorador</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona, Antonio García de Diego" data-album="Mentiras piadosas"><a href="canciones/joaquin_sabina/con_la_frente_marchita.html">Con la frente marchita</a></li>
+            <li data-author="Joaquín Sabina" data-album="Alivio de luto"><a href="canciones/joaquin_sabina/con_lo_que_eso_duele.html">Con lo que eso duele</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona, Antonio García de Diego" data-album="Mentiras piadosas"><a href="canciones/joaquin_sabina/con_un_par.html">Con un par</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona" data-album="Física y química"><a href="canciones/joaquin_sabina/conductores_suicidas.html">Conductores suicidas</a></li>
+            <li data-author="Joaquín Sabina" data-album="Yo, mi, me, contigo"><a href="canciones/joaquin_sabina/contigo.html">Contigo</a></li>
+            <li data-author="Joaquín Sabina" data-album="Singles"><a href="canciones/joaquin_sabina/contra_todo_pronostico.html">Contra todo pronóstico</a></li>
+            <li data-author="Joaquín Sabina" data-album="Alivio de luto"><a href="canciones/joaquin_sabina/contrabando.html">Contrabando</a></li>
+            <li data-author="Joaquín Sabina, Antonio García de Diego" data-album="Mentiras piadosas"><a href="canciones/joaquin_sabina/corre_dijo_la_tortuga.html">Corre, dijo la tortuga</a></li>
+            <li data-author="Joaquín Sabina" data-album="Vinagre y rosas"><a href="canciones/joaquin_sabina/crisis.html">Crisis</a></li>
+            <li data-author="Joaquín Sabina" data-album="Vinagre y rosas"><a href="canciones/joaquin_sabina/cristales_de_bohemia.html">Cristales de Bohemia</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona" data-album="El hombre del traje gris"><a href="canciones/joaquin_sabina/cuando_aprieta_el_frio.html">Cuando aprieta el frío</a></li>
+            <li data-author="Joaquín Sabina" data-album="Juez y parte"><a href="canciones/joaquin_sabina/cuando_era_mas_joven.html">Cuando era más joven</a></li>
+            <li data-author="Joaquín Sabina" data-album="Dímelo en la calle"><a href="canciones/joaquin_sabina/cuando_me_hablan_del_destino.html">Cuando me hablan del destino</a></li>
+            <li data-author="Joaquín Sabina, Joan Manuel Serrat" data-album="La orquesta del Titanic"><a href="canciones/joaquin_sabina/cuenta_conmigo.html">Cuenta conmigo</a></li>
+            <li data-author="Joaquín Sabina" data-album="Hotel, dulce hotel"><a href="canciones/joaquin_sabina/cuernos.html">Cuernos</a></li>
+            <li data-author="Joaquín Sabina" data-album="19 días y 500 noches"><a href="canciones/joaquin_sabina/de_purisima_y_oro.html">De purísima y oro</a></li>
+            <li data-author="Joaquín Sabina, Fito Páez" data-album="Enemigos íntimos"><a href="canciones/joaquin_sabina/delirium_tremens.html">Delirium tremens</a></li>
+            <li data-author="Joaquín Sabina, Joan Manuel Serrat" data-album="La orquesta del Titanic"><a href="canciones/joaquin_sabina/despues_de_los_despueses.html">Después de los despueses</a></li>
+            <li data-author="Joaquín Sabina" data-album="19 días y 500 noches"><a href="canciones/joaquin_sabina/dieguitos_y_mafaldas.html">Dieguitos y mafaldas</a></li>
+            <li data-author="Joaquín Sabina, Joan Manuel Serrat" data-album="La orquesta del Titanic"><a href="canciones/joaquin_sabina/dolent_de_mena.html">Dolent de mena</a></li>
+            <li data-author="Joaquín Sabina" data-album="Inventario"><a href="canciones/joaquin_sabina/donde_dijeron_digo_decid_diego.html">Donde dijeron digo decid Diego</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona, Antonio García de Diego" data-album="19 días y 500 noches"><a href="canciones/joaquin_sabina/donde_habita_el_olvido.html">Donde habita el olvido</a></li>
+            <li data-author="Joaquín Sabina" data-album="Alivio de luto"><a href="canciones/joaquin_sabina/dos_horas_despues.html">Dos horas después</a></li>
+            <li data-author="Joaquín Sabina, Luis Eduardo Aute" data-album="Mentiras piadosas"><a href="canciones/joaquin_sabina/eclipse_de_mar.html">Eclipse de mar</a></li>
+            <li data-author="Joaquín Sabina" data-album="Ruleta rusa"><a href="canciones/joaquin_sabina/eh_sabina.html">Eh, Sabina</a></li>
+            <li data-author="Joaquín Sabina" data-album="Esta boca es mía"><a href="canciones/joaquin_sabina/el_blues_de_lo_que_pasa_en_mi_escalera.html">El blues de lo que pasa en mi escalera</a></li>
+            <li data-author="Joaquín Sabina" data-album="Dímelo en la calle"><a href="canciones/joaquin_sabina/el_cafe_de_nicanor.html">El café de Nicanor</a></li>
+            <li data-author="Joaquín Sabina" data-album="Yo, mi, me, contigo"><a href="canciones/joaquin_sabina/el_capitan_de_su_calle.html">El capitán de su calle</a></li>
+            <li data-author="Joaquín Sabina, Alejo Stivel" data-album="19 días y 500 noches"><a href="canciones/joaquin_sabina/el_caso_de_la_rubia_platino.html">El caso de la rubia platino</a></li>
+            <li data-author="Joaquín Sabina" data-album="Juez y parte"><a href="canciones/joaquin_sabina/el_joven_aprendiz_de_pintor.html">El joven aprendiz de pintor</a></li>
+            <li data-author="Joaquín Sabina, Jaime Asúa" data-album="Mentiras piadosas"><a href="canciones/joaquin_sabina/el_muro_de_berlin.html">El muro de Berlín</a></li>
+            <li data-author="Joaquín Sabina" data-album="Yo, mi, me, contigo"><a href="canciones/joaquin_sabina/el_rocanrol_de_los_idiotas.html">El rocanrol de los idiotas</a></li>
+            <li data-author="Joaquín Sabina, Pereza" data-album="Vinagre y rosas"><a href="canciones/joaquin_sabina/embustera.html">Embustera</a></li>
+            <li data-author="Joaquín Sabina, Fito Páez" data-album="Enemigos íntimos"><a href="canciones/joaquin_sabina/enemigos_intimos.html">Enemigos íntimos</a></li>
+            <li data-author="Joaquín Sabina" data-album="Yo, mi, me, contigo"><a href="canciones/joaquin_sabina/es_mentira.html">Es mentira</a></li>
+            <li data-author="Joaquín Sabina" data-album="Esta boca es mía"><a href="canciones/joaquin_sabina/esta_boca_es_mia.html">Esta boca es mía</a></li>
+            <li data-author="Joaquín Sabina" data-album="Esta boca es mía"><a href="canciones/joaquin_sabina/esta_noche_contigo.html">Esta noche contigo</a></li>
+            <li data-author="Joaquín Sabina" data-album="El hombre del traje gris"><a href="canciones/joaquin_sabina/eva_tomando_el_sol.html">Eva tomando el sol</a></li>
+            <li data-author="Joaquín Sabina, Fito Páez" data-album="Enemigos íntimos"><a href="canciones/joaquin_sabina/flores_en_su_entierro.html">Flores en su entierro</a></li>
+            <li data-author="Joaquín Sabina" data-album="Esta boca es mía"><a href="canciones/joaquin_sabina/ganas_de.html">Ganas de</a></li>
+            <li data-author="Joaquín Sabina" data-album="Ruleta rusa"><a href="canciones/joaquin_sabina/guerra_mundial.html">Guerra mundial</a></li>
+            <li data-author="Joaquín Sabina" data-album="Malas compañías"><a href="canciones/joaquin_sabina/gulliver.html">Gulliver</a></li>
+            <li data-author="Joaquín Sabina, Fito Páez" data-album="Enemigos íntimos"><a href="canciones/joaquin_sabina/hasta_cuando.html">Hasta cuándo</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona" data-album="Hotel, dulce hotel"><a href="canciones/joaquin_sabina/hotel_dulce_hotel.html">Hotel, dulce hotel</a></li>
+            <li data-author="Joaquín Sabina, Joan Manuel Serrat" data-album="La orquesta del Titanic"><a href="canciones/joaquin_sabina/hoy_por_ti_mañana_por_mi.html">Hoy por ti, mañana por mí</a></li>
+            <li data-author="Joaquín Sabina, Joan Manuel Serrat" data-album="La orquesta del Titanic"><a href="canciones/joaquin_sabina/idiotas_palizas_y_calientabraguetas.html">Idiotas, palizas y calientabraguetas</a></li>
+            <li data-author="Joaquín Sabina" data-album="Esta boca es mía"><a href="canciones/joaquin_sabina/incluso_en_estos_tiempos.html">Incluso en estos tiempos</a></li>
+            <li data-author="Joaquín Sabina" data-album="Juez y parte"><a href="canciones/joaquin_sabina/incompatibilidad_de_caracteres.html">Incompatibilidad de caracteres</a></li>
+            <li data-author="Joaquín Sabina" data-album="Inventario"><a href="canciones/joaquin_sabina/inventario.html">Inventario</a></li>
+            <li data-author="Joaquín Sabina, Javier Krahe" data-album="Ruleta rusa"><a href="canciones/joaquin_sabina/juana_la_loca.html">Juana la Loca</a></li>
+            <li data-author="Joaquín Sabina" data-album="El hombre del traje gris"><a href="canciones/joaquin_sabina/juegos_de_azar.html">Juegos de azar</a></li>
+            <li data-author="Joaquín Sabina" data-album="Yo, mi, me, contigo"><a href="canciones/joaquin_sabina/jugar_por_jugar.html">Jugar por jugar</a></li>
+            <li data-author="Joaquín Sabina" data-album="Juez y parte"><a href="canciones/joaquin_sabina/kung-fu.html">Kung-fu</a></li>
+            <li data-author="Joaquín Sabina, Alejo Stivel" data-album="19 días y 500 noches"><a href="canciones/joaquin_sabina/la_biblia_y_el_calefon.html">La Biblia y el calefón</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona, Antonio García de Diego" data-album="Física y química"><a href="canciones/joaquin_sabina/la_cancion_de_las_noches_perdidas.html">La canción de las noches perdidas</a></li>
+            <li data-author="Joaquín Sabina, Fito Páez" data-album="Enemigos íntimos"><a href="canciones/joaquin_sabina/la_cancion_de_los_buenos_borrachos.html">La canción de los buenos borrachos</a></li>
+            <li data-author="Joaquín Sabina" data-album="Dímelo en la calle"><a href="canciones/joaquin_sabina/la_cancion_mas_hermosa_del_mundo.html">La canción más hermosa del mundo</a></li>
+            <li data-author="Joaquín Sabina" data-album="Esta boca es mía"><a href="canciones/joaquin_sabina/la_casa_por_la_ventana.html">La casa por la ventana</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona, Antonio García de Diego" data-album="Física y química"><a href="canciones/joaquin_sabina/la_del_pirata_cojo.html">La del pirata cojo</a></li>
+            <li data-author="Joaquín Sabina, Joan Manuel Serrat" data-album="La orquesta del Titanic"><a href="canciones/joaquin_sabina/la_orquesta_del_titanic.html">La orquesta del Titanic</a></li>
+            <li data-author="Joaquín Sabina, Fito Páez" data-album="Enemigos íntimos"><a href="canciones/joaquin_sabina/la_vida_moderna.html">La vida moderna</a></li>
+            <li data-author="Joaquín Sabina" data-album="Lo niego todo"><a href="canciones/joaquin_sabina/lagrimas_de_marmol.html">Lágrimas de mármol</a></li>
+            <li data-author="Joaquín Sabina" data-album="Dímelo en la calle"><a href="canciones/joaquin_sabina/lagrimas_de_plastico_azul.html">Lágrimas de plástico azul</a></li>
+            <li data-author="Joaquín Sabina" data-album="Lo niego todo"><a href="canciones/joaquin_sabina/las_noches_de_domingo_acaban_mal.html">Las noches de domingo acaban mal</a></li>
+            <li data-author="Joaquín Sabina, Fito Páez" data-album="Enemigos íntimos"><a href="canciones/joaquin_sabina/lazaro.html">Lázaro</a></li>
+            <li data-author="Joaquín Sabina" data-album="Lo niego todo"><a href="canciones/joaquin_sabina/leningrado.html">Leningrado</a></li>
+            <li data-author="Joaquín Sabina, Fito Páez" data-album="Enemigos íntimos"><a href="canciones/joaquin_sabina/llueve_sobre_mojado.html">Llueve sobre mojado</a></li>
+            <li data-author="Joaquín Sabina" data-album="Lo niego todo"><a href="canciones/joaquin_sabina/lo_niego_todo.html">Lo niego todo</a></li>
+            <li data-author="Joaquín Sabina" data-album="El hombre del traje gris"><a href="canciones/joaquin_sabina/locos_de_atar.html">Locos de atar</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona, Antonio García de Diego" data-album="Física y química"><a href="canciones/joaquin_sabina/los_cuentos_que_yo_cuento.html">Los cuentos que yo cuento</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona" data-album="El hombre del traje gris"><a href="canciones/joaquin_sabina/los_perros_del_amanecer.html">Los perros del amanecer</a></li>
+            <li data-author="Joaquín Sabina, Joan Manuel Serrat" data-album="La orquesta del Titanic"><a href="canciones/joaquin_sabina/maldito_blues.html">Maldito blues</a></li>
+            <li data-author="Joaquín Sabina" data-album="Malas compañías"><a href="canciones/joaquin_sabina/manual_para_heroes_o_canallas.html">Manual para héroes o canallas</a></li>
+            <li data-author="Joaquín Sabina, Joan Manuel Serrat" data-album="La orquesta del Titanic"><a href="canciones/joaquin_sabina/martinez.html">Martínez</a></li>
+            <li data-author="Joaquín Sabina" data-album="Esta boca es mía"><a href="canciones/joaquin_sabina/mas_de_cien_mentiras.html">Más de cien mentiras</a></li>
+            <li data-author="Joaquín Sabina, Fito Páez" data-album="Enemigos íntimos"><a href="canciones/joaquin_sabina/mas_guapa_que_cualquiera.html">Más guapa que cualquiera</a></li>
+            <li data-author="Joaquín Sabina" data-album="Alivio de luto"><a href="canciones/joaquin_sabina/mater_españa.html">Mater España</a></li>
+            <li data-author="Joaquín Sabina" data-album="Alivio de luto"><a href="canciones/joaquin_sabina/me_pido_primer.html">Me pido primer</a></li>
+            <li data-author="Joaquín Sabina" data-album="Mentiras piadosas"><a href="canciones/joaquin_sabina/medias_negras.html">Medias negras</a></li>
+            <li data-author="Joaquín Sabina" data-album="Vinagre y rosas"><a href="canciones/joaquin_sabina/menos_dos_alas.html">Menos dos alas</a></li>
+            <li data-author="Joaquín Sabina" data-album="Mentiras piadosas"><a href="canciones/joaquin_sabina/mentiras_piadosas.html">Mentiras piadosas</a></li>
+            <li data-author="Joaquín Sabina" data-album="Malas compañías"><a href="canciones/joaquin_sabina/mi_amigo_satan.html">Mi amigo Satán</a></li>
+            <li data-author="Joaquín Sabina" data-album="Yo, mi, me, contigo"><a href="canciones/joaquin_sabina/mi_primo_el_nano.html">Mi primo el Nano</a></li>
+            <li data-author="Joaquín Sabina" data-album="Inventario"><a href="canciones/joaquin_sabina/mi_vecino_de_arriba.html">Mi vecino de arriba</a></li>
+            <li data-author="Joaquín Sabina" data-album="Hotel, dulce hotel"><a href="canciones/joaquin_sabina/monica.html">Mónica</a></li>
+            <li data-author="Joaquín Sabina" data-album="Esta boca es mía"><a href="canciones/joaquin_sabina/mujeres_fatal.html">Mujeres fatal</a></li>
+            <li data-author="Joaquín Sabina" data-album="El hombre del traje gris"><a href="canciones/joaquin_sabina/nacidos_para_perder.html">Nacidos para perder</a></li>
+            <li data-author="Joaquín Sabina" data-album="Ruleta rusa"><a href="canciones/joaquin_sabina/negra_noche.html">Negra noche</a></li>
+            <li data-author="Joaquín Sabina, Luz Casal, Pancho Varona" data-album="Singles"><a href="canciones/joaquin_sabina/no_me_importa_nada.html">No me importa nada</a></li>
+            <li data-author="Joaquín Sabina" data-album="Dímelo en la calle"><a href="canciones/joaquin_sabina/no_permita_la_virgen.html">No permita la Virgen</a></li>
+            <li data-author="Joaquín Sabina" data-album="Yo, mi, me, contigo"><a href="canciones/joaquin_sabina/no_sopor_no_sopor.html">No sopor, no sopor</a></li>
+            <li data-author="Joaquín Sabina" data-album="Lo niego todo"><a href="canciones/joaquin_sabina/no_tan_deprisa.html">No tan deprisa</a></li>
+            <li data-author="Joaquín Sabina, Chavela Vargas" data-album="19 días y 500 noches"><a href="canciones/joaquin_sabina/noches_de_boda.html">Noches de boda</a></li>
+            <li data-author="Joaquín Sabina" data-album="Vinagre y rosas"><a href="canciones/joaquin_sabina/nombres_impropios.html">Nombres impropios</a></li>
+            <li data-author="Joaquín Sabina, Alejo Stivel" data-album="19 días y 500 noches"><a href="canciones/joaquin_sabina/nos_sobran_los_motivos.html">Nos sobran los motivos</a></li>
+            <li data-author="Joaquín Sabina" data-album="Alivio de luto"><a href="canciones/joaquin_sabina/nube_negra.html">Nube negra</a></li>
+            <li data-author="Joaquín Sabina" data-album="Alivio de luto"><a href="canciones/joaquin_sabina/numeros_rojos.html">Números rojos</a></li>
+            <li data-author="Joaquín Sabina" data-album="Ruleta rusa"><a href="canciones/joaquin_sabina/ocupen_su_localidad.html">Ocupen su localidad</a></li>
+            <li data-author="Joaquín Sabina" data-album="Hotel, dulce hotel"><a href="canciones/joaquin_sabina/oiga_doctor.html">Oiga, doctor</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona" data-album="Hotel, dulce hotel"><a href="canciones/joaquin_sabina/pacto_entre_caballeros.html">Pacto entre caballeros</a></li>
+            <li data-author="Joaquín Sabina" data-album="Alivio de luto"><a href="canciones/joaquin_sabina/paisanaje.html">Paisanaje</a></li>
+            <li data-author="Joaquín Sabina" data-album="Alivio de luto"><a href="canciones/joaquin_sabina/pajaros_de_portugal.html">Pájaros de Portugal</a></li>
+            <li data-author="Joaquín Sabina" data-album="Inventario"><a href="canciones/joaquin_sabina/palabras_como_cuerpos.html">Palabras como cuerpos</a></li>
+            <li data-author="Joaquín Sabina" data-album="Vinagre y rosas"><a href="canciones/joaquin_sabina/parte_meteorologico.html">Parte meteorológico</a></li>
+            <li data-author="Joaquín Sabina" data-album="Malas compañías"><a href="canciones/joaquin_sabina/pasandolo_bien.html">Pasándolo bien</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona, Antonio García de Diego" data-album="Física y química"><a href="canciones/joaquin_sabina/pastillas_para_no_soñar.html">Pastillas para no soñar</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona" data-album="Dímelo en la calle"><a href="canciones/joaquin_sabina/peces_de_ciudad.html">Peces de ciudad</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona" data-album="El hombre del traje gris"><a href="canciones/joaquin_sabina/peligro_de_incendio.html">Peligro de incendio</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona, Antonio García de Diego" data-album="Física y química"><a href="canciones/joaquin_sabina/peor_para_el_sol.html">Peor para el sol</a></li>
+            <li data-author="Joaquín Sabina" data-album="19 días y 500 noches"><a href="canciones/joaquin_sabina/pero_que_hermosas_eran.html">Pero qué hermosas eran</a></li>
+            <li data-author="Joaquín Sabina" data-album="Alivio de luto"><a href="canciones/joaquin_sabina/pie_de_guerra.html">Pie de guerra</a></li>
+            <li data-author="Joaquín Sabina" data-album="Ruleta rusa"><a href="canciones/joaquin_sabina/pisa_el_acelerador.html">Pisa el acelerador</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona, Antonio García de Diego" data-album="Mentiras piadosas"><a href="canciones/joaquin_sabina/pobre_cristina.html">Pobre Cristina</a></li>
+            <li data-author="Joaquín Sabina" data-album="Malas compañías"><a href="canciones/joaquin_sabina/pongamos_que_hablo_de_madrid.html">Pongamos que hablo de Madrid</a></li>
+            <li data-author="Joaquín Sabina, Antonio García de Diego" data-album="Mentiras piadosas"><a href="canciones/joaquin_sabina/ponme_un_trago_mas.html">Ponme un trago más</a></li>
+            <li data-author="Joaquín Sabina" data-album="Lo niego todo"><a href="canciones/joaquin_sabina/por_delicadeza.html">Por delicadeza</a></li>
+            <li data-author="Joaquín Sabina" data-album="Esta boca es mía"><a href="canciones/joaquin_sabina/por_el_bulevar_de_los_sueños_rotos.html">Por el bulevar de los sueños rotos</a></li>
+            <li data-author="Joaquín Sabina" data-album="Ruleta rusa"><a href="canciones/joaquin_sabina/por_el_tunel.html">Por el túnel</a></li>
+            <li data-author="Joaquín Sabina" data-album="Yo, mi, me, contigo"><a href="canciones/joaquin_sabina/postal_de_la_habana.html">Postal de La Habana</a></li>
+            <li data-author="Joaquín Sabina" data-album="Lo niego todo"><a href="canciones/joaquin_sabina/postdata.html">Postdata</a></li>
+            <li data-author="Joaquín Sabina" data-album="Juez y parte"><a href="canciones/joaquin_sabina/princesa.html">Princesa</a></li>
+            <li data-author="Joaquín Sabina" data-album="Malas compañías"><a href="canciones/joaquin_sabina/que_demasiao.html">Qué demasiao</a></li>
+            <li data-author="Joaquín Sabina" data-album="Lo niego todo"><a href="canciones/joaquin_sabina/que_estoy_haciendo_aqui.html">Qué estoy haciendo aquí</a></li>
+            <li data-author="Joaquín Sabina" data-album="Hotel, dulce hotel"><a href="canciones/joaquin_sabina/que_se_llama_soledad.html">Que se llama Soledad</a></li>
+            <li data-author="Joaquín Sabina" data-album="Juez y parte"><a href="canciones/joaquin_sabina/quedate_a_dormir.html">Quédate a dormir</a></li>
+            <li data-author="Joaquín Sabina" data-album="Lo niego todo"><a href="canciones/joaquin_sabina/quien_mas_quien_menos.html">Quien más, quien menos</a></li>
+            <li data-author="Joaquín Sabina" data-album="El hombre del traje gris"><a href="canciones/joaquin_sabina/quien_me_ha_robado_el_mes_de_abril.html">Quién me ha robado el mes de abril</a></li>
+            <li data-author="Joaquín Sabina, Joan Manuel Serrat" data-album="La orquesta del Titanic"><a href="canciones/joaquin_sabina/quince_o_veinte_copas.html">Quince o veinte copas</a></li>
+            <li data-author="Joaquín Sabina" data-album="El hombre del traje gris"><a href="canciones/joaquin_sabina/rap_del_optimista.html">Rap del optimista</a></li>
+            <li data-author="Joaquín Sabina" data-album="Juez y parte"><a href="canciones/joaquin_sabina/rebajas_de_enero.html">Rebajas de enero</a></li>
+            <li data-author="Joaquín Sabina" data-album="Alivio de luto"><a href="canciones/joaquin_sabina/resumiendo.html">Resumiendo</a></li>
+            <li data-author="Joaquín Sabina" data-album="Ruleta rusa"><a href="canciones/joaquin_sabina/ring_ring_ring.html">Ring, ring, ring</a></li>
+            <li data-author="Joaquín Sabina" data-album="Inventario"><a href="canciones/joaquin_sabina/romance_de_la_gentil_dama_y_el_rustico_pastor.html">Romance de la gentil dama y el rústico pastor</a></li>
+            <li data-author="Joaquín Sabina" data-album="Esta boca es mía"><a href="canciones/joaquin_sabina/ruido.html">Ruido</a></li>
+            <li data-author="Joaquín Sabina" data-album="Yo, mi, me, contigo"><a href="canciones/joaquin_sabina/seis_de_la_mañana.html">Seis de la mañana</a></li>
+            <li data-author="Joaquín Sabina" data-album="Alivio de luto"><a href="canciones/joaquin_sabina/seis_tequilas.html">Seis tequilas</a></li>
+            <li data-author="Joaquín Sabina" data-album="Dímelo en la calle"><a href="canciones/joaquin_sabina/semos_diferentes.html">Semos diferentes</a></li>
+            <li data-author="Joaquín Sabina, Fito Páez" data-album="Enemigos íntimos"><a href="canciones/joaquin_sabina/si_volvieran_los_dragones.html">Si volvieran los dragones</a></li>
+            <li data-author="Joaquín Sabina" data-album="Esta boca es mía"><a href="canciones/joaquin_sabina/siete_crisantemos.html">Siete crisantemos</a></li>
+            <li data-author="Joaquín Sabina" data-album="Lo niego todo"><a href="canciones/joaquin_sabina/sin_pena_ni_gloria.html">Sin pena ni gloria</a></li>
+            <li data-author="Joaquín Sabina" data-album="Singles"><a href="canciones/joaquin_sabina/sintiendolo_mucho.html">Sintiéndolo mucho</a></li>
+            <li data-author="Joaquín Sabina" data-album="Yo, mi, me, contigo"><a href="canciones/joaquin_sabina/tan_joven_y_tan_viejo.html">Tan joven y tan viejo</a></li>
+            <li data-author="Joaquín Sabina" data-album="Inventario"><a href="canciones/joaquin_sabina/tango_del_quinielista.html">Tango del quinielista</a></li>
+            <li data-author="Joaquín Sabina" data-album="Ruleta rusa"><a href="canciones/joaquin_sabina/telespañolito.html">Telespañolito</a></li>
+            <li data-author="Joaquín Sabina, Fito Páez" data-album="Enemigos íntimos"><a href="canciones/joaquin_sabina/tengo_una_muñeca_que_regala_besos.html">Tengo una muñeca que regala besos</a></li>
+            <li data-author="Joaquín Sabina, Pereza" data-album="Vinagre y rosas"><a href="canciones/joaquin_sabina/tiramisu_de_limon.html">Tiramisú de limón</a></li>
+            <li data-author="Joaquín Sabina, Los Rodríguez" data-album="Singles"><a href="canciones/joaquin_sabina/todavia_una_cancion_de_amor.html">Todavía una canción de amor</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona, Antonio García de Diego, Jaime Asúa" data-album="Física y química"><a href="canciones/joaquin_sabina/todos_menos_tu.html">Todos menos tú</a></li>
+            <li data-author="Joaquín Sabina" data-album="Inventario"><a href="canciones/joaquin_sabina/tratado_de_impaciencia_nº10.html">Tratado de impaciencia nº10</a></li>
+            <li data-author="Joaquín Sabina, Pablo Milanés" data-album="19 días y 500 noches"><a href="canciones/joaquin_sabina/una_cancion_para_la_magdalena.html">Una canción para la Magdalena</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona, Antonio García de Diego" data-album="El hombre del traje gris"><a href="canciones/joaquin_sabina/una_de_romanos.html">Una de romanos</a></li>
+            <li data-author="Joaquín Sabina" data-album="Dímelo en la calle"><a href="canciones/joaquin_sabina/vamonos_pal_sur.html">Vámonos pal sur</a></li>
+            <li data-author="Joaquín Sabina" data-album="Ruleta rusa"><a href="canciones/joaquin_sabina/viejo_blues_de_la_soledad.html">Viejo blues de la soledad</a></li>
+            <li data-author="Joaquín Sabina" data-album="Vinagre y rosas"><a href="canciones/joaquin_sabina/vinagre_y_rosas.html">Vinagre y rosas</a></li>
+            <li data-author="Joaquín Sabina" data-album="Vinagre y rosas"><a href="canciones/joaquin_sabina/violetas_para_violeta.html">Violetas para Violeta</a></li>
+            <li data-author="Joaquín Sabina" data-album="Vinagre y rosas"><a href="canciones/joaquin_sabina/virgen_de_la_amargura.html">Virgen de la amargura</a></li>
+            <li data-author="Joaquín Sabina" data-album="Yo, mi, me, contigo"><a href="canciones/joaquin_sabina/viridiana.html">Viridiana</a></li>
+            <li data-author="Joaquín Sabina" data-album="Vinagre y rosas"><a href="canciones/joaquin_sabina/viudita_de_clicquot.html">Viudita de Clicquot</a></li>
+            <li data-author="Joaquín Sabina" data-album="Juez y parte"><a href="canciones/joaquin_sabina/whisky_sin_soda.html">Whisky sin soda</a></li>
+            <li data-author="Joaquín Sabina" data-album="Física y química"><a href="canciones/joaquin_sabina/y_nos_dieron_las_diez.html">Y nos dieron las diez</a></li>
+            <li data-author="Joaquín Sabina, Pancho Varona, Antonio García de Diego" data-album="Mentiras piadosas"><a href="canciones/joaquin_sabina/y_si_amanece_por_fin.html">Y si amanece por fin</a></li>
+            <li data-author="Joaquín Sabina" data-album="Yo, mi, me, contigo"><a href="canciones/joaquin_sabina/y_sin_embargo.html">Y sin embargo</a></li>
+            <li data-author="Joaquín Sabina" data-album="Yo, mi, me, contigo"><a href="canciones/joaquin_sabina/y_sin_embargo_(intro).html">Y sin embargo (intro)</a></li>
+            <li data-author="Joaquín Sabina" data-album="Dímelo en la calle"><a href="canciones/joaquin_sabina/ya_eyacule.html">Ya eyaculé</a></li>
+            <li data-author="Joaquín Sabina" data-album="Enemigos íntimos"><a href="canciones/joaquin_sabina/yo_me_bajo_en_atocha.html">Yo me bajo en Atocha</a></li>
+            <li data-author="Joaquín Sabina, Luis Eduardo Aute, Antonio García de Diego" data-album="Física y química"><a href="canciones/joaquin_sabina/yo_quiero_ser_una_chica_almodovar.html">Yo quiero ser una chica almodóvar</a></li>
+            <li data-author="Joaquín Sabina" data-album="Dímelo en la calle"><a href="canciones/joaquin_sabina/yo_tambien_se_jugarme_la_boca.html">Yo también sé jugarme la boca</a></li>
+        </ul>
+
+        <span class="ancla-seccion" id="leiv" aria-hidden="true"></span>
+        <h2>Leiva</h2>
+        <ul class="lista">
+            <li data-author="Leiva" data-album="Diciembre"><a href="canciones/leiva/92.html">92</a></li>
+            <li data-author="Leiva" data-album="Cuando te muerdes el labio"><a href="canciones/leiva/a_medio_centimetro.html">A medio centímetro</a></li>
+            <li data-author="Leiva" data-album="Nuclear"><a href="canciones/leiva/a_ti_te_ocurre_algo.html">A ti te ocurre algo</a></li>
+            <li data-author="Leiva" data-album="Gigante"><a href="canciones/leiva/acido.html">Ácido</a></li>
+            <li data-author="Leiva" data-album="Pólvora"><a href="canciones/leiva/afuera_en_la_ciudad.html">Afuera en la ciudad</a></li>
+            <li data-author="Leiva" data-album="Gigante"><a href="canciones/leiva/angulo_muerto.html">Ángulo muerto</a></li>
+            <li data-author="Leiva, Iván Ferreiro" data-album="Singles"><a href="canciones/leiva/anticiclon_(ivan_ferreiro).html">Anticiclón (Iván Ferreiro)</a></li>
+            <li data-author="Leiva" data-album="Diciembre"><a href="canciones/leiva/aunque_sea_un_rato.html">Aunque sea un rato</a></li>
+            <li data-author="Leiva" data-album="Gigante"><a href="canciones/leiva/bajo_presion.html">Bajo presión</a></li>
+            <li data-author="Leiva" data-album="Gigante"><a href="canciones/leiva/barrio.html">Barrio</a></li>
+            <li data-author="Leiva" data-album="Cuando te muerdes el labio"><a href="canciones/leiva/blancos_faciles.html">Blancos fáciles</a></li>
+            <li data-author="Leiva" data-album="Monstruos"><a href="canciones/leiva/breaking_bad.html">Breaking Bad</a></li>
+            <li data-author="Leiva, Robe" data-album="Gigante"><a href="canciones/leiva/caida_libre.html">Caída libre</a></li>
+            <li data-author="Leiva" data-album="Pólvora"><a href="canciones/leiva/cerca.html">Cerca</a></li>
+            <li data-author="Leiva" data-album="Pólvora"><a href="canciones/leiva/ciencia_ficcion.html">Ciencia ficción</a></li>
+            <li data-author="Leiva" data-album="Gigante"><a href="canciones/leiva/cometas_y_estrellas.html">Cometas y estrellas</a></li>
+            <li data-author="Leiva" data-album="Nuclear"><a href="canciones/leiva/como_si_fueras_a_morir_mañana.html">Como si fueras a morir mañana</a></li>
+            <li data-author="Leiva" data-album="Cuando te muerdes el labio"><a href="canciones/leiva/con_el_pañuelo_en_los_ojos.html">Con el pañuelo en los ojos</a></li>
+            <li data-author="Leiva" data-album="Gigante"><a href="canciones/leiva/cortar_por_la_linea_de_puntos.html">Cortar por la línea de puntos</a></li>
+            <li data-author="Leiva" data-album="Nuclear"><a href="canciones/leiva/costa_de_oaxaca.html">Costa de Oaxaca</a></li>
+            <li data-author="Leiva" data-album="Cuando te muerdes el labio"><a href="canciones/leiva/cuando_te_muerdes_el_labio.html">Cuando te muerdes el labio</a></li>
+            <li data-author="Leiva" data-album="Gigante"><a href="canciones/leiva/cuarenta_mil.html">Cuarenta mil</a></li>
+            <li data-author="Leiva" data-album="Monstruos"><a href="canciones/leiva/dejandose_caer.html">Dejándose caer</a></li>
+            <li data-author="Leiva" data-album="Pólvora"><a href="canciones/leiva/del_hueso_una_flor.html">Del hueso una flor</a></li>
+            <li data-author="Leiva" data-album="Cuando te muerdes el labio"><a href="canciones/leiva/diazepam.html">Diazepam</a></li>
+            <li data-author="Leiva" data-album="Nuclear"><a href="canciones/leiva/el_gigante_de_big_fish.html">El gigante de Big Fish</a></li>
+            <li data-author="Leiva" data-album="Gigante"><a href="canciones/leiva/el_polvo_de_los_dias_raros.html">El polvo de los días raros</a></li>
+            <li data-author="Leiva" data-album="Monstruos"><a href="canciones/leiva/el_ultimo_incendio.html">El último incendio</a></li>
+            <li data-author="Leiva" data-album="Monstruos"><a href="canciones/leiva/electricidad.html">Electricidad</a></li>
+            <li data-author="Leiva" data-album="Diciembre"><a href="canciones/leiva/eme.html">Eme</a></li>
+            <li data-author="Leiva" data-album="Nuclear"><a href="canciones/leiva/en_el_espacio.html">En el espacio</a></li>
+            <li data-author="Leiva" data-album="Nuclear"><a href="canciones/leiva/expertos.html">Expertos</a></li>
+            <li data-author="Leiva" data-album="Diciembre"><a href="canciones/leiva/extasis.html">Éxtasis</a></li>
+            <li data-author="Leiva" data-album="Cuando te muerdes el labio"><a href="canciones/leiva/flecha.html">Flecha</a></li>
+            <li data-author="Leiva" data-album="Pólvora"><a href="canciones/leiva/francesita.html">Francesita</a></li>
+            <li data-author="Leiva" data-album="Gigante"><a href="canciones/leiva/gigante.html">Gigante</a></li>
+            <li data-author="Leiva" data-album="Nuclear"><a href="canciones/leiva/godzilla.html">Godzilla</a></li>
+            <li data-author="Leiva" data-album="Monstruos"><a href="canciones/leiva/guerra_mundial.html">Guerra mundial</a></li>
+            <li data-author="Leiva" data-album="Pólvora"><a href="canciones/leiva/hermosa_taquicardia.html">Hermosa taquicardia</a></li>
+            <li data-author="Leiva" data-album="Cuando te muerdes el labio"><a href="canciones/leiva/histericos.html">Histéricos</a></li>
+            <li data-author="Leiva" data-album="Diciembre"><a href="canciones/leiva/hoy_no_me_encuentro.html">Hoy no me encuentro</a></li>
+            <li data-author="Leiva" data-album="Monstruos"><a href="canciones/leiva/hoy_tus_ojos.html">Hoy tus ojos</a></li>
+            <li data-author="Leiva" data-album="Cuando te muerdes el labio"><a href="canciones/leiva/iceberg.html">Iceberg</a></li>
+            <li data-author="Leiva" data-album="Cuando te muerdes el labio"><a href="canciones/leiva/inertes.html">Inertes</a></li>
+            <li data-author="Leiva" data-album="Cuando te muerdes el labio"><a href="canciones/leiva/infinitos.html">Infinitos</a></li>
+            <li data-author="Leiva" data-album="Singles"><a href="canciones/leiva/la_llamada.html">La llamada</a></li>
+            <li data-author="Leiva" data-album="Monstruos"><a href="canciones/leiva/la_lluvia_en_los_zapatos.html">La lluvia en los zapatos</a></li>
+            <li data-author="Leiva" data-album="Diciembre"><a href="canciones/leiva/las_cuentas.html">Las cuentas</a></li>
+            <li data-author="Leiva" data-album="Gigante"><a href="canciones/leiva/leivinha.html">Leivinha</a></li>
+            <li data-author="Leiva" data-album="Cuando te muerdes el labio"><a href="canciones/leiva/llegara.html">Llegará</a></li>
+            <li data-author="Leiva" data-album="Nuclear"><a href="canciones/leiva/lobos.html">Lobos</a></li>
+            <li data-author="Leiva" data-album="Pólvora"><a href="canciones/leiva/los_cantantes.html">Los cantantes</a></li>
+            <li data-author="Leiva" data-album="Nuclear"><a href="canciones/leiva/maniobras_suicidas.html">Maniobras suicidas</a></li>
+            <li data-author="Leiva" data-album="Monstruos"><a href="canciones/leiva/medicina.html">Medicina</a></li>
+            <li data-author="Leiva" data-album="Pólvora"><a href="canciones/leiva/mi_mejor_version.html">Mi mejor versión</a></li>
+            <li data-author="Leiva" data-album="Nuclear"><a href="canciones/leiva/mi_pequeño_chernobil.html">Mi pequeño Chernóbil</a></li>
+            <li data-author="Leiva" data-album="Diciembre"><a href="canciones/leiva/miedo.html">Miedo</a></li>
+            <li data-author="Leiva" data-album="Pólvora"><a href="canciones/leiva/mirada_perdida.html">Mirada perdida</a></li>
+            <li data-author="Leiva" data-album="Monstruos"><a href="canciones/leiva/monstruos.html">Monstruos</a></li>
+            <li data-author="Leiva" data-album="Gigante"><a href="canciones/leiva/nevermind.html">Nevermind</a></li>
+            <li data-author="Leiva" data-album="Singles"><a href="canciones/leiva/no_soy_para_ti.html">No soy para ti</a></li>
+            <li data-author="Leiva" data-album="Nuclear"><a href="canciones/leiva/no_te_preocupes_por_mi.html">No te preocupes por mí</a></li>
+            <li data-author="Leiva" data-album="Nuclear"><a href="canciones/leiva/nuclear.html">Nuclear</a></li>
+            <li data-author="Leiva" data-album="Gigante"><a href="canciones/leiva/nueva_mision.html">Nueva misión</a></li>
+            <li data-author="Leiva" data-album="Diciembre"><a href="canciones/leiva/nunca_nadie.html">Nunca nadie</a></li>
+            <li data-author="Leiva" data-album="Monstruos"><a href="canciones/leiva/palermo_no_es_hollywood.html">Palermo no es Hollywood</a></li>
+            <li data-author="Leiva" data-album="Pólvora"><a href="canciones/leiva/palomas.html">Palomas</a></li>
+            <li data-author="Leiva" data-album="Singles"><a href="canciones/leiva/partido_a_partido.html">Partido a partido</a></li>
+            <li data-author="Leiva" data-album="Cuando te muerdes el labio"><a href="canciones/leiva/peligrosamente_dark.html">Peligrosamente dark</a></li>
+            <li data-author="Leiva" data-album="Diciembre"><a href="canciones/leiva/penaltis.html">Penaltis</a></li>
+            <li data-author="Leiva" data-album="Pólvora"><a href="canciones/leiva/polvora.html">Pólvora</a></li>
+            <li data-author="Leiva" data-album="Cuando te muerdes el labio"><a href="canciones/leiva/premio_de_consolacion.html">Premio de consolación</a></li>
+            <li data-author="Leiva" data-album="Monstruos"><a href="canciones/leiva/san_sebastian_–_madrid.html">San Sebastián – Madrid</a></li>
+            <li data-author="Leiva" data-album="Gigante"><a href="canciones/leiva/shock_y_adenalina.html">Shock y adenalina</a></li>
+            <li data-author="Leiva" data-album="Monstruos"><a href="canciones/leiva/sincericidio.html">Sincericidio</a></li>
+            <li data-author="Leiva" data-album="Singles"><a href="canciones/leiva/sixteen.html">Sixteen</a></li>
+            <li data-author="Leiva" data-album="Singles"><a href="canciones/leiva/solaris.html">Solaris</a></li>
+            <li data-author="Leiva" data-album="Cuando te muerdes el labio"><a href="canciones/leiva/stranger_things.html">Stranger things</a></li>
+            <li data-author="Leiva" data-album="Diciembre"><a href="canciones/leiva/sudando_la_tristeza.html">Sudando la tristeza</a></li>
+            <li data-author="Leiva" data-album="Nuclear"><a href="canciones/leiva/superpoderes.html">Superpoderes</a></li>
+            <li data-author="Leiva" data-album="Singles"><a href="canciones/leiva/te_comeria_a_versos.html">Te comería a versos</a></li>
+            <li data-author="Leiva" data-album="Diciembre"><a href="canciones/leiva/telediario.html">Telediario</a></li>
+            <li data-author="Leiva" data-album="Pólvora"><a href="canciones/leiva/terriblemente_cruel.html">Terriblemente cruel</a></li>
+            <li data-author="Leiva" data-album="Diciembre"><a href="canciones/leiva/todo_lo_que_tu_quieras.html">Todo lo que tú quieras</a></li>
+            <li data-author="Leiva" data-album="Singles"><a href="canciones/leiva/tu_respiracion.html">Tu respiración</a></li>
+            <li data-author="Leiva" data-album="Pólvora"><a href="canciones/leiva/vertigo.html">Vértigo</a></li>
+            <li data-author="Leiva" data-album="Diciembre"><a href="canciones/leiva/vis_a_vis.html">Vis a vis</a></li>
         </ul>
 
         <h2 style="display:none"></h2>

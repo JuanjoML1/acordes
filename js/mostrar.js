@@ -1,4 +1,6 @@
-const showAlbum = document.getElementById("showAlbum");
+const showOld = document.getElementById("showOld");
+const showNew = document.getElementById("showNew");
+const showRCC = document.getElementById("showRCC");
 const showAutor = document.getElementById("showAutor");
 
 function actualizarData() {
@@ -13,15 +15,22 @@ function actualizarData() {
             a.appendChild(span);
         }
 
-        const album = li.dataset.album;
+        const oldNum = li.dataset.nold;
+        const newNum = li.dataset.nnew;
+        const rccNum = li.dataset.nrcc;
         const author = li.dataset.author;
 
         let texto = "";
 
-        if (showAlbum.checked && album) {
-            texto += ` (${album})`;
+        if (showOld.checked && oldNum) {
+            texto += ` [${oldNum}]`;
         }
-
+        if (showNew.checked && newNum) {
+            texto += ` (${newNum})`;
+        }
+        if (showRCC.checked && rccNum) {
+            texto += ` {${rccNum}}`;
+        }
         if (showAutor.checked && author) {
             texto += ` — ${author}`;
         }
@@ -30,7 +39,9 @@ function actualizarData() {
     });
 }
 
-showAlbum.addEventListener("change", actualizarData);
+showOld.addEventListener("change", actualizarData);
+showNew.addEventListener("change", actualizarData);
+showRCC.addEventListener("change", actualizarData);
 showAutor.addEventListener("change", actualizarData);
 
 actualizarData();

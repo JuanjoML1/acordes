@@ -2,23 +2,39 @@
 <html lang="es">
 
     <head>
-        <meta charset="UTF-8">
-        <title>Irreversible</title>
-        <link rel="stylesheet" href="../../css/colores.css">
-        <link rel="stylesheet" href="../../css/estilo.css">
-        <link rel="stylesheet" href="../../css/estilo-texto.css">
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="jml-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Irreversible",
+    "musica": {
+        "tono": null,
+        "cejilla": null
+    },
+    "origen": {
+        "autor": "LOVG",
+        "album": "Guapa",
+        "num": null,
+        "año": null
+    },
+    "enlaces": {
+        "youtube": null
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
     </head>
 
     <body>
-
         <div class="cancion-header">
-            <div class="numeros">
-                <span class="antiguo">-</span>
-                <span class="nuevo">-</span>
-            </div>
-            <h1 class="titulo">Irreversible</h1>
+            <h1 class="titulo" data-md="titulo"></h1>
             <div class="tono">
-                <span>A</span>
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
             </div>
         </div>
         <div id="main-controls">
@@ -91,9 +107,30 @@ Viendo llover, uho, oh,
 viendo llover, oh, oh, oh, sé qué quiero contigo.
 </span>
 </pre>
-
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tr>
+                <th>Autor</th>
+                <td data-md="origen.autor"></td>
+            </tr>
+            <tr>
+                <th>Álbum</th>
+                <td data-md="origen.album"></td>
+            </tr>
+            <tr>
+                <th>Nº</th>
+                <td data-md="origen.num"></td>
+            </tr>
+            <tr>
+                <th>Año</th>
+                <td data-md="origen.año"></td>
+            </tr>
+        </table>
     </body>
     <script src="../../js/transponer.js"></script>
     <script src="../../js/cambiar_tema.js"></script>
-
+    <script src="../../js/metadata.js"></script>
 </html>

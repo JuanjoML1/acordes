@@ -1,45 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Lady Madrid</title>
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="jml-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Lady Madrid",
+    "musica": {
+        "tono": null,
+        "cejilla": null
+    },
+    "origen": {
+        "autor": "Pereza",
+        "album": null,
+        "num": null,
+        "año": null
+    },
+    "enlaces": {
+        "youtube": null
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
 
-    <link rel="stylesheet" href="../../css/colores.css">
-    <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="stylesheet" href="../../css/estilo-texto.css">
-</head>
-
-<body>
-
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
         </div>
-
-        <h1 class="titulo">Lady Madrid</h1>
-
-        <div class="tono">
-            <span>C</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-
-    <div id="main-controls">
-        <button id="back-button"
-                onclick="window.location.href='../../index.html'">
-            ← Volver
-        </button>
-
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-
-<pre>
+        <pre>
 Intro: C  Csus2  C  Fmaj7  //  C  Csus2  C  G
 
 C                 G       Fmaj7            C
@@ -53,7 +60,7 @@ De Málaga hasta La Coruña, durmiendo en la estación de tren
 
 <span class="estribillo">
 C                     G            Am                  F
-La estrella de los tejados, lo más rock & roll de por aquí
+La estrella de los tejados, lo más rock &amp; roll de por aquí
 C                      G6     Fmaj7   C    Cadd9 C G6
 Los gatos andábamos colgados, Lady Madrid
 </span>
@@ -68,7 +75,7 @@ Algunos todavía dudan, si vas a volver
 
 <span class="estribillo">
 C                     G            Am                  F
-La estrella de los tejados, lo más rock & roll de por aquí
+La estrella de los tejados, lo más rock &amp; roll de por aquí
 C                      G      Fmaj7   C    G6
 Los gatos andábamos colgados, Lady Madrid
 C            G              Am                      F
@@ -80,7 +87,7 @@ Y nunca hablaron los diarios de Lady Madrid
 
 <span class="estribillo">
 C                     G            Am                  F
-La estrella de los tejados, lo más rock & roll de por aquí
+La estrella de los tejados, lo más rock &amp; roll de por aquí
 C                      G      Fmaj7   C    G6
 Los gatos andábamos colgados, Lady Madrid
 C            G              Am                      F
@@ -93,10 +100,30 @@ Fmaj7  C
 Lady Madrid
 </span>
 </pre>
-
-</body>
-
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
-
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tr>
+                <th>Autor</th>
+                <td data-md="origen.autor"></td>
+            </tr>
+            <tr>
+                <th>Álbum</th>
+                <td data-md="origen.album"></td>
+            </tr>
+            <tr>
+                <th>Nº</th>
+                <td data-md="origen.num"></td>
+            </tr>
+            <tr>
+                <th>Año</th>
+                <td data-md="origen.año"></td>
+            </tr>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
 </html>

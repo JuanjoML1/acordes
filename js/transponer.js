@@ -27,20 +27,30 @@ const NOTE_INDEX = {
 
 /* Regex acorde */
 const CHORD_REGEX =
-    /\b(Do#|Re#|Fa#|Sol#|La#|Reb|Mib|Solb|Lab|Sib|Do|Re|Mi|Fa|Sol|La|Si|C#|D#|F#|G#|A#|Db|Eb|Gb|Ab|Bb|C|D|E|F|G|A|B)(m|maj7|7|sus4|sus2|º7|º|\+|m7b5)?\b/g;
+    /(Do#|Re#|Fa#|Sol#|La#|Reb|Mib|Solb|Lab|Sib|Do|Re|Mi|Fa|Sol|La|Si|C#|D#|F#|G#|A#|Db|Eb|Gb|Ab|Bb|C|D|E|F|G|A|B)(m|maj7|7|sus4|sus2|º7|º|\+|m7b5)?/g;
 
-/* Guardar originales */
+/* Guardar originales y detectar cifrado */
 const PRE_ORIGINALS = [];
-document.querySelectorAll("pre").forEach(pre => PRE_ORIGINALS.push(pre.innerHTML));
+const PRE_CIFRADOS = [];
+document.querySelectorAll("pre").forEach(pre => {
+    const original = pre.innerHTML;
+    PRE_ORIGINALS.push(original);
 
-let currentCifrado = "english";
+    // Detectar cifrado a partir de los acordes originales
+    const esIngles = /\b(C|D|E|F|G|A|B)(#|b)?(m|maj7|7|sus4|sus2)?\b/.test(
+        original.replace(/<[^>]*>/g, "")
+    );
+
+    PRE_CIFRADOS.push(esIngles ? "english" : "latin");
+});
+let currentCifrado = null;
 let currentSemitones = 0;
 
 /* Detecta si una línea es SOLO acordes */
 function isChordLine(line) {
     const stripped = line
         .replace(CHORD_REGEX, "")
-        .replace(/[()\[\]-]/g, "")
+        .replace(/[()\[\]]/g, "")
         .replace(/\s+/g, "");
     return stripped.length === 0;
 }
@@ -91,8 +101,14 @@ function transposePre(pre, semitones, notesArray) {
 /* Transponer todo */
 function transposeAll(semitones) {
     currentSemitones += semitones;
-    const notesArray = currentCifrado === "latin" ? NOTES_LATIN : NOTES_EN;
+
     document.querySelectorAll("pre").forEach((pre, i) => {
+        const cifrado = currentCifrado || PRE_CIFRADOS[i];
+
+        const notesArray = cifrado === "latin"
+            ? NOTES_LATIN
+            : NOTES_EN;
+
         pre.innerHTML = PRE_ORIGINALS[i];
         transposePre(pre, currentSemitones, notesArray);
     });
@@ -100,9 +116,21 @@ function transposeAll(semitones) {
 
 /* Cambiar cifrado */
 function toggleCifrado() {
-    currentCifrado = currentCifrado === "latin" ? "english" : "latin";
-    const notesArray = currentCifrado === "latin" ? NOTES_LATIN : NOTES_EN;
+    // Si todavía no se ha cambiado manualmente,
+    // partir del cifrado original de la primera canción.
+    if (currentCifrado === null) {
+        currentCifrado = PRE_CIFRADOS[0] || "latin";
+    }
+
+    currentCifrado = currentCifrado === "latin"
+        ? "english"
+        : "latin";
+
     document.querySelectorAll("pre").forEach((pre, i) => {
+        const notesArray = currentCifrado === "latin"
+            ? NOTES_LATIN
+            : NOTES_EN;
+
         pre.innerHTML = PRE_ORIGINALS[i];
         transposePre(pre, currentSemitones, notesArray);
     });
@@ -111,7 +139,8 @@ function toggleCifrado() {
 /* Reset */
 function resetTono() {
     currentSemitones = 0;
-    currentCifrado = "english";
+    currentCifrado = null;
+
     document.querySelectorAll("pre").forEach((pre, i) => {
         pre.innerHTML = PRE_ORIGINALS[i];
     });
@@ -120,3 +149,46 @@ function resetTono() {
 /* API */
 function subirTono() { transposeAll(1); }
 function bajarTono() { transposeAll(-1); }
+
+/* =========================================================
+   AJUSTAR TAMAÑO DE LETRA (shrink-to-fit)
+   - El CSS manda: pre { font-size: clamp(0.75rem, 1.5vw, 1.5rem); }
+   - Esto solo recorta si el pre desborda (scroll horizontal).
+   - Nunca agranda: parte del tamaño que dé el clamp.
+   - Mínimo 11px para no hacerlo ilegible.
+   ========================================================= */
+const FONT_MIN_PX = 11;
+
+function ajustarPre(pre) {
+    // Volver al clamp antes de medir
+    pre.style.fontSize = "";
+    const disponible = pre.clientWidth;
+    if (disponible <= 0) return;
+
+    let size = parseFloat(getComputedStyle(pre).fontSize);
+    if (isNaN(size)) return;
+
+    let guard = 40; // máx. 40 pasos de 0.5px = hasta -20px
+    while (guard-- > 0 && size > FONT_MIN_PX && pre.scrollWidth > disponible) {
+        size -= 0.5;
+        pre.style.fontSize = size + "px";
+    }
+}
+
+function ajustarTodasLasCanciones() {
+    document.querySelectorAll("pre").forEach(ajustarPre);
+}
+
+/* Carga inicial */
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", ajustarTodasLasCanciones);
+} else {
+    ajustarTodasLasCanciones();
+}
+
+/* Resize global con debounce (no un observer por pre) */
+let _ajusteT = null;
+window.addEventListener("resize", () => {
+    clearTimeout(_ajusteT);
+    _ajusteT = setTimeout(ajustarTodasLasCanciones, 150);
+});

@@ -2,32 +2,43 @@
 <html lang="es">
 
     <head>
-        <meta charset="UTF-8">
-        <title>Como un martillo en la pared</title>
-
-        <link rel="stylesheet" href="../../css/colores.css">
-        <link rel="stylesheet" href="../../css/estilo.css">
-        <link rel="stylesheet" href="../../css/estilo-texto.css">
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="jml-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Como un martillo en la pared",
+    "musica": {
+        "tono": null,
+        "cejilla": null
+    },
+    "origen": {
+        "autor": "Amaral",
+        "album": "Hacia lo salvaje",
+        "num": null,
+        "año": null
+    },
+    "enlaces": {
+        "youtube": null
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
     </head>
 
     <body>
-
         <div class="cancion-header">
-            <div class="numeros">
-                <span class="antiguo">-</span>
-                <span class="nuevo">-</span>
-            </div>
-
-            <h1 class="titulo">Como un martillo en la pared</h1>
-
+            <h1 class="titulo" data-md="titulo"></h1>
             <div class="tono">
-                <span>C</span>
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
             </div>
         </div>
-
         <div id="main-controls">
             <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-
             <div id="controls-container">
                 <button onclick="bajarTono()">−</button>
                 <button onclick="subirTono()">+</button>
@@ -35,7 +46,6 @@
                 <button onclick="toggleCifrado()">Do → C</button>
             </div>
         </div>
-
         <pre>
 Am                          F                 Am
 ¿Quién nos ha llamado a ser juez, jurado y verdugo?
@@ -82,10 +92,30 @@ Como un martillo en la pared
 ( Am  F  G  Am )
 </span>
 </pre>
-
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tr>
+                <th>Autor</th>
+                <td data-md="origen.autor"></td>
+            </tr>
+            <tr>
+                <th>Álbum</th>
+                <td data-md="origen.album"></td>
+            </tr>
+            <tr>
+                <th>Nº</th>
+                <td data-md="origen.num"></td>
+            </tr>
+            <tr>
+                <th>Año</th>
+                <td data-md="origen.año"></td>
+            </tr>
+        </table>
     </body>
-
     <script src="../../js/transponer.js"></script>
     <script src="../../js/cambiar_tema.js"></script>
-
+    <script src="../../js/metadata.js"></script>
 </html>
